@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flip_card/flip_card.dart';
@@ -5,6 +6,7 @@ import '../models/vocabulary_word.dart';
 import '../services/vocabulary_service.dart';
 import '../services/auth_service.dart';
 import '../components/flashcard_widget.dart';
+import '../components/adaptive_button.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -16,16 +18,16 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   final GlobalKey<FlipCardState> _cardKey = GlobalKey<FlipCardState>();
 
-  // State for navigation/display
+  // 導航/顯示狀態
   int _currentIndex = 0;
   bool _hideLearned = false;
 
-  // Computed (cached for current build)
+  // 計算屬性（針對當前 Build 緩存）
   List<VocabularyWord> _filteredWords = [];
   VocabularyWord? _currentWord;
   List<String> _availableLetters = [];
   final Map<String, int> _letterIndexMap = {};
-  Set<String> _learnedIds = {}; // Cached for helpers
+  Set<String> _learnedIds = {}; // 緩存輔助用
 
   @override
   void initState() {
@@ -52,9 +54,9 @@ class _MainScreenState extends State<MainScreen> {
       _currentIndex = 0;
       _currentWord = null;
     } else {
-      // Try to keep the same word if possible, OR same index
-      // But if the list changes drastically (e.g. initial load), index 0 is safer.
-      // If we are just toggling learned status, the word might disappear from list.
+      // 嘗試盡可能保持同一個單字，或是同一個索引
+      // 但如果列表變動很大（例如初始載入），索引 0 比較安全。
+      // 如果我們只是切換已學習狀態，該單字可能會從列表中消失。
 
       if (_currentIndex >= _filteredWords.length) {
         _currentIndex = _filteredWords.length - 1;
@@ -128,6 +130,60 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
+  void _showLogoutDialog(BuildContext context) {
+    final isIOS =
+        Theme.of(context).platform == TargetPlatform.iOS ||
+        Theme.of(context).platform == TargetPlatform.macOS;
+
+    if (isIOS) {
+      showCupertinoDialog(
+        context: context,
+        builder: (context) => CupertinoAlertDialog(
+          title: const Text('Logout'),
+          content: const Text('Are you sure you want to log out?'),
+          actions: [
+            CupertinoDialogAction(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Cancel'),
+            ),
+            CupertinoDialogAction(
+              isDestructiveAction: true,
+              onPressed: () {
+                Navigator.pop(context);
+                Provider.of<AuthService>(context, listen: false).signOut();
+              },
+              child: const Text('Logout'),
+            ),
+          ],
+        ),
+      );
+    } else {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: const Text('Logout'),
+          content: const Text('Are you sure you want to log out?'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                // Close dialog first
+                Navigator.pop(context);
+                // Perform sign out
+                Provider.of<AuthService>(context, listen: false).signOut();
+              },
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              child: const Text('Logout'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // Reactive data source
@@ -198,27 +254,31 @@ class _MainScreenState extends State<MainScreen> {
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
                 : authService.user != null
-                ? CircleAvatar(
-                    radius: 16,
-                    backgroundColor: Colors.blueAccent,
-                    backgroundImage: authService.user!.photoURL != null
-                        ? NetworkImage(authService.user!.photoURL!)
-                        : null,
-                    onBackgroundImageError: (_, __) {
-                      // Allow fallback to child if image fails
-                    },
-                    child: authService.user!.photoURL == null
-                        ? Text(
-                            (authService.user!.displayName ?? 'U')[0]
-                                .toUpperCase(),
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 12,
-                            ),
-                          )
-                        : null,
+                ? InkWell(
+                    onTap: () => _showLogoutDialog(context),
+                    borderRadius: BorderRadius.circular(16),
+                    child: CircleAvatar(
+                      radius: 16,
+                      backgroundColor: Colors.grey[800],
+                      backgroundImage: authService.user!.photoURL != null
+                          ? NetworkImage(authService.user!.photoURL!)
+                          : null,
+                      onBackgroundImageError: (_, __) {
+                        // Allow fallback to child if image fails
+                      },
+                      child: authService.user!.photoURL == null
+                          ? Text(
+                              (authService.user!.displayName ?? 'U')[0]
+                                  .toUpperCase(),
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                              ),
+                            )
+                          : null,
+                    ),
                   )
-                : TextButton.icon(
+                : AdaptiveButton(
                     onPressed: () async {
                       await authService.signInWithGoogle();
                       if (context.mounted && authService.user != null) {
@@ -233,11 +293,13 @@ class _MainScreenState extends State<MainScreen> {
                         );
                       }
                     },
-                    icon: const Icon(Icons.login, size: 16),
-                    label: const Text('Sign In'),
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.grey[700],
-                      textStyle: const TextStyle(fontWeight: FontWeight.w600),
+                    // Sign In: Icon only
+                    isFilled: false,
+                    padding: EdgeInsets.zero,
+                    child: const Icon(
+                      Icons.login,
+                      size: 24,
+                      color: Colors.black,
                     ),
                   ),
           ),
@@ -290,7 +352,7 @@ class _MainScreenState extends State<MainScreen> {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: _hideLearned ? Colors.green[50] : Colors.grey[100],
+                      color: _hideLearned ? Colors.grey[900] : Colors.grey[100],
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Row(
@@ -300,7 +362,7 @@ class _MainScreenState extends State<MainScreen> {
                               ? Icons.check_circle
                               : Icons.circle_outlined,
                           size: 14,
-                          color: _hideLearned ? Colors.green : Colors.grey,
+                          color: _hideLearned ? Colors.white : Colors.grey,
                         ),
                         const SizedBox(width: 4),
                         Text(
@@ -309,7 +371,7 @@ class _MainScreenState extends State<MainScreen> {
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: _hideLearned
-                                ? Colors.green[700]
+                                ? Colors.white
                                 : Colors.grey[600],
                           ),
                         ),
@@ -348,8 +410,10 @@ class _MainScreenState extends State<MainScreen> {
           ),
           const SizedBox(height: 8),
           if (_hideLearned)
-            TextButton(
+            AdaptiveButton(
               onPressed: _toggleHideLearned,
+              isFilled: false,
+              textColor: Colors.grey[600],
               child: const Text('Show learned words'),
             ),
         ],
@@ -362,55 +426,39 @@ class _MainScreenState extends State<MainScreen> {
 
     final isLearned = _learnedIds.contains(_currentWord!.id);
 
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-        child: Column(
-          children: [
-            FlashcardWidget(
-              key: ValueKey(
-                _currentWord!.id,
-              ), // Unique key to force rebuild on word change? Or reuse state?
-              // Actually if we want to programmatically flip back, we need to keep the global key
-              // But providing a new key every time ensures it starts at FRONT.
-              // Let's use the Global Key but we need to reset it.
-              // Actually, simply reusing the widget with a unique Key (ValueKey) forces a fresh state
-              // which means it defaults to Front. This is easier than managing the FlipCardController state manually.
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+      child: Column(
+        children: [
+          // 使用 Expanded 讓 Flashcard 填滿剩餘空間，而不是使用固定的 60% 高度
+          Expanded(
+            child: FlashcardWidget(
+              key: ValueKey(_currentWord!.id), // 使用唯一 Key 強制在單字變更時重建 Widget
+              // 使用 Global Key 讓我們可以程式化控制翻牌
+              // 使用 ValueKey 確保狀態重置（預設為正面）
               cardKey: _cardKey,
               word: _currentWord!,
               isLearned: isLearned,
               onToggleLearned: _toggleLearned,
             ),
-            const SizedBox(height: 24),
+          ),
+          const SizedBox(height: 24),
 
-            // Mark as Learned Button
-            ElevatedButton.icon(
-              onPressed: _toggleLearned,
-              icon: Icon(
-                isLearned ? Icons.check : Icons.circle_outlined,
-                size: 20,
-              ),
-              label: Text(isLearned ? 'Learned' : 'Mark as Learned'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: isLearned ? Colors.green[50] : Colors.white,
-                foregroundColor: isLearned
-                    ? Colors.green[700]
-                    : Colors.grey[700],
-                elevation: 0,
-                side: BorderSide(
-                  color: isLearned ? Colors.green[200]! : Colors.grey[300]!,
-                ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 32,
-                  vertical: 16,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30),
-                ),
-              ),
+          // 標記為已學習按鈕
+          // 標記為已學習按鈕
+          AdaptiveButton(
+            onPressed: _toggleLearned,
+            icon: Icon(
+              isLearned ? Icons.check : Icons.circle_outlined,
+              size: 20,
             ),
-          ],
-        ),
+            child: Text(isLearned ? 'Learned' : 'Mark as Learned'),
+            color: isLearned ? Colors.grey[900] : Colors.white,
+            textColor: isLearned ? Colors.white : Colors.grey[700],
+            borderRadius: 30,
+            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+          ),
+        ],
       ),
     );
   }
@@ -464,41 +512,26 @@ class _MainScreenState extends State<MainScreen> {
           child: Row(
             children: [
               Expanded(
-                child: ElevatedButton.icon(
+                child: AdaptiveButton(
                   onPressed: _currentIndex > 0 ? _prevCard : null,
                   icon: const Icon(Icons.arrow_back),
-                  label: const Text('Previous'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.grey[800],
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    elevation: 2,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                  ),
+                  child: const Text('Previous'),
+                  color: Colors.white,
+                  textColor: Colors.grey[800],
+                  borderRadius: 16,
                 ),
               ),
               const SizedBox(width: 16),
               Expanded(
-                child: ElevatedButton.icon(
+                child: AdaptiveButton(
                   onPressed: _currentIndex < _filteredWords.length - 1
                       ? _nextCard
                       : null,
-                  // textDirection: TextDirection.rtl, // Icon on right? No, standard is fine.
-                  icon: const Icon(
-                    Icons.arrow_forward,
-                  ), // We can swap icon/label manually to put icon on right
-                  label: const Text('Next'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey[800],
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    elevation: 4,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                  ),
+                  icon: const Icon(Icons.arrow_forward),
+                  child: const Text('Next'),
+                  color: Colors.grey[800],
+                  textColor: Colors.white,
+                  borderRadius: 16,
                 ),
               ),
             ],

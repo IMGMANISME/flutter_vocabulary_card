@@ -35,7 +35,11 @@ class MyApp extends StatelessWidget {
         title: 'Gocab',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.grey,
+            primary: Colors.black,
+            secondary: Colors.grey,
+          ),
           useMaterial3: true,
           fontFamily:
               'Roboto', // Fallback, we can add GoogleFonts later if needed

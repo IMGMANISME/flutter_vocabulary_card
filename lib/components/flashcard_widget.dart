@@ -1,5 +1,7 @@
 import 'package:flip_card/flip_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../components/adaptive_button.dart';
 import '../models/vocabulary_word.dart';
 
 class FlashcardWidget extends StatelessWidget {
@@ -34,19 +36,18 @@ class FlashcardWidget extends StatelessWidget {
   }
 
   Widget _buildFront(BuildContext context) {
-    // Responsive height: 60% of screen height
-    final cardHeight = MediaQuery.of(context).size.height * 0.6;
+    // 響應式高度：填滿父容器
 
     return Container(
       width: double.infinity,
-      height: cardHeight,
+      height: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(24),
       ),
       child: Stack(
         children: [
-          // Gradient decoration
+          // 漸層裝飾
           Positioned(
             top: 0,
             left: 0,
@@ -66,17 +67,19 @@ class FlashcardWidget extends StatelessWidget {
             ),
           ),
 
-          // Info Button (Top Right)
+          // 資訊按鈕（右上角）
           Positioned(
             top: 16,
             right: 16,
-            child: IconButton(
-              icon: const Icon(Icons.info_outline, color: Colors.grey),
+            child: AdaptiveButton(
+              isFilled: false,
+              padding: EdgeInsets.zero,
               onPressed: () => _showWordInfo(context),
+              child: const Icon(Icons.info_outline, color: Colors.grey),
             ),
           ),
 
-          // Content
+          // 內容
           Positioned.fill(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -100,7 +103,7 @@ class FlashcardWidget extends StatelessWidget {
                 ),
                 const Spacer(flex: 1),
 
-                // Hint Icon
+                // 提示圖示
                 Container(
                   width: 64,
                   height: 64,
@@ -125,7 +128,7 @@ class FlashcardWidget extends StatelessWidget {
                 ),
                 const Spacer(flex: 2),
 
-                // Bottom Indicator
+                // 底部指示器
                 Container(
                   width: 48,
                   height: 4,
@@ -144,12 +147,11 @@ class FlashcardWidget extends StatelessWidget {
   }
 
   Widget _buildBack(BuildContext context) {
-    // Responsive height matching front
-    final cardHeight = MediaQuery.of(context).size.height * 0.6;
+    // 響應式高度匹配正面
 
     return Container(
       width: double.infinity,
-      height: cardHeight,
+      height: double.infinity,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
@@ -163,7 +165,7 @@ class FlashcardWidget extends StatelessWidget {
       ),
       child: Column(
         children: [
-          // Header
+          // 標頭
           Container(
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
@@ -191,7 +193,7 @@ class FlashcardWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Definition
+                  // 定義
                   _buildContentCard(
                     icon: Icons.menu_book,
                     label: 'DEFINITION',
@@ -199,7 +201,7 @@ class FlashcardWidget extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
 
-                  // Example
+                  // 例句
                   _buildContentCard(
                     icon: Icons.format_quote,
                     label: 'EXAMPLE',
@@ -211,7 +213,7 @@ class FlashcardWidget extends StatelessWidget {
             ),
           ),
 
-          // Footer
+          // 頁尾
           Container(
             padding: const EdgeInsets.symmetric(vertical: 24),
             decoration: const BoxDecoration(
@@ -279,32 +281,62 @@ class FlashcardWidget extends StatelessWidget {
   }
 
   void _showWordInfo(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: Text(
-          word.word,
-          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          textAlign: TextAlign.center,
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            _buildInfoRow('Part of Speech', word.partOfSpeech),
-            const SizedBox(height: 16),
-            _buildInfoRow('Translation', word.chineseTranslation),
+    final isIOS =
+        Theme.of(context).platform == TargetPlatform.iOS ||
+        Theme.of(context).platform == TargetPlatform.macOS;
+
+    final content = Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _buildInfoRow('Part of Speech', word.partOfSpeech),
+        const SizedBox(height: 16),
+        _buildInfoRow('Translation', word.chineseTranslation),
+      ],
+    );
+
+    if (isIOS) {
+      showCupertinoDialog(
+        context: context,
+        builder: (context) => CupertinoAlertDialog(
+          title: Text(
+            word.word,
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          content: Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: content,
+          ),
+          actions: [
+            CupertinoDialogAction(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Close'),
+            ),
           ],
         ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Close'),
+      );
+    } else {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
           ),
-        ],
-      ),
-    );
+          title: Text(
+            word.word,
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
+          ),
+          content: content,
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Close'),
+            ),
+          ],
+        ),
+      );
+    }
   }
 
   Widget _buildInfoRow(String label, String value) {
