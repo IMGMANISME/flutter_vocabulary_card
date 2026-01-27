@@ -1,0 +1,610 @@
+[
+  {
+    "id": 959,
+    "word": "machinery",
+    "partOfSpeech": "noun",
+    "definition": "Machines collectively.",
+    "example": "The factory bought new machinery to increase production.",
+    "chineseTranslation": "機械、機器"
+  },
+  {
+    "id": 960,
+    "word": "magical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to, using, or resembling magic.",
+    "example": "The magician performed a magical trick that amazed the audience.",
+    "chineseTranslation": "魔法的、神奇的"
+  },
+  {
+    "id": 961,
+    "word": "magnify",
+    "partOfSpeech": "verb",
+    "definition": "Make something appear larger than it is.",
+    "example": "The microscope magnifies tiny objects so they can be seen clearly.",
+    "chineseTranslation": "放大、誇大"
+  },
+  {
+    "id": 962,
+    "word": "maintain",
+    "partOfSpeech": "verb",
+    "definition": "Cause or enable a condition or state to continue.",
+    "example": "It's important to maintain a healthy lifestyle.",
+    "chineseTranslation": "維持、保持"
+  },
+  {
+    "id": 963,
+    "word": "major",
+    "partOfSpeech": "adjective",
+    "definition": "Important, serious, or significant.",
+    "example": "They made a major decision regarding the company’s future.",
+    "chineseTranslation": "主要的、重大的"
+  },
+  {
+    "id": 964,
+    "word": "manage",
+    "partOfSpeech": "verb",
+    "definition": "Be in charge of, administer, or run.",
+    "example": "She manages a team of software developers.",
+    "chineseTranslation": "管理、經營"
+  },
+  {
+    "id": 965,
+    "word": "manual",
+    "partOfSpeech": "adjective",
+    "definition": "Done with the hands.",
+    "example": "This device requires manual operation.",
+    "chineseTranslation": "手工的、手動的"
+  },
+  {
+    "id": 966,
+    "word": "manufacture",
+    "partOfSpeech": "verb",
+    "definition": "Make (something) on a large scale using machinery.",
+    "example": "The company manufactures electronic gadgets.",
+    "chineseTranslation": "製造、生產"
+  },
+  {
+    "id": 967,
+    "word": "margin",
+    "partOfSpeech": "noun",
+    "definition": "The edge or border of something.",
+    "example": "There is a wide margin for error in this experiment.",
+    "chineseTranslation": "邊緣、利潤"
+  },
+  {
+    "id": 968,
+    "word": "marine",
+    "partOfSpeech": "adjective",
+    "definition": "Related to the sea.",
+    "example": "Marine life includes fish, corals, and other sea creatures.",
+    "chineseTranslation": "海洋的"
+  },
+  {
+    "id": 969,
+    "word": "market",
+    "partOfSpeech": "noun",
+    "definition": "A regular gathering for the purchase and sale of goods.",
+    "example": "She went to the market to buy fresh vegetables.",
+    "chineseTranslation": "市場"
+  },
+  {
+    "id": 970,
+    "word": "marvel",
+    "partOfSpeech": "noun",
+    "definition": "A wonderful or astonishing person or thing.",
+    "example": "The new technology is a marvel of modern engineering.",
+    "chineseTranslation": "奇蹟、令人驚嘆的事物"
+  },
+  {
+    "id": 971,
+    "word": "massive",
+    "partOfSpeech": "adjective",
+    "definition": "Large and heavy or solid.",
+    "example": "They built a massive bridge over the river.",
+    "chineseTranslation": "巨大的、大量的"
+  },
+  {
+    "id": 972,
+    "word": "material",
+    "partOfSpeech": "noun",
+    "definition": "The matter from which a thing is or can be made.",
+    "example": "Wood is a common building material.",
+    "chineseTranslation": "材料、物質"
+  },
+  {
+    "id": 973,
+    "word": "mathematics",
+    "partOfSpeech": "noun",
+    "definition": "The abstract science of number, quantity, and space.",
+    "example": "She excels in mathematics and science.",
+    "chineseTranslation": "數學"
+  },
+  {
+    "id": 974,
+    "word": "matter",
+    "partOfSpeech": "noun",
+    "definition": "Physical substance in general.",
+    "example": "Water is a form of matter.",
+    "chineseTranslation": "物質、事情"
+  },
+  {
+    "id": 975,
+    "word": "mature",
+    "partOfSpeech": "adjective",
+    "definition": "Fully developed physically; full-grown.",
+    "example": "The mature trees provide shade in the park.",
+    "chineseTranslation": "成熟的"
+  },
+  {
+    "id": 976,
+    "word": "maximum",
+    "partOfSpeech": "noun",
+    "definition": "The greatest amount or degree possible.",
+    "example": "The car can reach a maximum speed of 200 km/h.",
+    "chineseTranslation": "最大值"
+  },
+  {
+    "id": 977,
+    "word": "meaning",
+    "partOfSpeech": "noun",
+    "definition": "What is meant by a word, text, concept, or action.",
+    "example": "The meaning of the poem is open to interpretation.",
+    "chineseTranslation": "意思、含義"
+  },
+  {
+    "id": 978,
+    "word": "measure",
+    "partOfSpeech": "verb",
+    "definition": "Ascertain the size, amount, or degree of something.",
+    "example": "We need to measure the length of the table.",
+    "chineseTranslation": "測量"
+  },
+  {
+    "id": 979,
+    "word": "mechanical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to machines or machinery.",
+    "example": "The mechanical clock needs regular maintenance.",
+    "chineseTranslation": "機械的"
+  },
+  {
+    "id": 980,
+    "word": "medal",
+    "partOfSpeech": "noun",
+    "definition": "A metal disk awarded as a prize or honor.",
+    "example": "She received a gold medal for winning the race.",
+    "chineseTranslation": "獎牌"
+  },
+  {
+    "id": 981,
+    "word": "medical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the science or practice of medicine.",
+    "example": "He is studying to become a medical doctor.",
+    "chineseTranslation": "醫學的"
+  },
+  {
+    "id": 982,
+    "word": "medium",
+    "partOfSpeech": "noun",
+    "definition": "An agency or means of doing something.",
+    "example": "Television is a popular medium for advertising.",
+    "chineseTranslation": "媒介、中等的"
+  },
+  {
+    "id": 983,
+    "word": "melody",
+    "partOfSpeech": "noun",
+    "definition": "A sequence of musical notes that are perceived as a single entity.",
+    "example": "The song has a catchy melody.",
+    "chineseTranslation": "旋律"
+  },
+  {
+    "id": 984,
+    "word": "memory",
+    "partOfSpeech": "noun",
+    "definition": "The faculty by which the mind stores and remembers information.",
+    "example": "She has a good memory for faces.",
+    "chineseTranslation": "記憶"
+  },
+  {
+    "id": 985,
+    "word": "mental",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the mind.",
+    "example": "Mental health is as important as physical health.",
+    "chineseTranslation": "心理的、精神的"
+  },
+  {
+    "id": 986,
+    "word": "mention",
+    "partOfSpeech": "verb",
+    "definition": "Refer to something briefly and without going into detail.",
+    "example": "He mentioned the problem during the meeting.",
+    "chineseTranslation": "提到"
+  },
+  {
+    "id": 987,
+    "word": "merchant",
+    "partOfSpeech": "noun",
+    "definition": "A person or company involved in wholesale trade.",
+    "example": "The merchant sells goods to retailers.",
+    "chineseTranslation": "商人"
+  },
+  {
+    "id": 988,
+    "word": "mercy",
+    "partOfSpeech": "noun",
+    "definition": "Compassion or forgiveness shown toward someone.",
+    "example": "The judge showed mercy and gave a lighter sentence.",
+    "chineseTranslation": "憐憫、寬恕"
+  },
+  {
+    "id": 989,
+    "word": "mere",
+    "partOfSpeech": "adjective",
+    "definition": "That is solely or no more or better than what is specified.",
+    "example": "It was a mere coincidence that they met.",
+    "chineseTranslation": "僅僅的、純粹的"
+  },
+  {
+    "id": 990,
+    "word": "message",
+    "partOfSpeech": "noun",
+    "definition": "A communication containing information or news.",
+    "example": "I left a message on her voicemail.",
+    "chineseTranslation": "信息、訊息"
+  },
+  {
+    "id": 991,
+    "word": "metal",
+    "partOfSpeech": "noun",
+    "definition": "A solid material that is typically hard, shiny, and malleable.",
+    "example": "Gold is a precious metal.",
+    "chineseTranslation": "金屬"
+  },
+  {
+    "id": 992,
+    "word": "method",
+    "partOfSpeech": "noun",
+    "definition": "A particular procedure for accomplishing something.",
+    "example": "We need to find a new method to solve this problem.",
+    "chineseTranslation": "方法"
+  },
+  {
+    "id": 993,
+    "word": "middle",
+    "partOfSpeech": "noun",
+    "definition": "The point or position at an equal distance from the sides or ends.",
+    "example": "He stood in the middle of the room.",
+    "chineseTranslation": "中間"
+  },
+  {
+    "id": 994,
+    "word": "migrate",
+    "partOfSpeech": "verb",
+    "definition": "Move from one region or habitat to another.",
+    "example": "Birds migrate south for the winter.",
+    "chineseTranslation": "遷移"
+  },
+  {
+    "id": 995,
+    "word": "military",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the armed forces.",
+    "example": "He served in the military for five years.",
+    "chineseTranslation": "軍事的"
+  },
+  {
+    "id": 996,
+    "word": "mill",
+    "partOfSpeech": "noun",
+    "definition": "A building equipped with machinery for grinding grain.",
+    "example": "The old mill has been converted into a museum.",
+    "chineseTranslation": "磨坊"
+  },
+  {
+    "id": 997,
+    "word": "mind",
+    "partOfSpeech": "noun",
+    "definition": "The element of a person that enables them to be aware and think.",
+    "example": "She has a sharp mind.",
+    "chineseTranslation": "心智、思想"
+  },
+  {
+    "id": 998,
+    "word": "minimum",
+    "partOfSpeech": "noun",
+    "definition": "The least or smallest amount possible or required.",
+    "example": "The minimum age to vote is 18.",
+    "chineseTranslation": "最小值"
+  },
+  {
+    "id": 999,
+    "word": "minister",
+    "partOfSpeech": "noun",
+    "definition": "A head of a government department.",
+    "example": "The minister announced new policies today.",
+    "chineseTranslation": "部長、牧師"
+  },
+  {
+    "id": 1000,
+    "word": "minor",
+    "partOfSpeech": "adjective",
+    "definition": "Lesser in importance, seriousness, or significance.",
+    "example": "He had a minor injury in the accident.",
+    "chineseTranslation": "次要的、輕微的"
+  },
+  {
+    "id": 1001,
+    "word": "mirror",
+    "partOfSpeech": "noun",
+    "definition": "A reflective surface, typically of glass.",
+    "example": "She looked at herself in the mirror.",
+    "chineseTranslation": "鏡子"
+  },
+  {
+    "id": 1002,
+    "word": "misery",
+    "partOfSpeech": "noun",
+    "definition": "A state or feeling of great distress or discomfort.",
+    "example": "He lived in misery after losing his job.",
+    "chineseTranslation": "痛苦、悲慘"
+  },
+  {
+    "id": 1003,
+    "word": "missile",
+    "partOfSpeech": "noun",
+    "definition": "An object that is forcibly propelled at a target.",
+    "example": "The military launched a missile during the exercise.",
+    "chineseTranslation": "飛彈"
+  },
+  {
+    "id": 1004,
+    "word": "mission",
+    "partOfSpeech": "noun",
+    "definition": "An important assignment carried out for a specific purpose.",
+    "example": "They went on a mission to deliver aid.",
+    "chineseTranslation": "任務"
+  },
+  {
+    "id": 1005,
+    "word": "mistake",
+    "partOfSpeech": "noun",
+    "definition": "An action or judgment that is misguided or wrong.",
+    "example": "He realized his mistake and apologized.",
+    "chineseTranslation": "錯誤"
+  },
+  {
+    "id": 1006,
+    "word": "mix",
+    "partOfSpeech": "verb",
+    "definition": "Combine or blend into one mass or mixture.",
+    "example": "Mix the ingredients thoroughly.",
+    "chineseTranslation": "混合"
+  },
+  {
+    "id": 1007,
+    "word": "mobile",
+    "partOfSpeech": "adjective",
+    "definition": "Able to move or be moved freely or easily.",
+    "example": "Mobile phones have changed communication.",
+    "chineseTranslation": "可移動的、流動的"
+  },
+  {
+    "id": 1008,
+    "word": "mode",
+    "partOfSpeech": "noun",
+    "definition": "A way or manner in which something occurs or is experienced.",
+    "example": "The computer is in sleep mode.",
+    "chineseTranslation": "模式"
+  },
+  {
+    "id": 1009,
+    "word": "model",
+    "partOfSpeech": "noun",
+    "definition": "A three-dimensional representation of a person or thing.",
+    "example": "The architect showed a model of the new building.",
+    "chineseTranslation": "模型"
+  },
+  {
+    "id": 1010,
+    "word": "modern",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the present or recent times.",
+    "example": "They live in a modern apartment.",
+    "chineseTranslation": "現代的"
+  },
+  {
+    "id": 1011,
+    "word": "modest",
+    "partOfSpeech": "adjective",
+    "definition": "Unassuming in the estimation of one's abilities or achievements.",
+    "example": "She is modest about her success.",
+    "chineseTranslation": "謙虛的"
+  },
+  {
+    "id": 1012,
+    "word": "modify",
+    "partOfSpeech": "verb",
+    "definition": "Make partial or minor changes to something.",
+    "example": "They modified the design to improve performance.",
+    "chineseTranslation": "修改"
+  },
+  {
+    "id": 1013,
+    "word": "moment",
+    "partOfSpeech": "noun",
+    "definition": "A very brief period of time.",
+    "example": "Wait a moment, please.",
+    "chineseTranslation": "片刻"
+  },
+  {
+    "id": 1014,
+    "word": "monument",
+    "partOfSpeech": "noun",
+    "definition": "A statue or structure erected to commemorate a notable person or event.",
+    "example": "The monument honors the war heroes.",
+    "chineseTranslation": "紀念碑"
+  },
+  {
+    "id": 1015,
+    "word": "moral",
+    "partOfSpeech": "adjective",
+    "definition": "Concerned with the principles of right and wrong behavior.",
+    "example": "He gave a moral lesson to the students.",
+    "chineseTranslation": "道德的"
+  },
+  {
+    "id": 1016,
+    "word": "moreover",
+    "partOfSpeech": "adverb",
+    "definition": "Besides; in addition to what has been said.",
+    "example": "The plan is risky; moreover, it is expensive.",
+    "chineseTranslation": "此外"
+  },
+  {
+    "id": 1017,
+    "word": "mortal",
+    "partOfSpeech": "adjective",
+    "definition": "Subject to death.",
+    "example": "All humans are mortal.",
+    "chineseTranslation": "凡人的、會死的"
+  },
+  {
+    "id": 1018,
+    "word": "motion",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of moving or being moved.",
+    "example": "The motion of the car was smooth.",
+    "chineseTranslation": "運動、動作"
+  },
+  {
+    "id": 1019,
+    "word": "motivate",
+    "partOfSpeech": "verb",
+    "definition": "Provide with a motive or reason to do something.",
+    "example": "The teacher motivated the students to study harder.",
+    "chineseTranslation": "激勵"
+  },
+  {
+    "id": 1020,
+    "word": "mountain",
+    "partOfSpeech": "noun",
+    "definition": "A large natural elevation of the earth's surface.",
+    "example": "They climbed the mountain last summer.",
+    "chineseTranslation": "山"
+  },
+  {
+    "id": 1021,
+    "word": "mouse",
+    "partOfSpeech": "noun",
+    "definition": "A small rodent that typically has a pointed snout and a long tail.",
+    "example": "The cat caught a mouse.",
+    "chineseTranslation": "老鼠"
+  },
+  {
+    "id": 1022,
+    "word": "mouth",
+    "partOfSpeech": "noun",
+    "definition": "The opening in the face used for eating and speaking.",
+    "example": "He opened his mouth to speak.",
+    "chineseTranslation": "嘴巴"
+  },
+  {
+    "id": 1023,
+    "word": "move",
+    "partOfSpeech": "verb",
+    "definition": "Change position or place.",
+    "example": "Please move your car.",
+    "chineseTranslation": "移動"
+  },
+  {
+    "id": 1024,
+    "word": "much",
+    "partOfSpeech": "adjective",
+    "definition": "A large amount or quantity of.",
+    "example": "She has much experience in teaching.",
+    "chineseTranslation": "許多的"
+  },
+  {
+    "id": 1025,
+    "word": "mud",
+    "partOfSpeech": "noun",
+    "definition": "Soft, sticky matter resulting from the mixing of earth and water.",
+    "example": "The children were playing in the mud.",
+    "chineseTranslation": "泥巴"
+  },
+  {
+    "id": 1026,
+    "word": "multiple",
+    "partOfSpeech": "adjective",
+    "definition": "Having or involving several parts or elements.",
+    "example": "The project has multiple stages.",
+    "chineseTranslation": "多重的"
+  },
+  {
+    "id": 1027,
+    "word": "multiply",
+    "partOfSpeech": "verb",
+    "definition": "Increase or cause to increase greatly in number or quantity.",
+    "example": "You need to multiply these numbers.",
+    "chineseTranslation": "乘、增加"
+  },
+  {
+    "id": 1028,
+    "word": "murder",
+    "partOfSpeech": "noun",
+    "definition": "The unlawful premeditated killing of one human being by another.",
+    "example": "The detective investigated the murder case.",
+    "chineseTranslation": "謀殺"
+  },
+  {
+    "id": 1029,
+    "word": "muscle",
+    "partOfSpeech": "noun",
+    "definition": "A band or bundle of fibrous tissue that can contract.",
+    "example": "He has strong arm muscles.",
+    "chineseTranslation": "肌肉"
+  },
+  {
+    "id": 1030,
+    "word": "museum",
+    "partOfSpeech": "noun",
+    "definition": "A building where objects of historical, scientific, or artistic interest are kept.",
+    "example": "They visited the art museum.",
+    "chineseTranslation": "博物館"
+  },
+  {
+    "id": 1031,
+    "word": "music",
+    "partOfSpeech": "noun",
+    "definition": "Vocal or instrumental sounds combined to produce harmony.",
+    "example": "She enjoys listening to classical music.",
+    "chineseTranslation": "音樂"
+  },
+  {
+    "id": 1032,
+    "word": "musical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to music.",
+    "example": "He is very musical and plays several instruments.",
+    "chineseTranslation": "音樂的"
+  },
+  {
+    "id": 1033,
+    "word": "must",
+    "partOfSpeech": "modal verb",
+    "definition": "Be obliged to; should.",
+    "example": "You must wear a seatbelt.",
+    "chineseTranslation": "必須"
+  },
+  {
+    "id": 1034,
+    "word": "mutual",
+    "partOfSpeech": "adjective",
+    "definition": "Held in common by two or more parties.",
+    "example": "They have a mutual respect for each other.",
+    "chineseTranslation": "相互的"
+  }
+]

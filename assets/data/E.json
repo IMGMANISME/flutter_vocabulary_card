@@ -1,0 +1,1274 @@
+[
+  {
+    "id": 366,
+    "word": "earnings",
+    "partOfSpeech": "noun",
+    "definition": "Money obtained in return for labor or services.",
+    "example": "Her monthly earnings were enough to cover all her expenses.",
+    "chineseTranslation": "收入，賺得的錢"
+  },
+  {
+    "id": 367,
+    "word": "earthquake",
+    "partOfSpeech": "noun",
+    "definition": "A sudden and violent shaking of the ground.",
+    "example": "The earthquake caused significant damage to the city.",
+    "chineseTranslation": "地震"
+  },
+  {
+    "id": 368,
+    "word": "ease",
+    "partOfSpeech": "verb",
+    "definition": "To make something less severe or difficult.",
+    "example": "The medicine helped ease her pain.",
+    "chineseTranslation": "緩和，減輕"
+  },
+  {
+    "id": 369,
+    "word": "eastern",
+    "partOfSpeech": "adjective",
+    "definition": "Located in or facing the east.",
+    "example": "They traveled to the eastern part of the country.",
+    "chineseTranslation": "東方的"
+  },
+  {
+    "id": 370,
+    "word": "easygoing",
+    "partOfSpeech": "adjective",
+    "definition": "Relaxed and tolerant in attitude or manner.",
+    "example": "He has an easygoing personality that makes him popular.",
+    "chineseTranslation": "隨和的，性情溫和的"
+  },
+  {
+    "id": 371,
+    "word": "echo",
+    "partOfSpeech": "noun",
+    "definition": "A sound that is reflected off a surface and heard again.",
+    "example": "We heard the echo of our voices in the canyon.",
+    "chineseTranslation": "回聲"
+  },
+  {
+    "id": 372,
+    "word": "ecology",
+    "partOfSpeech": "noun",
+    "definition": "The study of relationships between organisms and their environment.",
+    "example": "She studied ecology to understand how to protect wildlife.",
+    "chineseTranslation": "生態學"
+  },
+  {
+    "id": 373,
+    "word": "economic",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the economy or finances.",
+    "example": "The government introduced new economic policies.",
+    "chineseTranslation": "經濟的"
+  },
+  {
+    "id": 374,
+    "word": "economy",
+    "partOfSpeech": "noun",
+    "definition": "The system of production and distribution of goods and services.",
+    "example": "The country's economy is growing rapidly.",
+    "chineseTranslation": "經濟"
+  },
+  {
+    "id": 375,
+    "word": "edit",
+    "partOfSpeech": "verb",
+    "definition": "To prepare written material for publication by correcting or modifying.",
+    "example": "She edited the article before submitting it.",
+    "chineseTranslation": "編輯"
+  },
+  {
+    "id": 376,
+    "word": "edition",
+    "partOfSpeech": "noun",
+    "definition": "A particular version or release of a publication.",
+    "example": "This is the second edition of the book.",
+    "chineseTranslation": "版本"
+  },
+  {
+    "id": 377,
+    "word": "editor",
+    "partOfSpeech": "noun",
+    "definition": "A person who edits written material for publication.",
+    "example": "The editor reviewed the manuscript carefully.",
+    "chineseTranslation": "編輯者"
+  },
+  {
+    "id": 378,
+    "word": "educate",
+    "partOfSpeech": "verb",
+    "definition": "To provide knowledge or training.",
+    "example": "Parents should educate their children about good manners.",
+    "chineseTranslation": "教育"
+  },
+  {
+    "id": 379,
+    "word": "education",
+    "partOfSpeech": "noun",
+    "definition": "The process of receiving or giving systematic instruction.",
+    "example": "Education is important for personal development.",
+    "chineseTranslation": "教育"
+  },
+  {
+    "id": 380,
+    "word": "effect",
+    "partOfSpeech": "noun",
+    "definition": "A change that results from a particular action or cause.",
+    "example": "The new law had a positive effect on the economy.",
+    "chineseTranslation": "效果，影響"
+  },
+  {
+    "id": 381,
+    "word": "effective",
+    "partOfSpeech": "adjective",
+    "definition": "Successful in producing a desired or intended result.",
+    "example": "The medicine was effective in treating the illness.",
+    "chineseTranslation": "有效的"
+  },
+  {
+    "id": 382,
+    "word": "efficiency",
+    "partOfSpeech": "noun",
+    "definition": "The ability to do something well without wasting time or resources.",
+    "example": "Improving efficiency can save money.",
+    "chineseTranslation": "效率"
+  },
+  {
+    "id": 383,
+    "word": "efficient",
+    "partOfSpeech": "adjective",
+    "definition": "Performing tasks in a well-organized and competent way.",
+    "example": "The new system is more efficient than the old one.",
+    "chineseTranslation": "有效率的"
+  },
+  {
+    "id": 384,
+    "word": "effort",
+    "partOfSpeech": "noun",
+    "definition": "A vigorous or determined attempt.",
+    "example": "She put a lot of effort into her project.",
+    "chineseTranslation": "努力"
+  },
+  {
+    "id": 385,
+    "word": "egg",
+    "partOfSpeech": "noun",
+    "definition": "An oval or round object laid by a female bird, reptile, fish, or invertebrate.",
+    "example": "She had eggs for breakfast.",
+    "chineseTranslation": "蛋"
+  },
+  {
+    "id": 386,
+    "word": "ego",
+    "partOfSpeech": "noun",
+    "definition": "A person's sense of self-esteem or self-importance.",
+    "example": "His ego was hurt by the criticism.",
+    "chineseTranslation": "自我，自尊"
+  },
+  {
+    "id": 387,
+    "word": "either",
+    "partOfSpeech": "determiner",
+    "definition": "One or the other of two.",
+    "example": "You can choose either option.",
+    "chineseTranslation": "兩者之一"
+  },
+  {
+    "id": 388,
+    "word": "elaborate",
+    "partOfSpeech": "adjective",
+    "definition": "Involving many carefully arranged parts or details.",
+    "example": "They made an elaborate plan for the event.",
+    "chineseTranslation": "精心製作的，詳盡的"
+  },
+  {
+    "id": 389,
+    "word": "elastic",
+    "partOfSpeech": "adjective",
+    "definition": "Able to return to its original shape after being stretched.",
+    "example": "The band is made of elastic material.",
+    "chineseTranslation": "有彈性的"
+  },
+  {
+    "id": 390,
+    "word": "elbow",
+    "partOfSpeech": "noun",
+    "definition": "The joint between the forearm and the upper arm.",
+    "example": "He bumped his elbow on the table.",
+    "chineseTranslation": "手肘"
+  },
+  {
+    "id": 391,
+    "word": "elderly",
+    "partOfSpeech": "adjective",
+    "definition": "Old or aging.",
+    "example": "The elderly man needed assistance crossing the street.",
+    "chineseTranslation": "年長的，老年的"
+  },
+  {
+    "id": 392,
+    "word": "elect",
+    "partOfSpeech": "verb",
+    "definition": "To choose someone for a position by voting.",
+    "example": "They elected her as their leader.",
+    "chineseTranslation": "選舉"
+  },
+  {
+    "id": 393,
+    "word": "election",
+    "partOfSpeech": "noun",
+    "definition": "The process of choosing someone by voting.",
+    "example": "The election will be held next month.",
+    "chineseTranslation": "選舉"
+  },
+  {
+    "id": 394,
+    "word": "electric",
+    "partOfSpeech": "adjective",
+    "definition": "Powered by electricity.",
+    "example": "He bought an electric car.",
+    "chineseTranslation": "電的，電動的"
+  },
+  {
+    "id": 395,
+    "word": "electricity",
+    "partOfSpeech": "noun",
+    "definition": "A form of energy resulting from charged particles.",
+    "example": "The electricity went out during the storm.",
+    "chineseTranslation": "電，電力"
+  },
+  {
+    "id": 396,
+    "word": "electronic",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to devices operated by electricity.",
+    "example": "She bought a new electronic device.",
+    "chineseTranslation": "電子的"
+  },
+  {
+    "id": 397,
+    "word": "element",
+    "partOfSpeech": "noun",
+    "definition": "A basic or essential part of something.",
+    "example": "Trust is an important element of friendship.",
+    "chineseTranslation": "元素，要素"
+  },
+  {
+    "id": 398,
+    "word": "elephant",
+    "partOfSpeech": "noun",
+    "definition": "A large mammal with a trunk.",
+    "example": "The elephant is the largest land animal.",
+    "chineseTranslation": "大象"
+  },
+  {
+    "id": 399,
+    "word": "elevator",
+    "partOfSpeech": "noun",
+    "definition": "A platform or compartment housed in a shaft for raising and lowering people or things.",
+    "example": "We took the elevator to the tenth floor.",
+    "chineseTranslation": "電梯"
+  },
+  {
+    "id": 400,
+    "word": "eleven",
+    "partOfSpeech": "noun",
+    "definition": "The number after ten.",
+    "example": "There are eleven players on a soccer team.",
+    "chineseTranslation": "十一"
+  },
+  {
+    "id": 401,
+    "word": "eligible",
+    "partOfSpeech": "adjective",
+    "definition": "Qualified or entitled to be chosen.",
+    "example": "Only eligible members can vote.",
+    "chineseTranslation": "有資格的"
+  },
+  {
+    "id": 402,
+    "word": "eliminate",
+    "partOfSpeech": "verb",
+    "definition": "To remove or get rid of.",
+    "example": "They worked hard to eliminate errors.",
+    "chineseTranslation": "消除，排除"
+  },
+  {
+    "id": 403,
+    "word": "elite",
+    "partOfSpeech": "noun",
+    "definition": "A group of people considered to be the best in a society.",
+    "example": "The elite athletes competed in the championship.",
+    "chineseTranslation": "精英"
+  },
+  {
+    "id": 404,
+    "word": "else",
+    "partOfSpeech": "adverb",
+    "definition": "In addition; besides.",
+    "example": "Is there anything else you need?",
+    "chineseTranslation": "其他的"
+  },
+  {
+    "id": 405,
+    "word": "elsewhere",
+    "partOfSpeech": "adverb",
+    "definition": "In or to another place.",
+    "example": "She decided to look elsewhere for a job.",
+    "chineseTranslation": "別處"
+  },
+  {
+    "id": 406,
+    "word": "email",
+    "partOfSpeech": "noun",
+    "definition": "Messages distributed by electronic means.",
+    "example": "I sent you an email yesterday.",
+    "chineseTranslation": "電子郵件"
+  },
+  {
+    "id": 407,
+    "word": "embarrass",
+    "partOfSpeech": "verb",
+    "definition": "To cause someone to feel awkward or ashamed.",
+    "example": "He was embarrassed by his mistake.",
+    "chineseTranslation": "使尷尬"
+  },
+  {
+    "id": 408,
+    "word": "embassy",
+    "partOfSpeech": "noun",
+    "definition": "The official residence or offices of an ambassador.",
+    "example": "They visited the embassy for their visa application.",
+    "chineseTranslation": "大使館"
+  },
+  {
+    "id": 409,
+    "word": "embrace",
+    "partOfSpeech": "verb",
+    "definition": "To hold someone closely in one's arms.",
+    "example": "They embraced after a long separation.",
+    "chineseTranslation": "擁抱"
+  },
+  {
+    "id": 410,
+    "word": "emerge",
+    "partOfSpeech": "verb",
+    "definition": "To come into view or existence.",
+    "example": "New opportunities emerged after the meeting.",
+    "chineseTranslation": "出現，浮現"
+  },
+  {
+    "id": 411,
+    "word": "emergency",
+    "partOfSpeech": "noun",
+    "definition": "A serious or dangerous situation requiring immediate action.",
+    "example": "Call 911 in case of an emergency.",
+    "chineseTranslation": "緊急情況"
+  },
+  {
+    "id": 412,
+    "word": "emotion",
+    "partOfSpeech": "noun",
+    "definition": "A strong feeling such as joy, anger, or sadness.",
+    "example": "She showed great emotion during the speech.",
+    "chineseTranslation": "情感，情緒"
+  },
+  {
+    "id": 413,
+    "word": "emotional",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to feelings.",
+    "example": "The movie was very emotional.",
+    "chineseTranslation": "情緒的"
+  },
+  {
+    "id": 414,
+    "word": "emphasis",
+    "partOfSpeech": "noun",
+    "definition": "Special importance or significance.",
+    "example": "The teacher placed emphasis on grammar.",
+    "chineseTranslation": "強調"
+  },
+  {
+    "id": 415,
+    "word": "emphasize",
+    "partOfSpeech": "verb",
+    "definition": "To give special importance to something.",
+    "example": "He emphasized the need for safety.",
+    "chineseTranslation": "強調"
+  },
+  {
+    "id": 416,
+    "word": "empire",
+    "partOfSpeech": "noun",
+    "definition": "A group of countries or territories controlled by one ruler.",
+    "example": "The Roman Empire was vast.",
+    "chineseTranslation": "帝國"
+  },
+  {
+    "id": 417,
+    "word": "employ",
+    "partOfSpeech": "verb",
+    "definition": "To hire someone for work.",
+    "example": "The company employs over 500 workers.",
+    "chineseTranslation": "雇用"
+  },
+  {
+    "id": 418,
+    "word": "employee",
+    "partOfSpeech": "noun",
+    "definition": "A person who is hired to work for someone else.",
+    "example": "The employee was promoted to manager.",
+    "chineseTranslation": "員工"
+  },
+  {
+    "id": 419,
+    "word": "employer",
+    "partOfSpeech": "noun",
+    "definition": "A person or organization that hires people.",
+    "example": "The employer offers good benefits.",
+    "chineseTranslation": "雇主"
+  },
+  {
+    "id": 420,
+    "word": "employment",
+    "partOfSpeech": "noun",
+    "definition": "The condition of having a paid job.",
+    "example": "Employment rates have increased this year.",
+    "chineseTranslation": "就業"
+  },
+  {
+    "id": 421,
+    "word": "empty",
+    "partOfSpeech": "adjective",
+    "definition": "Containing nothing.",
+    "example": "The box was empty.",
+    "chineseTranslation": "空的"
+  },
+  {
+    "id": 422,
+    "word": "enable",
+    "partOfSpeech": "verb",
+    "definition": "To make possible or easy.",
+    "example": "This software enables users to edit photos.",
+    "chineseTranslation": "使能夠"
+  },
+  {
+    "id": 423,
+    "word": "enclose",
+    "partOfSpeech": "verb",
+    "definition": "To surround or close off on all sides.",
+    "example": "Please enclose a copy of your resume.",
+    "chineseTranslation": "圍住，附上"
+  },
+  {
+    "id": 424,
+    "word": "encourage",
+    "partOfSpeech": "verb",
+    "definition": "To give support or confidence to someone.",
+    "example": "Parents should encourage their children.",
+    "chineseTranslation": "鼓勵"
+  },
+  {
+    "id": 425,
+    "word": "end",
+    "partOfSpeech": "noun",
+    "definition": "The final part of something.",
+    "example": "The movie had a surprising end.",
+    "chineseTranslation": "結束"
+  },
+  {
+    "id": 426,
+    "word": "endanger",
+    "partOfSpeech": "verb",
+    "definition": "To put at risk of harm or extinction.",
+    "example": "Pollution can endanger wildlife.",
+    "chineseTranslation": "危害"
+  },
+  {
+    "id": 427,
+    "word": "endeavor",
+    "partOfSpeech": "noun",
+    "definition": "An attempt to achieve a goal.",
+    "example": "They made a great endeavor to improve the community.",
+    "chineseTranslation": "努力"
+  },
+  {
+    "id": 428,
+    "word": "endorse",
+    "partOfSpeech": "verb",
+    "definition": "To support or approve publicly.",
+    "example": "The celebrity endorsed the product.",
+    "chineseTranslation": "支持，背書"
+  },
+  {
+    "id": 429,
+    "word": "endure",
+    "partOfSpeech": "verb",
+    "definition": "To suffer patiently.",
+    "example": "She endured the long journey without complaint.",
+    "chineseTranslation": "忍受"
+  },
+  {
+    "id": 430,
+    "word": "enemy",
+    "partOfSpeech": "noun",
+    "definition": "A person who is hostile or opposed.",
+    "example": "They fought bravely against their enemy.",
+    "chineseTranslation": "敵人"
+  },
+  {
+    "id": 431,
+    "word": "energy",
+    "partOfSpeech": "noun",
+    "definition": "The capacity for work or activity.",
+    "example": "He has a lot of energy to play sports.",
+    "chineseTranslation": "能量，精力"
+  },
+  {
+    "id": 432,
+    "word": "enforce",
+    "partOfSpeech": "verb",
+    "definition": "To make sure laws or rules are obeyed.",
+    "example": "The police enforce traffic laws.",
+    "chineseTranslation": "執行，強制"
+  },
+  {
+    "id": 433,
+    "word": "engage",
+    "partOfSpeech": "verb",
+    "definition": "To participate or become involved in.",
+    "example": "She engaged in volunteer work.",
+    "chineseTranslation": "參與"
+  },
+  {
+    "id": 434,
+    "word": "engine",
+    "partOfSpeech": "noun",
+    "definition": "A machine that converts energy into motion.",
+    "example": "The car's engine is very powerful.",
+    "chineseTranslation": "引擎"
+  },
+  {
+    "id": 435,
+    "word": "engineer",
+    "partOfSpeech": "noun",
+    "definition": "A person who designs or builds engines or machines.",
+    "example": "He works as a software engineer.",
+    "chineseTranslation": "工程師"
+  },
+  {
+    "id": 436,
+    "word": "enhance",
+    "partOfSpeech": "verb",
+    "definition": "To improve the quality or value of something.",
+    "example": "New features enhance the phone's performance.",
+    "chineseTranslation": "提升，增強"
+  },
+  {
+    "id": 437,
+    "word": "enjoy",
+    "partOfSpeech": "verb",
+    "definition": "To take pleasure in something.",
+    "example": "She enjoys reading books.",
+    "chineseTranslation": "享受"
+  },
+  {
+    "id": 438,
+    "word": "enormous",
+    "partOfSpeech": "adjective",
+    "definition": "Very large in size or quantity.",
+    "example": "They live in an enormous house.",
+    "chineseTranslation": "巨大的"
+  },
+  {
+    "id": 439,
+    "word": "enough",
+    "partOfSpeech": "determiner",
+    "definition": "As much as necessary.",
+    "example": "There is enough food for everyone.",
+    "chineseTranslation": "足夠的"
+  },
+  {
+    "id": 440,
+    "word": "enrich",
+    "partOfSpeech": "verb",
+    "definition": "To improve or enhance the quality of something.",
+    "example": "Travel can enrich your life.",
+    "chineseTranslation": "使豐富"
+  },
+  {
+    "id": 441,
+    "word": "enroll",
+    "partOfSpeech": "verb",
+    "definition": "To officially register as a member or student.",
+    "example": "She enrolled in a language course.",
+    "chineseTranslation": "註冊，入學"
+  },
+  {
+    "id": 442,
+    "word": "ensure",
+    "partOfSpeech": "verb",
+    "definition": "To make certain that something will happen.",
+    "example": "Please ensure that the door is locked.",
+    "chineseTranslation": "確保"
+  },
+  {
+    "id": 443,
+    "word": "enter",
+    "partOfSpeech": "verb",
+    "definition": "To come or go into a place.",
+    "example": "They entered the building quietly.",
+    "chineseTranslation": "進入"
+  },
+  {
+    "id": 444,
+    "word": "enterprise",
+    "partOfSpeech": "noun",
+    "definition": "A business or company.",
+    "example": "The enterprise is expanding rapidly.",
+    "chineseTranslation": "企業"
+  },
+  {
+    "id": 445,
+    "word": "entertain",
+    "partOfSpeech": "verb",
+    "definition": "To provide amusement or enjoyment.",
+    "example": "The show entertained the audience.",
+    "chineseTranslation": "娛樂"
+  },
+  {
+    "id": 446,
+    "word": "enthusiasm",
+    "partOfSpeech": "noun",
+    "definition": "Intense and eager enjoyment or interest.",
+    "example": "She showed great enthusiasm for the project.",
+    "chineseTranslation": "熱情"
+  },
+  {
+    "id": 447,
+    "word": "enthusiastic",
+    "partOfSpeech": "adjective",
+    "definition": "Having or showing intense enjoyment or interest.",
+    "example": "He is enthusiastic about learning new skills.",
+    "chineseTranslation": "熱情的"
+  },
+  {
+    "id": 448,
+    "word": "entire",
+    "partOfSpeech": "adjective",
+    "definition": "With no part left out; whole.",
+    "example": "She read the entire book in one day.",
+    "chineseTranslation": "全部的"
+  },
+  {
+    "id": 449,
+    "word": "entitle",
+    "partOfSpeech": "verb",
+    "definition": "To give a right or claim to something.",
+    "example": "The ticket entitles you to a free drink.",
+    "chineseTranslation": "給予權利"
+  },
+  {
+    "id": 450,
+    "word": "entrance",
+    "partOfSpeech": "noun",
+    "definition": "A place where you enter.",
+    "example": "The entrance to the museum is on Main Street.",
+    "chineseTranslation": "入口"
+  },
+  {
+    "id": 451,
+    "word": "entry",
+    "partOfSpeech": "noun",
+    "definition": "The act of entering or a way in.",
+    "example": "Entry to the event is free.",
+    "chineseTranslation": "進入"
+  },
+  {
+    "id": 452,
+    "word": "environment",
+    "partOfSpeech": "noun",
+    "definition": "The surroundings or conditions in which a person lives or operates.",
+    "example": "We must protect the environment.",
+    "chineseTranslation": "環境"
+  },
+  {
+    "id": 453,
+    "word": "environmental",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the environment.",
+    "example": "Environmental issues are important globally.",
+    "chineseTranslation": "環境的"
+  },
+  {
+    "id": 454,
+    "word": "episode",
+    "partOfSpeech": "noun",
+    "definition": "An event or a group of events occurring as part of a larger sequence.",
+    "example": "The next episode of the series airs tonight.",
+    "chineseTranslation": "一集，一段經歷"
+  },
+  {
+    "id": 455,
+    "word": "equal",
+    "partOfSpeech": "adjective",
+    "definition": "Being the same in quantity, size, degree, or value.",
+    "example": "All people should have equal rights.",
+    "chineseTranslation": "平等的"
+  },
+  {
+    "id": 456,
+    "word": "equation",
+    "partOfSpeech": "noun",
+    "definition": "A mathematical statement that two things are equal.",
+    "example": "Solve the equation for x.",
+    "chineseTranslation": "方程式"
+  },
+  {
+    "id": 457,
+    "word": "equip",
+    "partOfSpeech": "verb",
+    "definition": "To supply with necessary items.",
+    "example": "The soldiers were equipped with new weapons.",
+    "chineseTranslation": "裝備"
+  },
+  {
+    "id": 458,
+    "word": "equipment",
+    "partOfSpeech": "noun",
+    "definition": "The necessary items for a particular purpose.",
+    "example": "The lab has modern equipment.",
+    "chineseTranslation": "設備"
+  },
+  {
+    "id": 459,
+    "word": "equivalent",
+    "partOfSpeech": "adjective",
+    "definition": "Equal in value, amount, function, meaning, etc.",
+    "example": "One dollar is equivalent to about thirty Taiwanese dollars.",
+    "chineseTranslation": "相等的"
+  },
+  {
+    "id": 460,
+    "word": "era",
+    "partOfSpeech": "noun",
+    "definition": "A period of time marked by distinct events.",
+    "example": "The Victorian era was known for its culture.",
+    "chineseTranslation": "時代"
+  },
+  {
+    "id": 461,
+    "word": "erase",
+    "partOfSpeech": "verb",
+    "definition": "To remove or wipe out.",
+    "example": "He erased the board after the lesson.",
+    "chineseTranslation": "擦除"
+  },
+  {
+    "id": 462,
+    "word": "erect",
+    "partOfSpeech": "verb",
+    "definition": "To build or put up.",
+    "example": "They erected a new statue in the park.",
+    "chineseTranslation": "建造，豎立"
+  },
+  {
+    "id": 463,
+    "word": "error",
+    "partOfSpeech": "noun",
+    "definition": "A mistake.",
+    "example": "There was an error in the calculation.",
+    "chineseTranslation": "錯誤"
+  },
+  {
+    "id": 464,
+    "word": "escape",
+    "partOfSpeech": "verb",
+    "definition": "To get away from a place or situation.",
+    "example": "The prisoners tried to escape.",
+    "chineseTranslation": "逃脫"
+  },
+  {
+    "id": 465,
+    "word": "especially",
+    "partOfSpeech": "adverb",
+    "definition": "Particularly; more than usual.",
+    "example": "I love fruit, especially apples.",
+    "chineseTranslation": "特別地"
+  },
+  {
+    "id": 466,
+    "word": "essay",
+    "partOfSpeech": "noun",
+    "definition": "A short piece of writing on a particular subject.",
+    "example": "She wrote an essay about climate change.",
+    "chineseTranslation": "文章，散文"
+  },
+  {
+    "id": 467,
+    "word": "essence",
+    "partOfSpeech": "noun",
+    "definition": "The intrinsic nature or indispensable quality of something.",
+    "example": "Trust is the essence of a good relationship.",
+    "chineseTranslation": "本質"
+  },
+  {
+    "id": 468,
+    "word": "essential",
+    "partOfSpeech": "adjective",
+    "definition": "Absolutely necessary; extremely important.",
+    "example": "Water is essential for life.",
+    "chineseTranslation": "必要的"
+  },
+  {
+    "id": 469,
+    "word": "establish",
+    "partOfSpeech": "verb",
+    "definition": "To set up or found.",
+    "example": "They established a new company.",
+    "chineseTranslation": "建立"
+  },
+  {
+    "id": 470,
+    "word": "estate",
+    "partOfSpeech": "noun",
+    "definition": "An area of land or property.",
+    "example": "He owns a large estate in the countryside.",
+    "chineseTranslation": "地產，莊園"
+  },
+  {
+    "id": 471,
+    "word": "estimate",
+    "partOfSpeech": "verb",
+    "definition": "To make an approximate judgment or calculation.",
+    "example": "They estimated the cost of the project.",
+    "chineseTranslation": "估計"
+  },
+  {
+    "id": 472,
+    "word": "etc.",
+    "partOfSpeech": "abbreviation",
+    "definition": "And so on; and other similar things.",
+    "example": "We need pens, paper, etc.",
+    "chineseTranslation": "等等"
+  },
+  {
+    "id": 473,
+    "word": "eternal",
+    "partOfSpeech": "adjective",
+    "definition": "Lasting forever; without end.",
+    "example": "They promised eternal love.",
+    "chineseTranslation": "永恆的"
+  },
+  {
+    "id": 474,
+    "word": "ethics",
+    "partOfSpeech": "noun",
+    "definition": "Moral principles that govern behavior.",
+    "example": "Medical ethics are important in healthcare.",
+    "chineseTranslation": "倫理學，道德標準"
+  },
+  {
+    "id": 475,
+    "word": "ethnic",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to a population subgroup with a common national or cultural tradition.",
+    "example": "The city has many ethnic groups.",
+    "chineseTranslation": "種族的"
+  },
+  {
+    "id": 476,
+    "word": "evaluate",
+    "partOfSpeech": "verb",
+    "definition": "To judge or determine the significance or worth of.",
+    "example": "The teacher evaluated the students' essays.",
+    "chineseTranslation": "評估"
+  },
+  {
+    "id": 477,
+    "word": "even",
+    "partOfSpeech": "adjective",
+    "definition": "Flat and smooth; equal.",
+    "example": "The surface is even.",
+    "chineseTranslation": "平坦的"
+  },
+  {
+    "id": 478,
+    "word": "evening",
+    "partOfSpeech": "noun",
+    "definition": "The period of time at the end of the day.",
+    "example": "We went for a walk in the evening.",
+    "chineseTranslation": "晚上"
+  },
+  {
+    "id": 479,
+    "word": "event",
+    "partOfSpeech": "noun",
+    "definition": "Something that happens, especially something important.",
+    "example": "The concert was a big event.",
+    "chineseTranslation": "事件"
+  },
+  {
+    "id": 480,
+    "word": "eventually",
+    "partOfSpeech": "adverb",
+    "definition": "In the end, especially after a long time.",
+    "example": "He eventually passed the exam.",
+    "chineseTranslation": "最終"
+  },
+  {
+    "id": 481,
+    "word": "ever",
+    "partOfSpeech": "adverb",
+    "definition": "At any time.",
+    "example": "Have you ever been to Japan?",
+    "chineseTranslation": "曾經"
+  },
+  {
+    "id": 482,
+    "word": "every",
+    "partOfSpeech": "determiner",
+    "definition": "Each one of a group.",
+    "example": "Every student must attend the class.",
+    "chineseTranslation": "每一個"
+  },
+  {
+    "id": 483,
+    "word": "everybody",
+    "partOfSpeech": "pronoun",
+    "definition": "Every person.",
+    "example": "Everybody is invited to the party.",
+    "chineseTranslation": "每個人"
+  },
+  {
+    "id": 484,
+    "word": "everyone",
+    "partOfSpeech": "pronoun",
+    "definition": "Every person.",
+    "example": "Everyone enjoyed the show.",
+    "chineseTranslation": "每個人"
+  },
+  {
+    "id": 485,
+    "word": "everything",
+    "partOfSpeech": "pronoun",
+    "definition": "All things.",
+    "example": "Everything is ready for the trip.",
+    "chineseTranslation": "所有事物"
+  },
+  {
+    "id": 486,
+    "word": "everywhere",
+    "partOfSpeech": "adverb",
+    "definition": "In or to all places.",
+    "example": "We looked everywhere for the keys.",
+    "chineseTranslation": "到處"
+  },
+  {
+    "id": 487,
+    "word": "evidence",
+    "partOfSpeech": "noun",
+    "definition": "Information indicating whether a belief or proposition is true.",
+    "example": "The police found evidence at the crime scene.",
+    "chineseTranslation": "證據"
+  },
+  {
+    "id": 488,
+    "word": "evil",
+    "partOfSpeech": "adjective",
+    "definition": "Profoundly immoral and wicked.",
+    "example": "The villain had an evil plan.",
+    "chineseTranslation": "邪惡的"
+  },
+  {
+    "id": 489,
+    "word": "evoke",
+    "partOfSpeech": "verb",
+    "definition": "To bring a feeling, memory, or image to mind.",
+    "example": "The song evokes happy memories.",
+    "chineseTranslation": "喚起"
+  },
+  {
+    "id": 490,
+    "word": "evolution",
+    "partOfSpeech": "noun",
+    "definition": "The gradual development of something.",
+    "example": "The evolution of technology has been rapid.",
+    "chineseTranslation": "演變，進化"
+  },
+  {
+    "id": 491,
+    "word": "evolve",
+    "partOfSpeech": "verb",
+    "definition": "To develop gradually.",
+    "example": "Species evolve over time.",
+    "chineseTranslation": "進化"
+  },
+  {
+    "id": 492,
+    "word": "examine",
+    "partOfSpeech": "verb",
+    "definition": "To inspect or look at carefully.",
+    "example": "The doctor examined the patient.",
+    "chineseTranslation": "檢查"
+  },
+  {
+    "id": 493,
+    "word": "example",
+    "partOfSpeech": "noun",
+    "definition": "A thing characteristic of its kind or illustrating a general rule.",
+    "example": "This is an example of good writing.",
+    "chineseTranslation": "例子"
+  },
+  {
+    "id": 494,
+    "word": "exceed",
+    "partOfSpeech": "verb",
+    "definition": "To go beyond a limit.",
+    "example": "The speed limit was exceeded.",
+    "chineseTranslation": "超過"
+  },
+  {
+    "id": 495,
+    "word": "excellent",
+    "partOfSpeech": "adjective",
+    "definition": "Extremely good.",
+    "example": "She did an excellent job.",
+    "chineseTranslation": "優秀的"
+  },
+  {
+    "id": 496,
+    "word": "except",
+    "partOfSpeech": "preposition",
+    "definition": "Not including.",
+    "example": "Everyone except John was present.",
+    "chineseTranslation": "除了"
+  },
+  {
+    "id": 497,
+    "word": "exchange",
+    "partOfSpeech": "verb",
+    "definition": "To give one thing and receive another.",
+    "example": "They exchanged gifts.",
+    "chineseTranslation": "交換"
+  },
+  {
+    "id": 498,
+    "word": "excite",
+    "partOfSpeech": "verb",
+    "definition": "To cause strong feelings of enthusiasm or eagerness.",
+    "example": "The news excited the crowd.",
+    "chineseTranslation": "使興奮"
+  },
+  {
+    "id": 499,
+    "word": "exclude",
+    "partOfSpeech": "verb",
+    "definition": "To keep out or deny access.",
+    "example": "They excluded him from the group.",
+    "chineseTranslation": "排除"
+  },
+  {
+    "id": 500,
+    "word": "excuse",
+    "partOfSpeech": "noun",
+    "definition": "A reason or explanation put forward to defend or justify a fault or offense.",
+    "example": "He gave an excuse for being late.",
+    "chineseTranslation": "藉口"
+  },
+  {
+    "id": 501,
+    "word": "execute",
+    "partOfSpeech": "verb",
+    "definition": "To carry out or put into effect.",
+    "example": "The plan was executed perfectly.",
+    "chineseTranslation": "執行"
+  },
+  {
+    "id": 502,
+    "word": "exercise",
+    "partOfSpeech": "noun",
+    "definition": "Physical activity to maintain health and fitness.",
+    "example": "Regular exercise is important.",
+    "chineseTranslation": "運動"
+  },
+  {
+    "id": 503,
+    "word": "exhaust",
+    "partOfSpeech": "verb",
+    "definition": "To drain of strength or energy.",
+    "example": "The long hike exhausted them.",
+    "chineseTranslation": "使筋疲力盡"
+  },
+  {
+    "id": 504,
+    "word": "exhibit",
+    "partOfSpeech": "verb",
+    "definition": "To show or display.",
+    "example": "The museum exhibits ancient artifacts.",
+    "chineseTranslation": "展示"
+  },
+  {
+    "id": 505,
+    "word": "exist",
+    "partOfSpeech": "verb",
+    "definition": "To be real or present.",
+    "example": "Dinosaurs no longer exist.",
+    "chineseTranslation": "存在"
+  },
+  {
+    "id": 506,
+    "word": "exit",
+    "partOfSpeech": "noun",
+    "definition": "A way out.",
+    "example": "The exit is at the end of the hall.",
+    "chineseTranslation": "出口"
+  },
+  {
+    "id": 507,
+    "word": "expand",
+    "partOfSpeech": "verb",
+    "definition": "To increase in size or amount.",
+    "example": "The company plans to expand its operations.",
+    "chineseTranslation": "擴大"
+  },
+  {
+    "id": 508,
+    "word": "expect",
+    "partOfSpeech": "verb",
+    "definition": "To look forward to or anticipate.",
+    "example": "I expect to arrive by noon.",
+    "chineseTranslation": "期望"
+  },
+  {
+    "id": 509,
+    "word": "expense",
+    "partOfSpeech": "noun",
+    "definition": "The cost required for something.",
+    "example": "Travel expenses were reimbursed.",
+    "chineseTranslation": "費用"
+  },
+  {
+    "id": 510,
+    "word": "expensive",
+    "partOfSpeech": "adjective",
+    "definition": "Costing a lot of money.",
+    "example": "That car is very expensive.",
+    "chineseTranslation": "昂貴的"
+  },
+  {
+    "id": 511,
+    "word": "experience",
+    "partOfSpeech": "noun",
+    "definition": "Practical contact with events or activities.",
+    "example": "She has a lot of experience in teaching.",
+    "chineseTranslation": "經驗"
+  },
+  {
+    "id": 512,
+    "word": "experiment",
+    "partOfSpeech": "noun",
+    "definition": "A scientific test or procedure.",
+    "example": "The experiment proved the hypothesis.",
+    "chineseTranslation": "實驗"
+  },
+  {
+    "id": 513,
+    "word": "expert",
+    "partOfSpeech": "noun",
+    "definition": "A person with a high level of knowledge or skill.",
+    "example": "He is an expert in computer science.",
+    "chineseTranslation": "專家"
+  },
+  {
+    "id": 514,
+    "word": "explain",
+    "partOfSpeech": "verb",
+    "definition": "To make something clear or understandable.",
+    "example": "Please explain the problem.",
+    "chineseTranslation": "解釋"
+  },
+  {
+    "id": 515,
+    "word": "explode",
+    "partOfSpeech": "verb",
+    "definition": "To burst or cause to burst violently.",
+    "example": "The bomb exploded in the city.",
+    "chineseTranslation": "爆炸"
+  },
+  {
+    "id": 516,
+    "word": "explore",
+    "partOfSpeech": "verb",
+    "definition": "To travel through an area to learn about it.",
+    "example": "They explored the jungle.",
+    "chineseTranslation": "探索"
+  },
+  {
+    "id": 517,
+    "word": "export",
+    "partOfSpeech": "verb",
+    "definition": "To send goods to another country for sale.",
+    "example": "The country exports a lot of rice.",
+    "chineseTranslation": "出口"
+  },
+  {
+    "id": 518,
+    "word": "expose",
+    "partOfSpeech": "verb",
+    "definition": "To make something visible or known.",
+    "example": "The report exposed the corruption.",
+    "chineseTranslation": "揭露"
+  },
+  {
+    "id": 519,
+    "word": "express",
+    "partOfSpeech": "verb",
+    "definition": "To convey a thought or feeling.",
+    "example": "She expressed her opinion clearly.",
+    "chineseTranslation": "表達"
+  },
+  {
+    "id": 520,
+    "word": "extend",
+    "partOfSpeech": "verb",
+    "definition": "To make something longer or larger.",
+    "example": "They extended the deadline.",
+    "chineseTranslation": "延長"
+  },
+  {
+    "id": 521,
+    "word": "extra",
+    "partOfSpeech": "adjective",
+    "definition": "Additional to what is usual or necessary.",
+    "example": "We need extra chairs for the guests.",
+    "chineseTranslation": "額外的"
+  },
+  {
+    "id": 522,
+    "word": "extract",
+    "partOfSpeech": "verb",
+    "definition": "To remove or take out.",
+    "example": "They extracted the tooth.",
+    "chineseTranslation": "提取"
+  },
+  {
+    "id": 523,
+    "word": "extreme",
+    "partOfSpeech": "adjective",
+    "definition": "Very great in degree.",
+    "example": "The weather was extremely cold.",
+    "chineseTranslation": "極端的"
+  },
+  {
+    "id": 524,
+    "word": "extremist",
+    "partOfSpeech": "noun",
+    "definition": "A person who holds extreme political or religious views.",
+    "example": "The government took measures to prevent extremist activities.",
+    "chineseTranslation": "極端主義者"
+  }
+]

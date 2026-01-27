@@ -1,0 +1,1146 @@
+[
+  {
+    "id": 1278,
+    "word": "sacred",
+    "partOfSpeech": "adjective",
+    "definition": "Connected with God or dedicated to a religious purpose and so deserving veneration.",
+    "example": "The temple is a sacred place.",
+    "chineseTranslation": "神聖的，莊嚴的"
+  },
+  {
+    "id": 1279,
+    "word": "sacrifice",
+    "partOfSpeech": "noun",
+    "definition": "An act of giving up something valued for the sake of something else regarded as more important or worthy.",
+    "example": "She made many sacrifices for her family.",
+    "chineseTranslation": "犧牲，奉獻"
+  },
+  {
+    "id": 1280,
+    "word": "saint",
+    "partOfSpeech": "noun",
+    "definition": "A person acknowledged as holy or virtuous and typically regarded as being in heaven after death.",
+    "example": "Saint Peter is one of the most famous saints.",
+    "chineseTranslation": "聖人，聖徒"
+  },
+  {
+    "id": 1281,
+    "word": "sake",
+    "partOfSpeech": "noun",
+    "definition": "For the purpose of; in the interest of; in order to achieve or preserve.",
+    "example": "They stayed together for the sake of the children.",
+    "chineseTranslation": "緣故，利益"
+  },
+  {
+    "id": 1282,
+    "word": "sanction",
+    "partOfSpeech": "noun",
+    "definition": "A threatened penalty for disobeying a law or rule.",
+    "example": "The country faces international sanctions.",
+    "chineseTranslation": "制裁，批准"
+  },
+  {
+    "id": 1283,
+    "word": "say",
+    "partOfSpeech": "noun",
+    "definition": "The right or power to influence or make a decision.",
+    "example": "The workers had no say in the matter.",
+    "chineseTranslation": "發言權，決定權"
+  },
+  {
+    "id": 1284,
+    "word": "scattered",
+    "partOfSpeech": "adjective",
+    "definition": "Occurring or found at intervals or various locations rather than all together.",
+    "example": "Scattered showers are expected this afternoon.",
+    "chineseTranslation": "零星的，分散的"
+  },
+  {
+    "id": 1285,
+    "word": "scope",
+    "partOfSpeech": "noun",
+    "definition": "The extent of the area or subject matter that something deals with or to which it is relevant.",
+    "example": "The scope of the project is quite broad.",
+    "chineseTranslation": "範圍，領域"
+  },
+  {
+    "id": 1286,
+    "word": "screw",
+    "partOfSpeech": "noun",
+    "definition": "A short, slender, sharp-pointed metal pin with a raised helical thread running around it.",
+    "example": "Tighten the screw to fix the hinge.",
+    "chineseTranslation": "螺絲"
+  },
+  {
+    "id": 1287,
+    "word": "scrutiny",
+    "partOfSpeech": "noun",
+    "definition": "Critical observation or examination.",
+    "example": "The plan came under close scrutiny.",
+    "chineseTranslation": "仔細檢查，審查"
+  },
+  {
+    "id": 1288,
+    "word": "seal",
+    "partOfSpeech": "verb",
+    "definition": "Fasten or close securely.",
+    "example": "She sealed the envelope with glue.",
+    "chineseTranslation": "密封，封住"
+  },
+  {
+    "id": 1289,
+    "word": "secondly",
+    "partOfSpeech": "adverb",
+    "definition": "In the second place (used to introduce a second point or reason).",
+    "example": "Firstly, we need more time. Secondly, we need more money.",
+    "chineseTranslation": "其次，第二"
+  },
+  {
+    "id": 1290,
+    "word": "secular",
+    "partOfSpeech": "adjective",
+    "definition": "Not connected with religious or spiritual matters.",
+    "example": "The country has a secular government.",
+    "chineseTranslation": "世俗的，非宗教的"
+  },
+  {
+    "id": 1291,
+    "word": "seemingly",
+    "partOfSpeech": "adverb",
+    "definition": "So as to give the impression of having a certain quality; apparently.",
+    "example": "She was seemingly calm, but actually very nervous.",
+    "chineseTranslation": "看似，表面上"
+  },
+  {
+    "id": 1292,
+    "word": "segment",
+    "partOfSpeech": "noun",
+    "definition": "Each of the parts into which something is or may be divided.",
+    "example": "A segment of the population prefers online shopping.",
+    "chineseTranslation": "部分，段"
+  },
+  {
+    "id": 1293,
+    "word": "seize",
+    "partOfSpeech": "verb",
+    "definition": "Take hold of suddenly and forcibly.",
+    "example": "The police seized the stolen goods.",
+    "chineseTranslation": "抓住，奪取"
+  },
+  {
+    "id": 1294,
+    "word": "seldom",
+    "partOfSpeech": "adverb",
+    "definition": "Not often; rarely.",
+    "example": "She seldom goes out on weekends.",
+    "chineseTranslation": "很少，不常"
+  },
+  {
+    "id": 1295,
+    "word": "selective",
+    "partOfSpeech": "adjective",
+    "definition": "Characterized by careful choice.",
+    "example": "The school has a highly selective admission process.",
+    "chineseTranslation": "有選擇性的，精選的"
+  },
+  {
+    "id": 1296,
+    "word": "sensation",
+    "partOfSpeech": "noun",
+    "definition": "A physical feeling or perception resulting from something that happens to or comes into contact with the body.",
+    "example": "She felt a tingling sensation in her fingers.",
+    "chineseTranslation": "感覺，知覺"
+  },
+  {
+    "id": 1297,
+    "word": "sensitivity",
+    "partOfSpeech": "noun",
+    "definition": "The quality of being sensitive.",
+    "example": "She has a sensitivity to loud noises.",
+    "chineseTranslation": "敏感，感受性"
+  },
+  {
+    "id": 1298,
+    "word": "sentiment",
+    "partOfSpeech": "noun",
+    "definition": "A view of or attitude toward a situation or event; an opinion.",
+    "example": "Public sentiment is against the policy.",
+    "chineseTranslation": "情緒，觀點"
+  },
+  {
+    "id": 1299,
+    "word": "separation",
+    "partOfSpeech": "noun",
+    "definition": "The action or state of moving or being moved apart.",
+    "example": "The separation of church and state is important.",
+    "chineseTranslation": "分離，分開"
+  },
+  {
+    "id": 1300,
+    "word": "serial",
+    "partOfSpeech": "adjective",
+    "definition": "Consisting of, forming part of, or taking place in a series.",
+    "example": "He is a serial entrepreneur.",
+    "chineseTranslation": "連續的，系列的"
+  },
+  {
+    "id": 1301,
+    "word": "settlement",
+    "partOfSpeech": "noun",
+    "definition": "An official agreement intended to resolve a dispute or conflict.",
+    "example": "The two parties reached a settlement after months of negotiation.",
+    "chineseTranslation": "協議，解決；定居地"
+  },
+  {
+    "id": 1302,
+    "word": "setup",
+    "partOfSpeech": "noun",
+    "definition": "The way in which something is organized, arranged, or prepared.",
+    "example": "The new computer setup is very efficient.",
+    "chineseTranslation": "設置，安排"
+  },
+  {
+    "id": 1303,
+    "word": "sexuality",
+    "partOfSpeech": "noun",
+    "definition": "Capacity for sexual feelings; a person's sexual orientation or preference.",
+    "example": "The documentary explores gender and sexuality.",
+    "chineseTranslation": "性傾向，性特徵"
+  },
+  {
+    "id": 1304,
+    "word": "shareholder",
+    "partOfSpeech": "noun",
+    "definition": "An owner of shares in a company.",
+    "example": "Shareholders voted to approve the merger.",
+    "chineseTranslation": "股東"
+  },
+  {
+    "id": 1305,
+    "word": "shatter",
+    "partOfSpeech": "verb",
+    "definition": "Break or cause to break suddenly and violently into pieces.",
+    "example": "The explosion shattered windows across the street.",
+    "chineseTranslation": "粉碎，使破滅"
+  },
+  {
+    "id": 1306,
+    "word": "shed",
+    "partOfSpeech": "verb",
+    "definition": "To get rid of something unnecessary or unwanted.",
+    "example": "The trees shed their leaves in autumn.",
+    "chineseTranslation": "脫落，擺脫"
+  },
+  {
+    "id": 1307,
+    "word": "sheer",
+    "partOfSpeech": "adjective",
+    "definition": "Nothing other than; absolute.",
+    "example": "It was sheer luck that they survived.",
+    "chineseTranslation": "完全的，十足的"
+  },
+  {
+    "id": 1308,
+    "word": "shipping",
+    "partOfSpeech": "noun",
+    "definition": "The transport of goods by sea or other means.",
+    "example": "The company offers free shipping on orders over $50.",
+    "chineseTranslation": "運輸，航運"
+  },
+  {
+    "id": 1309,
+    "word": "shoot",
+    "partOfSpeech": "verb",
+    "definition": "To fire a bullet from a gun or another weapon.",
+    "example": "The hunter shot at the deer.",
+    "chineseTranslation": "射擊，開槍"
+  },
+  {
+    "id": 1310,
+    "word": "shrink",
+    "partOfSpeech": "verb",
+    "definition": "To become or make smaller in size or amount.",
+    "example": "The sweater shrank in the wash.",
+    "chineseTranslation": "縮小，減少"
+  },
+  {
+    "id": 1311,
+    "word": "shrug",
+    "partOfSpeech": "verb",
+    "definition": "Raise one's shoulders slightly to express doubt, ignorance, or indifference.",
+    "example": "He shrugged when I asked if he knew the answer.",
+    "chineseTranslation": "聳肩（表示疑惑、不在乎）"
+  },
+  {
+    "id": 1312,
+    "word": "sigh",
+    "partOfSpeech": "verb",
+    "definition": "Emit a long, deep audible breath expressing sadness, relief, tiredness, or similar.",
+    "example": "She sighed deeply after hearing the news.",
+    "chineseTranslation": "嘆氣"
+  },
+  {
+    "id": 1313,
+    "word": "simulate",
+    "partOfSpeech": "verb",
+    "definition": "Imitate the appearance or character of something.",
+    "example": "The flight simulator can simulate real flying conditions.",
+    "chineseTranslation": "模擬，模仿"
+  },
+  {
+    "id": 1314,
+    "word": "simulation",
+    "partOfSpeech": "noun",
+    "definition": "Imitation of a situation or process.",
+    "example": "The training includes a simulation of emergency scenarios.",
+    "chineseTranslation": "模擬，仿真"
+  },
+  {
+    "id": 1315,
+    "word": "simultaneously",
+    "partOfSpeech": "adverb",
+    "definition": "At the same time.",
+    "example": "The two runners crossed the finish line simultaneously.",
+    "chineseTranslation": "同時地"
+  },
+  {
+    "id": 1316,
+    "word": "sin",
+    "partOfSpeech": "noun",
+    "definition": "An immoral act considered to be a transgression against divine law.",
+    "example": "In many religions, lying is considered a sin.",
+    "chineseTranslation": "罪，罪惡"
+  },
+  {
+    "id": 1317,
+    "word": "situated",
+    "partOfSpeech": "adjective",
+    "definition": "Located in a particular place or position.",
+    "example": "The hotel is situated near the beach.",
+    "chineseTranslation": "位於，坐落在"
+  },
+  {
+    "id": 1318,
+    "word": "sceptical",
+    "partOfSpeech": "adjective",
+    "definition": "Not easily convinced; having doubts or reservations.",
+    "example": "Many people are sceptical about the new policy.",
+    "chineseTranslation": "懷疑的，持懷疑態度的"
+  },
+  {
+    "id": 1319,
+    "word": "sketch",
+    "partOfSpeech": "noun",
+    "definition": "A rough or unfinished drawing or painting.",
+    "example": "She made a quick sketch of the landscape.",
+    "chineseTranslation": "素描，草圖"
+  },
+  {
+    "id": 1320,
+    "word": "skip",
+    "partOfSpeech": "verb",
+    "definition": "Move along lightly, stepping from one foot to the other with a hop or bounce.",
+    "example": "The children skipped down the street.",
+    "chineseTranslation": "蹦跳，略過"
+  },
+  {
+    "id": 1321,
+    "word": "slam",
+    "partOfSpeech": "verb",
+    "definition": "Shut a door, window, or lid forcefully and loudly.",
+    "example": "He slammed the door on his way out.",
+    "chineseTranslation": "砰地關上，猛撞"
+  },
+  {
+    "id": 1322,
+    "word": "slap",
+    "partOfSpeech": "verb",
+    "definition": "Hit or strike with the palm of the hand or a flat object.",
+    "example": "She slapped him on the arm playfully.",
+    "chineseTranslation": "拍打，摑"
+  },
+  {
+    "id": 1323,
+    "word": "slash",
+    "partOfSpeech": "verb",
+    "definition": "Cut with a wide, sweeping movement, typically using a knife or sword.",
+    "example": "He slashed the canvas with a knife.",
+    "chineseTranslation": "猛砍，削減"
+  },
+  {
+    "id": 1324,
+    "word": "slavery",
+    "partOfSpeech": "noun",
+    "definition": "The state of being a slave; the practice of owning slaves.",
+    "example": "Slavery was abolished in the 19th century.",
+    "chineseTranslation": "奴隸制度，奴役"
+  },
+  {
+    "id": 1325,
+    "word": "slot",
+    "partOfSpeech": "noun",
+    "definition": "A long, narrow aperture or slit in a machine for something to be inserted.",
+    "example": "Insert the coin into the slot.",
+    "chineseTranslation": "狹縫，投幣口，位置"
+  },
+  {
+    "id": 1326,
+    "word": "smash",
+    "partOfSpeech": "verb",
+    "definition": "Violently break something into pieces.",
+    "example": "The vase fell and smashed into pieces.",
+    "chineseTranslation": "打碎，猛撞"
+  },
+  {
+    "id": 1327,
+    "word": "snap",
+    "partOfSpeech": "verb",
+    "definition": "Break or cause to break suddenly and completely, typically with a sharp cracking sound.",
+    "example": "The branch snapped under the weight.",
+    "chineseTranslation": "折斷，啪地一聲"
+  },
+  {
+    "id": 1328,
+    "word": "soak",
+    "partOfSpeech": "verb",
+    "definition": "Make or allow something to become thoroughly wet by immersing it in liquid.",
+    "example": "She soaked the clothes in water overnight.",
+    "chineseTranslation": "浸泡，濕透"
+  },
+  {
+    "id": 1329,
+    "word": "soar",
+    "partOfSpeech": "verb",
+    "definition": "Fly or rise high in the air; increase rapidly.",
+    "example": "The eagle soared above the mountains.",
+    "chineseTranslation": "翱翔，激增"
+  },
+  {
+    "id": 1330,
+    "word": "socialist",
+    "partOfSpeech": "adjective",
+    "definition": "Adhering to or based on the principles of socialism.",
+    "example": "The government introduced socialist policies.",
+    "chineseTranslation": "社會主義的"
+  },
+  {
+    "id": 1331,
+    "word": "sole",
+    "partOfSpeech": "adjective",
+    "definition": "Being the only one; single or solitary.",
+    "example": "She was the sole survivor of the accident.",
+    "chineseTranslation": "唯一的，單獨的"
+  },
+  {
+    "id": 1332,
+    "word": "solely",
+    "partOfSpeech": "adverb",
+    "definition": "Not involving anyone or anything else; only.",
+    "example": "He was solely responsible for the failure.",
+    "chineseTranslation": "唯一地，僅僅"
+  },
+  {
+    "id": 1333,
+    "word": "solidarity",
+    "partOfSpeech": "noun",
+    "definition": "Unity or agreement of feeling or action, especially among individuals with a common interest.",
+    "example": "The workers showed solidarity during the strike.",
+    "chineseTranslation": "團結，一致"
+  },
+  {
+    "id": 1334,
+    "word": "solo",
+    "partOfSpeech": "adjective",
+    "definition": "Done by one person alone; unaccompanied.",
+    "example": "She gave a brilliant solo performance.",
+    "chineseTranslation": "單獨的，獨奏的"
+  },
+  {
+    "id": 1335,
+    "word": "sophomore",
+    "partOfSpeech": "noun",
+    "definition": "A second-year college or high school student.",
+    "example": "She is a sophomore at the university.",
+    "chineseTranslation": "大學二年級學生，高中二年級學生"
+  },
+  {
+    "id": 1336,
+    "word": "sound",
+    "partOfSpeech": "adjective",
+    "definition": "In good condition; based on reason, sense, or judgment.",
+    "example": "She gave sound advice to her friend.",
+    "chineseTranslation": "健全的，合理的"
+  },
+  {
+    "id": 1337,
+    "word": "sovereignty",
+    "partOfSpeech": "noun",
+    "definition": "Supreme power or authority.",
+    "example": "The country regained its sovereignty after the war.",
+    "chineseTranslation": "主權，統治權"
+  },
+  {
+    "id": 1338,
+    "word": "spam",
+    "partOfSpeech": "noun",
+    "definition": "Irrelevant or inappropriate messages sent on the Internet to a large number of recipients.",
+    "example": "My inbox is full of spam.",
+    "chineseTranslation": "垃圾郵件"
+  },
+  {
+    "id": 1339,
+    "word": "span",
+    "partOfSpeech": "verb",
+    "definition": "Extend across something from one side to the other.",
+    "example": "The bridge spans the river.",
+    "chineseTranslation": "橫跨，持續"
+  },
+  {
+    "id": 1340,
+    "word": "spark",
+    "partOfSpeech": "verb",
+    "definition": "Cause the start of something, especially a violent or intense process.",
+    "example": "The announcement sparked protests across the country.",
+    "chineseTranslation": "引發，激起"
+  },
+  {
+    "id": 1341,
+    "word": "specialised",
+    "partOfSpeech": "adjective",
+    "definition": "Requiring or involving detailed and specific knowledge or training.",
+    "example": "He works in a specialised field of medicine.",
+    "chineseTranslation": "專門的，專業的"
+  },
+  {
+    "id": 1342,
+    "word": "specification",
+    "partOfSpeech": "noun",
+    "definition": "A detailed description of the design and materials used to make something.",
+    "example": "The car was built to the customer's specifications.",
+    "chineseTranslation": "規格，詳細說明"
+  },
+  {
+    "id": 1343,
+    "word": "specimen",
+    "partOfSpeech": "noun",
+    "definition": "An individual animal, plant, piece of a mineral, etc. used as an example of its species or type for scientific study or display.",
+    "example": "They collected a specimen of the rare plant.",
+    "chineseTranslation": "標本，樣本"
+  },
+  {
+    "id": 1344,
+    "word": "spectacle",
+    "partOfSpeech": "noun",
+    "definition": "A visually striking performance or display.",
+    "example": "The fireworks created a stunning spectacle.",
+    "chineseTranslation": "壯觀的場面，景象"
+  },
+  {
+    "id": 1345,
+    "word": "spectrum",
+    "partOfSpeech": "noun",
+    "definition": "A range of different positions, opinions, or people.",
+    "example": "The two politicians represent opposite ends of the political spectrum.",
+    "chineseTranslation": "範圍，光譜"
+  },
+  {
+    "id": 1346,
+    "word": "spell",
+    "partOfSpeech": "noun",
+    "definition": "A short period of time during which something lasts.",
+    "example": "There was a spell of hot weather in July.",
+    "chineseTranslation": "一段時間，咒語"
+  },
+  {
+    "id": 1347,
+    "word": "sphere",
+    "partOfSpeech": "noun",
+    "definition": "An area of activity, interest, or expertise.",
+    "example": "She is well known in the political sphere.",
+    "chineseTranslation": "範圍，領域，球體"
+  },
+  {
+    "id": 1348,
+    "word": "spin",
+    "partOfSpeech": "verb",
+    "definition": "Turn or cause to turn or whirl around quickly.",
+    "example": "The wheels began to spin in the mud.",
+    "chineseTranslation": "旋轉，紡（紗）"
+  },
+  {
+    "id": 1349,
+    "word": "spine",
+    "partOfSpeech": "noun",
+    "definition": "The series of vertebrae extending from the skull to the lower back; backbone.",
+    "example": "She injured her spine in the accident.",
+    "chineseTranslation": "脊椎，書脊"
+  },
+  {
+    "id": 1350,
+    "word": "spotlight",
+    "partOfSpeech": "noun",
+    "definition": "A lamp projecting a narrow, intense beam of light directly onto a place or person.",
+    "example": "The actor stood alone in the spotlight.",
+    "chineseTranslation": "聚光燈，矚目焦點"
+  },
+  {
+    "id": 1351,
+    "word": "spouse",
+    "partOfSpeech": "noun",
+    "definition": "A husband or wife, considered in relation to their partner.",
+    "example": "Spouses are invited to the annual company dinner.",
+    "chineseTranslation": "配偶"
+  },
+  {
+    "id": 1352,
+    "word": "spy",
+    "partOfSpeech": "noun",
+    "definition": "A person employed by a government or other organization to secretly obtain information on an enemy or competitor.",
+    "example": "The spy infiltrated the enemy base.",
+    "chineseTranslation": "間諜，偵探"
+  },
+  {
+    "id": 1353,
+    "word": "squad",
+    "partOfSpeech": "noun",
+    "definition": "A small group of people having a particular task.",
+    "example": "The rescue squad arrived quickly.",
+    "chineseTranslation": "小隊，小組"
+  },
+  {
+    "id": 1354,
+    "word": "squeeze",
+    "partOfSpeech": "verb",
+    "definition": "Firmly press something soft or yielding, typically with one's fingers.",
+    "example": "She squeezed the lemon to get the juice.",
+    "chineseTranslation": "擠壓，緊握"
+  },
+  {
+    "id": 1355,
+    "word": "stab",
+    "partOfSpeech": "verb",
+    "definition": "Thrust a knife or other pointed weapon into someone or something.",
+    "example": "He was stabbed in the leg during the fight.",
+    "chineseTranslation": "刺，戳"
+  },
+  {
+    "id": 1356,
+    "word": "stability",
+    "partOfSpeech": "noun",
+    "definition": "The state of being stable; firmness in position.",
+    "example": "The political stability of the country has improved.",
+    "chineseTranslation": "穩定，安定"
+  },
+  {
+    "id": 1357,
+    "word": "stabilise",
+    "partOfSpeech": "verb",
+    "definition": "Make or become stable.",
+    "example": "Measures were taken to stabilise the economy.",
+    "chineseTranslation": "穩定，使穩固"
+  },
+  {
+    "id": 1358,
+    "word": "stake",
+    "partOfSpeech": "noun",
+    "definition": "A strong wooden or metal post with a point at one end, driven into the ground to support something or mark a boundary.",
+    "example": "They marked the site with stakes.",
+    "chineseTranslation": "樁，股份，利害關係"
+  },
+  {
+    "id": 1359,
+    "word": "standing",
+    "partOfSpeech": "noun",
+    "definition": "Position, status, or reputation.",
+    "example": "The club improved its standing in the league.",
+    "chineseTranslation": "地位，聲望，排名"
+  },
+  {
+    "id": 1360,
+    "word": "stark",
+    "partOfSpeech": "adjective",
+    "definition": "Severe or bare in appearance or outline.",
+    "example": "The stark landscape was beautiful in its simplicity.",
+    "chineseTranslation": "荒涼的，明顯的，嚴酷的"
+  },
+  {
+    "id": 1361,
+    "word": "statistical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the use of statistics or numerical data.",
+    "example": "The statistical analysis showed clear trends.",
+    "chineseTranslation": "統計的，統計學的"
+  },
+  {
+    "id": 1362,
+    "word": "steer",
+    "partOfSpeech": "verb",
+    "definition": "Guide or control the movement of a vehicle, vessel, or aircraft.",
+    "example": "He steered the car into the parking space.",
+    "chineseTranslation": "駕駛，引導"
+  },
+  {
+    "id": 1363,
+    "word": "stem",
+    "partOfSpeech": "verb",
+    "definition": "Originate in or be caused by.",
+    "example": "His anger stems from a misunderstanding.",
+    "chineseTranslation": "起源於，阻止"
+  },
+  {
+    "id": 1364,
+    "word": "stereotype",
+    "partOfSpeech": "noun",
+    "definition": "A widely held but fixed and oversimplified image or idea of a particular type of person or thing.",
+    "example": "The movie reinforces negative stereotypes.",
+    "chineseTranslation": "刻板印象，模式化觀念"
+  },
+  {
+    "id": 1365,
+    "word": "stimulus",
+    "partOfSpeech": "noun",
+    "definition": "A thing that rouses activity or energy in someone or something; a spur or incentive.",
+    "example": "The tax cut provided a stimulus to the economy.",
+    "chineseTranslation": "刺激，激勵"
+  },
+  {
+    "id": 1366,
+    "word": "stir",
+    "partOfSpeech": "verb",
+    "definition": "Move or cause to move slightly.",
+    "example": "She stirred her coffee slowly.",
+    "chineseTranslation": "攪拌，激起"
+  },
+  {
+    "id": 1367,
+    "word": "storage",
+    "partOfSpeech": "noun",
+    "definition": "The action or method of storing something for future use.",
+    "example": "The warehouse is used for storage.",
+    "chineseTranslation": "儲存，倉庫"
+  },
+  {
+    "id": 1368,
+    "word": "straightforward",
+    "partOfSpeech": "adjective",
+    "definition": "Uncomplicated and easy to do or understand.",
+    "example": "The instructions are quite straightforward.",
+    "chineseTranslation": "簡單的，直接的"
+  },
+  {
+    "id": 1369,
+    "word": "strain",
+    "partOfSpeech": "noun",
+    "definition": "A force tending to pull or stretch something to an extreme or damaging degree.",
+    "example": "The heavy workload put a strain on her health.",
+    "chineseTranslation": "壓力，拉緊"
+  },
+  {
+    "id": 1370,
+    "word": "strand",
+    "partOfSpeech": "noun",
+    "definition": "A single thin length of something such as thread, fiber, or wire.",
+    "example": "A strand of hair fell across her face.",
+    "chineseTranslation": "一縷，一股，部分"
+  },
+  {
+    "id": 1371,
+    "word": "strategic",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the identification of long-term or overall aims and interests and the means of achieving them.",
+    "example": "They made a strategic decision to expand overseas.",
+    "chineseTranslation": "戰略性的，策略性的"
+  },
+  {
+    "id": 1372,
+    "word": "strip",
+    "partOfSpeech": "noun",
+    "definition": "A long, narrow piece of cloth, paper, or other material.",
+    "example": "He tore a strip of cloth to use as a bandage.",
+    "chineseTranslation": "長條，狹長地帶"
+  },
+  {
+    "id": 1373,
+    "word": "strive",
+    "partOfSpeech": "verb",
+    "definition": "Make great efforts to achieve or obtain something.",
+    "example": "She strives for perfection in everything she does.",
+    "chineseTranslation": "努力，奮鬥"
+  },
+  {
+    "id": 1374,
+    "word": "structural",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to or forming part of the structure of a building or other item.",
+    "example": "The building has structural problems.",
+    "chineseTranslation": "結構的，構造上的"
+  },
+  {
+    "id": 1375,
+    "word": "stumble",
+    "partOfSpeech": "verb",
+    "definition": "Trip or momentarily lose one's balance; almost fall.",
+    "example": "She stumbled on a rock and fell.",
+    "chineseTranslation": "絆倒，跌跌撞撞地走"
+  },
+  {
+    "id": 1376,
+    "word": "stun",
+    "partOfSpeech": "verb",
+    "definition": "Knock unconscious or into a dazed state.",
+    "example": "The news stunned everyone in the room.",
+    "chineseTranslation": "使震驚，使目瞪口呆"
+  },
+  {
+    "id": 1377,
+    "word": "submission",
+    "partOfSpeech": "noun",
+    "definition": "The action of presenting a proposal, application, or other document for consideration or judgment.",
+    "example": "The deadline for submission is next Friday.",
+    "chineseTranslation": "提交，屈服"
+  },
+  {
+    "id": 1378,
+    "word": "subscriber",
+    "partOfSpeech": "noun",
+    "definition": "A person who receives a publication or service regularly by paying in advance.",
+    "example": "Subscribers get early access to new features.",
+    "chineseTranslation": "訂閱者"
+  },
+  {
+    "id": 1379,
+    "word": "subscription",
+    "partOfSpeech": "noun",
+    "definition": "The action of making or agreeing to make an advance payment in order to receive or participate in something.",
+    "example": "I canceled my magazine subscription.",
+    "chineseTranslation": "訂閱，訂購"
+  },
+  {
+    "id": 1380,
+    "word": "subsidy",
+    "partOfSpeech": "noun",
+    "definition": "A sum of money granted by the government or a public body to assist an industry or business.",
+    "example": "The farmers receive subsidies from the government.",
+    "chineseTranslation": "補貼，津貼"
+  },
+  {
+    "id": 1381,
+    "word": "substantial",
+    "partOfSpeech": "adjective",
+    "definition": "Of considerable importance, size, or worth.",
+    "example": "There is substantial evidence to support the claim.",
+    "chineseTranslation": "大量的，實質的"
+  },
+  {
+    "id": 1382,
+    "word": "substantially",
+    "partOfSpeech": "adverb",
+    "definition": "To a great or significant extent.",
+    "example": "The cost of the project has substantially increased.",
+    "chineseTranslation": "大幅地，實質上"
+  },
+  {
+    "id": 1383,
+    "word": "substitute",
+    "partOfSpeech": "noun",
+    "definition": "A person or thing acting or serving in place of another.",
+    "example": "You can use honey as a substitute for sugar.",
+    "chineseTranslation": "代替品，替代者"
+  },
+  {
+    "id": 1384,
+    "word": "substitution",
+    "partOfSpeech": "noun",
+    "definition": "The action of replacing someone or something with another person or thing.",
+    "example": "The substitution of meat with vegetables is healthier.",
+    "chineseTranslation": "替代，代替"
+  },
+  {
+    "id": 1385,
+    "word": "subtle",
+    "partOfSpeech": "adjective",
+    "definition": "So delicate or precise as to be difficult to analyze or describe.",
+    "example": "There are subtle differences between the two products.",
+    "chineseTranslation": "細微的，微妙的"
+  },
+  {
+    "id": 1386,
+    "word": "suburban",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to a suburb.",
+    "example": "They live in a quiet suburban neighborhood.",
+    "chineseTranslation": "郊區的，市郊的"
+  },
+  {
+    "id": 1387,
+    "word": "succession",
+    "partOfSpeech": "noun",
+    "definition": "A number of people or things of a similar kind following one after the other.",
+    "example": "A succession of guests arrived throughout the day.",
+    "chineseTranslation": "一連串，繼任"
+  },
+  {
+    "id": 1388,
+    "word": "successive",
+    "partOfSpeech": "adjective",
+    "definition": "Following one another or following others.",
+    "example": "The team has won three successive championships.",
+    "chineseTranslation": "連續的，接連的"
+  },
+  {
+    "id": 1389,
+    "word": "successor",
+    "partOfSpeech": "noun",
+    "definition": "A person or thing that succeeds another.",
+    "example": "She was appointed as his successor.",
+    "chineseTranslation": "繼任者，接班人"
+  },
+  {
+    "id": 1390,
+    "word": "suck",
+    "partOfSpeech": "verb",
+    "definition": "Draw into the mouth by contracting the muscles of the lips and mouth to make a partial vacuum.",
+    "example": "The baby sucked on the bottle.",
+    "chineseTranslation": "吸吮，糟糕"
+  },
+  {
+    "id": 1391,
+    "word": "sue",
+    "partOfSpeech": "verb",
+    "definition": "Institute legal proceedings against a person or institution.",
+    "example": "She decided to sue the company for negligence.",
+    "chineseTranslation": "控告，提起訴訟"
+  },
+  {
+    "id": 1392,
+    "word": "suicide",
+    "partOfSpeech": "noun",
+    "definition": "The act of intentionally causing one's own death.",
+    "example": "The issue of suicide prevention is very important.",
+    "chineseTranslation": "自殺"
+  },
+  {
+    "id": 1393,
+    "word": "suite",
+    "partOfSpeech": "noun",
+    "definition": "A set of rooms designated for one person's or family's use or for a particular purpose.",
+    "example": "They stayed in the honeymoon suite.",
+    "chineseTranslation": "套房，一組"
+  },
+  {
+    "id": 1394,
+    "word": "summit",
+    "partOfSpeech": "noun",
+    "definition": "A meeting between heads of government.",
+    "example": "The leaders met at the economic summit.",
+    "chineseTranslation": "高峰會，頂點"
+  },
+  {
+    "id": 1395,
+    "word": "superb",
+    "partOfSpeech": "adjective",
+    "definition": "Excellent; impressively splendid.",
+    "example": "The food at the restaurant was superb.",
+    "chineseTranslation": "極好的，華麗的"
+  },
+  {
+    "id": 1396,
+    "word": "superintendent",
+    "partOfSpeech": "noun",
+    "definition": "A person who manages or superintends an organization or activity.",
+    "example": "The building superintendent fixed the heating system.",
+    "chineseTranslation": "主管，負責人"
+  },
+  {
+    "id": 1397,
+    "word": "superior",
+    "partOfSpeech": "adjective",
+    "definition": "Higher in rank, status, or quality.",
+    "example": "Her performance was far superior to others.",
+    "chineseTranslation": "優越的，上級的"
+  },
+  {
+    "id": 1398,
+    "word": "supervise",
+    "partOfSpeech": "verb",
+    "definition": "Observe and direct the execution of a task or activity.",
+    "example": "He supervises a team of 20 employees.",
+    "chineseTranslation": "監督，管理"
+  },
+  {
+    "id": 1399,
+    "word": "supervision",
+    "partOfSpeech": "noun",
+    "definition": "The action of supervising someone or something.",
+    "example": "The project requires careful supervision.",
+    "chineseTranslation": "監督，指導"
+  },
+  {
+    "id": 1400,
+    "word": "supervisor",
+    "partOfSpeech": "noun",
+    "definition": "A person who supervises others, especially workers or students.",
+    "example": "She was promoted to supervisor last year.",
+    "chineseTranslation": "主管，監督者"
+  },
+  {
+    "id": 1401,
+    "word": "supplement",
+    "partOfSpeech": "noun",
+    "definition": "A thing added to something else in order to complete or enhance it.",
+    "example": "She takes vitamin supplements daily.",
+    "chineseTranslation": "補充物，補充"
+  },
+  {
+    "id": 1402,
+    "word": "supportive",
+    "partOfSpeech": "adjective",
+    "definition": "Providing encouragement or emotional help.",
+    "example": "Her friends were very supportive during the tough times.",
+    "chineseTranslation": "支持的，支援的"
+  },
+  {
+    "id": 1403,
+    "word": "supposedly",
+    "partOfSpeech": "adverb",
+    "definition": "According to what is generally assumed or believed.",
+    "example": "He is supposedly the best player on the team.",
+    "chineseTranslation": "據說，理應"
+  },
+  {
+    "id": 1404,
+    "word": "suppress",
+    "partOfSpeech": "verb",
+    "definition": "Forcibly put an end to something.",
+    "example": "The government tried to suppress the rebellion.",
+    "chineseTranslation": "鎮壓，壓制"
+  },
+  {
+    "id": 1405,
+    "word": "supreme",
+    "partOfSpeech": "adjective",
+    "definition": "Highest in rank or authority.",
+    "example": "The Supreme Court is the highest court in the country.",
+    "chineseTranslation": "最高的，至上的"
+  },
+  {
+    "id": 1406,
+    "word": "surge",
+    "partOfSpeech": "noun",
+    "definition": "A sudden powerful forward or upward movement.",
+    "example": "There was a surge of excitement in the crowd.",
+    "chineseTranslation": "激增，湧現"
+  },
+  {
+    "id": 1407,
+    "word": "surgical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to or used in surgery.",
+    "example": "She works as a surgical nurse.",
+    "chineseTranslation": "外科的，手術的"
+  },
+  {
+    "id": 1408,
+    "word": "surplus",
+    "partOfSpeech": "noun",
+    "definition": "An amount of something left over when requirements have been met.",
+    "example": "The company has a surplus of $2 million.",
+    "chineseTranslation": "盈餘，過剩"
+  },
+  {
+    "id": 1409,
+    "word": "surrender",
+    "partOfSpeech": "verb",
+    "definition": "Cease resistance to an enemy or opponent and submit to their authority.",
+    "example": "The army was forced to surrender.",
+    "chineseTranslation": "投降，屈服"
+  },
+  {
+    "id": 1410,
+    "word": "surveillance",
+    "partOfSpeech": "noun",
+    "definition": "Close observation, especially of a suspected spy or criminal.",
+    "example": "The police kept him under surveillance.",
+    "chineseTranslation": "監視，監控"
+  },
+  {
+    "id": 1411,
+    "word": "suspension",
+    "partOfSpeech": "noun",
+    "definition": "The action of suspending someone or something or the condition of being suspended.",
+    "example": "The player received a two-game suspension.",
+    "chineseTranslation": "暫停，停職"
+  },
+  {
+    "id": 1412,
+    "word": "suspicion",
+    "partOfSpeech": "noun",
+    "definition": "A feeling or thought that something is possible, likely, or true.",
+    "example": "There was a suspicion of foul play.",
+    "chineseTranslation": "懷疑，猜疑"
+  },
+  {
+    "id": 1413,
+    "word": "suspicious",
+    "partOfSpeech": "adjective",
+    "definition": "Having or showing a cautious distrust of someone or something.",
+    "example": "He gave me a suspicious look.",
+    "chineseTranslation": "懷疑的，多疑的"
+  },
+  {
+    "id": 1414,
+    "word": "sustain",
+    "partOfSpeech": "verb",
+    "definition": "Strengthen or support physically or mentally.",
+    "example": "The pillars sustain the roof.",
+    "chineseTranslation": "支撐，維持"
+  },
+  {
+    "id": 1415,
+    "word": "swing",
+    "partOfSpeech": "verb",
+    "definition": "Move or cause to move back and forth or from side to side while suspended or on an axis.",
+    "example": "The children were swinging on the swings.",
+    "chineseTranslation": "搖擺，擺動"
+  },
+  {
+    "id": 1416,
+    "word": "sword",
+    "partOfSpeech": "noun",
+    "definition": "A weapon with a long metal blade and a hilt with a hand guard.",
+    "example": "The knight drew his sword.",
+    "chineseTranslation": "劍，刀"
+  },
+  {
+    "id": 1417,
+    "word": "symbolic",
+    "partOfSpeech": "adjective",
+    "definition": "Serving as a symbol.",
+    "example": "The dove is symbolic of peace.",
+    "chineseTranslation": "象徵性的，符號的"
+  },
+  {
+    "id": 1418,
+    "word": "syndrome",
+    "partOfSpeech": "noun",
+    "definition": "A group of symptoms that consistently occur together or a condition characterized by a set of associated symptoms.",
+    "example": "The patient was diagnosed with a rare syndrome.",
+    "chineseTranslation": "綜合症，併發症狀"
+  },
+  {
+    "id": 1419,
+    "word": "synthesis",
+    "partOfSpeech": "noun",
+    "definition": "The combination of components or elements to form a connected whole.",
+    "example": "The report provides a synthesis of the research findings.",
+    "chineseTranslation": "綜合，合成"
+  },
+  {
+    "id": 1420,
+    "word": "systematic",
+    "partOfSpeech": "adjective",
+    "definition": "Done or acting according to a fixed plan or system; methodical.",
+    "example": "They conducted a systematic review of the data.",
+    "chineseTranslation": "有系統的，有條理的"
+  }
+]

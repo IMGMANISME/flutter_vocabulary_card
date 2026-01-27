@@ -1,0 +1,866 @@
+[
+  {
+    "id": 799,
+    "word": "identification",
+    "partOfSpeech": "noun",
+    "definition": "The process of recognizing or establishing what something is.",
+    "example": "The identification of the species was confirmed by the scientist.",
+    "chineseTranslation": "識別，鑑定"
+  },
+  {
+    "id": 800,
+    "word": "identity",
+    "partOfSpeech": "noun",
+    "definition": "The characteristics determining who or what a person or thing is.",
+    "example": "He struggled with his identity after moving to a new country.",
+    "chineseTranslation": "身份，特性"
+  },
+  {
+    "id": 801,
+    "word": "idle",
+    "partOfSpeech": "adjective",
+    "definition": "Not active or in use.",
+    "example": "The factory has been idle since the strike began.",
+    "chineseTranslation": "閒置的，無所事事的"
+  },
+  {
+    "id": 802,
+    "word": "idol",
+    "partOfSpeech": "noun",
+    "definition": "An image or representation of a god used as an object of worship; a person greatly admired.",
+    "example": "The pop star was an idol to many teenagers.",
+    "chineseTranslation": "偶像，崇拜物"
+  },
+  {
+    "id": 803,
+    "word": "ignite",
+    "partOfSpeech": "verb",
+    "definition": "To set on fire; to cause to start burning.",
+    "example": "The sparks ignited the dry grass.",
+    "chineseTranslation": "點燃，引發"
+  },
+  {
+    "id": 804,
+    "word": "ignorant",
+    "partOfSpeech": "adjective",
+    "definition": "Lacking knowledge or awareness in general or about a particular thing.",
+    "example": "He was ignorant of the rules of the game.",
+    "chineseTranslation": "無知的，愚昧的"
+  },
+  {
+    "id": 805,
+    "word": "ignore",
+    "partOfSpeech": "verb",
+    "definition": "To refuse to take notice of or acknowledge; to disregard intentionally.",
+    "example": "She ignored the warning signs and proceeded.",
+    "chineseTranslation": "忽視，不理會"
+  },
+  {
+    "id": 806,
+    "word": "illuminate",
+    "partOfSpeech": "verb",
+    "definition": "To light up; to decorate with lights; to make clear or understandable.",
+    "example": "The streetlights illuminate the road at night.",
+    "chineseTranslation": "照亮，闡明"
+  },
+  {
+    "id": 807,
+    "word": "illusion",
+    "partOfSpeech": "noun",
+    "definition": "A false idea or belief; something that appears different from reality.",
+    "example": "The magician created the illusion of a disappearing coin.",
+    "chineseTranslation": "幻覺，錯覺"
+  },
+  {
+    "id": 808,
+    "word": "illustrate",
+    "partOfSpeech": "verb",
+    "definition": "To explain or decorate a text with pictures or examples.",
+    "example": "The book is illustrated with beautiful drawings.",
+    "chineseTranslation": "說明，舉例"
+  },
+  {
+    "id": 809,
+    "word": "illustration",
+    "partOfSpeech": "noun",
+    "definition": "A picture or example that explains or decorates something.",
+    "example": "The textbook includes many illustrations.",
+    "chineseTranslation": "插圖，說明"
+  },
+  {
+    "id": 810,
+    "word": "image",
+    "partOfSpeech": "noun",
+    "definition": "A representation of the external form of a person or thing in art or media.",
+    "example": "The advertisement used a strong image to attract attention.",
+    "chineseTranslation": "形象，影像"
+  },
+  {
+    "id": 811,
+    "word": "imagination",
+    "partOfSpeech": "noun",
+    "definition": "The ability to form new ideas, images, or concepts not present to the senses.",
+    "example": "Children have vivid imaginations.",
+    "chineseTranslation": "想像力"
+  },
+  {
+    "id": 812,
+    "word": "imagine",
+    "partOfSpeech": "verb",
+    "definition": "To form a mental image or concept of something.",
+    "example": "Can you imagine living on another planet?",
+    "chineseTranslation": "想像"
+  },
+  {
+    "id": 813,
+    "word": "imitate",
+    "partOfSpeech": "verb",
+    "definition": "To copy the behavior or actions of someone or something.",
+    "example": "Children often imitate their parents.",
+    "chineseTranslation": "模仿"
+  },
+  {
+    "id": 814,
+    "word": "immediate",
+    "partOfSpeech": "adjective",
+    "definition": "Happening or done without delay.",
+    "example": "The response to the emergency was immediate.",
+    "chineseTranslation": "立即的，直接的"
+  },
+  {
+    "id": 815,
+    "word": "immense",
+    "partOfSpeech": "adjective",
+    "definition": "Extremely large or great.",
+    "example": "They have immense wealth.",
+    "chineseTranslation": "巨大的，廣大的"
+  },
+  {
+    "id": 816,
+    "word": "immigrate",
+    "partOfSpeech": "verb",
+    "definition": "To come to live permanently in a foreign country.",
+    "example": "Many people immigrate to seek better opportunities.",
+    "chineseTranslation": "移民"
+  },
+  {
+    "id": 817,
+    "word": "immune",
+    "partOfSpeech": "adjective",
+    "definition": "Protected or exempt from something, especially disease.",
+    "example": "After vaccination, he became immune to the virus.",
+    "chineseTranslation": "免疫的，有免疫力的"
+  },
+  {
+    "id": 818,
+    "word": "impact",
+    "partOfSpeech": "noun",
+    "definition": "The strong effect or influence of something.",
+    "example": "The impact of the new policy was felt immediately.",
+    "chineseTranslation": "影響，衝擊"
+  },
+  {
+    "id": 819,
+    "word": "impart",
+    "partOfSpeech": "verb",
+    "definition": "To make information known; to communicate.",
+    "example": "The teacher imparted knowledge to the students.",
+    "chineseTranslation": "傳授，告知"
+  },
+  {
+    "id": 820,
+    "word": "impatient",
+    "partOfSpeech": "adjective",
+    "definition": "Easily annoyed by delay or opposition.",
+    "example": "She was impatient waiting for the bus.",
+    "chineseTranslation": "不耐煩的"
+  },
+  {
+    "id": 821,
+    "word": "implement",
+    "partOfSpeech": "verb",
+    "definition": "To put into effect according to a plan or procedure.",
+    "example": "The company implemented new safety measures.",
+    "chineseTranslation": "實施，執行"
+  },
+  {
+    "id": 822,
+    "word": "implication",
+    "partOfSpeech": "noun",
+    "definition": "A possible effect or result of an action or decision.",
+    "example": "The implications of the law are far-reaching.",
+    "chineseTranslation": "含意，暗示"
+  },
+  {
+    "id": 823,
+    "word": "imply",
+    "partOfSpeech": "verb",
+    "definition": "To suggest or express indirectly.",
+    "example": "His tone implied that he was unhappy.",
+    "chineseTranslation": "暗示"
+  },
+  {
+    "id": 824,
+    "word": "import",
+    "partOfSpeech": "verb",
+    "definition": "To bring goods or services into a country from abroad.",
+    "example": "The country imports a lot of electronics.",
+    "chineseTranslation": "進口"
+  },
+  {
+    "id": 825,
+    "word": "importance",
+    "partOfSpeech": "noun",
+    "definition": "The state or fact of being of great significance or value.",
+    "example": "Education is of great importance.",
+    "chineseTranslation": "重要性"
+  },
+  {
+    "id": 826,
+    "word": "important",
+    "partOfSpeech": "adjective",
+    "definition": "Of great significance or value.",
+    "example": "It is important to be punctual.",
+    "chineseTranslation": "重要的"
+  },
+  {
+    "id": 827,
+    "word": "impose",
+    "partOfSpeech": "verb",
+    "definition": "To force something to be accepted or put in place.",
+    "example": "The government imposed new taxes.",
+    "chineseTranslation": "強加，徵稅"
+  },
+  {
+    "id": 828,
+    "word": "impress",
+    "partOfSpeech": "verb",
+    "definition": "To make someone feel admiration or respect.",
+    "example": "Her performance impressed the audience.",
+    "chineseTranslation": "給人深刻印象"
+  },
+  {
+    "id": 829,
+    "word": "improve",
+    "partOfSpeech": "verb",
+    "definition": "To make or become better.",
+    "example": "He improved his English skills.",
+    "chineseTranslation": "改善，提升"
+  },
+  {
+    "id": 830,
+    "word": "impulse",
+    "partOfSpeech": "noun",
+    "definition": "A sudden strong desire or urge to act.",
+    "example": "She bought the dress on impulse.",
+    "chineseTranslation": "衝動"
+  },
+  {
+    "id": 831,
+    "word": "inability",
+    "partOfSpeech": "noun",
+    "definition": "Lack of ability, power, or means to do something.",
+    "example": "His inability to swim caused concern.",
+    "chineseTranslation": "無能，不能"
+  },
+  {
+    "id": 832,
+    "word": "incentive",
+    "partOfSpeech": "noun",
+    "definition": "Something that motivates or encourages someone to do something.",
+    "example": "The company offers bonuses as an incentive.",
+    "chineseTranslation": "刺激，動機"
+  },
+  {
+    "id": 833,
+    "word": "incident",
+    "partOfSpeech": "noun",
+    "definition": "An event or occurrence, often unusual or important.",
+    "example": "There was an incident at the school yesterday.",
+    "chineseTranslation": "事件，事故"
+  },
+  {
+    "id": 834,
+    "word": "incline",
+    "partOfSpeech": "verb",
+    "definition": "To lean or slope in a particular direction; to have a tendency.",
+    "example": "He inclined his head to listen carefully.",
+    "chineseTranslation": "傾向，傾斜"
+  },
+  {
+    "id": 835,
+    "word": "include",
+    "partOfSpeech": "verb",
+    "definition": "To contain or comprise as part of a whole.",
+    "example": "The price includes tax.",
+    "chineseTranslation": "包括"
+  },
+  {
+    "id": 836,
+    "word": "income",
+    "partOfSpeech": "noun",
+    "definition": "Money received, especially on a regular basis, for work or investments.",
+    "example": "She has a high monthly income.",
+    "chineseTranslation": "收入"
+  },
+  {
+    "id": 837,
+    "word": "increase",
+    "partOfSpeech": "verb",
+    "definition": "To become or make greater in size, amount, or degree.",
+    "example": "The company increased production last year.",
+    "chineseTranslation": "增加"
+  },
+  {
+    "id": 838,
+    "word": "independent",
+    "partOfSpeech": "adjective",
+    "definition": "Free from outside control; not depending on others.",
+    "example": "She is an independent thinker.",
+    "chineseTranslation": "獨立的"
+  },
+  {
+    "id": 839,
+    "word": "index",
+    "partOfSpeech": "noun",
+    "definition": "An alphabetical list of names or subjects with references to where they occur.",
+    "example": "The book has an index at the back.",
+    "chineseTranslation": "索引"
+  },
+  {
+    "id": 840,
+    "word": "indicate",
+    "partOfSpeech": "verb",
+    "definition": "To point out or show.",
+    "example": "The sign indicates the direction to the station.",
+    "chineseTranslation": "指示，表明"
+  },
+  {
+    "id": 841,
+    "word": "individual",
+    "partOfSpeech": "noun",
+    "definition": "A single person or thing, especially when considered separately.",
+    "example": "Each individual has rights.",
+    "chineseTranslation": "個人"
+  },
+  {
+    "id": 842,
+    "word": "indoor",
+    "partOfSpeech": "adjective",
+    "definition": "Located or used inside a building.",
+    "example": "We played indoor games during the rain.",
+    "chineseTranslation": "室內的"
+  },
+  {
+    "id": 843,
+    "word": "induce",
+    "partOfSpeech": "verb",
+    "definition": "To cause or bring about.",
+    "example": "The medicine induced sleep.",
+    "chineseTranslation": "引起，誘導"
+  },
+  {
+    "id": 844,
+    "word": "industry",
+    "partOfSpeech": "noun",
+    "definition": "Economic activity concerned with the processing of raw materials and manufacture of goods.",
+    "example": "The steel industry is important to the economy.",
+    "chineseTranslation": "工業，產業"
+  },
+  {
+    "id": 845,
+    "word": "inevitable",
+    "partOfSpeech": "adjective",
+    "definition": "Certain to happen; unavoidable.",
+    "example": "Change is inevitable in life.",
+    "chineseTranslation": "不可避免的"
+  },
+  {
+    "id": 846,
+    "word": "infect",
+    "partOfSpeech": "verb",
+    "definition": "To contaminate with a disease-causing organism.",
+    "example": "The wound became infected.",
+    "chineseTranslation": "感染"
+  },
+  {
+    "id": 847,
+    "word": "infer",
+    "partOfSpeech": "verb",
+    "definition": "To deduce or conclude information from evidence and reasoning.",
+    "example": "From his silence, I inferred he was upset.",
+    "chineseTranslation": "推斷"
+  },
+  {
+    "id": 848,
+    "word": "infinite",
+    "partOfSpeech": "adjective",
+    "definition": "Without limits or end.",
+    "example": "The universe is infinite.",
+    "chineseTranslation": "無限的"
+  },
+  {
+    "id": 849,
+    "word": "inflation",
+    "partOfSpeech": "noun",
+    "definition": "A general increase in prices and fall in the purchasing value of money.",
+    "example": "Inflation has risen this year.",
+    "chineseTranslation": "通貨膨脹"
+  },
+  {
+    "id": 850,
+    "word": "influence",
+    "partOfSpeech": "noun",
+    "definition": "The capacity to have an effect on the character, development, or behavior of someone or something.",
+    "example": "Her influence on the team was significant.",
+    "chineseTranslation": "影響"
+  },
+  {
+    "id": 851,
+    "word": "inform",
+    "partOfSpeech": "verb",
+    "definition": "To give someone facts or information.",
+    "example": "Please inform me of any changes.",
+    "chineseTranslation": "通知，告知"
+  },
+  {
+    "id": 852,
+    "word": "information",
+    "partOfSpeech": "noun",
+    "definition": "Facts provided or learned about something or someone.",
+    "example": "The website provides useful information.",
+    "chineseTranslation": "資訊，信息"
+  },
+  {
+    "id": 853,
+    "word": "initial",
+    "partOfSpeech": "adjective",
+    "definition": "Existing or occurring at the beginning.",
+    "example": "The initial reaction was positive.",
+    "chineseTranslation": "最初的"
+  },
+  {
+    "id": 854,
+    "word": "initiative",
+    "partOfSpeech": "noun",
+    "definition": "The ability to assess and initiate things independently.",
+    "example": "She showed great initiative in the project.",
+    "chineseTranslation": "主動性"
+  },
+  {
+    "id": 855,
+    "word": "injure",
+    "partOfSpeech": "verb",
+    "definition": "To cause physical harm or damage to someone.",
+    "example": "He injured his leg in the accident.",
+    "chineseTranslation": "傷害"
+  },
+  {
+    "id": 856,
+    "word": "injury",
+    "partOfSpeech": "noun",
+    "definition": "Physical harm or damage to a person's body.",
+    "example": "She suffered a serious injury during the game.",
+    "chineseTranslation": "受傷"
+  },
+  {
+    "id": 857,
+    "word": "ink",
+    "partOfSpeech": "noun",
+    "definition": "A colored fluid used for writing, printing, or drawing.",
+    "example": "The pen ran out of ink.",
+    "chineseTranslation": "墨水"
+  },
+  {
+    "id": 858,
+    "word": "inner",
+    "partOfSpeech": "adjective",
+    "definition": "Situated inside or further in; internal.",
+    "example": "She kept her inner thoughts to herself.",
+    "chineseTranslation": "內部的"
+  },
+  {
+    "id": 859,
+    "word": "innocent",
+    "partOfSpeech": "adjective",
+    "definition": "Not guilty of a crime or offense.",
+    "example": "The jury found him innocent.",
+    "chineseTranslation": "無辜的，清白的"
+  },
+  {
+    "id": 860,
+    "word": "input",
+    "partOfSpeech": "noun",
+    "definition": "What is put in, taken in, or operated on by any process or system.",
+    "example": "The data input was incorrect.",
+    "chineseTranslation": "輸入"
+  },
+  {
+    "id": 861,
+    "word": "inquire",
+    "partOfSpeech": "verb",
+    "definition": "To ask for information.",
+    "example": "She inquired about the job opening.",
+    "chineseTranslation": "詢問"
+  },
+  {
+    "id": 862,
+    "word": "insist",
+    "partOfSpeech": "verb",
+    "definition": "To demand something forcefully, not accepting refusal.",
+    "example": "He insisted on paying the bill.",
+    "chineseTranslation": "堅持"
+  },
+  {
+    "id": 863,
+    "word": "inspect",
+    "partOfSpeech": "verb",
+    "definition": "To look at carefully to check for problems or details.",
+    "example": "The engineer inspected the bridge.",
+    "chineseTranslation": "檢查"
+  },
+  {
+    "id": 864,
+    "word": "inspire",
+    "partOfSpeech": "verb",
+    "definition": "To fill someone with the urge or ability to do something.",
+    "example": "Her story inspired many people.",
+    "chineseTranslation": "激勵，啟發"
+  },
+  {
+    "id": 865,
+    "word": "install",
+    "partOfSpeech": "verb",
+    "definition": "To put in place or set up for use.",
+    "example": "They installed new software on the computer.",
+    "chineseTranslation": "安裝"
+  },
+  {
+    "id": 866,
+    "word": "instance",
+    "partOfSpeech": "noun",
+    "definition": "An example or single occurrence of something.",
+    "example": "In this instance, we will make an exception.",
+    "chineseTranslation": "例子，實例"
+  },
+  {
+    "id": 867,
+    "word": "instant",
+    "partOfSpeech": "adjective",
+    "definition": "Happening immediately.",
+    "example": "She gave an instant reply.",
+    "chineseTranslation": "立即的"
+  },
+  {
+    "id": 868,
+    "word": "instead",
+    "partOfSpeech": "adverb",
+    "definition": "As an alternative or substitute.",
+    "example": "We went to the park instead of the museum.",
+    "chineseTranslation": "代替"
+  },
+  {
+    "id": 869,
+    "word": "instinct",
+    "partOfSpeech": "noun",
+    "definition": "An innate, typically fixed pattern of behavior in animals.",
+    "example": "Birds have an instinct to migrate.",
+    "chineseTranslation": "本能"
+  },
+  {
+    "id": 870,
+    "word": "institute",
+    "partOfSpeech": "noun",
+    "definition": "An organization for education or research.",
+    "example": "He works at a research institute.",
+    "chineseTranslation": "學院，研究所"
+  },
+  {
+    "id": 871,
+    "word": "institution",
+    "partOfSpeech": "noun",
+    "definition": "An established organization or foundation.",
+    "example": "The bank is a financial institution.",
+    "chineseTranslation": "機構，制度"
+  },
+  {
+    "id": 872,
+    "word": "instruct",
+    "partOfSpeech": "verb",
+    "definition": "To teach or give orders.",
+    "example": "The coach instructed the players.",
+    "chineseTranslation": "指示，教導"
+  },
+  {
+    "id": 873,
+    "word": "instrument",
+    "partOfSpeech": "noun",
+    "definition": "A tool or device used for a particular purpose.",
+    "example": "The surgeon used a special instrument.",
+    "chineseTranslation": "儀器，工具"
+  },
+  {
+    "id": 874,
+    "word": "insult",
+    "partOfSpeech": "verb",
+    "definition": "To speak or act in a way that is disrespectful or scornful.",
+    "example": "He insulted her in front of everyone.",
+    "chineseTranslation": "侮辱"
+  },
+  {
+    "id": 875,
+    "word": "insurance",
+    "partOfSpeech": "noun",
+    "definition": "A contract or arrangement to provide financial protection.",
+    "example": "She bought health insurance.",
+    "chineseTranslation": "保險"
+  },
+  {
+    "id": 876,
+    "word": "intellectual",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the ability to think and understand ideas.",
+    "example": "He enjoys intellectual discussions.",
+    "chineseTranslation": "智力的"
+  },
+  {
+    "id": 877,
+    "word": "intelligence",
+    "partOfSpeech": "noun",
+    "definition": "The ability to acquire and apply knowledge and skills.",
+    "example": "She has high intelligence.",
+    "chineseTranslation": "智慧，情報"
+  },
+  {
+    "id": 878,
+    "word": "intend",
+    "partOfSpeech": "verb",
+    "definition": "To plan or mean to do something.",
+    "example": "I intend to travel next year.",
+    "chineseTranslation": "打算"
+  },
+  {
+    "id": 879,
+    "word": "intense",
+    "partOfSpeech": "adjective",
+    "definition": "Very strong or extreme.",
+    "example": "The competition was intense.",
+    "chineseTranslation": "強烈的"
+  },
+  {
+    "id": 880,
+    "word": "intention",
+    "partOfSpeech": "noun",
+    "definition": "An aim or plan.",
+    "example": "He had no intention of leaving.",
+    "chineseTranslation": "意圖"
+  },
+  {
+    "id": 881,
+    "word": "interaction",
+    "partOfSpeech": "noun",
+    "definition": "Communication or direct involvement with someone or something.",
+    "example": "There was little interaction between the groups.",
+    "chineseTranslation": "互動"
+  },
+  {
+    "id": 882,
+    "word": "interest",
+    "partOfSpeech": "noun",
+    "definition": "A feeling of wanting to know or learn about something.",
+    "example": "She has a strong interest in music.",
+    "chineseTranslation": "興趣"
+  },
+  {
+    "id": 883,
+    "word": "interesting",
+    "partOfSpeech": "adjective",
+    "definition": "Arousing curiosity or interest.",
+    "example": "That was an interesting book.",
+    "chineseTranslation": "有趣的"
+  },
+  {
+    "id": 884,
+    "word": "interfere",
+    "partOfSpeech": "verb",
+    "definition": "To get involved in a situation where you are not wanted.",
+    "example": "Please don't interfere in my affairs.",
+    "chineseTranslation": "干涉"
+  },
+  {
+    "id": 885,
+    "word": "interior",
+    "partOfSpeech": "noun",
+    "definition": "The inside part of something.",
+    "example": "The car's interior is very comfortable.",
+    "chineseTranslation": "內部"
+  },
+  {
+    "id": 886,
+    "word": "internal",
+    "partOfSpeech": "adjective",
+    "definition": "Inside or within something.",
+    "example": "He suffered internal injuries.",
+    "chineseTranslation": "內部的"
+  },
+  {
+    "id": 887,
+    "word": "international",
+    "partOfSpeech": "adjective",
+    "definition": "Between or involving different countries.",
+    "example": "They signed an international agreement.",
+    "chineseTranslation": "國際的"
+  },
+  {
+    "id": 888,
+    "word": "Internet",
+    "partOfSpeech": "noun",
+    "definition": "A global computer network providing information and communication.",
+    "example": "She found the information on the Internet.",
+    "chineseTranslation": "網際網路"
+  },
+  {
+    "id": 889,
+    "word": "interpret",
+    "partOfSpeech": "verb",
+    "definition": "To explain the meaning of something.",
+    "example": "It is difficult to interpret his handwriting.",
+    "chineseTranslation": "解釋"
+  },
+  {
+    "id": 890,
+    "word": "interrupt",
+    "partOfSpeech": "verb",
+    "definition": "To stop the continuous progress of an activity or process.",
+    "example": "Please don't interrupt me while I'm speaking.",
+    "chineseTranslation": "打斷，中斷"
+  },
+  {
+    "id": 891,
+    "word": "interval",
+    "partOfSpeech": "noun",
+    "definition": "A period of time between events.",
+    "example": "There was a short interval between the shows.",
+    "chineseTranslation": "間隔，間歇"
+  },
+  {
+    "id": 892,
+    "word": "interview",
+    "partOfSpeech": "noun",
+    "definition": "A meeting to assess someone's suitability for a job or position.",
+    "example": "She has an interview tomorrow.",
+    "chineseTranslation": "面試"
+  },
+  {
+    "id": 893,
+    "word": "introduce",
+    "partOfSpeech": "verb",
+    "definition": "To bring something into use or operation for the first time.",
+    "example": "They introduced a new product line.",
+    "chineseTranslation": "介紹，引進"
+  },
+  {
+    "id": 894,
+    "word": "introduction",
+    "partOfSpeech": "noun",
+    "definition": "The act of bringing something into use or operation.",
+    "example": "The introduction of the policy caused debate.",
+    "chineseTranslation": "介紹，引言"
+  },
+  {
+    "id": 895,
+    "word": "invasion",
+    "partOfSpeech": "noun",
+    "definition": "An instance of invading a country or region with an armed force.",
+    "example": "The invasion led to a long war.",
+    "chineseTranslation": "入侵"
+  },
+  {
+    "id": 896,
+    "word": "invent",
+    "partOfSpeech": "verb",
+    "definition": "To create or design something that has not existed before.",
+    "example": "He invented a new type of engine.",
+    "chineseTranslation": "發明"
+  },
+  {
+    "id": 897,
+    "word": "invest",
+    "partOfSpeech": "verb",
+    "definition": "To put money into financial schemes or shares with the expectation of profit.",
+    "example": "They invested in real estate.",
+    "chineseTranslation": "投資"
+  },
+  {
+    "id": 898,
+    "word": "investigate",
+    "partOfSpeech": "verb",
+    "definition": "To carry out a systematic or formal inquiry to discover facts.",
+    "example": "The police investigated the crime.",
+    "chineseTranslation": "調查"
+  },
+  {
+    "id": 899,
+    "word": "investment",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of investing money for profit.",
+    "example": "Real estate is a popular investment.",
+    "chineseTranslation": "投資"
+  },
+  {
+    "id": 900,
+    "word": "invite",
+    "partOfSpeech": "verb",
+    "definition": "To ask someone to go somewhere or do something.",
+    "example": "They invited us to the party.",
+    "chineseTranslation": "邀請"
+  },
+  {
+    "id": 901,
+    "word": "involve",
+    "partOfSpeech": "verb",
+    "definition": "To include or affect someone or something.",
+    "example": "The project involves many people.",
+    "chineseTranslation": "涉及，包含"
+  },
+  {
+    "id": 902,
+    "word": "iron",
+    "partOfSpeech": "noun",
+    "definition": "A strong, hard magnetic silvery-gray metal.",
+    "example": "The bridge is made of iron.",
+    "chineseTranslation": "鐵"
+  },
+  {
+    "id": 903,
+    "word": "irregular",
+    "partOfSpeech": "adjective",
+    "definition": "Not following a pattern or rule.",
+    "example": "The building has an irregular shape.",
+    "chineseTranslation": "不規則的"
+  },
+  {
+    "id": 904,
+    "word": "island",
+    "partOfSpeech": "noun",
+    "definition": "A piece of land surrounded by water.",
+    "example": "They spent their vacation on a tropical island.",
+    "chineseTranslation": "島"
+  },
+  {
+    "id": 905,
+    "word": "isolate",
+    "partOfSpeech": "verb",
+    "definition": "To separate from others; to set apart.",
+    "example": "The patient was isolated to prevent infection.",
+    "chineseTranslation": "隔離，使孤立"
+  },
+  {
+    "id": 906,
+    "word": "isolation",
+    "partOfSpeech": "noun",
+    "definition": "The state of being separated from others.",
+    "example": "The isolation of the village made communication difficult.",
+    "chineseTranslation": "孤立，隔離"
+  }
+]

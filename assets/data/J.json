@@ -1,0 +1,34 @@
+[
+  {
+    "id": 907,
+    "word": "judicial",
+    "partOfSpeech": "adjective",
+    "definition": "Of, by, or appropriate to a court or judge.",
+    "example": "The judicial system ensures that justice is served.",
+    "chineseTranslation": "司法的，法庭的"
+  },
+  {
+    "id": 908,
+    "word": "justification",
+    "partOfSpeech": "noun",
+    "definition": "The action of showing something to be right or reasonable.",
+    "example": "He provided a clear justification for his decision.",
+    "chineseTranslation": "正當理由，辯護"
+  },
+  {
+    "id": 909,
+    "word": "jurisdiction",
+    "partOfSpeech": "noun",
+    "definition": "The official power to make legal decisions and judgments.",
+    "example": "The court has no jurisdiction over foreign cases.",
+    "chineseTranslation": "司法權，管轄權"
+  },
+  {
+    "id": 910,
+    "word": "just",
+    "partOfSpeech": "adjective",
+    "definition": "Based on or behaving according to what is morally right and fair.",
+    "example": "It was a just decision made by the judge.",
+    "chineseTranslation": "公正的，正義的"
+  }
+]

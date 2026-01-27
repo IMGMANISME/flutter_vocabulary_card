@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1060,
+    "word": "objection",
+    "partOfSpeech": "noun",
+    "definition": "An expression or feeling of disapproval or opposition.",
+    "example": "The proposal was accepted without objection.",
+    "chineseTranslation": "反對，異議"
+  },
+  {
+    "id": 1061,
+    "word": "oblige",
+    "partOfSpeech": "verb",
+    "definition": "Make someone legally or morally bound to do something.",
+    "example": "They were obliged to follow the rules.",
+    "chineseTranslation": "迫使，義務"
+  },
+  {
+    "id": 1062,
+    "word": "obsess",
+    "partOfSpeech": "verb",
+    "definition": "Preoccupy or fill the mind of someone continually.",
+    "example": "She tends to obsess over minor details.",
+    "chineseTranslation": "著迷，執著於"
+  },
+  {
+    "id": 1063,
+    "word": "obsession",
+    "partOfSpeech": "noun",
+    "definition": "The state of being obsessed with someone or something.",
+    "example": "His obsession with perfection slowed down the project.",
+    "chineseTranslation": "著迷，痴迷"
+  },
+  {
+    "id": 1064,
+    "word": "occasional",
+    "partOfSpeech": "adjective",
+    "definition": "Occurring, appearing, or done infrequently and irregularly.",
+    "example": "She enjoys an occasional cup of coffee.",
+    "chineseTranslation": "偶爾的"
+  },
+  {
+    "id": 1065,
+    "word": "occurrence",
+    "partOfSpeech": "noun",
+    "definition": "An incident or event.",
+    "example": "Flooding is a common occurrence in this area.",
+    "chineseTranslation": "事件，發生"
+  },
+  {
+    "id": 1066,
+    "word": "odds",
+    "partOfSpeech": "noun",
+    "definition": "The likelihood of a particular outcome.",
+    "example": "The odds of winning the lottery are very low.",
+    "chineseTranslation": "機率，可能性"
+  },
+  {
+    "id": 1067,
+    "word": "offering",
+    "partOfSpeech": "noun",
+    "definition": "A thing offered, especially as a gift or contribution.",
+    "example": "The company presented its latest offering at the tech fair.",
+    "chineseTranslation": "提供，產品"
+  },
+  {
+    "id": 1068,
+    "word": "offspring",
+    "partOfSpeech": "noun",
+    "definition": "A person's child or children; the young of an animal.",
+    "example": "The bird was feeding its offspring.",
+    "chineseTranslation": "子女，後代"
+  },
+  {
+    "id": 1069,
+    "word": "operational",
+    "partOfSpeech": "adjective",
+    "definition": "In or ready for use; functioning.",
+    "example": "The new system is now fully operational.",
+    "chineseTranslation": "運作的，操作上的"
+  },
+  {
+    "id": 1070,
+    "word": "opt",
+    "partOfSpeech": "verb",
+    "definition": "Make a choice from a range of possibilities.",
+    "example": "Many students opt to study abroad.",
+    "chineseTranslation": "選擇"
+  },
+  {
+    "id": 1071,
+    "word": "optical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to sight or vision.",
+    "example": "The microscope uses advanced optical technology.",
+    "chineseTranslation": "視覺的，光學的"
+  },
+  {
+    "id": 1072,
+    "word": "optimism",
+    "partOfSpeech": "noun",
+    "definition": "Hopefulness and confidence about the future or the successful outcome of something.",
+    "example": "Her optimism inspired the entire team.",
+    "chineseTranslation": "樂觀"
+  },
+  {
+    "id": 1073,
+    "word": "oral",
+    "partOfSpeech": "adjective",
+    "definition": "Spoken rather than written; relating to the mouth.",
+    "example": "The students had to give an oral presentation.",
+    "chineseTranslation": "口頭的，口腔的"
+  },
+  {
+    "id": 1074,
+    "word": "organisational",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the way in which something is organized.",
+    "example": "She has strong organisational skills.",
+    "chineseTranslation": "組織的"
+  },
+  {
+    "id": 1075,
+    "word": "orientation",
+    "partOfSpeech": "noun",
+    "definition": "The determination of the relative position of something or someone; training or introduction.",
+    "example": "The new employees attended an orientation session.",
+    "chineseTranslation": "方向，培訓"
+  },
+  {
+    "id": 1076,
+    "word": "originate",
+    "partOfSpeech": "verb",
+    "definition": "Have a specified beginning or cause.",
+    "example": "The idea originated from a casual conversation.",
+    "chineseTranslation": "起源，發起"
+  },
+  {
+    "id": 1077,
+    "word": "outbreak",
+    "partOfSpeech": "noun",
+    "definition": "A sudden occurrence of something unwelcome, such as war or disease.",
+    "example": "There was an outbreak of flu in the city.",
+    "chineseTranslation": "爆發"
+  },
+  {
+    "id": 1078,
+    "word": "outing",
+    "partOfSpeech": "noun",
+    "definition": "A short trip taken for pleasure or education.",
+    "example": "The family went on a weekend outing.",
+    "chineseTranslation": "郊遊，外出"
+  },
+  {
+    "id": 1079,
+    "word": "outlet",
+    "partOfSpeech": "noun",
+    "definition": "A pipe or hole through which something may be released; a means of expression.",
+    "example": "The teenager used music as an outlet for his emotions.",
+    "chineseTranslation": "出口，宣洩方式"
+  },
+  {
+    "id": 1080,
+    "word": "outlook",
+    "partOfSpeech": "noun",
+    "definition": "A person's point of view or general attitude to life; the likely future.",
+    "example": "The economic outlook is improving.",
+    "chineseTranslation": "觀點，前景"
+  },
+  {
+    "id": 1081,
+    "word": "outrage",
+    "partOfSpeech": "noun",
+    "definition": "An extremely strong reaction of anger, shock, or indignation.",
+    "example": "The decision caused public outrage.",
+    "chineseTranslation": "憤慨，暴行"
+  },
+  {
+    "id": 1082,
+    "word": "outsider",
+    "partOfSpeech": "noun",
+    "definition": "A person who does not belong to a particular group.",
+    "example": "As a newcomer, he felt like an outsider.",
+    "chineseTranslation": "局外人"
+  },
+  {
+    "id": 1083,
+    "word": "overlook",
+    "partOfSpeech": "verb",
+    "definition": "Fail to notice something.",
+    "example": "Don't overlook the details.",
+    "chineseTranslation": "忽略"
+  },
+  {
+    "id": 1084,
+    "word": "overly",
+    "partOfSpeech": "adverb",
+    "definition": "Excessively; too much.",
+    "example": "He is not overly concerned about the result.",
+    "chineseTranslation": "過於，太"
+  },
+  {
+    "id": 1085,
+    "word": "oversee",
+    "partOfSpeech": "verb",
+    "definition": "Supervise a person or their work.",
+    "example": "She was hired to oversee the project.",
+    "chineseTranslation": "監督"
+  },
+  {
+    "id": 1086,
+    "word": "overturn",
+    "partOfSpeech": "verb",
+    "definition": "Tip something over so that it is on its top or side.",
+    "example": "The boat overturned in the storm.",
+    "chineseTranslation": "推翻，翻倒"
+  },
+  {
+    "id": 1087,
+    "word": "overwhelm",
+    "partOfSpeech": "verb",
+    "definition": "Bury or drown beneath a huge mass; give too much of a thing to someone.",
+    "example": "She was overwhelmed by the amount of work.",
+    "chineseTranslation": "壓倒，淹沒，使不知所措"
+  },
+  {
+    "id": 1088,
+    "word": "overwhelming",
+    "partOfSpeech": "adjective",
+    "definition": "Very great in amount; overpowering.",
+    "example": "The support from the community was overwhelming.",
+    "chineseTranslation": "壓倒性的，巨大的"
+  }
+]

@@ -1,0 +1,260 @@
+
+
+[
+  {
+    "id": 767,
+    "word": "hail",
+    "partOfSpeech": "verb, noun",
+    "definition": "to greet or acclaim enthusiastically; small balls of ice that fall from the sky",
+    "example": "The crowd hailed the hero with cheers. / Hail damaged the crops last night.",
+    "chineseTranslation": "歡呼，喝采；冰雹"
+  },
+  {
+    "id": 768,
+    "word": "halt",
+    "partOfSpeech": "verb, noun",
+    "definition": "to stop or cause to stop; a stop or pause",
+    "example": "The train halted at the station. / The project came to a halt.",
+    "chineseTranslation": "停止，暫停"
+  },
+  {
+    "id": 769,
+    "word": "hamper",
+    "partOfSpeech": "verb",
+    "definition": "to hinder or impede the movement or progress of something",
+    "example": "Heavy rain hampered the rescue efforts.",
+    "chineseTranslation": "妨礙，阻礙"
+  },
+  {
+    "id": 770,
+    "word": "handicap",
+    "partOfSpeech": "noun, verb",
+    "definition": "a disadvantage that makes achievement difficult; to place at a disadvantage",
+    "example": "His lack of experience was a handicap. / The rules handicapped the team.",
+    "chineseTranslation": "障礙，不利條件"
+  },
+  {
+    "id": 771,
+    "word": "handy",
+    "partOfSpeech": "adjective",
+    "definition": "useful or convenient; skillful with hands",
+    "example": "A pocketknife is a handy tool. / She is very handy around the house.",
+    "chineseTranslation": "方便的；靈巧的"
+  },
+  {
+    "id": 772,
+    "word": "harass",
+    "partOfSpeech": "verb",
+    "definition": "to disturb or bother persistently; to trouble by repeated attacks",
+    "example": "He claimed that his boss harassed him at work.",
+    "chineseTranslation": "騷擾，煩擾"
+  },
+  {
+    "id": 773,
+    "word": "harbor",
+    "partOfSpeech": "noun, verb",
+    "definition": "a sheltered place for ships; to give shelter or refuge",
+    "example": "The ship stayed in the harbor. / She harbored a secret.",
+    "chineseTranslation": "港口；庇護，心懷"
+  },
+  {
+    "id": 774,
+    "word": "hardship",
+    "partOfSpeech": "noun",
+    "definition": "severe suffering or deprivation",
+    "example": "They suffered many hardships during the war.",
+    "chineseTranslation": "困苦，艱難"
+  },
+  {
+    "id": 775,
+    "word": "harmonious",
+    "partOfSpeech": "adjective",
+    "definition": "forming a pleasing or consistent whole; free from disagreement",
+    "example": "They have a harmonious relationship.",
+    "chineseTranslation": "和諧的，協調的"
+  },
+  {
+    "id": 776,
+    "word": "harsh",
+    "partOfSpeech": "adjective",
+    "definition": "unpleasantly rough or severe",
+    "example": "The harsh winter made travel difficult.",
+    "chineseTranslation": "嚴酷的，刺耳的"
+  },
+  {
+    "id": 777,
+    "word": "hasten",
+    "partOfSpeech": "verb",
+    "definition": "to move or act quickly; to accelerate",
+    "example": "She hastened to finish her homework.",
+    "chineseTranslation": "加速，趕緊"
+  },
+  {
+    "id": 778,
+    "word": "haul",
+    "partOfSpeech": "verb, noun",
+    "definition": "to pull or drag with effort; the amount taken or won at one time",
+    "example": "They hauled the boat out of the water. / The police seized a large haul of drugs.",
+    "chineseTranslation": "拖拉；收穫量"
+  },
+  {
+    "id": 779,
+    "word": "haunt",
+    "partOfSpeech": "verb, noun",
+    "definition": "to appear in or inhabit as a ghost; a place frequently visited",
+    "example": "The old house is said to be haunted. / This café is my favorite haunt.",
+    "chineseTranslation": "常出沒於；常去的地方"
+  },
+  {
+    "id": 780,
+    "word": "hazard",
+    "partOfSpeech": "noun, verb",
+    "definition": "a danger or risk; to venture or risk something",
+    "example": "Wet floors are a hazard. / He hazarded a guess.",
+    "chineseTranslation": "危險，冒險"
+  },
+  {
+    "id": 781,
+    "word": "hazardous",
+    "partOfSpeech": "adjective",
+    "definition": "dangerous or risky",
+    "example": "Handling chemicals can be hazardous.",
+    "chineseTranslation": "危險的"
+  },
+  {
+    "id": 782,
+    "word": "hectic",
+    "partOfSpeech": "adjective",
+    "definition": "full of activity, or very busy and fast",
+    "example": "She has a hectic schedule.",
+    "chineseTranslation": "忙亂的，繁忙的"
+  },
+  {
+    "id": 783,
+    "word": "heed",
+    "partOfSpeech": "verb, noun",
+    "definition": "to pay attention to; careful attention",
+    "example": "He failed to heed the warning. / Take heed of her advice.",
+    "chineseTranslation": "注意，留心"
+  },
+  {
+    "id": 784,
+    "word": "hereditary",
+    "partOfSpeech": "adjective",
+    "definition": "passed from parent to child through genes",
+    "example": "Eye color is a hereditary trait.",
+    "chineseTranslation": "遺傳的"
+  },
+  {
+    "id": 785,
+    "word": "hesitate",
+    "partOfSpeech": "verb",
+    "definition": "to pause before saying or doing something, usually through uncertainty",
+    "example": "He hesitated before answering the question.",
+    "chineseTranslation": "猶豫，遲疑"
+  },
+  {
+    "id": 786,
+    "word": "hierarchy",
+    "partOfSpeech": "noun",
+    "definition": "a system in which people or things are arranged according to their importance",
+    "example": "He rose quickly through the corporate hierarchy.",
+    "chineseTranslation": "階級制度，等級制度"
+  },
+  {
+    "id": 787,
+    "word": "hinder",
+    "partOfSpeech": "verb",
+    "definition": "to make it difficult for something to develop or succeed",
+    "example": "Bad weather hindered our progress.",
+    "chineseTranslation": "阻礙，妨礙"
+  },
+  {
+    "id": 788,
+    "word": "hoist",
+    "partOfSpeech": "verb",
+    "definition": "to raise or lift something, often with a rope or machine",
+    "example": "They hoisted the flag at sunrise.",
+    "chineseTranslation": "升起，吊起"
+  },
+  {
+    "id": 789,
+    "word": "hollow",
+    "partOfSpeech": "adjective, noun",
+    "definition": "having a hole or empty space inside; a hole or depression in something",
+    "example": "The tree trunk was hollow. / They found a hollow in the ground.",
+    "chineseTranslation": "中空的；洞"
+  },
+  {
+    "id": 790,
+    "word": "hostile",
+    "partOfSpeech": "adjective",
+    "definition": "unfriendly; antagonistic",
+    "example": "The two countries have a hostile relationship.",
+    "chineseTranslation": "敵對的，不友善的"
+  },
+  {
+    "id": 791,
+    "word": "hover",
+    "partOfSpeech": "verb",
+    "definition": "to remain in one place in the air",
+    "example": "A helicopter hovered over the building.",
+    "chineseTranslation": "盤旋，徘徊"
+  },
+  {
+    "id": 792,
+    "word": "humble",
+    "partOfSpeech": "adjective",
+    "definition": "having or showing a modest or low estimate of one's importance",
+    "example": "He is very humble despite his success.",
+    "chineseTranslation": "謙虛的，卑微的"
+  },
+  {
+    "id": 793,
+    "word": "humid",
+    "partOfSpeech": "adjective",
+    "definition": "having a large amount of water or moisture in the air",
+    "example": "The weather is hot and humid today.",
+    "chineseTranslation": "潮濕的"
+  },
+  {
+    "id": 794,
+    "word": "humiliate",
+    "partOfSpeech": "verb",
+    "definition": "to make someone feel ashamed or foolish",
+    "example": "He was humiliated in front of his classmates.",
+    "chineseTranslation": "羞辱，使丟臉"
+  },
+  {
+    "id": 795,
+    "word": "hurl",
+    "partOfSpeech": "verb",
+    "definition": "to throw something with force",
+    "example": "He hurled a rock at the window.",
+    "chineseTranslation": "用力投擲"
+  },
+  {
+    "id": 796,
+    "word": "hygiene",
+    "partOfSpeech": "noun",
+    "definition": "conditions or practices conducive to maintaining health and preventing disease",
+    "example": "Good hygiene is essential for health.",
+    "chineseTranslation": "衛生"
+  },
+  {
+    "id": 797,
+    "word": "hypothesis",
+    "partOfSpeech": "noun",
+    "definition": "a proposed explanation made on the basis of limited evidence",
+    "example": "The experiment will test the scientist's hypothesis.",
+    "chineseTranslation": "假設，假說"
+  },
+  {
+    "id": 798,
+    "word": "hydrogen",
+    "partOfSpeech": "noun",
+    "definition": "a colorless, odorless, highly flammable gas, the chemical element of atomic number 1",
+    "example": "Water is made up of hydrogen and oxygen.",
+    "chineseTranslation": "氫"
+  }
+]

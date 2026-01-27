@@ -1,0 +1,116 @@
+
+
+[
+  {
+    "id": 1484,
+    "word": "unconstitutional",
+    "partOfSpeech": "adjective",
+    "definition": "Not in accordance with a political constitution, especially the US Constitution, or with procedural rules.",
+    "example": "The law was declared unconstitutional by the Supreme Court.",
+    "chineseTranslation": "違憲的"
+  },
+  {
+    "id": 1485,
+    "word": "undergraduate",
+    "partOfSpeech": "noun",
+    "definition": "A student at a college or university who has not yet earned a bachelor's or equivalent degree.",
+    "example": "She is an undergraduate studying biology.",
+    "chineseTranslation": "大學生，未取得學位者"
+  },
+  {
+    "id": 1486,
+    "word": "underlying",
+    "partOfSpeech": "adjective",
+    "definition": "Be the cause or basis of something.",
+    "example": "The underlying cause of the problem was a lack of funding.",
+    "chineseTranslation": "根本的，潛在的"
+  },
+  {
+    "id": 1487,
+    "word": "undermine",
+    "partOfSpeech": "verb",
+    "definition": "Erode the base or foundation of something; damage or weaken someone or something gradually.",
+    "example": "His actions undermined her authority.",
+    "chineseTranslation": "削弱，破壞"
+  },
+  {
+    "id": 1488,
+    "word": "undoubtedly",
+    "partOfSpeech": "adverb",
+    "definition": "Without doubt; certainly.",
+    "example": "She will undoubtedly succeed in her career.",
+    "chineseTranslation": "毫無疑問地"
+  },
+  {
+    "id": 1489,
+    "word": "unify",
+    "partOfSpeech": "verb",
+    "definition": "Make or become united, uniform, or whole.",
+    "example": "The leader's speech helped unify the country.",
+    "chineseTranslation": "統一，使一致"
+  },
+  {
+    "id": 1490,
+    "word": "unprecedented",
+    "partOfSpeech": "adjective",
+    "definition": "Never done or known before.",
+    "example": "The pandemic created an unprecedented situation worldwide.",
+    "chineseTranslation": "史無前例的"
+  },
+  {
+    "id": 1491,
+    "word": "unveil",
+    "partOfSpeech": "verb",
+    "definition": "Remove a veil or covering from, especially in a ceremonial way.",
+    "example": "The company will unveil its new product next week.",
+    "chineseTranslation": "揭幕，公布"
+  },
+  {
+    "id": 1492,
+    "word": "upcoming",
+    "partOfSpeech": "adjective",
+    "definition": "About to happen; forthcoming.",
+    "example": "The upcoming concert has already sold out.",
+    "chineseTranslation": "即將到來的"
+  },
+  {
+    "id": 1493,
+    "word": "upgrade",
+    "partOfSpeech": "verb",
+    "definition": "Raise something to a higher standard, in particular improve equipment or machinery by adding or replacing components.",
+    "example": "They decided to upgrade the computer system.",
+    "chineseTranslation": "升級，提高"
+  },
+  {
+    "id": 1494,
+    "word": "uphold",
+    "partOfSpeech": "verb",
+    "definition": "Confirm or support something that has been questioned.",
+    "example": "The court upheld the decision.",
+    "chineseTranslation": "維護，支持"
+  },
+  {
+    "id": 1495,
+    "word": "utility",
+    "partOfSpeech": "noun",
+    "definition": "The state of being useful, profitable, or beneficial.",
+    "example": "Water and electricity are essential public utilities.",
+    "chineseTranslation": "實用，公用事業"
+  },
+  {
+    "id": 1496,
+    "word": "utilise",
+    "partOfSpeech": "verb",
+    "definition": "Make practical and effective use of something.",
+    "example": "We must utilise available resources efficiently.",
+    "chineseTranslation": "利用，使用"
+  },
+  {
+    "id": 1497,
+    "word": "utterly",
+    "partOfSpeech": "adverb",
+    "definition": "Completely and without qualification; absolutely.",
+    "example": "The movie was utterly disappointing.",
+    "chineseTranslation": "完全地，徹底地"
+  }
+]

@@ -1,0 +1,793 @@
+[
+  {
+    "id": 1089,
+    "word": "pad",
+    "partOfSpeech": "noun",
+    "definition": "A thick piece of soft material used to protect or support something.",
+    "example": "She placed a pad under the box to prevent scratches.",
+    "chineseTranslation": "墊子，襯墊"
+  },
+  {
+    "id": 1090,
+    "word": "parameter",
+    "partOfSpeech": "noun",
+    "definition": "A numerical or other measurable factor forming one of a set that defines a system or sets the conditions of its operation.",
+    "example": "You can adjust the parameters of the program for better performance.",
+    "chineseTranslation": "參數"
+  },
+  {
+    "id": 1091,
+    "word": "parental",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to a person's parents.",
+    "example": "Parental guidance is advised for this movie.",
+    "chineseTranslation": "父母的"
+  },
+  {
+    "id": 1092,
+    "word": "parliament",
+    "partOfSpeech": "noun",
+    "definition": "The highest legislature, consisting of the sovereign, the House of Lords, and the House of Commons.",
+    "example": "The law was passed by parliament.",
+    "chineseTranslation": "議會，國會"
+  },
+  {
+    "id": 1093,
+    "word": "partial",
+    "partOfSpeech": "adjective",
+    "definition": "Existing only in part; incomplete.",
+    "example": "The building suffered partial damage in the fire.",
+    "chineseTranslation": "部分的，不完全的"
+  },
+  {
+    "id": 1094,
+    "word": "partially",
+    "partOfSpeech": "adverb",
+    "definition": "Only in part; to a limited extent.",
+    "example": "The road was partially blocked by fallen trees.",
+    "chineseTranslation": "部分地"
+  },
+  {
+    "id": 1095,
+    "word": "passing",
+    "partOfSpeech": "noun",
+    "definition": "The action of passing or moving past something; death.",
+    "example": "His passing was a great loss to the community.",
+    "chineseTranslation": "經過，逝世"
+  },
+  {
+    "id": 1096,
+    "word": "passive",
+    "partOfSpeech": "adjective",
+    "definition": "Accepting or allowing what happens or what others do, without active response or resistance.",
+    "example": "He played a passive role in the discussion.",
+    "chineseTranslation": "被動的"
+  },
+  {
+    "id": 1097,
+    "word": "pastor",
+    "partOfSpeech": "noun",
+    "definition": "A minister in charge of a Christian church or congregation.",
+    "example": "The pastor delivered a heartfelt sermon.",
+    "chineseTranslation": "牧師"
+  },
+  {
+    "id": 1098,
+    "word": "patent",
+    "partOfSpeech": "noun",
+    "definition": "A government authority or license conferring a right or title for a set period.",
+    "example": "The company applied for a patent on its new technology.",
+    "chineseTranslation": "專利"
+  },
+  {
+    "id": 1099,
+    "word": "pathway",
+    "partOfSpeech": "noun",
+    "definition": "A path or track laid down for walking or made by continual treading.",
+    "example": "A narrow pathway led to the garden.",
+    "chineseTranslation": "小徑，途徑"
+  },
+  {
+    "id": 1100,
+    "word": "patrol",
+    "partOfSpeech": "verb",
+    "definition": "Keep watch over an area by regularly walking or traveling around it.",
+    "example": "Police officers patrol the streets at night.",
+    "chineseTranslation": "巡邏"
+  },
+  {
+    "id": 1101,
+    "word": "patron",
+    "partOfSpeech": "noun",
+    "definition": "A person who gives financial or other support to a person, organization, cause, or activity.",
+    "example": "The museum relies on patrons for funding.",
+    "chineseTranslation": "贊助人"
+  },
+  {
+    "id": 1102,
+    "word": "peak",
+    "partOfSpeech": "noun",
+    "definition": "The pointed top of a mountain; the highest level of something.",
+    "example": "The mountain peak was covered in snow.",
+    "chineseTranslation": "山峰，巔峰"
+  },
+  {
+    "id": 1103,
+    "word": "peasant",
+    "partOfSpeech": "noun",
+    "definition": "A poor farmer of low social status who owns or rents a small piece of land for cultivation.",
+    "example": "The story is set in a small peasant village.",
+    "chineseTranslation": "農民"
+  },
+  {
+    "id": 1104,
+    "word": "peculiar",
+    "partOfSpeech": "adjective",
+    "definition": "Strange or odd; unusual.",
+    "example": "There was something peculiar about his behavior.",
+    "chineseTranslation": "奇怪的，特有的"
+  },
+  {
+    "id": 1105,
+    "word": "pension",
+    "partOfSpeech": "noun",
+    "definition": "A regular payment made during a person's retirement from an investment fund to which that person or their employer has contributed during their working life.",
+    "example": "He lives comfortably on his pension.",
+    "chineseTranslation": "退休金"
+  },
+  {
+    "id": 1106,
+    "word": "persist",
+    "partOfSpeech": "verb",
+    "definition": "Continue firmly or obstinately in an opinion or a course of action despite difficulty or opposition.",
+    "example": "She persisted in her efforts to improve.",
+    "chineseTranslation": "堅持，持續"
+  },
+  {
+    "id": 1107,
+    "word": "persistent",
+    "partOfSpeech": "adjective",
+    "definition": "Continuing firmly or obstinately in a course of action in spite of difficulty or opposition.",
+    "example": "Her persistent questions annoyed everyone.",
+    "chineseTranslation": "持續的，堅持的"
+  },
+  {
+    "id": 1108,
+    "word": "personnel",
+    "partOfSpeech": "noun",
+    "definition": "People employed in an organization or engaged in an organized undertaking.",
+    "example": "All personnel must attend the safety training.",
+    "chineseTranslation": "人員，員工"
+  },
+  {
+    "id": 1109,
+    "word": "petition",
+    "partOfSpeech": "noun",
+    "definition": "A formal written request, typically one signed by many people, appealing to authority with respect to a particular cause.",
+    "example": "They submitted a petition to stop the construction.",
+    "chineseTranslation": "請願書"
+  },
+  {
+    "id": 1110,
+    "word": "philosopher",
+    "partOfSpeech": "noun",
+    "definition": "A person engaged or learned in philosophy, especially as an academic discipline.",
+    "example": "Socrates is one of the most famous philosophers in history.",
+    "chineseTranslation": "哲學家"
+  },
+  {
+    "id": 1111,
+    "word": "philosophical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+    "example": "They had a deep philosophical discussion.",
+    "chineseTranslation": "哲學的"
+  },
+  {
+    "id": 1112,
+    "word": "pioneer",
+    "partOfSpeech": "noun",
+    "definition": "A person who is among the first to explore or settle a new country or area.",
+    "example": "She is a pioneer in medical research.",
+    "chineseTranslation": "先驅，開拓者"
+  },
+  {
+    "id": 1113,
+    "word": "pipeline",
+    "partOfSpeech": "noun",
+    "definition": "A long pipe, typically underground, for conveying oil, gas, etc. over long distances.",
+    "example": "The oil pipeline stretches across the country.",
+    "chineseTranslation": "管道"
+  },
+  {
+    "id": 1114,
+    "word": "pirate",
+    "partOfSpeech": "noun",
+    "definition": "A person who attacks and robs ships at sea.",
+    "example": "The pirates captured the cargo ship.",
+    "chineseTranslation": "海盜"
+  },
+  {
+    "id": 1115,
+    "word": "pit",
+    "partOfSpeech": "noun",
+    "definition": "A large hole in the ground.",
+    "example": "They dug a pit to plant the tree.",
+    "chineseTranslation": "坑"
+  },
+  {
+    "id": 1116,
+    "word": "plea",
+    "partOfSpeech": "noun",
+    "definition": "A request made in an urgent and emotional manner; a formal statement by or on behalf of a defendant.",
+    "example": "He made a plea for mercy.",
+    "chineseTranslation": "懇求，抗辯"
+  },
+  {
+    "id": 1117,
+    "word": "plead",
+    "partOfSpeech": "verb",
+    "definition": "Make an emotional appeal; present and argue for a position in court.",
+    "example": "She pleaded with him to stay.",
+    "chineseTranslation": "懇求，辯護"
+  },
+  {
+    "id": 1118,
+    "word": "pledge",
+    "partOfSpeech": "noun",
+    "definition": "A solemn promise or undertaking.",
+    "example": "He made a pledge to donate to charity.",
+    "chineseTranslation": "誓言，承諾"
+  },
+  {
+    "id": 1119,
+    "word": "plug",
+    "partOfSpeech": "noun",
+    "definition": "An object used to fill a hole tightly; a device for making an electrical connection.",
+    "example": "She pulled the plug out of the socket.",
+    "chineseTranslation": "塞子，插頭"
+  },
+  {
+    "id": 1120,
+    "word": "plunge",
+    "partOfSpeech": "verb",
+    "definition": "Jump or dive quickly and energetically.",
+    "example": "He plunged into the water.",
+    "chineseTranslation": "投入，跳入"
+  },
+  {
+    "id": 1121,
+    "word": "pole",
+    "partOfSpeech": "noun",
+    "definition": "A long, slender, rounded piece of wood or metal, typically used with one end placed in the ground as a support for something.",
+    "example": "He climbed the flag pole.",
+    "chineseTranslation": "桿，柱"
+  },
+  {
+    "id": 1122,
+    "word": "poll",
+    "partOfSpeech": "noun",
+    "definition": "The process of voting in an election; a survey of public opinion.",
+    "example": "The latest poll shows the candidate in the lead.",
+    "chineseTranslation": "投票，民意調查"
+  },
+  {
+    "id": 1123,
+    "word": "pond",
+    "partOfSpeech": "noun",
+    "definition": "A small body of still water formed naturally or by artificial means.",
+    "example": "The ducks were swimming in the pond.",
+    "chineseTranslation": "池塘"
+  },
+  {
+    "id": 1124,
+    "word": "pop",
+    "partOfSpeech": "verb",
+    "definition": "Make a light explosive sound; cause to burst open with a pop.",
+    "example": "The balloon popped suddenly.",
+    "chineseTranslation": "發出砰的一聲，突然打開"
+  },
+  {
+    "id": 1125,
+    "word": "portfolio",
+    "partOfSpeech": "noun",
+    "definition": "A large, thin, flat case for loose sheets of paper such as drawings or maps; a range of investments held by a person or organization.",
+    "example": "She showed her design portfolio to the client.",
+    "chineseTranslation": "資料夾，投資組合"
+  },
+  {
+    "id": 1126,
+    "word": "portray",
+    "partOfSpeech": "verb",
+    "definition": "Depict someone or something in a work of art or literature; describe in a particular way.",
+    "example": "The film portrays the struggles of young artists.",
+    "chineseTranslation": "描繪，刻畫"
+  },
+  {
+    "id": 1127,
+    "word": "postpone",
+    "partOfSpeech": "verb",
+    "definition": "Cause or arrange for something to take place at a time later than first scheduled.",
+    "example": "The meeting was postponed until next week.",
+    "chineseTranslation": "延期"
+  },
+  {
+    "id": 1128,
+    "word": "post-war",
+    "partOfSpeech": "adjective",
+    "definition": "Occurring or existing after a war, especially the Second World War.",
+    "example": "The post-war era saw rapid economic growth.",
+    "chineseTranslation": "戰後的"
+  },
+  {
+    "id": 1129,
+    "word": "practitioner",
+    "partOfSpeech": "noun",
+    "definition": "A person actively engaged in an art, discipline, or profession, especially medicine.",
+    "example": "She is a respected medical practitioner.",
+    "chineseTranslation": "從業者"
+  },
+  {
+    "id": 1130,
+    "word": "preach",
+    "partOfSpeech": "verb",
+    "definition": "Deliver a religious address to an assembled group of people, typically in church.",
+    "example": "The priest preached to the congregation.",
+    "chineseTranslation": "傳道，說教"
+  },
+  {
+    "id": 1131,
+    "word": "precedent",
+    "partOfSpeech": "noun",
+    "definition": "An earlier event or action that is regarded as an example or guide to be considered in subsequent similar circumstances.",
+    "example": "The court decision set a legal precedent.",
+    "chineseTranslation": "先例，前例"
+  },
+  {
+    "id": 1132,
+    "word": "precision",
+    "partOfSpeech": "noun",
+    "definition": "The quality, condition, or fact of being exact and accurate.",
+    "example": "The machine works with high precision.",
+    "chineseTranslation": "精確"
+  },
+  {
+    "id": 1133,
+    "word": "predator",
+    "partOfSpeech": "noun",
+    "definition": "An animal that naturally preys on others.",
+    "example": "Lions are top predators in their habitat.",
+    "chineseTranslation": "掠食者"
+  },
+  {
+    "id": 1134,
+    "word": "predecessor",
+    "partOfSpeech": "noun",
+    "definition": "A person who held a job or office before the current holder.",
+    "example": "The new CEO is more dynamic than his predecessor.",
+    "chineseTranslation": "前任"
+  },
+  {
+    "id": 1135,
+    "word": "predominantly",
+    "partOfSpeech": "adverb",
+    "definition": "Mainly; for the most part.",
+    "example": "The team is predominantly made up of local players.",
+    "chineseTranslation": "主要地，大部分地"
+  },
+  {
+    "id": 1136,
+    "word": "pregnancy",
+    "partOfSpeech": "noun",
+    "definition": "The condition or period of being pregnant.",
+    "example": "She announced her pregnancy to her family.",
+    "chineseTranslation": "懷孕"
+  },
+  {
+    "id": 1137,
+    "word": "prejudice",
+    "partOfSpeech": "noun",
+    "definition": "Preconceived opinion that is not based on reason or actual experience.",
+    "example": "We must fight against racial prejudice.",
+    "chineseTranslation": "偏見"
+  },
+  {
+    "id": 1138,
+    "word": "preliminary",
+    "partOfSpeech": "adjective",
+    "definition": "Denoting an action or event preceding or done in preparation for something fuller or more important.",
+    "example": "The team completed preliminary research before the project.",
+    "chineseTranslation": "初步的，預備的"
+  },
+  {
+    "id": 1139,
+    "word": "premier",
+    "partOfSpeech": "noun",
+    "definition": "A prime minister or other head of government.",
+    "example": "The premier met with foreign leaders.",
+    "chineseTranslation": "總理，首相"
+  },
+  {
+    "id": 1140,
+    "word": "premise",
+    "partOfSpeech": "noun",
+    "definition": "A previous statement or proposition from which another is inferred or follows as a conclusion.",
+    "example": "The argument is based on a false premise.",
+    "chineseTranslation": "前提"
+  },
+  {
+    "id": 1141,
+    "word": "premium",
+    "partOfSpeech": "noun",
+    "definition": "An amount to be paid for an insurance policy; something of high quality.",
+    "example": "He pays a high premium for his health insurance.",
+    "chineseTranslation": "保險費，優質的"
+  },
+  {
+    "id": 1142,
+    "word": "prescribe",
+    "partOfSpeech": "verb",
+    "definition": "Advise and authorize the use of a medicine or treatment for someone, especially in writing.",
+    "example": "The doctor prescribed antibiotics."
+  },
+  {
+    "id": 1143,
+    "word": "prescription",
+    "partOfSpeech": "noun",
+    "definition": "An instruction written by a medical practitioner that authorizes a patient to be issued a medicine or treatment.",
+    "example": "The doctor gave me a prescription for antibiotics.",
+    "chineseTranslation": "處方籤"
+  },
+  {
+    "id": 1144,
+    "word": "presently",
+    "partOfSpeech": "adverb",
+    "definition": "At the present time; now.",
+    "example": "She is presently working on a new project.",
+    "chineseTranslation": "目前，現在"
+  },
+  {
+    "id": 1145,
+    "word": "preservation",
+    "partOfSpeech": "noun",
+    "definition": "The action of preserving something.",
+    "example": "The preservation of historical buildings is important.",
+    "chineseTranslation": "保存，維護"
+  },
+  {
+    "id": 1146,
+    "word": "preside",
+    "partOfSpeech": "verb",
+    "definition": "Be in the position of authority in a meeting or gathering.",
+    "example": "The judge will preside over the hearing.",
+    "chineseTranslation": "主持，負責"
+  },
+  {
+    "id": 1147,
+    "word": "presidency",
+    "partOfSpeech": "noun",
+    "definition": "The office of president.",
+    "example": "His presidency brought many changes to the country.",
+    "chineseTranslation": "總統任期，總統職位"
+  },
+  {
+    "id": 1148,
+    "word": "prestigious",
+    "partOfSpeech": "adjective",
+    "definition": "Inspiring respect and admiration; having high status.",
+    "example": "She graduated from a prestigious university.",
+    "chineseTranslation": "有聲望的，受尊敬的"
+  },
+  {
+    "id": 1149,
+    "word": "presumably",
+    "partOfSpeech": "adverb",
+    "definition": "Used to convey that what is asserted is very likely though not known for certain.",
+    "example": "Presumably, he will join us later.",
+    "chineseTranslation": "大概，據推測"
+  },
+  {
+    "id": 1150,
+    "word": "presume",
+    "partOfSpeech": "verb",
+    "definition": "Suppose that something is the case on the basis of probability.",
+    "example": "I presume he is coming to the meeting.",
+    "chineseTranslation": "假定，推測"
+  },
+  {
+    "id": 1151,
+    "word": "prevail",
+    "partOfSpeech": "verb",
+    "definition": "Prove more powerful than opposing forces; be victorious.",
+    "example": "Justice will prevail in the end.",
+    "chineseTranslation": "獲勝，盛行"
+  },
+  {
+    "id": 1152,
+    "word": "prevalence",
+    "partOfSpeech": "noun",
+    "definition": "The fact or condition of being prevalent; commonness.",
+    "example": "The prevalence of the disease is increasing.",
+    "chineseTranslation": "普遍，流行"
+  },
+  {
+    "id": 1153,
+    "word": "prevention",
+    "partOfSpeech": "noun",
+    "definition": "The action of stopping something from happening or arising.",
+    "example": "Prevention is better than cure.",
+    "chineseTranslation": "預防"
+  },
+  {
+    "id": 1154,
+    "word": "prey",
+    "partOfSpeech": "noun",
+    "definition": "An animal that is hunted and killed by another for food.",
+    "example": "The lion stalked its prey.",
+    "chineseTranslation": "獵物"
+  },
+  {
+    "id": 1155,
+    "word": "privatization",
+    "partOfSpeech": "noun",
+    "definition": "The transfer of a business, industry, or service from public to private ownership and control.",
+    "example": "The privatization of state assets was controversial.",
+    "chineseTranslation": "私有化"
+  },
+  {
+    "id": 1156,
+    "word": "privilege",
+    "partOfSpeech": "noun",
+    "definition": "A special right, advantage, or immunity granted or available only to a particular person or group.",
+    "example": "It is a privilege to work with such a talented team.",
+    "chineseTranslation": "特權，榮幸"
+  },
+  {
+    "id": 1157,
+    "word": "probe",
+    "partOfSpeech": "verb",
+    "definition": "Physically explore or examine (something) with the hands or an instrument; investigate thoroughly.",
+    "example": "The journalist probed the issue deeply.",
+    "chineseTranslation": "調查，探究"
+  },
+  {
+    "id": 1158,
+    "word": "problematic",
+    "partOfSpeech": "adjective",
+    "definition": "Constituting or presenting a problem or difficulty.",
+    "example": "His behavior is becoming increasingly problematic.",
+    "chineseTranslation": "有問題的，成問題的"
+  },
+  {
+    "id": 1159,
+    "word": "proceeding",
+    "partOfSpeech": "noun",
+    "definition": "An event or a series of activities involving a set procedure.",
+    "example": "The court proceeding lasted for several hours.",
+    "chineseTranslation": "程序，訴訟"
+  },
+  {
+    "id": 1160,
+    "word": "proceeds",
+    "partOfSpeech": "noun",
+    "definition": "Money obtained from an event or activity.",
+    "example": "The proceeds from the concert will go to charity.",
+    "chineseTranslation": "收益，收入"
+  },
+  {
+    "id": 1161,
+    "word": "processing",
+    "partOfSpeech": "noun",
+    "definition": "A series of actions or steps taken to achieve a particular end.",
+    "example": "The processing of the data took several hours.",
+    "chineseTranslation": "處理，加工"
+  },
+  {
+    "id": 1162,
+    "word": "processor",
+    "partOfSpeech": "noun",
+    "definition": "A machine or person that processes something; the part of a computer that performs calculations and operations.",
+    "example": "The new processor is faster and more efficient.",
+    "chineseTranslation": "處理器，加工者"
+  },
+  {
+    "id": 1163,
+    "word": "proclaim",
+    "partOfSpeech": "verb",
+    "definition": "Announce officially or publicly.",
+    "example": "The government proclaimed a national holiday.",
+    "chineseTranslation": "宣佈"
+  },
+  {
+    "id": 1164,
+    "word": "productive",
+    "partOfSpeech": "adjective",
+    "definition": "Producing or able to produce large amounts of goods, crops, or other commodities.",
+    "example": "The team had a very productive meeting.",
+    "chineseTranslation": "多產的，有成效的"
+  },
+  {
+    "id": 1165,
+    "word": "productivity",
+    "partOfSpeech": "noun",
+    "definition": "The state or quality of being productive.",
+    "example": "Improving productivity is essential for growth.",
+    "chineseTranslation": "生產力，生產率"
+  },
+  {
+    "id": 1166,
+    "word": "profitable",
+    "partOfSpeech": "adjective",
+    "definition": "Yielding profit or financial gain.",
+    "example": "The company had a profitable year.",
+    "chineseTranslation": "有利可圖的"
+  },
+  {
+    "id": 1167,
+    "word": "profound",
+    "partOfSpeech": "adjective",
+    "definition": "Very great or intense; having deep insight or understanding.",
+    "example": "Her speech had a profound impact on everyone.",
+    "chineseTranslation": "深刻的，強烈的"
+  },
+  {
+    "id": 1168,
+    "word": "projection",
+    "partOfSpeech": "noun",
+    "definition": "An estimate or forecast of a future situation based on a study of present trends.",
+    "example": "Sales projections show steady growth next year.",
+    "chineseTranslation": "預測，推測"
+  },
+  {
+    "id": 1169,
+    "word": "prominent",
+    "partOfSpeech": "adjective",
+    "definition": "Important; famous; standing out so as to be easily seen.",
+    "example": "She is a prominent figure in the fashion industry.",
+    "chineseTranslation": "重要的，顯眼的"
+  },
+  {
+    "id": 1170,
+    "word": "pronounced",
+    "partOfSpeech": "adjective",
+    "definition": "Very noticeable or marked; strongly expressed.",
+    "example": "There was a pronounced difference in their attitudes.",
+    "chineseTranslation": "明顯的"
+  },
+  {
+    "id": 1171,
+    "word": "propaganda",
+    "partOfSpeech": "noun",
+    "definition": "Information, especially of a biased or misleading nature, used to promote a political cause or point of view.",
+    "example": "The regime spread propaganda to control public opinion.",
+    "chineseTranslation": "宣傳（帶有偏見或誤導）"
+  },
+  {
+    "id": 1172,
+    "word": "proposition",
+    "partOfSpeech": "noun",
+    "definition": "A statement or assertion that expresses a judgment or opinion.",
+    "example": "The board accepted the business proposition.",
+    "chineseTranslation": "提議，主張"
+  },
+  {
+    "id": 1173,
+    "word": "prosecute",
+    "partOfSpeech": "verb",
+    "definition": "Institute legal proceedings against a person or organization.",
+    "example": "The company was prosecuted for tax fraud.",
+    "chineseTranslation": "起訴"
+  },
+  {
+    "id": 1174,
+    "word": "prosecution",
+    "partOfSpeech": "noun",
+    "definition": "The institution and conducting of legal proceedings against someone.",
+    "example": "The prosecution presented strong evidence.",
+    "chineseTranslation": "起訴，檢方"
+  },
+  {
+    "id": 1175,
+    "word": "prosecutor",
+    "partOfSpeech": "noun",
+    "definition": "A legal official who accuses someone of committing a crime, especially in a court of law.",
+    "example": "The prosecutor questioned the witness.",
+    "chineseTranslation": "檢察官"
+  },
+  {
+    "id": 1176,
+    "word": "prospective",
+    "partOfSpeech": "adjective",
+    "definition": "Expected or expecting to be something particular in the future.",
+    "example": "They interviewed prospective candidates for the job.",
+    "chineseTranslation": "預期的，未來的"
+  },
+  {
+    "id": 1177,
+    "word": "prosperity",
+    "partOfSpeech": "noun",
+    "definition": "The state of being prosperous.",
+    "example": "The country enjoyed years of peace and prosperity.",
+    "chineseTranslation": "繁榮，昌盛"
+  },
+  {
+    "id": 1178,
+    "word": "protective",
+    "partOfSpeech": "adjective",
+    "definition": "Capable of or intended to protect someone or something.",
+    "example": "She wore protective gloves in the lab.",
+    "chineseTranslation": "保護的"
+  },
+  {
+    "id": 1179,
+    "word": "protocol",
+    "partOfSpeech": "noun",
+    "definition": "The official procedure or system of rules governing affairs of state or diplomatic occasions.",
+    "example": "They followed the established diplomatic protocol.",
+    "chineseTranslation": "禮儀，規範"
+  },
+  {
+    "id": 1180,
+    "word": "province",
+    "partOfSpeech": "noun",
+    "definition": "A principal administrative division of certain countries or empires.",
+    "example": "They traveled across the southern province.",
+    "chineseTranslation": "省，地區"
+  },
+  {
+    "id": 1181,
+    "word": "provincial",
+    "partOfSpeech": "adjective",
+    "definition": "Of or concerning a province of a country or empire.",
+    "example": "He grew up in a small provincial town.",
+    "chineseTranslation": "省的，地方的"
+  },
+  {
+    "id": 1182,
+    "word": "provision",
+    "partOfSpeech": "noun",
+    "definition": "The action of providing or supplying something for use.",
+    "example": "The provision of food was organized by volunteers.",
+    "chineseTranslation": "供應，條款"
+  },
+  {
+    "id": 1183,
+    "word": "provoke",
+    "partOfSpeech": "verb",
+    "definition": "Stimulate or give rise to a reaction or emotion, typically a strong or unwelcome one, in someone.",
+    "example": "The news provoked an angry response.",
+    "chineseTranslation": "激起，引發"
+  },
+  {
+    "id": 1184,
+    "word": "psychiatric",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to mental illness or its treatment.",
+    "example": "He was admitted to a psychiatric hospital.",
+    "chineseTranslation": "精神病的，精神醫學的"
+  },
+  {
+    "id": 1185,
+    "word": "pulse",
+    "partOfSpeech": "noun",
+    "definition": "A rhythmical throbbing of the arteries as blood is propelled through them, typically felt in the wrists or neck.",
+    "example": "The nurse checked his pulse.",
+    "chineseTranslation": "脈搏"
+  },
+  {
+    "id": 1186,
+    "word": "pump",
+    "partOfSpeech": "verb",
+    "definition": "Force liquid or gas to move by or as if by means of a pump.",
+    "example": "They pumped water from the well.",
+    "chineseTranslation": "抽送，打氣"
+  },
+  {
+    "id": 1187,
+    "word": "punch",
+    "partOfSpeech": "verb",
+    "definition": "Strike with the fist.",
+    "example": "He punched the bag hard during training.",
+    "chineseTranslation": "用拳猛擊"
+  }
+]

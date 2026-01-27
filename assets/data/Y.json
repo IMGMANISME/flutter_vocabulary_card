@@ -1,0 +1,20 @@
+
+
+[
+  {
+    "id": 1549,
+    "word": "yell",
+    "partOfSpeech": "verb",
+    "definition": "Shout in a loud, sharp way.",
+    "example": "He yelled for help when he saw the fire.",
+    "chineseTranslation": "大喊，叫喊"
+  },
+  {
+    "id": 1550,
+    "word": "yield",
+    "partOfSpeech": "verb",
+    "definition": "Produce or provide a natural, agricultural, or industrial product; give way to arguments, demands, or pressure.",
+    "example": "The farm yields enough vegetables to feed 50 families.",
+    "chineseTranslation": "產生，屈服，讓步"
+  }
+]

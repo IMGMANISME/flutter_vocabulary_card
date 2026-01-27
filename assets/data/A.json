@@ -1,0 +1,818 @@
+[
+  {
+    "id": 1,
+    "word": "abolish",
+    "partOfSpeech": "verb",
+    "definition": "Formally put an end to (a system, practice, or institution).",
+    "example": "The government decided to abolish the outdated tax system.",
+    "chineseTranslation": "廢除、廢止"
+  },
+  {
+    "id": 2,
+    "word": "abortion",
+    "partOfSpeech": "noun",
+    "definition": "The deliberate termination of a human pregnancy.",
+    "example": "The debate over abortion remains controversial.",
+    "chineseTranslation": "墮胎、流產"
+  },
+  {
+    "id": 3,
+    "word": "absence",
+    "partOfSpeech": "noun",
+    "definition": "The state of being away from a place or person.",
+    "example": "His long absence worried his family.",
+    "chineseTranslation": "缺席、不在"
+  },
+  {
+    "id": 4,
+    "word": "absent",
+    "partOfSpeech": "adjective",
+    "definition": "Not present in a place, at an occasion, or as part of something.",
+    "example": "Several students were absent from class today.",
+    "chineseTranslation": "缺席的、不在場的"
+  },
+  {
+    "id": 5,
+    "word": "absurd",
+    "partOfSpeech": "adjective",
+    "definition": "Wildly unreasonable, illogical, or inappropriate.",
+    "example": "The idea that the earth is flat is absurd.",
+    "chineseTranslation": "荒謬的、不合理的"
+  },
+  {
+    "id": 6,
+    "word": "abuse",
+    "partOfSpeech": "noun",
+    "definition": "The improper use of something; cruel or violent treatment of someone.",
+    "example": "Child abuse is a serious problem that must be addressed.",
+    "chineseTranslation": "濫用、虐待"
+  },
+  {
+    "id": 7,
+    "word": "academy",
+    "partOfSpeech": "noun",
+    "definition": "A place of study or training in a special field.",
+    "example": "She was accepted into a prestigious academy of arts.",
+    "chineseTranslation": "學院、專科學校"
+  },
+  {
+    "id": 8,
+    "word": "accelerate",
+    "partOfSpeech": "verb",
+    "definition": "Begin to move more quickly; increase in rate or amount.",
+    "example": "The car began to accelerate down the highway.",
+    "chineseTranslation": "加速、促進"
+  },
+  {
+    "id": 9,
+    "word": "acceptance",
+    "partOfSpeech": "noun",
+    "definition": "The action of consenting to receive or undertake something.",
+    "example": "Her acceptance of the job offer surprised everyone.",
+    "chineseTranslation": "接受、認可"
+  },
+  {
+    "id": 10,
+    "word": "accessible",
+    "partOfSpeech": "adjective",
+    "definition": "Able to be reached or easily entered.",
+    "example": "The museum is accessible by public transport.",
+    "chineseTranslation": "可接近的、可取得的"
+  },
+  {
+    "id": 11,
+    "word": "accomplishment",
+    "partOfSpeech": "noun",
+    "definition": "Something that has been achieved successfully.",
+    "example": "Graduating from college was a major accomplishment for her.",
+    "chineseTranslation": "成就、完成"
+  },
+  {
+    "id": 12,
+    "word": "accordingly",
+    "partOfSpeech": "adverb",
+    "definition": "In a way that is appropriate to the particular circumstances.",
+    "example": "He studied hard and was rewarded accordingly.",
+    "chineseTranslation": "因此、相應地"
+  },
+  {
+    "id": 13,
+    "word": "accountability",
+    "partOfSpeech": "noun",
+    "definition": "The fact or condition of being responsible; answerability.",
+    "example": "Government officials must have accountability to the public.",
+    "chineseTranslation": "責任制、可問責性"
+  },
+  {
+    "id": 14,
+    "word": "accountable",
+    "partOfSpeech": "adjective",
+    "definition": "Required or expected to justify actions or decisions; responsible.",
+    "example": "You will be held accountable for your behavior.",
+    "chineseTranslation": "負責任的、可說明的"
+  },
+  {
+    "id": 15,
+    "word": "accumulate",
+    "partOfSpeech": "verb",
+    "definition": "Gather together or acquire an increasing number or quantity of.",
+    "example": "Dust had accumulated on the shelves.",
+    "chineseTranslation": "累積、積聚"
+  },
+  {
+    "id": 16,
+    "word": "accumulation",
+    "partOfSpeech": "noun",
+    "definition": "The acquisition or gradual gathering of something.",
+    "example": "The accumulation of data took several months.",
+    "chineseTranslation": "累積、堆積"
+  },
+  {
+    "id": 17,
+    "word": "accusation",
+    "partOfSpeech": "noun",
+    "definition": "A charge or claim that someone has done something illegal or wrong.",
+    "example": "He denied the accusation of theft.",
+    "chineseTranslation": "指控、控告"
+  },
+  {
+    "id": 18,
+    "word": "accused",
+    "partOfSpeech": "noun",
+    "definition": "A person or group of people who are charged with or on trial for a crime.",
+    "example": "The accused stood before the judge.",
+    "chineseTranslation": "被告"
+  },
+  {
+    "id": 19,
+    "word": "acid",
+    "partOfSpeech": "noun",
+    "definition": "A chemical substance that neutralizes alkalis and dissolves some metals.",
+    "example": "The scientist handled the acid with great care.",
+    "chineseTranslation": "酸、酸性物質"
+  },
+  {
+    "id": 20,
+    "word": "acquisition",
+    "partOfSpeech": "noun",
+    "definition": "An asset or object bought or obtained; the act of acquiring something.",
+    "example": "The company announced the acquisition of a smaller competitor.",
+    "chineseTranslation": "獲得、收購"
+  },
+  {
+    "id": 21,
+    "word": "activation",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of making something active or operative.",
+    "example": "Account activation requires email verification.",
+    "chineseTranslation": "啟動、激活"
+  },
+  {
+    "id": 22,
+    "word": "activist",
+    "partOfSpeech": "noun",
+    "definition": "A person who campaigns to bring about political or social change.",
+    "example": "She became a well-known human rights activist.",
+    "chineseTranslation": "行動主義者、社運人士"
+  },
+  {
+    "id": 23,
+    "word": "acute",
+    "partOfSpeech": "adjective",
+    "definition": "Present or experienced to a severe or intense degree.",
+    "example": "She experienced acute pain in her leg.",
+    "chineseTranslation": "劇烈的、敏銳的"
+  },
+  {
+    "id": 24,
+    "word": "adaptation",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of adapting or being adapted.",
+    "example": "The film is an adaptation of a popular novel.",
+    "chineseTranslation": "適應、改編"
+  },
+  {
+    "id": 25,
+    "word": "adhere",
+    "partOfSpeech": "verb",
+    "definition": "Stick fast to a surface or substance; believe in and follow the practices of.",
+    "example": "Paint will not adhere well to a dirty surface.",
+    "chineseTranslation": "黏附、堅持"
+  },
+  {
+    "id": 26,
+    "word": "adjacent",
+    "partOfSpeech": "adjective",
+    "definition": "Next to or adjoining something else.",
+    "example": "The library is adjacent to the school.",
+    "chineseTranslation": "鄰近的、毗連的"
+  },
+  {
+    "id": 27,
+    "word": "adjustment",
+    "partOfSpeech": "noun",
+    "definition": "A small alteration or movement made to achieve a desired fit or result.",
+    "example": "A slight adjustment to the seat made it more comfortable.",
+    "chineseTranslation": "調整、校正"
+  },
+  {
+    "id": 28,
+    "word": "administer",
+    "partOfSpeech": "verb",
+    "definition": "Manage and be responsible for the running of something.",
+    "example": "The nurse will administer the medication.",
+    "chineseTranslation": "管理、施用"
+  },
+  {
+    "id": 29,
+    "word": "administrative",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the running of a business, organization, etc.",
+    "example": "She works in an administrative role in the company.",
+    "chineseTranslation": "行政的、管理的"
+  },
+  {
+    "id": 30,
+    "word": "administrator",
+    "partOfSpeech": "noun",
+    "definition": "A person responsible for running a business, organization, etc.",
+    "example": "The system administrator updated the servers.",
+    "chineseTranslation": "管理者、行政人員"
+  },
+  {
+    "id": 31,
+    "word": "admission",
+    "partOfSpeech": "noun",
+    "definition": "The process or fact of entering or being allowed to enter a place.",
+    "example": "Admission to the event is free for children.",
+    "chineseTranslation": "准許進入、入場"
+  },
+  {
+    "id": 32,
+    "word": "adolescent",
+    "partOfSpeech": "noun",
+    "definition": "A young person in the process of developing from a child into an adult.",
+    "example": "Many adolescents struggle with identity during their teenage years.",
+    "chineseTranslation": "青少年"
+  },
+  {
+    "id": 33,
+    "word": "adoption",
+    "partOfSpeech": "noun",
+    "definition": "The action or fact of legally taking another's child and bringing it up as one's own, or accepting something new.",
+    "example": "The adoption of new technology improved productivity.",
+    "chineseTranslation": "收養、採用"
+  },
+  {
+    "id": 34,
+    "word": "adverse",
+    "partOfSpeech": "adjective",
+    "definition": "Preventing success or development; harmful or unfavorable.",
+    "example": "The medication may have adverse side effects.",
+    "chineseTranslation": "不利的、有害的"
+  },
+  {
+    "id": 35,
+    "word": "advocate",
+    "partOfSpeech": "noun",
+    "definition": "A person who publicly supports or recommends a particular cause or policy.",
+    "example": "She is a strong advocate for women's rights.",
+    "chineseTranslation": "倡導者、擁護者"
+  },
+  {
+    "id": 36,
+    "word": "aesthetic",
+    "partOfSpeech": "adjective",
+    "definition": "Concerned with beauty or the appreciation of beauty.",
+    "example": "The new building has great aesthetic appeal.",
+    "chineseTranslation": "美學的、美感的"
+  },
+  {
+    "id": 37,
+    "word": "affection",
+    "partOfSpeech": "noun",
+    "definition": "A gentle feeling of fondness or liking.",
+    "example": "He showed his affection by giving her flowers.",
+    "chineseTranslation": "喜愛、感情"
+  },
+  {
+    "id": 38,
+    "word": "aftermath",
+    "partOfSpeech": "noun",
+    "definition": "The consequences or aftereffects of a significant event.",
+    "example": "The aftermath of the earthquake was devastating.",
+    "chineseTranslation": "後果、餘波"
+  },
+  {
+    "id": 39,
+    "word": "aggression",
+    "partOfSpeech": "noun",
+    "definition": "Hostile or violent behavior or attitudes toward another.",
+    "example": "The dog showed signs of aggression when strangers approached.",
+    "chineseTranslation": "侵略、攻擊性"
+  },
+  {
+    "id": 40,
+    "word": "agricultural",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to farming or agriculture.",
+    "example": "The country relies heavily on agricultural exports.",
+    "chineseTranslation": "農業的"
+  },
+  {
+    "id": 41,
+    "word": "aide",
+    "partOfSpeech": "noun",
+    "definition": "An assistant to an important person, especially a political leader.",
+    "example": "The president's aide prepared the speech.",
+    "chineseTranslation": "助理、助手"
+  },
+  {
+    "id": 42,
+    "word": "alert",
+    "partOfSpeech": "adjective",
+    "definition": "Quick to notice any unusual and potentially dangerous or difficult circumstances.",
+    "example": "The guards remained alert throughout the night.",
+    "chineseTranslation": "警覺的、機敏的"
+  },
+  {
+    "id": 43,
+    "word": "align",
+    "partOfSpeech": "verb",
+    "definition": "Place or arrange things in a straight line; give support to a person or cause.",
+    "example": "The company decided to align its goals with environmental standards.",
+    "chineseTranslation": "對齊、使一致"
+  },
+  {
+    "id": 44,
+    "word": "alignment",
+    "partOfSpeech": "noun",
+    "definition": "Arrangement in a straight line or in correct relative positions.",
+    "example": "Proper alignment of the wheels is important for safety.",
+    "chineseTranslation": "對齊、排列"
+  },
+  {
+    "id": 45,
+    "word": "alike",
+    "partOfSpeech": "adjective",
+    "definition": "Similar to each other.",
+    "example": "The twins look alike but have different personalities.",
+    "chineseTranslation": "相似的、類似的"
+  },
+  {
+    "id": 46,
+    "word": "allegation",
+    "partOfSpeech": "noun",
+    "definition": "A claim or assertion that someone has done something illegal or wrong, typically one made without proof.",
+    "example": "The company denied the allegation of fraud.",
+    "chineseTranslation": "指控、主張"
+  },
+  {
+    "id": 47,
+    "word": "allege",
+    "partOfSpeech": "verb",
+    "definition": "Claim or assert that someone has done something illegal or wrong, typically without proof.",
+    "example": "The report alleges that the company was involved in bribery.",
+    "chineseTranslation": "宣稱、指控"
+  },
+  {
+    "id": 48,
+    "word": "allegedly",
+    "partOfSpeech": "adverb",
+    "definition": "Used to convey that something is claimed to be the case or have taken place, although there is no proof.",
+    "example": "The suspect allegedly stole the car.",
+    "chineseTranslation": "據稱、聲稱"
+  },
+  {
+    "id": 49,
+    "word": "alliance",
+    "partOfSpeech": "noun",
+    "definition": "A union or association formed for mutual benefit, especially between countries or organizations.",
+    "example": "The two nations formed a military alliance.",
+    "chineseTranslation": "聯盟、同盟"
+  },
+  {
+    "id": 50,
+    "word": "allocate",
+    "partOfSpeech": "verb",
+    "definition": "Distribute resources or duties for a particular purpose.",
+    "example": "The government allocated funds for education.",
+    "chineseTranslation": "分配、撥出"
+  },
+  {
+    "id": 51,
+    "word": "allocation",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of allocating or distributing something.",
+    "example": "The allocation of resources must be fair and efficient.",
+    "chineseTranslation": "分配、配置"
+  },
+  {
+    "id": 52,
+    "word": "allowance",
+    "partOfSpeech": "noun",
+    "definition": "An amount of money given regularly, especially to a child or employee.",
+    "example": "She receives a weekly allowance from her parents.",
+    "chineseTranslation": "津貼、零用錢"
+  },
+  {
+    "id": 53,
+    "word": "ally",
+    "partOfSpeech": "noun",
+    "definition": "A state or person formally cooperating with another for a military or other purpose.",
+    "example": "The country became an ally during the war.",
+    "chineseTranslation": "盟友、支持者"
+  },
+  {
+    "id": 54,
+    "word": "aluminium",
+    "partOfSpeech": "noun",
+    "definition": "A lightweight silvery-grey metal, used widely in industry.",
+    "example": "The frame is made of aluminium.",
+    "chineseTranslation": "鋁"
+  },
+  {
+    "id": 55,
+    "word": "amateur",
+    "partOfSpeech": "noun",
+    "definition": "A person who engages in a pursuit, especially a sport, on an unpaid basis.",
+    "example": "He is an amateur photographer in his free time.",
+    "chineseTranslation": "業餘愛好者"
+  },
+  {
+    "id": 56,
+    "word": "ambassador",
+    "partOfSpeech": "noun",
+    "definition": "An accredited diplomat sent by a country as its official representative.",
+    "example": "The ambassador attended the international summit.",
+    "chineseTranslation": "大使、代表"
+  },
+  {
+    "id": 57,
+    "word": "amend",
+    "partOfSpeech": "verb",
+    "definition": "Make minor changes to improve a text, law, or statement.",
+    "example": "The committee decided to amend the proposal.",
+    "chineseTranslation": "修正、修改"
+  },
+  {
+    "id": 58,
+    "word": "amendment",
+    "partOfSpeech": "noun",
+    "definition": "A minor change or addition designed to improve a text or legislation.",
+    "example": "The amendment was passed unanimously.",
+    "chineseTranslation": "修正案、修改"
+  },
+  {
+    "id": 59,
+    "word": "amid",
+    "partOfSpeech": "preposition",
+    "definition": "Surrounded by; in the middle of.",
+    "example": "The speech took place amid loud cheers.",
+    "chineseTranslation": "在…之中、處於…期間"
+  },
+  {
+    "id": 60,
+    "word": "analogy",
+    "partOfSpeech": "noun",
+    "definition": "A comparison between two things for the purpose of explanation or clarification.",
+    "example": "The teacher used an analogy to explain the concept.",
+    "chineseTranslation": "類比、比喻"
+  },
+  {
+    "id": 61,
+    "word": "anchor",
+    "partOfSpeech": "noun",
+    "definition": "A heavy object used to moor a vessel to the sea bottom; also a source of stability.",
+    "example": "The ship dropped its anchor near the shore.",
+    "chineseTranslation": "錨、支柱"
+  },
+  {
+    "id": 62,
+    "word": "angel",
+    "partOfSpeech": "noun",
+    "definition": "A spiritual being believed to act as a messenger of God.",
+    "example": "The painting depicts a beautiful angel.",
+    "chineseTranslation": "天使"
+  },
+  {
+    "id": 63,
+    "word": "anonymous",
+    "partOfSpeech": "adjective",
+    "definition": "Not identified by name; of unknown authorship.",
+    "example": "The donation was made by an anonymous benefactor.",
+    "chineseTranslation": "匿名的、不具名的"
+  },
+  {
+    "id": 64,
+    "word": "apparatus",
+    "partOfSpeech": "noun",
+    "definition": "The technical equipment or machinery needed for a particular activity or purpose.",
+    "example": "The laboratory is equipped with modern apparatus.",
+    "chineseTranslation": "設備、器械"
+  },
+  {
+    "id": 65,
+    "word": "apparel",
+    "partOfSpeech": "noun",
+    "definition": "Clothing, especially outerwear.",
+    "example": "The store sells sports apparel.",
+    "chineseTranslation": "服裝、衣著"
+  },
+  {
+    "id": 66,
+    "word": "appealing",
+    "partOfSpeech": "adjective",
+    "definition": "Attractive or interesting.",
+    "example": "The design of the new phone is very appealing.",
+    "chineseTranslation": "吸引人的、有吸引力的"
+  },
+  {
+    "id": 67,
+    "word": "appetite",
+    "partOfSpeech": "noun",
+    "definition": "A natural desire to satisfy a bodily need, especially for food.",
+    "example": "The walk gave me a good appetite.",
+    "chineseTranslation": "食慾、慾望"
+  },
+  {
+    "id": 68,
+    "word": "applaud",
+    "partOfSpeech": "verb",
+    "definition": "Show approval or praise by clapping or cheering.",
+    "example": "The audience applauded the performers loudly.",
+    "chineseTranslation": "鼓掌、讚許"
+  },
+  {
+    "id": 69,
+    "word": "applicable",
+    "partOfSpeech": "adjective",
+    "definition": "Relevant or appropriate.",
+    "example": "These rules are applicable to all students.",
+    "chineseTranslation": "適用的、相關的"
+  },
+  {
+    "id": 70,
+    "word": "appoint",
+    "partOfSpeech": "verb",
+    "definition": "Assign a job or role to someone.",
+    "example": "The board will appoint a new manager next week.",
+    "chineseTranslation": "任命、指定"
+  },
+  {
+    "id": 71,
+    "word": "appreciation",
+    "partOfSpeech": "noun",
+    "definition": "Recognition and enjoyment of the good qualities of someone or something.",
+    "example": "She expressed her appreciation for their support.",
+    "chineseTranslation": "感激、欣賞"
+  },
+  {
+    "id": 72,
+    "word": "arbitrary",
+    "partOfSpeech": "adjective",
+    "definition": "Based on random choice or personal whim, rather than any reason or system.",
+    "example": "The decision seemed completely arbitrary.",
+    "chineseTranslation": "武斷的、任意的"
+  },
+  {
+    "id": 73,
+    "word": "architectural",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to architecture.",
+    "example": "The city is famous for its architectural landmarks.",
+    "chineseTranslation": "建築的"
+  },
+  {
+    "id": 74,
+    "word": "archive",
+    "partOfSpeech": "noun",
+    "definition": "A collection of historical documents or records.",
+    "example": "The library holds an extensive archive of manuscripts.",
+    "chineseTranslation": "檔案、檔案館"
+  },
+  {
+    "id": 75,
+    "word": "arena",
+    "partOfSpeech": "noun",
+    "definition": "A level area surrounded by seating for spectators, used for sports or other events.",
+    "example": "The basketball game was held in a large arena.",
+    "chineseTranslation": "競技場、舞台"
+  },
+  {
+    "id": 76,
+    "word": "arm",
+    "partOfSpeech": "verb",
+    "definition": "Supply someone with weapons; prepare for conflict.",
+    "example": "The rebels armed themselves for battle.",
+    "chineseTranslation": "武裝、配備"
+  },
+  {
+    "id": 77,
+    "word": "array",
+    "partOfSpeech": "noun",
+    "definition": "An impressive display or range of a particular type of thing.",
+    "example": "The shop offers an array of delicious desserts.",
+    "chineseTranslation": "大量、陣列"
+  },
+  {
+    "id": 78,
+    "word": "articulate",
+    "partOfSpeech": "verb",
+    "definition": "Express an idea or feeling fluently and coherently.",
+    "example": "She was able to articulate her thoughts clearly.",
+    "chineseTranslation": "清楚表達"
+  },
+  {
+    "id": 79,
+    "word": "ash",
+    "partOfSpeech": "noun",
+    "definition": "The powdery residue left after the burning of a substance.",
+    "example": "Volcanic ash covered the town.",
+    "chineseTranslation": "灰、灰燼"
+  },
+  {
+    "id": 80,
+    "word": "aspiration",
+    "partOfSpeech": "noun",
+    "definition": "A hope or ambition of achieving something.",
+    "example": "She has aspirations to become a doctor.",
+    "chineseTranslation": "抱負、志向"
+  },
+  {
+    "id": 81,
+    "word": "aspire",
+    "partOfSpeech": "verb",
+    "definition": "Direct one's hopes or ambitions toward achieving something.",
+    "example": "He aspires to become a great musician.",
+    "chineseTranslation": "渴望、立志"
+  },
+  {
+    "id": 82,
+    "word": "assassination",
+    "partOfSpeech": "noun",
+    "definition": "The action of murdering an important person for political or religious reasons.",
+    "example": "The assassination shocked the entire world.",
+    "chineseTranslation": "暗殺、刺殺"
+  },
+  {
+    "id": 83,
+    "word": "assault",
+    "partOfSpeech": "noun",
+    "definition": "A physical attack or a threat of attack.",
+    "example": "He was arrested for assault after the fight.",
+    "chineseTranslation": "攻擊、襲擊"
+  },
+  {
+    "id": 84,
+    "word": "assemble",
+    "partOfSpeech": "verb",
+    "definition": "Gather together in one place for a common purpose.",
+    "example": "The team assembled in the meeting room.",
+    "chineseTranslation": "集合、組裝"
+  },
+  {
+    "id": 85,
+    "word": "assembly",
+    "partOfSpeech": "noun",
+    "definition": "A group of people gathered together in one place for a common purpose.",
+    "example": "The school held a morning assembly.",
+    "chineseTranslation": "集會、組裝"
+  },
+  {
+    "id": 86,
+    "word": "assert",
+    "partOfSpeech": "verb",
+    "definition": "State a fact or belief confidently and forcefully.",
+    "example": "She asserted her innocence in court.",
+    "chineseTranslation": "斷言、主張"
+  },
+  {
+    "id": 87,
+    "word": "assertion",
+    "partOfSpeech": "noun",
+    "definition": "A confident and forceful statement of fact or belief.",
+    "example": "His assertion was supported by evidence.",
+    "chineseTranslation": "主張、斷言"
+  },
+  {
+    "id": 88,
+    "word": "assurance",
+    "partOfSpeech": "noun",
+    "definition": "A positive declaration intended to give confidence; a promise.",
+    "example": "The manager gave her assurance that the issue would be resolved.",
+    "chineseTranslation": "保證、確信"
+  },
+  {
+    "id": 89,
+    "word": "asylum",
+    "partOfSpeech": "noun",
+    "definition": "The protection granted by a nation to someone who has left their native country as a political refugee.",
+    "example": "He sought asylum in a foreign embassy.",
+    "chineseTranslation": "庇護、避難"
+  },
+  {
+    "id": 90,
+    "word": "atrocity",
+    "partOfSpeech": "noun",
+    "definition": "An extremely wicked or cruel act, typically one involving physical violence or injury.",
+    "example": "The atrocity of the attack shocked everyone.",
+    "chineseTranslation": "暴行、殘暴"
+  },
+  {
+    "id": 91,
+    "word": "attain",
+    "partOfSpeech": "verb",
+    "definition": "Succeed in achieving something that one desires and has worked for.",
+    "example": "She attained her goal of becoming a lawyer.",
+    "chineseTranslation": "達到、獲得"
+  },
+  {
+    "id": 92,
+    "word": "attendance",
+    "partOfSpeech": "noun",
+    "definition": "The action or state of going regularly to or being present at a place or event.",
+    "example": "Class attendance is mandatory.",
+    "chineseTranslation": "出席、出勤"
+  },
+  {
+    "id": 93,
+    "word": "attribute",
+    "partOfSpeech": "verb",
+    "definition": "Regard something as being caused by someone or something.",
+    "example": "He attributed his success to hard work.",
+    "chineseTranslation": "歸因於"
+  },
+  {
+    "id": 94,
+    "word": "auction",
+    "partOfSpeech": "noun",
+    "definition": "A public sale in which goods or property are sold to the highest bidder.",
+    "example": "The painting was sold at auction for a record price.",
+    "chineseTranslation": "拍賣"
+  },
+  {
+    "id": 95,
+    "word": "audit",
+    "partOfSpeech": "noun",
+    "definition": "An official inspection of an organization's accounts.",
+    "example": "The company conducted an annual audit.",
+    "chineseTranslation": "審計、查帳"
+  },
+  {
+    "id": 96,
+    "word": "authentic",
+    "partOfSpeech": "adjective",
+    "definition": "Of undisputed origin; genuine.",
+    "example": "This is an authentic piece of ancient pottery.",
+    "chineseTranslation": "真實的、道地的"
+  },
+  {
+    "id": 97,
+    "word": "authorise",
+    "partOfSpeech": "verb",
+    "definition": "Give official permission for or approval to an action.",
+    "example": "The manager authorised the purchase of new equipment.",
+    "chineseTranslation": "授權、批准"
+  },
+  {
+    "id": 98,
+    "word": "auto",
+    "partOfSpeech": "noun",
+    "definition": "A car or automobile.",
+    "example": "He drove a classic auto from the 1960s.",
+    "chineseTranslation": "汽車"
+  },
+  {
+    "id": 99,
+    "word": "autonomy",
+    "partOfSpeech": "noun",
+    "definition": "The right or condition of self-government.",
+    "example": "The region gained autonomy after years of negotiation.",
+    "chineseTranslation": "自治、自治權"
+  },
+  {
+    "id": 100,
+    "word": "autumn",
+    "partOfSpeech": "noun",
+    "definition": "The season after summer and before winter.",
+    "example": "The trees turn golden in autumn.",
+    "chineseTranslation": "秋天"
+  },
+  {
+    "id": 101,
+    "word": "availability",
+    "partOfSpeech": "noun",
+    "definition": "The state of being able to be used or obtained; at someone's disposal.",
+    "example": "The availability of clean water is crucial.",
+    "chineseTranslation": "可用性、可得性"
+  },
+  {
+    "id": 102,
+    "word": "await",
+    "partOfSpeech": "verb",
+    "definition": "Wait for (an event).",
+    "example": "We eagerly await your reply.",
+    "chineseTranslation": "等待、期盼"
+  }
+]

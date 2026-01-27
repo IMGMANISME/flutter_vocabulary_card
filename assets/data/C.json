@@ -1,0 +1,1052 @@
+
+
+[
+  {
+    "id": 157,
+    "word": "cabinet",
+    "partOfSpeech": "noun",
+    "definition": "A piece of furniture with shelves, drawers, or compartments for storing or displaying items.",
+    "example": "She put the dishes away in the kitchen cabinet.",
+    "chineseTranslation": "櫥櫃；內閣"
+  },
+  {
+    "id": 158,
+    "word": "cable",
+    "partOfSpeech": "noun",
+    "definition": "A thick, strong rope or wire used for supporting structures or transmitting electrical signals.",
+    "example": "The internet connection was down due to a broken cable.",
+    "chineseTranslation": "纜線；電纜"
+  },
+  {
+    "id": 159,
+    "word": "calculate",
+    "partOfSpeech": "verb",
+    "definition": "To determine a number or amount using mathematical processes.",
+    "example": "He used a calculator to calculate the total cost.",
+    "chineseTranslation": "計算"
+  },
+  {
+    "id": 160,
+    "word": "calendar",
+    "partOfSpeech": "noun",
+    "definition": "A chart or series of pages showing the days, weeks, and months of a particular year.",
+    "example": "She marked her birthday on the calendar.",
+    "chineseTranslation": "日曆"
+  },
+  {
+    "id": 161,
+    "word": "calm",
+    "partOfSpeech": "adjective",
+    "definition": "Not showing or feeling nervousness, anger, or other strong emotions.",
+    "example": "He remained calm during the emergency.",
+    "chineseTranslation": "冷靜的；平靜的"
+  },
+  {
+    "id": 162,
+    "word": "campaign",
+    "partOfSpeech": "noun",
+    "definition": "A series of organized activities or events intended to achieve a particular result.",
+    "example": "The company launched a campaign to promote their new product.",
+    "chineseTranslation": "活動；運動"
+  },
+  {
+    "id": 163,
+    "word": "cancel",
+    "partOfSpeech": "verb",
+    "definition": "To decide that something that was planned will not happen.",
+    "example": "They had to cancel the meeting due to bad weather.",
+    "chineseTranslation": "取消"
+  },
+  {
+    "id": 164,
+    "word": "candidate",
+    "partOfSpeech": "noun",
+    "definition": "A person who applies for a job or is nominated for election.",
+    "example": "She is a candidate for the position of manager.",
+    "chineseTranslation": "候選人"
+  },
+  {
+    "id": 165,
+    "word": "capable",
+    "partOfSpeech": "adjective",
+    "definition": "Having the ability, fitness, or quality necessary to do or achieve a specified thing.",
+    "example": "He is capable of solving complex problems.",
+    "chineseTranslation": "有能力的"
+  },
+  {
+    "id": 166,
+    "word": "capacity",
+    "partOfSpeech": "noun",
+    "definition": "The maximum amount that something can contain or produce.",
+    "example": "The stadium has a seating capacity of 50,000.",
+    "chineseTranslation": "容量；能力"
+  },
+  {
+    "id": 167,
+    "word": "capital",
+    "partOfSpeech": "noun",
+    "definition": "The city where a country's government is located; money or assets for investment.",
+    "example": "Paris is the capital of France.",
+    "chineseTranslation": "首都；資本"
+  },
+  {
+    "id": 168,
+    "word": "capture",
+    "partOfSpeech": "verb",
+    "definition": "To take control or possession of something or someone.",
+    "example": "The police managed to capture the suspect.",
+    "chineseTranslation": "捕捉；俘虜"
+  },
+  {
+    "id": 169,
+    "word": "carbon",
+    "partOfSpeech": "noun",
+    "definition": "A chemical element present in all living things and in coal and diamonds.",
+    "example": "Carbon dioxide is a greenhouse gas.",
+    "chineseTranslation": "碳"
+  },
+  {
+    "id": 170,
+    "word": "career",
+    "partOfSpeech": "noun",
+    "definition": "An occupation undertaken for a significant period of a person’s life with opportunities for progress.",
+    "example": "She chose a career in medicine.",
+    "chineseTranslation": "職業；事業"
+  },
+  {
+    "id": 171,
+    "word": "careful",
+    "partOfSpeech": "adjective",
+    "definition": "Making sure of avoiding potential danger, mishap, or harm; cautious.",
+    "example": "Be careful when crossing the street.",
+    "chineseTranslation": "小心的；謹慎的"
+  },
+  {
+    "id": 172,
+    "word": "carve",
+    "partOfSpeech": "verb",
+    "definition": "To cut into a surface or material to form a shape.",
+    "example": "He learned to carve wooden figures.",
+    "chineseTranslation": "雕刻"
+  },
+  {
+    "id": 173,
+    "word": "casual",
+    "partOfSpeech": "adjective",
+    "definition": "Relaxed and unconcerned; not formal or regular.",
+    "example": "He wore casual clothes to the party.",
+    "chineseTranslation": "隨便的；非正式的"
+  },
+  {
+    "id": 174,
+    "word": "category",
+    "partOfSpeech": "noun",
+    "definition": "A class or division of people or things regarded as having particular shared characteristics.",
+    "example": "Books are divided into different categories in the library.",
+    "chineseTranslation": "種類；類別"
+  },
+  {
+    "id": 175,
+    "word": "cattle",
+    "partOfSpeech": "noun",
+    "definition": "Large domesticated animals raised for milk or meat, such as cows and bulls.",
+    "example": "The farmer has a herd of cattle.",
+    "chineseTranslation": "牛（總稱）"
+  },
+  {
+    "id": 176,
+    "word": "cautious",
+    "partOfSpeech": "adjective",
+    "definition": "Careful to avoid potential problems or dangers.",
+    "example": "She is always cautious when driving at night.",
+    "chineseTranslation": "謹慎的"
+  },
+  {
+    "id": 177,
+    "word": "celebrity",
+    "partOfSpeech": "noun",
+    "definition": "A famous person, especially in entertainment or sports.",
+    "example": "The celebrity was surrounded by fans.",
+    "chineseTranslation": "名人"
+  },
+  {
+    "id": 178,
+    "word": "ceremony",
+    "partOfSpeech": "noun",
+    "definition": "A formal event held on important social or religious occasions.",
+    "example": "They attended the graduation ceremony.",
+    "chineseTranslation": "典禮；儀式"
+  },
+  {
+    "id": 179,
+    "word": "challenge",
+    "partOfSpeech": "noun",
+    "definition": "A task or situation that tests someone's abilities.",
+    "example": "Climbing the mountain was a big challenge.",
+    "chineseTranslation": "挑戰"
+  },
+  {
+    "id": 180,
+    "word": "champion",
+    "partOfSpeech": "noun",
+    "definition": "A person who has defeated or surpassed all rivals in a competition.",
+    "example": "She became the world tennis champion.",
+    "chineseTranslation": "冠軍"
+  },
+  {
+    "id": 181,
+    "word": "channel",
+    "partOfSpeech": "noun",
+    "definition": "A television station or a passage for water or other fluids.",
+    "example": "Turn to channel five to watch the news.",
+    "chineseTranslation": "頻道；渠道"
+  },
+  {
+    "id": 182,
+    "word": "chapter",
+    "partOfSpeech": "noun",
+    "definition": "A main division of a book, typically with a number or title.",
+    "example": "I finished reading the first chapter.",
+    "chineseTranslation": "章；回"
+  },
+  {
+    "id": 183,
+    "word": "charity",
+    "partOfSpeech": "noun",
+    "definition": "An organization set up to provide help and raise money for those in need.",
+    "example": "She donated money to the charity.",
+    "chineseTranslation": "慈善機構"
+  },
+  {
+    "id": 184,
+    "word": "chase",
+    "partOfSpeech": "verb",
+    "definition": "To pursue in order to catch or catch up with.",
+    "example": "The dog chased the ball across the yard.",
+    "chineseTranslation": "追逐"
+  },
+  {
+    "id": 185,
+    "word": "cheat",
+    "partOfSpeech": "verb",
+    "definition": "To act dishonestly or unfairly in order to gain an advantage.",
+    "example": "He was caught trying to cheat on the exam.",
+    "chineseTranslation": "作弊"
+  },
+  {
+    "id": 186,
+    "word": "cheerful",
+    "partOfSpeech": "adjective",
+    "definition": "Noticeably happy and optimistic.",
+    "example": "She is always cheerful and smiling.",
+    "chineseTranslation": "開朗的；愉快的"
+  },
+  {
+    "id": 187,
+    "word": "chemical",
+    "partOfSpeech": "noun",
+    "definition": "A substance used in or produced by a chemical process.",
+    "example": "The factory produces dangerous chemicals.",
+    "chineseTranslation": "化學物質"
+  },
+  {
+    "id": 188,
+    "word": "chief",
+    "partOfSpeech": "noun",
+    "definition": "A leader or person in charge of a group or organization.",
+    "example": "He is the chief of the fire department.",
+    "chineseTranslation": "首領；主管"
+  },
+  {
+    "id": 189,
+    "word": "chop",
+    "partOfSpeech": "verb",
+    "definition": "To cut something into pieces with repeated sharp blows.",
+    "example": "She chopped the onions for the soup.",
+    "chineseTranslation": "剁；砍"
+  },
+  {
+    "id": 190,
+    "word": "circular",
+    "partOfSpeech": "adjective",
+    "definition": "Having the shape of a circle.",
+    "example": "They sat around a circular table.",
+    "chineseTranslation": "圓形的"
+  },
+  {
+    "id": 191,
+    "word": "circulate",
+    "partOfSpeech": "verb",
+    "definition": "To move or cause to move continuously or freely through a closed system or area.",
+    "example": "Blood circulates through the body.",
+    "chineseTranslation": "循環；流通"
+  },
+  {
+    "id": 192,
+    "word": "citizen",
+    "partOfSpeech": "noun",
+    "definition": "A legally recognized subject or national of a state or commonwealth.",
+    "example": "She became a citizen of the United States.",
+    "chineseTranslation": "公民"
+  },
+  {
+    "id": 193,
+    "word": "civil",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to ordinary citizens and their concerns, as distinct from military or ecclesiastical matters.",
+    "example": "He filed a civil lawsuit.",
+    "chineseTranslation": "公民的；民事的"
+  },
+  {
+    "id": 194,
+    "word": "civilization",
+    "partOfSpeech": "noun",
+    "definition": "The stage of human social development and organization that is considered most advanced.",
+    "example": "Ancient Egypt was an early civilization.",
+    "chineseTranslation": "文明"
+  },
+  {
+    "id": 195,
+    "word": "clarify",
+    "partOfSpeech": "verb",
+    "definition": "To make a statement or situation less confused and more clearly comprehensible.",
+    "example": "Could you clarify your last statement?",
+    "chineseTranslation": "澄清；說明"
+  },
+  {
+    "id": 196,
+    "word": "classic",
+    "partOfSpeech": "adjective",
+    "definition": "Judged over a period of time to be of the highest quality and outstanding of its kind.",
+    "example": "That movie is a classic comedy.",
+    "chineseTranslation": "經典的"
+  },
+  {
+    "id": 197,
+    "word": "climate",
+    "partOfSpeech": "noun",
+    "definition": "The weather conditions prevailing in an area in general or over a long period.",
+    "example": "This region has a tropical climate.",
+    "chineseTranslation": "氣候"
+  },
+  {
+    "id": 198,
+    "word": "clinic",
+    "partOfSpeech": "noun",
+    "definition": "A place or hospital department where outpatients are given medical treatment or advice.",
+    "example": "She went to the clinic for a check-up.",
+    "chineseTranslation": "診所"
+  },
+  {
+    "id": 199,
+    "word": "clue",
+    "partOfSpeech": "noun",
+    "definition": "A piece of evidence or information used in the detection of a crime or solving a mystery.",
+    "example": "The detective found a clue at the crime scene.",
+    "chineseTranslation": "線索"
+  },
+  {
+    "id": 200,
+    "word": "collapse",
+    "partOfSpeech": "verb",
+    "definition": "To fall down or give way suddenly, often after breaking apart.",
+    "example": "The building collapsed after the earthquake.",
+    "chineseTranslation": "倒塌；崩潰"
+  },
+  {
+    "id": 201,
+    "word": "colleague",
+    "partOfSpeech": "noun",
+    "definition": "A person with whom one works, especially in a profession or business.",
+    "example": "She discussed the project with her colleagues.",
+    "chineseTranslation": "同事"
+  },
+  {
+    "id": 202,
+    "word": "collect",
+    "partOfSpeech": "verb",
+    "definition": "To gather together; to accumulate.",
+    "example": "He likes to collect stamps.",
+    "chineseTranslation": "收集"
+  },
+  {
+    "id": 203,
+    "word": "colony",
+    "partOfSpeech": "noun",
+    "definition": "A country or area under the full or partial political control of another country.",
+    "example": "India was once a British colony.",
+    "chineseTranslation": "殖民地"
+  },
+  {
+    "id": 204,
+    "word": "combine",
+    "partOfSpeech": "verb",
+    "definition": "To join or mix together to form a single unit or substance.",
+    "example": "Combine flour and water to make dough.",
+    "chineseTranslation": "結合；合併"
+  },
+  {
+    "id": 205,
+    "word": "comment",
+    "partOfSpeech": "noun",
+    "definition": "A verbal or written remark expressing an opinion or reaction.",
+    "example": "She made a helpful comment during the meeting.",
+    "chineseTranslation": "評論；意見"
+  },
+  {
+    "id": 206,
+    "word": "commercial",
+    "partOfSpeech": "adjective",
+    "definition": "Related to buying and selling things; concerned with commerce.",
+    "example": "The city is a major commercial center.",
+    "chineseTranslation": "商業的"
+  },
+  {
+    "id": 207,
+    "word": "commit",
+    "partOfSpeech": "verb",
+    "definition": "To carry out or perpetrate a mistake, crime, or immoral act.",
+    "example": "He committed a serious error.",
+    "chineseTranslation": "犯（錯）；承諾"
+  },
+  {
+    "id": 208,
+    "word": "committee",
+    "partOfSpeech": "noun",
+    "definition": "A group of people appointed for a specific function by a larger group.",
+    "example": "The committee will review the proposal.",
+    "chineseTranslation": "委員會"
+  },
+  {
+    "id": 209,
+    "word": "communicate",
+    "partOfSpeech": "verb",
+    "definition": "To share or exchange information, news, or ideas.",
+    "example": "They communicate by email.",
+    "chineseTranslation": "溝通"
+  },
+  {
+    "id": 210,
+    "word": "community",
+    "partOfSpeech": "noun",
+    "definition": "A group of people living in the same place or having a particular characteristic in common.",
+    "example": "The community organized a festival.",
+    "chineseTranslation": "社區；社群"
+  },
+  {
+    "id": 211,
+    "word": "companion",
+    "partOfSpeech": "noun",
+    "definition": "A person or animal with whom one spends a lot of time or with whom one travels.",
+    "example": "The dog has been his loyal companion for years.",
+    "chineseTranslation": "同伴；伴侶"
+  },
+  {
+    "id": 212,
+    "word": "compare",
+    "partOfSpeech": "verb",
+    "definition": "To examine the similarities and/or differences.",
+    "example": "Let's compare the two options before deciding.",
+    "chineseTranslation": "比較"
+  },
+  {
+    "id": 213,
+    "word": "compete",
+    "partOfSpeech": "verb",
+    "definition": "To try to win or gain something by defeating others.",
+    "example": "They competed in the national championship.",
+    "chineseTranslation": "競爭"
+  },
+  {
+    "id": 214,
+    "word": "complain",
+    "partOfSpeech": "verb",
+    "definition": "To express dissatisfaction or annoyance about something.",
+    "example": "He complained about the noise.",
+    "chineseTranslation": "抱怨"
+  },
+  {
+    "id": 215,
+    "word": "complex",
+    "partOfSpeech": "adjective",
+    "definition": "Consisting of many different and connected parts; not easy to understand.",
+    "example": "The problem is more complex than it seems.",
+    "chineseTranslation": "複雜的"
+  },
+  {
+    "id": 216,
+    "word": "compose",
+    "partOfSpeech": "verb",
+    "definition": "To write or create a piece of music, poetry, or other art.",
+    "example": "He composed a beautiful song.",
+    "chineseTranslation": "作曲；構成"
+  },
+  {
+    "id": 217,
+    "word": "concentrate",
+    "partOfSpeech": "verb",
+    "definition": "To focus all one's attention on a particular object or activity.",
+    "example": "Please concentrate on your homework.",
+    "chineseTranslation": "專心；集中"
+  },
+  {
+    "id": 218,
+    "word": "concept",
+    "partOfSpeech": "noun",
+    "definition": "An abstract idea; a general notion.",
+    "example": "Freedom is a difficult concept to define.",
+    "chineseTranslation": "概念"
+  },
+  {
+    "id": 219,
+    "word": "concern",
+    "partOfSpeech": "noun",
+    "definition": "A matter of interest or importance to someone.",
+    "example": "Environmental protection is a major concern.",
+    "chineseTranslation": "關心；憂慮"
+  },
+  {
+    "id": 220,
+    "word": "conclude",
+    "partOfSpeech": "verb",
+    "definition": "To bring something to an end; to arrive at a judgment or opinion by reasoning.",
+    "example": "They concluded the meeting at 5 p.m.",
+    "chineseTranslation": "結束；推斷"
+  },
+  {
+    "id": 221,
+    "word": "concrete",
+    "partOfSpeech": "noun",
+    "definition": "A building material made from a mixture of cement, sand, gravel, and water.",
+    "example": "The bridge is made of concrete.",
+    "chineseTranslation": "混凝土"
+  },
+  {
+    "id": 222,
+    "word": "conduct",
+    "partOfSpeech": "verb",
+    "definition": "To organize and carry out; to behave in a particular way.",
+    "example": "The scientist conducted an experiment.",
+    "chineseTranslation": "進行；指揮"
+  },
+  {
+    "id": 223,
+    "word": "confess",
+    "partOfSpeech": "verb",
+    "definition": "To admit or state that one has committed a crime or is at fault.",
+    "example": "He confessed to stealing the money.",
+    "chineseTranslation": "坦白；承認"
+  },
+  {
+    "id": 224,
+    "word": "confidence",
+    "partOfSpeech": "noun",
+    "definition": "The feeling or belief that one can rely on someone or something; firm trust.",
+    "example": "She has great confidence in her abilities.",
+    "chineseTranslation": "自信；信心"
+  },
+  {
+    "id": 225,
+    "word": "conflict",
+    "partOfSpeech": "noun",
+    "definition": "A serious disagreement or argument, typically a protracted one.",
+    "example": "The two countries are in conflict.",
+    "chineseTranslation": "衝突；爭執"
+  },
+  {
+    "id": 226,
+    "word": "congratulate",
+    "partOfSpeech": "verb",
+    "definition": "To praise someone for an achievement or special occasion.",
+    "example": "I congratulated her on her promotion.",
+    "chineseTranslation": "祝賀"
+  },
+  {
+    "id": 227,
+    "word": "congress",
+    "partOfSpeech": "noun",
+    "definition": "A formal meeting or series of meetings for discussion between delegates.",
+    "example": "The congress meets once a year.",
+    "chineseTranslation": "國會；代表大會"
+  },
+  {
+    "id": 228,
+    "word": "conquer",
+    "partOfSpeech": "verb",
+    "definition": "To take control of a place or people by military force.",
+    "example": "The army conquered the city.",
+    "chineseTranslation": "征服"
+  },
+  {
+    "id": 229,
+    "word": "conscience",
+    "partOfSpeech": "noun",
+    "definition": "An inner feeling or voice viewed as acting as a guide to rightness or wrongness of one's behavior.",
+    "example": "He had a guilty conscience about lying.",
+    "chineseTranslation": "良心"
+  },
+  {
+    "id": 230,
+    "word": "conscious",
+    "partOfSpeech": "adjective",
+    "definition": "Aware of and responding to one's surroundings; awake.",
+    "example": "She was conscious during the operation.",
+    "chineseTranslation": "有意識的；意識到的"
+  },
+  {
+    "id": 231,
+    "word": "consequence",
+    "partOfSpeech": "noun",
+    "definition": "A result or effect of an action or condition.",
+    "example": "He failed the test as a consequence of not studying.",
+    "chineseTranslation": "結果；後果"
+  },
+  {
+    "id": 232,
+    "word": "conservation",
+    "partOfSpeech": "noun",
+    "definition": "The protection and preservation of natural resources.",
+    "example": "Wildlife conservation is important for the environment.",
+    "chineseTranslation": "保護；保存"
+  },
+  {
+    "id": 233,
+    "word": "considerable",
+    "partOfSpeech": "adjective",
+    "definition": "Notably large in size, amount, or extent.",
+    "example": "He spent a considerable amount of money.",
+    "chineseTranslation": "相當大的"
+  },
+  {
+    "id": 234,
+    "word": "consistent",
+    "partOfSpeech": "adjective",
+    "definition": "Acting or done in the same way over time; unchanging in nature.",
+    "example": "Her work is always consistent.",
+    "chineseTranslation": "一致的；始終如一的"
+  },
+  {
+    "id": 235,
+    "word": "constant",
+    "partOfSpeech": "adjective",
+    "definition": "Occurring continuously over a period of time.",
+    "example": "He is under constant pressure at work.",
+    "chineseTranslation": "持續的；不變的"
+  },
+  {
+    "id": 236,
+    "word": "construct",
+    "partOfSpeech": "verb",
+    "definition": "To build or make something, typically a building, road, or machine.",
+    "example": "They plan to construct a new bridge.",
+    "chineseTranslation": "建造"
+  },
+  {
+    "id": 237,
+    "word": "consult",
+    "partOfSpeech": "verb",
+    "definition": "To seek information or advice from someone.",
+    "example": "You should consult a doctor if the symptoms continue.",
+    "chineseTranslation": "諮詢；請教"
+  },
+  {
+    "id": 238,
+    "word": "consume",
+    "partOfSpeech": "verb",
+    "definition": "To use up a resource; to eat or drink.",
+    "example": "Americans consume a lot of coffee.",
+    "chineseTranslation": "消耗；消費"
+  },
+  {
+    "id": 239,
+    "word": "container",
+    "partOfSpeech": "noun",
+    "definition": "An object for holding or transporting something.",
+    "example": "She poured the juice into a container.",
+    "chineseTranslation": "容器"
+  },
+  {
+    "id": 240,
+    "word": "contemporary",
+    "partOfSpeech": "adjective",
+    "definition": "Belonging to or occurring in the present.",
+    "example": "She prefers contemporary art.",
+    "chineseTranslation": "當代的"
+  },
+  {
+    "id": 241,
+    "word": "content",
+    "partOfSpeech": "noun",
+    "definition": "The subjects or topics covered in a book, document, or media.",
+    "example": "The content of the article is very informative.",
+    "chineseTranslation": "內容"
+  },
+  {
+    "id": 242,
+    "word": "contest",
+    "partOfSpeech": "noun",
+    "definition": "An event in which people compete for supremacy in a sport or other activity.",
+    "example": "She won the singing contest.",
+    "chineseTranslation": "比賽"
+  },
+  {
+    "id": 243,
+    "word": "context",
+    "partOfSpeech": "noun",
+    "definition": "The circumstances or setting surrounding an event, statement, or idea.",
+    "example": "You need to understand the context of the story.",
+    "chineseTranslation": "上下文；背景"
+  },
+  {
+    "id": 244,
+    "word": "continent",
+    "partOfSpeech": "noun",
+    "definition": "Any of the world's main continuous expanses of land (such as Asia, Europe, Africa).",
+    "example": "Africa is a large continent.",
+    "chineseTranslation": "大陸；洲"
+  },
+  {
+    "id": 245,
+    "word": "continue",
+    "partOfSpeech": "verb",
+    "definition": "To persist in an activity or process.",
+    "example": "They will continue working after lunch.",
+    "chineseTranslation": "繼續"
+  },
+  {
+    "id": 246,
+    "word": "contract",
+    "partOfSpeech": "noun",
+    "definition": "A written or spoken agreement that is intended to be enforceable by law.",
+    "example": "He signed a contract with the company.",
+    "chineseTranslation": "合約"
+  },
+  {
+    "id": 247,
+    "word": "contrast",
+    "partOfSpeech": "noun",
+    "definition": "The state of being strikingly different from something else.",
+    "example": "There is a sharp contrast between the two paintings.",
+    "chineseTranslation": "對比；差異"
+  },
+  {
+    "id": 248,
+    "word": "contribute",
+    "partOfSpeech": "verb",
+    "definition": "To give something, especially money or help, for a common purpose.",
+    "example": "Many people contributed to the charity.",
+    "chineseTranslation": "貢獻"
+  },
+  {
+    "id": 249,
+    "word": "convenient",
+    "partOfSpeech": "adjective",
+    "definition": "Fitting in well with a person's needs, activities, and plans.",
+    "example": "This hotel is convenient for travelers.",
+    "chineseTranslation": "方便的"
+  },
+  {
+    "id": 250,
+    "word": "convention",
+    "partOfSpeech": "noun",
+    "definition": "A large meeting or conference, especially of members of a political party or a particular profession.",
+    "example": "The convention attracted thousands of visitors.",
+    "chineseTranslation": "大會；慣例"
+  },
+  {
+    "id": 251,
+    "word": "convert",
+    "partOfSpeech": "verb",
+    "definition": "To change something into a different form or use.",
+    "example": "They converted the old factory into apartments.",
+    "chineseTranslation": "轉換"
+  },
+  {
+    "id": 252,
+    "word": "convince",
+    "partOfSpeech": "verb",
+    "definition": "To make someone believe that something is true.",
+    "example": "She convinced me to try the new restaurant.",
+    "chineseTranslation": "說服；使信服"
+  },
+  {
+    "id": 253,
+    "word": "cooperate",
+    "partOfSpeech": "verb",
+    "definition": "To work together towards a common goal.",
+    "example": "The two companies agreed to cooperate on the project.",
+    "chineseTranslation": "合作"
+  },
+  {
+    "id": 254,
+    "word": "cope",
+    "partOfSpeech": "verb",
+    "definition": "To deal effectively with something difficult.",
+    "example": "She learned to cope with stress.",
+    "chineseTranslation": "應付；處理"
+  },
+  {
+    "id": 255,
+    "word": "corporation",
+    "partOfSpeech": "noun",
+    "definition": "A large company or group of companies authorized to act as a single entity.",
+    "example": "He works for a multinational corporation.",
+    "chineseTranslation": "公司；企業"
+  },
+  {
+    "id": 256,
+    "word": "correspond",
+    "partOfSpeech": "verb",
+    "definition": "To communicate by exchanging letters; to match or be similar.",
+    "example": "We corresponded by email for months.",
+    "chineseTranslation": "通信；符合"
+  },
+  {
+    "id": 257,
+    "word": "council",
+    "partOfSpeech": "noun",
+    "definition": "A group of people elected to make decisions or give advice.",
+    "example": "The city council approved the new law.",
+    "chineseTranslation": "議會；委員會"
+  },
+  {
+    "id": 258,
+    "word": "counsel",
+    "partOfSpeech": "noun",
+    "definition": "Advice, especially given formally; a lawyer conducting a case.",
+    "example": "She sought counsel from a trusted friend.",
+    "chineseTranslation": "建議；律師"
+  },
+  {
+    "id": 259,
+    "word": "counter",
+    "partOfSpeech": "noun",
+    "definition": "A flat surface on which goods are shown and business is conducted; in opposition.",
+    "example": "She put her groceries on the counter.",
+    "chineseTranslation": "櫃台；相反"
+  },
+  {
+    "id": 260,
+    "word": "courage",
+    "partOfSpeech": "noun",
+    "definition": "The ability to do something that frightens one; bravery.",
+    "example": "He showed great courage during the rescue.",
+    "chineseTranslation": "勇氣"
+  },
+  {
+    "id": 261,
+    "word": "courtesy",
+    "partOfSpeech": "noun",
+    "definition": "Polite behavior that shows respect for other people.",
+    "example": "She thanked him for his courtesy.",
+    "chineseTranslation": "禮貌"
+  },
+  {
+    "id": 262,
+    "word": "crack",
+    "partOfSpeech": "verb",
+    "definition": "To break or cause to break without a complete separation of the parts.",
+    "example": "He accidentally cracked the window.",
+    "chineseTranslation": "裂開"
+  },
+  {
+    "id": 263,
+    "word": "craft",
+    "partOfSpeech": "noun",
+    "definition": "An activity involving skill in making things by hand.",
+    "example": "She enjoys traditional crafts like pottery.",
+    "chineseTranslation": "工藝；手藝"
+  },
+  {
+    "id": 264,
+    "word": "crash",
+    "partOfSpeech": "verb",
+    "definition": "To collide violently with an obstacle or another vehicle.",
+    "example": "The car crashed into a tree.",
+    "chineseTranslation": "碰撞；墜毀"
+  },
+  {
+    "id": 265,
+    "word": "crawl",
+    "partOfSpeech": "verb",
+    "definition": "To move forward on the hands and knees or by dragging the body close to the ground.",
+    "example": "The baby learned to crawl at six months.",
+    "chineseTranslation": "爬行"
+  },
+  {
+    "id": 266,
+    "word": "crazy",
+    "partOfSpeech": "adjective",
+    "definition": "Mentally deranged; extremely enthusiastic or excited.",
+    "example": "He had a crazy idea.",
+    "chineseTranslation": "瘋狂的"
+  },
+  {
+    "id": 267,
+    "word": "creation",
+    "partOfSpeech": "noun",
+    "definition": "The act of bringing something into existence.",
+    "example": "The creation of the new park took two years.",
+    "chineseTranslation": "創造"
+  },
+  {
+    "id": 268,
+    "word": "creative",
+    "partOfSpeech": "adjective",
+    "definition": "Having the ability to create; imaginative or original.",
+    "example": "She is very creative in her artwork.",
+    "chineseTranslation": "有創造力的"
+  },
+  {
+    "id": 269,
+    "word": "creature",
+    "partOfSpeech": "noun",
+    "definition": "A living being, especially an animal.",
+    "example": "Strange creatures live in the ocean.",
+    "chineseTranslation": "生物；動物"
+  },
+  {
+    "id": 270,
+    "word": "crew",
+    "partOfSpeech": "noun",
+    "definition": "A group of people who work together, especially on a ship, aircraft, or in a movie.",
+    "example": "The crew prepared the plane for takeoff.",
+    "chineseTranslation": "全體工作人員"
+  },
+  {
+    "id": 271,
+    "word": "crisis",
+    "partOfSpeech": "noun",
+    "definition": "A time of intense difficulty, trouble, or danger.",
+    "example": "The country is facing an economic crisis.",
+    "chineseTranslation": "危機"
+  },
+  {
+    "id": 272,
+    "word": "critic",
+    "partOfSpeech": "noun",
+    "definition": "A person who judges the merits of literary, artistic, or musical works.",
+    "example": "The movie received positive reviews from critics.",
+    "chineseTranslation": "評論家"
+  },
+  {
+    "id": 273,
+    "word": "critical",
+    "partOfSpeech": "adjective",
+    "definition": "Expressing adverse or disapproving comments; very important.",
+    "example": "It is critical to follow the safety rules.",
+    "chineseTranslation": "批評的；關鍵的"
+  },
+  {
+    "id": 274,
+    "word": "criticize",
+    "partOfSpeech": "verb",
+    "definition": "To express disapproval of someone or something.",
+    "example": "He was criticized for his decision.",
+    "chineseTranslation": "批評"
+  },
+  {
+    "id": 275,
+    "word": "cruel",
+    "partOfSpeech": "adjective",
+    "definition": "Causing pain or suffering to others deliberately.",
+    "example": "It was cruel to leave the dog outside in the cold.",
+    "chineseTranslation": "殘忍的"
+  },
+  {
+    "id": 276,
+    "word": "crush",
+    "partOfSpeech": "verb",
+    "definition": "To press or squeeze with force so as to break or deform.",
+    "example": "She crushed the can with her foot.",
+    "chineseTranslation": "壓碎"
+  },
+  {
+    "id": 277,
+    "word": "crystal",
+    "partOfSpeech": "noun",
+    "definition": "A clear, transparent mineral or glass resembling ice.",
+    "example": "The chandelier was made of crystal.",
+    "chineseTranslation": "水晶；結晶"
+  },
+  {
+    "id": 278,
+    "word": "cultural",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the ideas, customs, and social behavior of a society.",
+    "example": "They visited many cultural sites during their trip.",
+    "chineseTranslation": "文化的"
+  },
+  {
+    "id": 279,
+    "word": "cure",
+    "partOfSpeech": "verb",
+    "definition": "To relieve a person or animal of the symptoms of a disease or condition.",
+    "example": "Doctors are working to cure cancer.",
+    "chineseTranslation": "治癒"
+  },
+  {
+    "id": 280,
+    "word": "curious",
+    "partOfSpeech": "adjective",
+    "definition": "Eager to know or learn something.",
+    "example": "Children are naturally curious about the world.",
+    "chineseTranslation": "好奇的"
+  },
+  {
+    "id": 281,
+    "word": "current",
+    "partOfSpeech": "adjective",
+    "definition": "Belonging to the present time; happening or being used now.",
+    "example": "What is your current address?",
+    "chineseTranslation": "目前的"
+  },
+  {
+    "id": 282,
+    "word": "curve",
+    "partOfSpeech": "noun",
+    "definition": "A smoothly flowing, continuous line or surface that differs from a straight line.",
+    "example": "The road has a sharp curve ahead.",
+    "chineseTranslation": "曲線"
+  },
+  {
+    "id": 283,
+    "word": "custom",
+    "partOfSpeech": "noun",
+    "definition": "A traditional and widely accepted way of behaving or doing something in a particular society.",
+    "example": "Shaking hands is a common custom.",
+    "chineseTranslation": "習俗"
+  },
+  {
+    "id": 284,
+    "word": "customer",
+    "partOfSpeech": "noun",
+    "definition": "A person or organization that buys goods or services.",
+    "example": "The store has many regular customers.",
+    "chineseTranslation": "顧客"
+  },
+  {
+    "id": 285,
+    "word": "cycle",
+    "partOfSpeech": "noun",
+    "definition": "A series of events that are regularly repeated in the same order.",
+    "example": "The water cycle is essential for life.",
+    "chineseTranslation": "循環"
+  },
+  {
+    "id": 286,
+    "word": "cylinder",
+    "partOfSpeech": "noun",
+    "definition": "A solid geometric figure with straight parallel sides and a circular or oval cross section.",
+    "example": "The tank has the shape of a cylinder.",
+    "chineseTranslation": "圓柱體"
+  },
+  {
+    "id": 287,
+    "word": "cynical",
+    "partOfSpeech": "adjective",
+    "definition": "Believing that people are motivated purely by self-interest; distrustful of human sincerity or integrity.",
+    "example": "She has a cynical view of politics.",
+    "chineseTranslation": "憤世嫉俗的"
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1498,
+    "word": "vacuum",
+    "partOfSpeech": "noun",
+    "definition": "A space entirely devoid of matter.",
+    "example": "The pump created a vacuum inside the chamber.",
+    "chineseTranslation": "真空，空白"
+  },
+  {
+    "id": 1499,
+    "word": "vague",
+    "partOfSpeech": "adjective",
+    "definition": "Of uncertain, indefinite, or unclear character or meaning.",
+    "example": "He gave only a vague answer to the question.",
+    "chineseTranslation": "模糊的，不明確的"
+  },
+  {
+    "id": 1500,
+    "word": "validity",
+    "partOfSpeech": "noun",
+    "definition": "The quality of being logically or factually sound; soundness or cogency.",
+    "example": "The validity of the results was questioned.",
+    "chineseTranslation": "有效性，正當性"
+  },
+  {
+    "id": 1501,
+    "word": "vanish",
+    "partOfSpeech": "verb",
+    "definition": "Disappear suddenly and completely.",
+    "example": "The magician made the rabbit vanish.",
+    "chineseTranslation": "消失，消散"
+  },
+  {
+    "id": 1502,
+    "word": "variable",
+    "partOfSpeech": "noun",
+    "definition": "An element, feature, or factor that is liable to vary or change.",
+    "example": "There are too many variables to make a prediction.",
+    "chineseTranslation": "變數，可變因素"
+  },
+  {
+    "id": 1503,
+    "word": "varied",
+    "partOfSpeech": "adjective",
+    "definition": "Involving or including many different types or elements.",
+    "example": "The restaurant offers a varied menu.",
+    "chineseTranslation": "各式各樣的，多變的"
+  },
+  {
+    "id": 1504,
+    "word": "vein",
+    "partOfSpeech": "noun",
+    "definition": "Any of the tubes forming part of the blood circulation system of the body, carrying in most cases oxygen-depleted blood toward the heart.",
+    "example": "The nurse found a vein for the injection.",
+    "chineseTranslation": "靜脈，脈絡"
+  },
+  {
+    "id": 1505,
+    "word": "venture",
+    "partOfSpeech": "noun",
+    "definition": "A risky or daring journey or undertaking.",
+    "example": "They embarked on a new business venture.",
+    "chineseTranslation": "冒險，企業"
+  },
+  {
+    "id": 1506,
+    "word": "verbal",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to or in the form of words.",
+    "example": "They had a verbal agreement.",
+    "chineseTranslation": "口頭的，言語的"
+  },
+  {
+    "id": 1507,
+    "word": "verdict",
+    "partOfSpeech": "noun",
+    "definition": "A decision on a disputed issue in a civil or criminal case or an inquest.",
+    "example": "The jury returned a verdict of not guilty.",
+    "chineseTranslation": "裁決，判決"
+  },
+  {
+    "id": 1508,
+    "word": "verify",
+    "partOfSpeech": "verb",
+    "definition": "Make sure or demonstrate that something is true, accurate, or justified.",
+    "example": "We need to verify your identity before processing the request.",
+    "chineseTranslation": "核實，證實"
+  },
+  {
+    "id": 1509,
+    "word": "verse",
+    "partOfSpeech": "noun",
+    "definition": "Writing arranged with a metrical rhythm, typically having a rhyme.",
+    "example": "She wrote a short verse for the occasion.",
+    "chineseTranslation": "詩，詩節"
+  },
+  {
+    "id": 1510,
+    "word": "versus",
+    "partOfSpeech": "preposition",
+    "definition": "Against (especially in sports and legal use).",
+    "example": "The final game is Team A versus Team B.",
+    "chineseTranslation": "對抗，對"
+  },
+  {
+    "id": 1511,
+    "word": "vessel",
+    "partOfSpeech": "noun",
+    "definition": "A ship or large boat.",
+    "example": "The vessel sailed across the ocean.",
+    "chineseTranslation": "船，容器，血管"
+  },
+  {
+    "id": 1512,
+    "word": "veteran",
+    "partOfSpeech": "noun",
+    "definition": "A person who has had long experience in a particular field.",
+    "example": "He is a veteran journalist with 30 years of experience.",
+    "chineseTranslation": "老兵，資深人士"
+  },
+  {
+    "id": 1513,
+    "word": "viable",
+    "partOfSpeech": "adjective",
+    "definition": "Capable of working successfully; feasible.",
+    "example": "They discussed a viable plan to reduce costs.",
+    "chineseTranslation": "可行的，能生存的"
+  },
+  {
+    "id": 1514,
+    "word": "vibrant",
+    "partOfSpeech": "adjective",
+    "definition": "Full of energy and enthusiasm.",
+    "example": "The city has a vibrant nightlife.",
+    "chineseTranslation": "充滿活力的，明亮的"
+  },
+  {
+    "id": 1515,
+    "word": "vice",
+    "partOfSpeech": "noun",
+    "definition": "Immoral or wicked behavior.",
+    "example": "Gambling was considered a vice.",
+    "chineseTranslation": "惡習，罪惡"
+  },
+  {
+    "id": 1516,
+    "word": "vicious",
+    "partOfSpeech": "adjective",
+    "definition": "Deliberately cruel or violent.",
+    "example": "The dog gave a vicious bite.",
+    "chineseTranslation": "兇猛的，惡毒的"
+  },
+  {
+    "id": 1517,
+    "word": "violate",
+    "partOfSpeech": "verb",
+    "definition": "Break or fail to comply with a rule or formal agreement.",
+    "example": "They violated the terms of the contract.",
+    "chineseTranslation": "違反，侵犯"
+  },
+  {
+    "id": 1518,
+    "word": "violation",
+    "partOfSpeech": "noun",
+    "definition": "The action of violating someone or something.",
+    "example": "The company was fined for environmental violations.",
+    "chineseTranslation": "違反，違規"
+  },
+  {
+    "id": 1519,
+    "word": "virtue",
+    "partOfSpeech": "noun",
+    "definition": "Behavior showing high moral standards.",
+    "example": "Patience is a great virtue.",
+    "chineseTranslation": "美德，優點"
+  },
+  {
+    "id": 1520,
+    "word": "vocal",
+    "partOfSpeech": "adjective",
+    "definition": "Expressing opinions or feelings freely or loudly.",
+    "example": "She was a vocal critic of the policy.",
+    "chineseTranslation": "直言不諱的，聲音的"
+  },
+  {
+    "id": 1521,
+    "word": "vow",
+    "partOfSpeech": "verb",
+    "definition": "Solemnly promise to do a specified thing.",
+    "example": "They vowed to support each other forever.",
+    "chineseTranslation": "發誓，立誓"
+  },
+  {
+    "id": 1522,
+    "word": "vulnerability",
+    "partOfSpeech": "noun",
+    "definition": "The quality or state of being exposed to the possibility of being attacked or harmed.",
+    "example": "They assessed the system for security vulnerabilities.",
+    "chineseTranslation": "弱點，脆弱性"
+  },
+  {
+    "id": 1523,
+    "word": "vulnerable",
+    "partOfSpeech": "adjective",
+    "definition": "Susceptible to physical or emotional attack or harm.",
+    "example": "Children are vulnerable to certain diseases.",
+    "chineseTranslation": "脆弱的，易受傷的"
+  }
+]

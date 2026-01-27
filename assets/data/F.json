@@ -1,0 +1,1210 @@
+[
+  {
+    "id": 525,
+    "word": "facilitate",
+    "partOfSpeech": "verb",
+    "definition": "to make an action or process easier",
+    "example": "The new software will facilitate the scheduling of appointments.",
+    "chineseTranslation": "促進；使容易"
+  },
+  {
+    "id": 526,
+    "word": "facility",
+    "partOfSpeech": "noun",
+    "definition": "a place, amenity, or piece of equipment provided for a particular purpose",
+    "example": "The sports facility includes a gym and a swimming pool.",
+    "chineseTranslation": "設施；設備"
+  },
+  {
+    "id": 527,
+    "word": "fact",
+    "partOfSpeech": "noun",
+    "definition": "a thing that is known or proved to be true",
+    "example": "It is a fact that the earth orbits the sun.",
+    "chineseTranslation": "事實"
+  },
+  {
+    "id": 528,
+    "word": "factor",
+    "partOfSpeech": "noun",
+    "definition": "a circumstance, fact, or influence that contributes to a result",
+    "example": "Price is an important factor when buying a car.",
+    "chineseTranslation": "因素"
+  },
+  {
+    "id": 529,
+    "word": "factory",
+    "partOfSpeech": "noun",
+    "definition": "a building or group of buildings where goods are manufactured",
+    "example": "The factory produces thousands of toys every day.",
+    "chineseTranslation": "工廠"
+  },
+  {
+    "id": 530,
+    "word": "faculty",
+    "partOfSpeech": "noun",
+    "definition": "an inherent mental or physical power; a division of a university",
+    "example": "She has a faculty for learning languages quickly.",
+    "chineseTranslation": "能力；學院"
+  },
+  {
+    "id": 531,
+    "word": "fade",
+    "partOfSpeech": "verb",
+    "definition": "to gradually lose brightness or color",
+    "example": "The colors of the old painting have faded over time.",
+    "chineseTranslation": "褪色；逐漸消失"
+  },
+  {
+    "id": 532,
+    "word": "fail",
+    "partOfSpeech": "verb",
+    "definition": "to be unsuccessful in achieving a goal",
+    "example": "He failed the exam despite studying hard.",
+    "chineseTranslation": "失敗"
+  },
+  {
+    "id": 533,
+    "word": "failure",
+    "partOfSpeech": "noun",
+    "definition": "lack of success",
+    "example": "The project was a failure due to poor planning.",
+    "chineseTranslation": "失敗；故障"
+  },
+  {
+    "id": 534,
+    "word": "faint",
+    "partOfSpeech": "adjective",
+    "definition": "barely perceptible; weak",
+    "example": "There was a faint smell of smoke in the air.",
+    "chineseTranslation": "微弱的；模糊的"
+  },
+  {
+    "id": 535,
+    "word": "fair",
+    "partOfSpeech": "adjective",
+    "definition": "in accordance with the rules or standards; just",
+    "example": "The teacher gave a fair grade to all students.",
+    "chineseTranslation": "公平的；合理的"
+  },
+  {
+    "id": 536,
+    "word": "faith",
+    "partOfSpeech": "noun",
+    "definition": "complete trust or confidence in someone or something",
+    "example": "She has faith in her team's abilities.",
+    "chineseTranslation": "信任；信仰"
+  },
+  {
+    "id": 537,
+    "word": "fall",
+    "partOfSpeech": "verb",
+    "definition": "to drop down from a higher place",
+    "example": "Leaves fall from the trees in autumn.",
+    "chineseTranslation": "落下；跌倒"
+  },
+  {
+    "id": 538,
+    "word": "false",
+    "partOfSpeech": "adjective",
+    "definition": "not true or correct; intended to deceive",
+    "example": "He gave a false answer to the question.",
+    "chineseTranslation": "假的；錯誤的"
+  },
+  {
+    "id": 539,
+    "word": "fame",
+    "partOfSpeech": "noun",
+    "definition": "the state of being known or recognized by many people",
+    "example": "The actor gained fame after starring in the movie.",
+    "chineseTranslation": "名聲"
+  },
+  {
+    "id": 540,
+    "word": "familiar",
+    "partOfSpeech": "adjective",
+    "definition": "well known from long or close association",
+    "example": "She is familiar with the city because she grew up there.",
+    "chineseTranslation": "熟悉的"
+  },
+  {
+    "id": 541,
+    "word": "family",
+    "partOfSpeech": "noun",
+    "definition": "a group consisting of parents and their children",
+    "example": "They have a big family with three children.",
+    "chineseTranslation": "家庭"
+  },
+  {
+    "id": 542,
+    "word": "famous",
+    "partOfSpeech": "adjective",
+    "definition": "known about by many people",
+    "example": "She is a famous singer worldwide.",
+    "chineseTranslation": "著名的"
+  },
+  {
+    "id": 543,
+    "word": "fan",
+    "partOfSpeech": "noun",
+    "definition": "a device for creating a current of air; an enthusiastic admirer",
+    "example": "He is a big fan of the basketball team.",
+    "chineseTranslation": "風扇；粉絲"
+  },
+  {
+    "id": 544,
+    "word": "fancy",
+    "partOfSpeech": "adjective",
+    "definition": "elaborate or decorative; not plain",
+    "example": "She wore a fancy dress to the party.",
+    "chineseTranslation": "華麗的；昂貴的"
+  },
+  {
+    "id": 545,
+    "word": "fantasy",
+    "partOfSpeech": "noun",
+    "definition": "a genre of imaginative fiction involving magic or supernatural elements",
+    "example": "He enjoys reading fantasy novels.",
+    "chineseTranslation": "幻想；奇幻小說"
+  },
+  {
+    "id": 546,
+    "word": "far",
+    "partOfSpeech": "adverb",
+    "definition": "at, to, or by a great distance",
+    "example": "They traveled far to reach the mountain.",
+    "chineseTranslation": "遠"
+  },
+  {
+    "id": 547,
+    "word": "farm",
+    "partOfSpeech": "noun",
+    "definition": "an area of land used for growing crops or raising animals",
+    "example": "The farm produces fresh vegetables.",
+    "chineseTranslation": "農場"
+  },
+  {
+    "id": 548,
+    "word": "farmer",
+    "partOfSpeech": "noun",
+    "definition": "a person who owns or manages a farm",
+    "example": "The farmer harvested the crops in autumn.",
+    "chineseTranslation": "農夫"
+  },
+  {
+    "id": 549,
+    "word": "fashion",
+    "partOfSpeech": "noun",
+    "definition": "a popular trend, especially in clothing",
+    "example": "She follows the latest fashion trends.",
+    "chineseTranslation": "時尚；流行"
+  },
+  {
+    "id": 550,
+    "word": "fast",
+    "partOfSpeech": "adjective",
+    "definition": "moving or capable of moving at high speed",
+    "example": "He is a fast runner.",
+    "chineseTranslation": "快速的"
+  },
+  {
+    "id": 551,
+    "word": "fasten",
+    "partOfSpeech": "verb",
+    "definition": "to attach or fix firmly",
+    "example": "Please fasten your seatbelt.",
+    "chineseTranslation": "繫牢；固定"
+  },
+  {
+    "id": 552,
+    "word": "fat",
+    "partOfSpeech": "noun",
+    "definition": "a natural oily substance in animal bodies",
+    "example": "Butter contains a lot of fat.",
+    "chineseTranslation": "脂肪"
+  },
+  {
+    "id": 553,
+    "word": "fatal",
+    "partOfSpeech": "adjective",
+    "definition": "causing death",
+    "example": "The accident was fatal.",
+    "chineseTranslation": "致命的"
+  },
+  {
+    "id": 554,
+    "word": "fate",
+    "partOfSpeech": "noun",
+    "definition": "the development of events beyond a person's control",
+    "example": "He believed it was his fate to become a leader.",
+    "chineseTranslation": "命運"
+  },
+  {
+    "id": 555,
+    "word": "father",
+    "partOfSpeech": "noun",
+    "definition": "a male parent",
+    "example": "My father taught me how to ride a bike.",
+    "chineseTranslation": "父親"
+  },
+  {
+    "id": 556,
+    "word": "fatigue",
+    "partOfSpeech": "noun",
+    "definition": "extreme tiredness",
+    "example": "She felt fatigue after working all day.",
+    "chineseTranslation": "疲勞"
+  },
+  {
+    "id": 557,
+    "word": "fault",
+    "partOfSpeech": "noun",
+    "definition": "responsibility for a mistake or wrongdoing",
+    "example": "It was not my fault that the project failed.",
+    "chineseTranslation": "過錯；缺點"
+  },
+  {
+    "id": 558,
+    "word": "favor",
+    "partOfSpeech": "noun",
+    "definition": "an act of kindness beyond what is due",
+    "example": "Can you do me a favor and help with this?",
+    "chineseTranslation": "恩惠；幫助"
+  },
+  {
+    "id": 559,
+    "word": "favorite",
+    "partOfSpeech": "adjective",
+    "definition": "preferred before all others",
+    "example": "Chocolate is my favorite flavor.",
+    "chineseTranslation": "最喜愛的"
+  },
+  {
+    "id": 560,
+    "word": "fear",
+    "partOfSpeech": "noun",
+    "definition": "an unpleasant emotion caused by danger or threat",
+    "example": "She has a fear of heights.",
+    "chineseTranslation": "害怕；恐懼"
+  },
+  {
+    "id": 561,
+    "word": "feather",
+    "partOfSpeech": "noun",
+    "definition": "one of the soft, light parts that cover a bird",
+    "example": "The bird's feathers are colorful.",
+    "chineseTranslation": "羽毛"
+  },
+  {
+    "id": 562,
+    "word": "feature",
+    "partOfSpeech": "noun",
+    "definition": "a distinctive attribute or aspect",
+    "example": "The new phone has many features.",
+    "chineseTranslation": "特徵；特色"
+  },
+  {
+    "id": 563,
+    "word": "federal",
+    "partOfSpeech": "adjective",
+    "definition": "relating to a system of government in which several states form a unity",
+    "example": "The federal government passed new laws.",
+    "chineseTranslation": "聯邦的"
+  },
+  {
+    "id": 564,
+    "word": "fee",
+    "partOfSpeech": "noun",
+    "definition": "a payment made to a professional person or institution",
+    "example": "The lawyer's fee was quite high.",
+    "chineseTranslation": "費用；酬金"
+  },
+  {
+    "id": 565,
+    "word": "feed",
+    "partOfSpeech": "verb",
+    "definition": "to give food to",
+    "example": "She feeds the dog every morning.",
+    "chineseTranslation": "餵食"
+  },
+  {
+    "id": 566,
+    "word": "feel",
+    "partOfSpeech": "verb",
+    "definition": "to experience an emotion or sensation",
+    "example": "I feel happy today.",
+    "chineseTranslation": "感覺"
+  },
+  {
+    "id": 567,
+    "word": "feeling",
+    "partOfSpeech": "noun",
+    "definition": "an emotional state or reaction",
+    "example": "He has strong feelings about the issue.",
+    "chineseTranslation": "感情；感覺"
+  },
+  {
+    "id": 568,
+    "word": "fellow",
+    "partOfSpeech": "noun",
+    "definition": "a person in the same position or involved in the same activity",
+    "example": "He is a fellow student in my class.",
+    "chineseTranslation": "同伴；同事"
+  },
+  {
+    "id": 569,
+    "word": "female",
+    "partOfSpeech": "adjective",
+    "definition": "relating to the sex that can bear offspring",
+    "example": "The female cat had kittens.",
+    "chineseTranslation": "女性的"
+  },
+  {
+    "id": 570,
+    "word": "fence",
+    "partOfSpeech": "noun",
+    "definition": "a barrier enclosing an area",
+    "example": "The garden is surrounded by a wooden fence.",
+    "chineseTranslation": "籬笆；圍欄"
+  },
+  {
+    "id": 571,
+    "word": "festival",
+    "partOfSpeech": "noun",
+    "definition": "a day or period of celebration",
+    "example": "The city hosts a music festival every summer.",
+    "chineseTranslation": "節日；慶典"
+  },
+  {
+    "id": 572,
+    "word": "fetch",
+    "partOfSpeech": "verb",
+    "definition": "to go and bring back",
+    "example": "Please fetch me a glass of water.",
+    "chineseTranslation": "取來；拿來"
+  },
+  {
+    "id": 573,
+    "word": "fever",
+    "partOfSpeech": "noun",
+    "definition": "an abnormally high body temperature",
+    "example": "He has a fever and needs to rest.",
+    "chineseTranslation": "發燒"
+  },
+  {
+    "id": 574,
+    "word": "few",
+    "partOfSpeech": "adjective",
+    "definition": "a small number of",
+    "example": "Few people attended the meeting.",
+    "chineseTranslation": "少數的"
+  },
+  {
+    "id": 575,
+    "word": "fiber",
+    "partOfSpeech": "noun",
+    "definition": "a thread or filament from which a vegetable tissue, mineral substance, or textile is formed",
+    "example": "This bread is high in fiber.",
+    "chineseTranslation": "纖維"
+  },
+  {
+    "id": 576,
+    "word": "fiction",
+    "partOfSpeech": "noun",
+    "definition": "literature in the form of prose, especially novels, that describes imaginary events",
+    "example": "She enjoys reading science fiction and other fiction books.",
+    "chineseTranslation": "小說；虛構"
+  },
+  {
+    "id": 577,
+    "word": "field",
+    "partOfSpeech": "noun",
+    "definition": "an area of open land",
+    "example": "The children played soccer in the field.",
+    "chineseTranslation": "田野；領域"
+  },
+  {
+    "id": 578,
+    "word": "fierce",
+    "partOfSpeech": "adjective",
+    "definition": "having or displaying an intense or ferocious aggressiveness",
+    "example": "The fierce lion roared loudly.",
+    "chineseTranslation": "兇猛的；激烈的"
+  },
+  {
+    "id": 579,
+    "word": "fight",
+    "partOfSpeech": "verb",
+    "definition": "to take part in a violent struggle",
+    "example": "The soldiers fight for their country.",
+    "chineseTranslation": "戰鬥；爭吵"
+  },
+  {
+    "id": 580,
+    "word": "figure",
+    "partOfSpeech": "noun",
+    "definition": "a number, especially one which forms part of official statistics",
+    "example": "The sales figures increased last year.",
+    "chineseTranslation": "數字；人物"
+  },
+  {
+    "id": 581,
+    "word": "file",
+    "partOfSpeech": "noun",
+    "definition": "a folder or box for holding loose papers",
+    "example": "She keeps all her documents in a file.",
+    "chineseTranslation": "檔案；文件夾"
+  },
+  {
+    "id": 582,
+    "word": "fill",
+    "partOfSpeech": "verb",
+    "definition": "to make something full",
+    "example": "Please fill the bottle with water.",
+    "chineseTranslation": "填滿"
+  },
+  {
+    "id": 583,
+    "word": "film",
+    "partOfSpeech": "noun",
+    "definition": "a movie or motion picture",
+    "example": "They watched a new film at the cinema.",
+    "chineseTranslation": "電影"
+  },
+  {
+    "id": 584,
+    "word": "filter",
+    "partOfSpeech": "noun",
+    "definition": "a device for removing impurities",
+    "example": "The water filter removes harmful substances.",
+    "chineseTranslation": "過濾器"
+  },
+  {
+    "id": 585,
+    "word": "final",
+    "partOfSpeech": "adjective",
+    "definition": "coming at the end of a series",
+    "example": "The final exam will be next week.",
+    "chineseTranslation": "最終的"
+  },
+  {
+    "id": 586,
+    "word": "finance",
+    "partOfSpeech": "noun",
+    "definition": "the management of large amounts of money",
+    "example": "He works in finance at a bank.",
+    "chineseTranslation": "金融；財務"
+  },
+  {
+    "id": 587,
+    "word": "financial",
+    "partOfSpeech": "adjective",
+    "definition": "relating to money or finance",
+    "example": "They are facing financial difficulties.",
+    "chineseTranslation": "財務的"
+  },
+  {
+    "id": 588,
+    "word": "find",
+    "partOfSpeech": "verb",
+    "definition": "to discover or perceive by chance or effort",
+    "example": "I can't find my keys.",
+    "chineseTranslation": "找到"
+  },
+  {
+    "id": 589,
+    "word": "fine",
+    "partOfSpeech": "adjective",
+    "definition": "of high quality",
+    "example": "She has fine handwriting.",
+    "chineseTranslation": "優良的；好的"
+  },
+  {
+    "id": 590,
+    "word": "finger",
+    "partOfSpeech": "noun",
+    "definition": "one of the five digits on the hand",
+    "example": "He cut his finger while cooking.",
+    "chineseTranslation": "手指"
+  },
+  {
+    "id": 591,
+    "word": "finish",
+    "partOfSpeech": "verb",
+    "definition": "to bring to an end",
+    "example": "They finished their homework early.",
+    "chineseTranslation": "完成"
+  },
+  {
+    "id": 592,
+    "word": "fire",
+    "partOfSpeech": "noun",
+    "definition": "the process of combustion producing heat and light",
+    "example": "The fire in the fireplace kept us warm.",
+    "chineseTranslation": "火"
+  },
+  {
+    "id": 593,
+    "word": "firm",
+    "partOfSpeech": "adjective",
+    "definition": "solid or unyielding",
+    "example": "The ground was firm beneath their feet.",
+    "chineseTranslation": "堅固的；牢固的"
+  },
+  {
+    "id": 594,
+    "word": "first",
+    "partOfSpeech": "adjective",
+    "definition": "coming before all others in time or order",
+    "example": "She was the first to arrive.",
+    "chineseTranslation": "第一的"
+  },
+  {
+    "id": 595,
+    "word": "fish",
+    "partOfSpeech": "noun",
+    "definition": "a limbless cold-blooded vertebrate animal with gills and fins",
+    "example": "He caught a big fish in the lake.",
+    "chineseTranslation": "魚"
+  },
+  {
+    "id": 596,
+    "word": "fisherman",
+    "partOfSpeech": "noun",
+    "definition": "a person who catches fish",
+    "example": "The fisherman went out early in the morning.",
+    "chineseTranslation": "漁夫"
+  },
+  {
+    "id": 597,
+    "word": "fit",
+    "partOfSpeech": "adjective",
+    "definition": "in good health, especially because of regular physical exercise",
+    "example": "He stays fit by jogging every day.",
+    "chineseTranslation": "健康的；適合的"
+  },
+  {
+    "id": 598,
+    "word": "fitness",
+    "partOfSpeech": "noun",
+    "definition": "the condition of being physically fit and healthy",
+    "example": "She joined a gym to improve her fitness.",
+    "chineseTranslation": "健康；適合"
+  },
+  {
+    "id": 599,
+    "word": "fix",
+    "partOfSpeech": "verb",
+    "definition": "to repair or mend",
+    "example": "He fixed the broken chair.",
+    "chineseTranslation": "修理"
+  },
+  {
+    "id": 600,
+    "word": "flag",
+    "partOfSpeech": "noun",
+    "definition": "a piece of cloth used as a symbol or signal",
+    "example": "The national flag was raised at the ceremony.",
+    "chineseTranslation": "旗幟"
+  },
+  {
+    "id": 601,
+    "word": "flame",
+    "partOfSpeech": "noun",
+    "definition": "the visible, gaseous part of a fire",
+    "example": "The candle's flame flickered in the wind.",
+    "chineseTranslation": "火焰"
+  },
+  {
+    "id": 602,
+    "word": "flash",
+    "partOfSpeech": "noun",
+    "definition": "a sudden brief burst of bright light",
+    "example": "There was a flash of lightning during the storm.",
+    "chineseTranslation": "閃光"
+  },
+  {
+    "id": 603,
+    "word": "flat",
+    "partOfSpeech": "adjective",
+    "definition": "having a level surface; without raised areas",
+    "example": "The land was flat and perfect for farming.",
+    "chineseTranslation": "平坦的"
+  },
+  {
+    "id": 604,
+    "word": "flavor",
+    "partOfSpeech": "noun",
+    "definition": "the distinctive taste of a food or drink",
+    "example": "Vanilla is my favorite flavor of ice cream.",
+    "chineseTranslation": "味道；風味"
+  },
+  {
+    "id": 605,
+    "word": "flesh",
+    "partOfSpeech": "noun",
+    "definition": "the soft substance consisting of muscle and fat that is found between the skin and bones of an animal or a human",
+    "example": "The meat includes skin, flesh, and bones.",
+    "chineseTranslation": "肉；肌肉"
+  },
+  {
+    "id": 606,
+    "word": "flight",
+    "partOfSpeech": "noun",
+    "definition": "the action or process of flying through the air",
+    "example": "Our flight to New York was delayed.",
+    "chineseTranslation": "飛行；航班"
+  },
+  {
+    "id": 607,
+    "word": "float",
+    "partOfSpeech": "verb",
+    "definition": "to rest or move on the surface of a liquid without sinking",
+    "example": "The boat floated on the water.",
+    "chineseTranslation": "漂浮"
+  },
+  {
+    "id": 608,
+    "word": "flood",
+    "partOfSpeech": "noun",
+    "definition": "an overflow of water that submerges land",
+    "example": "The flood caused a lot of damage to the town.",
+    "chineseTranslation": "洪水"
+  },
+  {
+    "id": 609,
+    "word": "floor",
+    "partOfSpeech": "noun",
+    "definition": "the lower surface of a room on which one may walk",
+    "example": "The floor was covered with a carpet.",
+    "chineseTranslation": "地板"
+  },
+  {
+    "id": 610,
+    "word": "flour",
+    "partOfSpeech": "noun",
+    "definition": "a powder obtained by grinding grain, used to make bread, cakes, etc.",
+    "example": "She bought flour to bake a cake.",
+    "chineseTranslation": "麵粉"
+  },
+  {
+    "id": 611,
+    "word": "flower",
+    "partOfSpeech": "noun",
+    "definition": "the seed-bearing part of a plant, often colorful and fragrant",
+    "example": "The garden is full of beautiful flowers.",
+    "chineseTranslation": "花"
+  },
+  {
+    "id": 612,
+    "word": "flu",
+    "partOfSpeech": "noun",
+    "definition": "a common viral infection causing fever and aches",
+    "example": "He stayed home because he had the flu.",
+    "chineseTranslation": "流感"
+  },
+  {
+    "id": 613,
+    "word": "fluid",
+    "partOfSpeech": "noun",
+    "definition": "a substance that has no fixed shape and yields easily to external pressure",
+    "example": "Water is a fluid that flows easily.",
+    "chineseTranslation": "液體"
+  },
+  {
+    "id": 614,
+    "word": "flush",
+    "partOfSpeech": "verb",
+    "definition": "to cleanse with a sudden flow of water",
+    "example": "Please flush the toilet after use.",
+    "chineseTranslation": "沖洗"
+  },
+  {
+    "id": 615,
+    "word": "fly",
+    "partOfSpeech": "verb",
+    "definition": "to move through the air using wings",
+    "example": "Birds fly south for the winter.",
+    "chineseTranslation": "飛"
+  },
+  {
+    "id": 616,
+    "word": "focus",
+    "partOfSpeech": "verb",
+    "definition": "to concentrate attention or effort",
+    "example": "You need to focus on your studies.",
+    "chineseTranslation": "集中注意力"
+  },
+  {
+    "id": 617,
+    "word": "fold",
+    "partOfSpeech": "verb",
+    "definition": "to bend something over on itself",
+    "example": "She folded the letter before putting it in the envelope.",
+    "chineseTranslation": "折疊"
+  },
+  {
+    "id": 618,
+    "word": "follow",
+    "partOfSpeech": "verb",
+    "definition": "to come after or behind",
+    "example": "Please follow the instructions carefully.",
+    "chineseTranslation": "跟隨"
+  },
+  {
+    "id": 619,
+    "word": "food",
+    "partOfSpeech": "noun",
+    "definition": "any nutritious substance that people or animals eat or drink",
+    "example": "We need food to survive.",
+    "chineseTranslation": "食物"
+  },
+  {
+    "id": 620,
+    "word": "fool",
+    "partOfSpeech": "noun",
+    "definition": "a person who acts unwisely or imprudently",
+    "example": "Don't be a fool and ignore the warnings.",
+    "chineseTranslation": "傻瓜"
+  },
+  {
+    "id": 621,
+    "word": "foot",
+    "partOfSpeech": "noun",
+    "definition": "the lower extremity of the leg below the ankle",
+    "example": "He injured his foot while playing soccer.",
+    "chineseTranslation": "腳"
+  },
+  {
+    "id": 622,
+    "word": "football",
+    "partOfSpeech": "noun",
+    "definition": "a sport played by two teams trying to score goals",
+    "example": "They watched a football match on TV.",
+    "chineseTranslation": "足球"
+  },
+  {
+    "id": 623,
+    "word": "for",
+    "partOfSpeech": "preposition",
+    "definition": "with the object or purpose of",
+    "example": "This gift is for you.",
+    "chineseTranslation": "為了"
+  },
+  {
+    "id": 624,
+    "word": "force",
+    "partOfSpeech": "noun",
+    "definition": "strength or energy as an attribute of physical action or movement",
+    "example": "The force of the wind broke the tree.",
+    "chineseTranslation": "力量；強迫"
+  },
+  {
+    "id": 625,
+    "word": "forecast",
+    "partOfSpeech": "noun",
+    "definition": "a prediction or estimate of future events, especially weather",
+    "example": "The weather forecast predicts rain tomorrow.",
+    "chineseTranslation": "預報"
+  },
+  {
+    "id": 626,
+    "word": "forehead",
+    "partOfSpeech": "noun",
+    "definition": "the part of the face above the eyebrows",
+    "example": "He wiped sweat from his forehead.",
+    "chineseTranslation": "額頭"
+  },
+  {
+    "id": 627,
+    "word": "foreign",
+    "partOfSpeech": "adjective",
+    "definition": "from a country other than one's own",
+    "example": "She speaks several foreign languages.",
+    "chineseTranslation": "外國的"
+  },
+  {
+    "id": 628,
+    "word": "forest",
+    "partOfSpeech": "noun",
+    "definition": "a large area covered chiefly with trees and undergrowth",
+    "example": "The forest is home to many animals.",
+    "chineseTranslation": "森林"
+  },
+  {
+    "id": 629,
+    "word": "forget",
+    "partOfSpeech": "verb",
+    "definition": "to fail to remember",
+    "example": "Don't forget to lock the door.",
+    "chineseTranslation": "忘記"
+  },
+  {
+    "id": 630,
+    "word": "forgive",
+    "partOfSpeech": "verb",
+    "definition": "to stop feeling angry or resentful toward someone",
+    "example": "She forgave him for his mistake.",
+    "chineseTranslation": "原諒"
+  },
+  {
+    "id": 631,
+    "word": "fork",
+    "partOfSpeech": "noun",
+    "definition": "a tool with two or more prongs used for eating or cooking",
+    "example": "Please use a fork to eat the salad.",
+    "chineseTranslation": "叉子"
+  },
+  {
+    "id": 632,
+    "word": "form",
+    "partOfSpeech": "noun",
+    "definition": "the visible shape or configuration of something",
+    "example": "Fill out this form with your personal details.",
+    "chineseTranslation": "形式；表格"
+  },
+  {
+    "id": 633,
+    "word": "formal",
+    "partOfSpeech": "adjective",
+    "definition": "following rules or customs; official",
+    "example": "They wore formal clothes to the event.",
+    "chineseTranslation": "正式的"
+  },
+  {
+    "id": 634,
+    "word": "format",
+    "partOfSpeech": "noun",
+    "definition": "the way in which something is arranged or set out",
+    "example": "The report was written in a clear format.",
+    "chineseTranslation": "格式"
+  },
+  {
+    "id": 635,
+    "word": "former",
+    "partOfSpeech": "adjective",
+    "definition": "having previously filled a particular role or been a particular thing",
+    "example": "He is a former president of the company.",
+    "chineseTranslation": "前任的"
+  },
+  {
+    "id": 636,
+    "word": "formula",
+    "partOfSpeech": "noun",
+    "definition": "a mathematical rule expressed in symbols",
+    "example": "Use the formula to calculate the area.",
+    "chineseTranslation": "公式"
+  },
+  {
+    "id": 637,
+    "word": "fort",
+    "partOfSpeech": "noun",
+    "definition": "a fortified building or strategic position",
+    "example": "The soldiers defended the fort from attack.",
+    "chineseTranslation": "堡壘"
+  },
+  {
+    "id": 638,
+    "word": "fortunate",
+    "partOfSpeech": "adjective",
+    "definition": "favored by or involving good luck",
+    "example": "They were fortunate to escape unharmed.",
+    "chineseTranslation": "幸運的"
+  },
+  {
+    "id": 639,
+    "word": "fortune",
+    "partOfSpeech": "noun",
+    "definition": "a large amount of money or assets",
+    "example": "He made a fortune in the stock market.",
+    "chineseTranslation": "財富；運氣"
+  },
+  {
+    "id": 640,
+    "word": "forum",
+    "partOfSpeech": "noun",
+    "definition": "a place or meeting for open discussion",
+    "example": "The forum allowed people to share their opinions.",
+    "chineseTranslation": "論壇"
+  },
+  {
+    "id": 641,
+    "word": "forward",
+    "partOfSpeech": "adverb",
+    "definition": "toward the front",
+    "example": "Please move forward in the line.",
+    "chineseTranslation": "向前"
+  },
+  {
+    "id": 642,
+    "word": "found",
+    "partOfSpeech": "verb",
+    "definition": "to establish or set up",
+    "example": "They founded a new company last year.",
+    "chineseTranslation": "創立"
+  },
+  {
+    "id": 643,
+    "word": "foundation",
+    "partOfSpeech": "noun",
+    "definition": "the lowest load-bearing part of a building",
+    "example": "The house has a strong foundation.",
+    "chineseTranslation": "基礎"
+  },
+  {
+    "id": 644,
+    "word": "founder",
+    "partOfSpeech": "noun",
+    "definition": "a person who establishes an institution or settlement",
+    "example": "She is the founder of the charity.",
+    "chineseTranslation": "創辦人"
+  },
+  {
+    "id": 645,
+    "word": "four",
+    "partOfSpeech": "numeral",
+    "definition": "the number equivalent to the sum of two and two",
+    "example": "There are four seasons in a year.",
+    "chineseTranslation": "四"
+  },
+  {
+    "id": 646,
+    "word": "fourth",
+    "partOfSpeech": "adjective",
+    "definition": "coming after the third in position",
+    "example": "He finished in fourth place.",
+    "chineseTranslation": "第四的"
+  },
+  {
+    "id": 647,
+    "word": "fox",
+    "partOfSpeech": "noun",
+    "definition": "a small to medium-sized omnivorous mammal",
+    "example": "The fox is known for its cunning nature.",
+    "chineseTranslation": "狐狸"
+  },
+  {
+    "id": 648,
+    "word": "fraction",
+    "partOfSpeech": "noun",
+    "definition": "a numerical quantity that is not a whole number",
+    "example": "One half is a fraction.",
+    "chineseTranslation": "分數；部分"
+  },
+  {
+    "id": 649,
+    "word": "fragile",
+    "partOfSpeech": "adjective",
+    "definition": "easily broken or damaged",
+    "example": "Handle the fragile glass with care.",
+    "chineseTranslation": "易碎的"
+  },
+  {
+    "id": 650,
+    "word": "frame",
+    "partOfSpeech": "noun",
+    "definition": "a rigid structure that surrounds or encloses something",
+    "example": "The picture was in a wooden frame.",
+    "chineseTranslation": "框架"
+  },
+  {
+    "id": 651,
+    "word": "framework",
+    "partOfSpeech": "noun",
+    "definition": "a basic structure underlying a system or concept",
+    "example": "The framework of the building was steel.",
+    "chineseTranslation": "框架；結構"
+  },
+  {
+    "id": 652,
+    "word": "free",
+    "partOfSpeech": "adjective",
+    "definition": "not under the control or in the power of another",
+    "example": "The bird was set free.",
+    "chineseTranslation": "自由的；免費的"
+  },
+  {
+    "id": 653,
+    "word": "freedom",
+    "partOfSpeech": "noun",
+    "definition": "the power or right to act, speak, or think as one wants",
+    "example": "They fought for freedom and justice.",
+    "chineseTranslation": "自由"
+  },
+  {
+    "id": 654,
+    "word": "freeze",
+    "partOfSpeech": "verb",
+    "definition": "to become hardened into ice or a solid as a result of cold",
+    "example": "Water freezes at 0 degrees Celsius.",
+    "chineseTranslation": "結冰"
+  },
+  {
+    "id": 655,
+    "word": "French",
+    "partOfSpeech": "adjective",
+    "definition": "relating to France or its people",
+    "example": "She speaks French fluently.",
+    "chineseTranslation": "法國的"
+  },
+  {
+    "id": 656,
+    "word": "frequent",
+    "partOfSpeech": "adjective",
+    "definition": "occurring or done often",
+    "example": "He is a frequent visitor to the library.",
+    "chineseTranslation": "頻繁的"
+  },
+  {
+    "id": 657,
+    "word": "fresh",
+    "partOfSpeech": "adjective",
+    "definition": "recently made or obtained",
+    "example": "We bought fresh vegetables from the market.",
+    "chineseTranslation": "新鮮的"
+  },
+  {
+    "id": 658,
+    "word": "friend",
+    "partOfSpeech": "noun",
+    "definition": "a person whom one knows and with whom one has a bond of mutual affection",
+    "example": "She is my best friend.",
+    "chineseTranslation": "朋友"
+  },
+  {
+    "id": 659,
+    "word": "friendly",
+    "partOfSpeech": "adjective",
+    "definition": "kind and pleasant",
+    "example": "The staff were very friendly and helpful.",
+    "chineseTranslation": "友好的"
+  },
+  {
+    "id": 660,
+    "word": "friendship",
+    "partOfSpeech": "noun",
+    "definition": "the emotions or conduct of friends; the state of being friends",
+    "example": "Their friendship lasted for many years.",
+    "chineseTranslation": "友誼"
+  },
+  {
+    "id": 661,
+    "word": "frighten",
+    "partOfSpeech": "verb",
+    "definition": "to make someone afraid or anxious",
+    "example": "The loud noise frightened the children.",
+    "chineseTranslation": "使害怕"
+  },
+  {
+    "id": 662,
+    "word": "frog",
+    "partOfSpeech": "noun",
+    "definition": "a tailless amphibian with a short squat body",
+    "example": "The frog jumped into the pond.",
+    "chineseTranslation": "青蛙"
+  },
+  {
+    "id": 663,
+    "word": "front",
+    "partOfSpeech": "noun",
+    "definition": "the foremost part or surface of something",
+    "example": "The house has a large front yard.",
+    "chineseTranslation": "前面"
+  },
+  {
+    "id": 664,
+    "word": "frost",
+    "partOfSpeech": "noun",
+    "definition": "a deposit of small white ice crystals formed on the ground or other surfaces",
+    "example": "There was frost on the grass this morning.",
+    "chineseTranslation": "霜"
+  },
+  {
+    "id": 665,
+    "word": "frown",
+    "partOfSpeech": "verb",
+    "definition": "to furrow one's brow in an expression of disapproval or concentration",
+    "example": "She frowned when she heard the bad news.",
+    "chineseTranslation": "皺眉"
+  },
+  {
+    "id": 666,
+    "word": "fruit",
+    "partOfSpeech": "noun",
+    "definition": "the sweet and fleshy product of a tree or other plant that contains seed",
+    "example": "Apples and oranges are types of fruit.",
+    "chineseTranslation": "水果"
+  },
+  {
+    "id": 667,
+    "word": "frustrate",
+    "partOfSpeech": "verb",
+    "definition": "to prevent from progressing or succeeding",
+    "example": "The delays frustrated the travelers.",
+    "chineseTranslation": "使沮喪"
+  },
+  {
+    "id": 668,
+    "word": "fuel",
+    "partOfSpeech": "noun",
+    "definition": "a material such as coal, gas, or oil that is burned to produce heat or power",
+    "example": "The car runs on diesel fuel.",
+    "chineseTranslation": "燃料"
+  },
+  {
+    "id": 669,
+    "word": "full",
+    "partOfSpeech": "adjective",
+    "definition": "containing or holding as much as possible",
+    "example": "The glass is full of water.",
+    "chineseTranslation": "滿的"
+  },
+  {
+    "id": 670,
+    "word": "fully",
+    "partOfSpeech": "adverb",
+    "definition": "completely or entirely",
+    "example": "The project is fully funded.",
+    "chineseTranslation": "完全地"
+  },
+  {
+    "id": 671,
+    "word": "fun",
+    "partOfSpeech": "noun",
+    "definition": "enjoyment, amusement, or lighthearted pleasure",
+    "example": "We had fun at the party.",
+    "chineseTranslation": "樂趣"
+  },
+  {
+    "id": 672,
+    "word": "function",
+    "partOfSpeech": "noun",
+    "definition": "an activity or purpose natural to or intended for a person or thing",
+    "example": "The function of the heart is to pump blood.",
+    "chineseTranslation": "功能"
+  },
+  {
+    "id": 673,
+    "word": "fund",
+    "partOfSpeech": "noun",
+    "definition": "a sum of money saved or made available for a particular purpose",
+    "example": "They raised funds for the charity.",
+    "chineseTranslation": "基金；資金"
+  },
+  {
+    "id": 674,
+    "word": "fundamental",
+    "partOfSpeech": "adjective",
+    "definition": "forming a necessary base or core; of central importance",
+    "example": "Honesty is a fundamental value.",
+    "chineseTranslation": "基本的"
+  },
+  {
+    "id": 675,
+    "word": "funeral",
+    "partOfSpeech": "noun",
+    "definition": "a ceremony for burying or cremating the dead",
+    "example": "The funeral was attended by many relatives.",
+    "chineseTranslation": "葬禮"
+  }
+]

@@ -1,0 +1,626 @@
+[
+  {
+    "id": 288,
+    "word": "dam",
+    "partOfSpeech": "noun",
+    "definition": "A barrier constructed to hold back water and raise its level, forming a reservoir used to generate electricity or as a water supply.",
+    "example": "The dam was built to prevent flooding in the valley.",
+    "chineseTranslation": "水壩"
+  },
+  {
+    "id": 289,
+    "word": "dance",
+    "partOfSpeech": "verb",
+    "definition": "To move rhythmically to music, typically following a set sequence of steps.",
+    "example": "They danced all night at the party.",
+    "chineseTranslation": "跳舞"
+  },
+  {
+    "id": 290,
+    "word": "danger",
+    "partOfSpeech": "noun",
+    "definition": "The possibility of suffering harm or injury.",
+    "example": "The warning sign indicated danger ahead.",
+    "chineseTranslation": "危險"
+  },
+  {
+    "id": 291,
+    "word": "dare",
+    "partOfSpeech": "verb",
+    "definition": "Have the courage to do something.",
+    "example": "I dare you to jump into the cold lake.",
+    "chineseTranslation": "敢"
+  },
+  {
+    "id": 292,
+    "word": "dark",
+    "partOfSpeech": "adjective",
+    "definition": "With little or no light.",
+    "example": "It was dark outside after the sun set.",
+    "chineseTranslation": "黑暗的"
+  },
+  {
+    "id": 293,
+    "word": "date",
+    "partOfSpeech": "noun",
+    "definition": "The day of the month or year as specified by a number.",
+    "example": "Please write the date on the form.",
+    "chineseTranslation": "日期"
+  },
+  {
+    "id": 294,
+    "word": "daughter",
+    "partOfSpeech": "noun",
+    "definition": "A female child in relation to her parents.",
+    "example": "She is their only daughter.",
+    "chineseTranslation": "女兒"
+  },
+  {
+    "id": 295,
+    "word": "dawn",
+    "partOfSpeech": "noun",
+    "definition": "The first appearance of light in the sky before sunrise.",
+    "example": "We woke up at dawn to watch the sunrise.",
+    "chineseTranslation": "黎明"
+  },
+  {
+    "id": 296,
+    "word": "day",
+    "partOfSpeech": "noun",
+    "definition": "A period of 24 hours as a unit of time.",
+    "example": "There are seven days in a week.",
+    "chineseTranslation": "一天"
+  },
+  {
+    "id": 297,
+    "word": "dead",
+    "partOfSpeech": "adjective",
+    "definition": "No longer alive.",
+    "example": "The plant is dead because it wasn't watered.",
+    "chineseTranslation": "死的"
+  },
+  {
+    "id": 298,
+    "word": "deal",
+    "partOfSpeech": "verb",
+    "definition": "To distribute or apportion something.",
+    "example": "He dealt the cards to the players.",
+    "chineseTranslation": "分配"
+  },
+  {
+    "id": 299,
+    "word": "dear",
+    "partOfSpeech": "adjective",
+    "definition": "Regarded with deep affection.",
+    "example": "She is a dear friend of mine.",
+    "chineseTranslation": "親愛的"
+  },
+  {
+    "id": 300,
+    "word": "death",
+    "partOfSpeech": "noun",
+    "definition": "The end of the life of a person or organism.",
+    "example": "The death of the old tree saddened the town.",
+    "chineseTranslation": "死亡"
+  },
+  {
+    "id": 301,
+    "word": "debate",
+    "partOfSpeech": "noun",
+    "definition": "A formal discussion on a particular topic.",
+    "example": "The debate lasted for two hours.",
+    "chineseTranslation": "辯論"
+  },
+  {
+    "id": 302,
+    "word": "decide",
+    "partOfSpeech": "verb",
+    "definition": "Come to a resolution in the mind as a result of consideration.",
+    "example": "They decided to go on a trip.",
+    "chineseTranslation": "決定"
+  },
+  {
+    "id": 303,
+    "word": "decision",
+    "partOfSpeech": "noun",
+    "definition": "A conclusion or resolution reached after consideration.",
+    "example": "Her decision was final.",
+    "chineseTranslation": "決定"
+  },
+  {
+    "id": 304,
+    "word": "deep",
+    "partOfSpeech": "adjective",
+    "definition": "Extending far down from the top or surface.",
+    "example": "The lake is very deep.",
+    "chineseTranslation": "深的"
+  },
+  {
+    "id": 305,
+    "word": "defend",
+    "partOfSpeech": "verb",
+    "definition": "Protect from harm or danger.",
+    "example": "The soldiers defended the city.",
+    "chineseTranslation": "防衛"
+  },
+  {
+    "id": 306,
+    "word": "degree",
+    "partOfSpeech": "noun",
+    "definition": "A unit of measurement for angles or temperature.",
+    "example": "Water boils at 100 degrees Celsius.",
+    "chineseTranslation": "度"
+  },
+  {
+    "id": 307,
+    "word": "delay",
+    "partOfSpeech": "verb",
+    "definition": "Make someone or something late or slow.",
+    "example": "The train was delayed due to bad weather.",
+    "chineseTranslation": "延遲"
+  },
+  {
+    "id": 308,
+    "word": "deliver",
+    "partOfSpeech": "verb",
+    "definition": "Bring and hand over to the proper recipient.",
+    "example": "The mailman delivered the package.",
+    "chineseTranslation": "遞送"
+  },
+  {
+    "id": 309,
+    "word": "demand",
+    "partOfSpeech": "noun",
+    "definition": "An insistent and peremptory request.",
+    "example": "The workers made a demand for higher wages.",
+    "chineseTranslation": "需求"
+  },
+  {
+    "id": 310,
+    "word": "deny",
+    "partOfSpeech": "verb",
+    "definition": "State that one refuses to admit the truth or existence of.",
+    "example": "He denied breaking the window.",
+    "chineseTranslation": "否認"
+  },
+  {
+    "id": 311,
+    "word": "depart",
+    "partOfSpeech": "verb",
+    "definition": "Leave, typically in order to start a journey.",
+    "example": "The plane departs at noon.",
+    "chineseTranslation": "離開"
+  },
+  {
+    "id": 312,
+    "word": "depend",
+    "partOfSpeech": "verb",
+    "definition": "Be controlled or determined by.",
+    "example": "Success depends on hard work.",
+    "chineseTranslation": "依賴"
+  },
+  {
+    "id": 313,
+    "word": "depth",
+    "partOfSpeech": "noun",
+    "definition": "The distance from the top or surface to the bottom.",
+    "example": "The depth of the ocean is vast.",
+    "chineseTranslation": "深度"
+  },
+  {
+    "id": 314,
+    "word": "describe",
+    "partOfSpeech": "verb",
+    "definition": "Give an account in words of someone or something.",
+    "example": "Please describe what you saw.",
+    "chineseTranslation": "描述"
+  },
+  {
+    "id": 315,
+    "word": "desert",
+    "partOfSpeech": "noun",
+    "definition": "A barren area of land with little rainfall.",
+    "example": "Camels can survive in the desert.",
+    "chineseTranslation": "沙漠"
+  },
+  {
+    "id": 316,
+    "word": "design",
+    "partOfSpeech": "noun",
+    "definition": "A plan or drawing produced to show the look and function of something.",
+    "example": "The design of the building is modern.",
+    "chineseTranslation": "設計"
+  },
+  {
+    "id": 317,
+    "word": "desire",
+    "partOfSpeech": "noun",
+    "definition": "A strong feeling of wanting something.",
+    "example": "She has a desire to travel the world.",
+    "chineseTranslation": "慾望"
+  },
+  {
+    "id": 318,
+    "word": "destroy",
+    "partOfSpeech": "verb",
+    "definition": "Cause so much damage that something no longer exists.",
+    "example": "The fire destroyed the house.",
+    "chineseTranslation": "摧毀"
+  },
+  {
+    "id": 319,
+    "word": "detail",
+    "partOfSpeech": "noun",
+    "definition": "An individual feature or fact.",
+    "example": "He explained every detail of the plan.",
+    "chineseTranslation": "細節"
+  },
+  {
+    "id": 320,
+    "word": "detect",
+    "partOfSpeech": "verb",
+    "definition": "Discover or identify the presence of.",
+    "example": "The alarm detected smoke in the building.",
+    "chineseTranslation": "偵測"
+  },
+  {
+    "id": 321,
+    "word": "develop",
+    "partOfSpeech": "verb",
+    "definition": "Grow or cause to grow and become more mature or advanced.",
+    "example": "The town has developed rapidly.",
+    "chineseTranslation": "發展"
+  },
+  {
+    "id": 322,
+    "word": "device",
+    "partOfSpeech": "noun",
+    "definition": "A thing made for a particular purpose.",
+    "example": "The device helps you track your fitness.",
+    "chineseTranslation": "裝置"
+  },
+  {
+    "id": 323,
+    "word": "devote",
+    "partOfSpeech": "verb",
+    "definition": "Give all or a large part of one's time or resources to.",
+    "example": "She devotes herself to charity work.",
+    "chineseTranslation": "奉獻"
+  },
+  {
+    "id": 324,
+    "word": "diamond",
+    "partOfSpeech": "noun",
+    "definition": "A precious stone consisting of a clear and colorless crystalline form of pure carbon.",
+    "example": "She wore a diamond ring.",
+    "chineseTranslation": "鑽石"
+  },
+  {
+    "id": 325,
+    "word": "diary",
+    "partOfSpeech": "noun",
+    "definition": "A book in which one keeps a daily record of events and experiences.",
+    "example": "She writes in her diary every night.",
+    "chineseTranslation": "日記"
+  },
+  {
+    "id": 326,
+    "word": "dictionary",
+    "partOfSpeech": "noun",
+    "definition": "A book or electronic resource that lists the words of a language and their meanings.",
+    "example": "Look up the word in the dictionary.",
+    "chineseTranslation": "字典"
+  },
+  {
+    "id": 327,
+    "word": "die",
+    "partOfSpeech": "verb",
+    "definition": "Cease to live.",
+    "example": "Many plants die in winter.",
+    "chineseTranslation": "死亡"
+  },
+  {
+    "id": 328,
+    "word": "differ",
+    "partOfSpeech": "verb",
+    "definition": "Be unlike or dissimilar.",
+    "example": "They differ in their opinions.",
+    "chineseTranslation": "不同"
+  },
+  {
+    "id": 329,
+    "word": "difference",
+    "partOfSpeech": "noun",
+    "definition": "A point or way in which people or things are dissimilar.",
+    "example": "There is a big difference between the two models.",
+    "chineseTranslation": "差異"
+  },
+  {
+    "id": 330,
+    "word": "different",
+    "partOfSpeech": "adjective",
+    "definition": "Not the same as another or each other.",
+    "example": "We have different tastes in music.",
+    "chineseTranslation": "不同的"
+  },
+  {
+    "id": 331,
+    "word": "difficult",
+    "partOfSpeech": "adjective",
+    "definition": "Needing much effort or skill to accomplish.",
+    "example": "This math problem is difficult.",
+    "chineseTranslation": "困難的"
+  },
+  {
+    "id": 332,
+    "word": "dig",
+    "partOfSpeech": "verb",
+    "definition": "Break up and move earth with a tool or machine.",
+    "example": "They dug a hole in the garden.",
+    "chineseTranslation": "挖掘"
+  },
+  {
+    "id": 333,
+    "word": "dinner",
+    "partOfSpeech": "noun",
+    "definition": "The main meal of the day, eaten in the evening.",
+    "example": "We had pasta for dinner.",
+    "chineseTranslation": "晚餐"
+  },
+  {
+    "id": 334,
+    "word": "direct",
+    "partOfSpeech": "adjective",
+    "definition": "Moving from one place to another by the shortest way without changing direction.",
+    "example": "Take a direct flight to New York.",
+    "chineseTranslation": "直接的"
+  },
+  {
+    "id": 335,
+    "word": "direction",
+    "partOfSpeech": "noun",
+    "definition": "A course along which someone or something moves.",
+    "example": "Turn left in the direction of the park.",
+    "chineseTranslation": "方向"
+  },
+  {
+    "id": 336,
+    "word": "director",
+    "partOfSpeech": "noun",
+    "definition": "A person who is in charge of an activity, department, or organization.",
+    "example": "She is the director of the company.",
+    "chineseTranslation": "主管"
+  },
+  {
+    "id": 337,
+    "word": "dirt",
+    "partOfSpeech": "noun",
+    "definition": "Loose soil or earth.",
+    "example": "The children played in the dirt.",
+    "chineseTranslation": "泥土"
+  },
+  {
+    "id": 338,
+    "word": "dirty",
+    "partOfSpeech": "adjective",
+    "definition": "Covered or marked with an unclean substance.",
+    "example": "His clothes were dirty after the game.",
+    "chineseTranslation": "骯髒的"
+  },
+  {
+    "id": 339,
+    "word": "disagree",
+    "partOfSpeech": "verb",
+    "definition": "Have or express a different opinion.",
+    "example": "They disagreed about the best solution.",
+    "chineseTranslation": "不同意"
+  },
+  {
+    "id": 340,
+    "word": "discover",
+    "partOfSpeech": "verb",
+    "definition": "Find something or someone unexpectedly.",
+    "example": "Scientists discovered a new species.",
+    "chineseTranslation": "發現"
+  },
+  {
+    "id": 341,
+    "word": "discuss",
+    "partOfSpeech": "verb",
+    "definition": "Talk about something with another person or group.",
+    "example": "They discussed the project details.",
+    "chineseTranslation": "討論"
+  },
+  {
+    "id": 342,
+    "word": "dish",
+    "partOfSpeech": "noun",
+    "definition": "A shallow container for cooking or serving food.",
+    "example": "She washed the dishes after dinner.",
+    "chineseTranslation": "盤子"
+  },
+  {
+    "id": 343,
+    "word": "distance",
+    "partOfSpeech": "noun",
+    "definition": "The amount of space between two points.",
+    "example": "The distance between the cities is 100 miles.",
+    "chineseTranslation": "距離"
+  },
+  {
+    "id": 344,
+    "word": "distant",
+    "partOfSpeech": "adjective",
+    "definition": "Far away in space or time.",
+    "example": "They live in a distant village.",
+    "chineseTranslation": "遙遠的"
+  },
+  {
+    "id": 345,
+    "word": "divide",
+    "partOfSpeech": "verb",
+    "definition": "Separate into parts or groups.",
+    "example": "Divide the cake into eight pieces.",
+    "chineseTranslation": "分開"
+  },
+  {
+    "id": 346,
+    "word": "doctor",
+    "partOfSpeech": "noun",
+    "definition": "A person qualified to treat the sick or injured.",
+    "example": "The doctor examined the patient.",
+    "chineseTranslation": "醫生"
+  },
+  {
+    "id": 347,
+    "word": "dog",
+    "partOfSpeech": "noun",
+    "definition": "A domesticated carnivorous mammal.",
+    "example": "The dog barked loudly.",
+    "chineseTranslation": "狗"
+  },
+  {
+    "id": 348,
+    "word": "doll",
+    "partOfSpeech": "noun",
+    "definition": "A small model of a human figure used as a child's toy.",
+    "example": "She gave her daughter a doll for her birthday.",
+    "chineseTranslation": "娃娃"
+  },
+  {
+    "id": 349,
+    "word": "dollar",
+    "partOfSpeech": "noun",
+    "definition": "The basic unit of money in the US and other countries.",
+    "example": "This book costs ten dollars.",
+    "chineseTranslation": "美元"
+  },
+  {
+    "id": 350,
+    "word": "door",
+    "partOfSpeech": "noun",
+    "definition": "A movable barrier used to close an entrance.",
+    "example": "She opened the door and entered the room.",
+    "chineseTranslation": "門"
+  },
+  {
+    "id": 351,
+    "word": "dot",
+    "partOfSpeech": "noun",
+    "definition": "A small round mark or spot.",
+    "example": "The letter 'i' has a dot on top.",
+    "chineseTranslation": "點"
+  },
+  {
+    "id": 352,
+    "word": "double",
+    "partOfSpeech": "adjective",
+    "definition": "Twice as much or as many.",
+    "example": "He ordered a double portion of fries.",
+    "chineseTranslation": "雙倍的"
+  },
+  {
+    "id": 353,
+    "word": "doubt",
+    "partOfSpeech": "noun",
+    "definition": "A feeling of uncertainty or lack of conviction.",
+    "example": "There is no doubt about his honesty.",
+    "chineseTranslation": "懷疑"
+  },
+  {
+    "id": 354,
+    "word": "down",
+    "partOfSpeech": "adverb",
+    "definition": "From a higher to a lower point.",
+    "example": "She climbed down the ladder.",
+    "chineseTranslation": "向下"
+  },
+  {
+    "id": 355,
+    "word": "dozen",
+    "partOfSpeech": "noun",
+    "definition": "A group or set of twelve.",
+    "example": "I bought a dozen eggs.",
+    "chineseTranslation": "一打"
+  },
+  {
+    "id": 356,
+    "word": "draw",
+    "partOfSpeech": "verb",
+    "definition": "Produce a picture or diagram by making lines on paper.",
+    "example": "He drew a picture of a house.",
+    "chineseTranslation": "畫"
+  },
+  {
+    "id": 357,
+    "word": "dream",
+    "partOfSpeech": "noun",
+    "definition": "A series of thoughts, images, or emotions occurring during sleep.",
+    "example": "She had a strange dream last night.",
+    "chineseTranslation": "夢"
+  },
+  {
+    "id": 358,
+    "word": "dress",
+    "partOfSpeech": "noun",
+    "definition": "A one-piece garment for a woman or girl.",
+    "example": "She wore a red dress to the party.",
+    "chineseTranslation": "洋裝"
+  },
+  {
+    "id": 359,
+    "word": "drink",
+    "partOfSpeech": "verb",
+    "definition": "Take liquid into the mouth and swallow.",
+    "example": "He drank a glass of water.",
+    "chineseTranslation": "喝"
+  },
+  {
+    "id": 360,
+    "word": "drive",
+    "partOfSpeech": "verb",
+    "definition": "Operate and control the direction and speed of a motor vehicle.",
+    "example": "She drives to work every day.",
+    "chineseTranslation": "駕駛"
+  },
+  {
+    "id": 361,
+    "word": "drop",
+    "partOfSpeech": "verb",
+    "definition": "Let or make something fall.",
+    "example": "He dropped his keys on the floor.",
+    "chineseTranslation": "掉落"
+  },
+  {
+    "id": 362,
+    "word": "dry",
+    "partOfSpeech": "adjective",
+    "definition": "Free from moisture or liquid.",
+    "example": "The clothes are dry now.",
+    "chineseTranslation": "乾的"
+  },
+  {
+    "id": 363,
+    "word": "duck",
+    "partOfSpeech": "noun",
+    "definition": "A waterbird with a broad blunt bill.",
+    "example": "The duck swam across the pond.",
+    "chineseTranslation": "鴨子"
+  },
+  {
+    "id": 364,
+    "word": "due",
+    "partOfSpeech": "adjective",
+    "definition": "Expected at or planned for at a certain time.",
+    "example": "The train is due at 5 PM.",
+    "chineseTranslation": "到期的"
+  },
+  {
+    "id": 365,
+    "word": "duo",
+    "partOfSpeech": "noun",
+    "definition": "A pair of people or things.",
+    "example": "The singing duo performed beautifully.",
+    "chineseTranslation": "二人組"
+  }
+]

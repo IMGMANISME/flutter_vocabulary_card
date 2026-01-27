@@ -1,0 +1,698 @@
+[
+  {
+    "id": 1191,
+    "word": "radar",
+    "partOfSpeech": "noun",
+    "definition": "A system for detecting the presence, direction, distance, and speed of objects.",
+    "example": "The plane disappeared from the radar.",
+    "chineseTranslation": "雷達"
+  },
+  {
+    "id": 1192,
+    "word": "radical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to or affecting the fundamental nature of something; far-reaching or thorough.",
+    "example": "The government proposed radical reforms.",
+    "chineseTranslation": "激進的，根本的"
+  },
+  {
+    "id": 1193,
+    "word": "rage",
+    "partOfSpeech": "noun",
+    "definition": "Violent uncontrollable anger.",
+    "example": "He was trembling with rage.",
+    "chineseTranslation": "憤怒，狂怒"
+  },
+  {
+    "id": 1194,
+    "word": "raid",
+    "partOfSpeech": "noun",
+    "definition": "A sudden attack on an enemy by troops, aircraft, or other armed forces.",
+    "example": "The police conducted a raid on the warehouse.",
+    "chineseTranslation": "突襲，突擊"
+  },
+  {
+    "id": 1195,
+    "word": "rally",
+    "partOfSpeech": "verb",
+    "definition": "Come together again in order to continue fighting after a defeat or dispersion.",
+    "example": "The team rallied in the second half.",
+    "chineseTranslation": "重整旗鼓，召集"
+  },
+  {
+    "id": 1196,
+    "word": "ranking",
+    "partOfSpeech": "noun",
+    "definition": "A position in a hierarchy or scale.",
+    "example": "The university improved its world ranking.",
+    "chineseTranslation": "排名，等級"
+  },
+  {
+    "id": 1197,
+    "word": "rape",
+    "partOfSpeech": "noun",
+    "definition": "The crime of forcing another person to have sexual intercourse against their will.",
+    "example": "The suspect was arrested for rape.",
+    "chineseTranslation": "強姦，強奸罪"
+  },
+  {
+    "id": 1198,
+    "word": "ratio",
+    "partOfSpeech": "noun",
+    "definition": "A quantitative relation between two amounts.",
+    "example": "The ratio of teachers to students is 1 to 20.",
+    "chineseTranslation": "比例"
+  },
+  {
+    "id": 1199,
+    "word": "rational",
+    "partOfSpeech": "adjective",
+    "definition": "Based on or in accordance with reason or logic.",
+    "example": "She gave a rational explanation for her actions.",
+    "chineseTranslation": "理性的，合理的"
+  },
+  {
+    "id": 1200,
+    "word": "ray",
+    "partOfSpeech": "noun",
+    "definition": "Each of the lines in which light or other radiation seems to stream from a source.",
+    "example": "A ray of sunlight shone through the window.",
+    "chineseTranslation": "光線"
+  },
+  {
+    "id": 1201,
+    "word": "readily",
+    "partOfSpeech": "adverb",
+    "definition": "Without hesitation or reluctance; willingly.",
+    "example": "She readily agreed to help.",
+    "chineseTranslation": "樂意地，輕易地"
+  },
+  {
+    "id": 1202,
+    "word": "realization",
+    "partOfSpeech": "noun",
+    "definition": "An act of becoming fully aware of something as a fact.",
+    "example": "She came to the sudden realization of the truth.",
+    "chineseTranslation": "認識，領悟"
+  },
+  {
+    "id": 1203,
+    "word": "realm",
+    "partOfSpeech": "noun",
+    "definition": "A kingdom; a field or domain of activity or interest.",
+    "example": "His work belongs to the realm of science.",
+    "chineseTranslation": "領域，範圍，王國"
+  },
+  {
+    "id": 1204,
+    "word": "rear",
+    "partOfSpeech": "noun",
+    "definition": "The back part of something, especially a building or vehicle.",
+    "example": "There’s a garden at the rear of the house.",
+    "chineseTranslation": "後部，背後"
+  },
+  {
+    "id": 1205,
+    "word": "reasoning",
+    "partOfSpeech": "noun",
+    "definition": "The action of thinking about something in a logical, sensible way.",
+    "example": "I don’t follow your reasoning.",
+    "chineseTranslation": "推理，論證"
+  },
+  {
+    "id": 1206,
+    "word": "reassure",
+    "partOfSpeech": "verb",
+    "definition": "Say or do something to remove the doubts and fears of someone.",
+    "example": "He reassured her that everything would be fine.",
+    "chineseTranslation": "使安心，再保證"
+  },
+  {
+    "id": 1207,
+    "word": "rebel",
+    "partOfSpeech": "noun",
+    "definition": "A person who rises in opposition or armed resistance against an established government or ruler.",
+    "example": "The rebels planned to overthrow the government.",
+    "chineseTranslation": "反叛者"
+  },
+  {
+    "id": 1208,
+    "word": "rebellion",
+    "partOfSpeech": "noun",
+    "definition": "An act of violent or open resistance to an established government or ruler.",
+    "example": "The rebellion was quickly suppressed.",
+    "chineseTranslation": "反叛，叛亂"
+  },
+  {
+    "id": 1209,
+    "word": "recipient",
+    "partOfSpeech": "noun",
+    "definition": "A person or thing that receives or is awarded something.",
+    "example": "She was the recipient of the award.",
+    "chineseTranslation": "接受者，受領者"
+  },
+  {
+    "id": 1210,
+    "word": "reconstruction",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of reconstructing or being reconstructed.",
+    "example": "The reconstruction of the building took two years.",
+    "chineseTranslation": "重建，重構"
+  },
+  {
+    "id": 1211,
+    "word": "recount",
+    "partOfSpeech": "verb",
+    "definition": "Tell someone about something; give an account of an event or experience.",
+    "example": "He recounted his adventures abroad.",
+    "chineseTranslation": "敘述，講述"
+  },
+  {
+    "id": 1212,
+    "word": "recruitment",
+    "partOfSpeech": "noun",
+    "definition": "The action of finding new people to join an organization or support a cause.",
+    "example": "The recruitment of new members is essential.",
+    "chineseTranslation": "招募，徵兵"
+  },
+  {
+    "id": 1213,
+    "word": "referendum",
+    "partOfSpeech": "noun",
+    "definition": "A general vote by the electorate on a single political question.",
+    "example": "The government held a referendum on the issue.",
+    "chineseTranslation": "公民投票"
+  },
+  {
+    "id": 1214,
+    "word": "reflection",
+    "partOfSpeech": "noun",
+    "definition": "The throwing back by a body or surface of light, heat, or sound without absorbing it; serious thought or consideration.",
+    "example": "The lake was a perfect reflection of the sky.",
+    "chineseTranslation": "反射，反映，沉思"
+  },
+  {
+    "id": 1215,
+    "word": "reform",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of changing something to improve it.",
+    "example": "The education system is in need of reform.",
+    "chineseTranslation": "改革"
+  },
+  {
+    "id": 1216,
+    "word": "refuge",
+    "partOfSpeech": "noun",
+    "definition": "A condition of being safe or sheltered from pursuit, danger, or trouble.",
+    "example": "They sought refuge in a neighboring country.",
+    "chineseTranslation": "避難所，庇護"
+  },
+  {
+    "id": 1217,
+    "word": "refusal",
+    "partOfSpeech": "noun",
+    "definition": "An act of refusing to do something.",
+    "example": "His refusal to cooperate made things difficult.",
+    "chineseTranslation": "拒絕"
+  },
+  {
+    "id": 1218,
+    "word": "regain",
+    "partOfSpeech": "verb",
+    "definition": "Obtain possession or use of something again after losing it.",
+    "example": "He worked hard to regain his strength.",
+    "chineseTranslation": "重新獲得，恢復"
+  },
+  {
+    "id": 1219,
+    "word": "regardless",
+    "partOfSpeech": "adverb",
+    "definition": "Without paying attention to the present situation; despite the prevailing circumstances.",
+    "example": "She carried on regardless of the difficulties.",
+    "chineseTranslation": "不顧，不管"
+  },
+  {
+    "id": 1220,
+    "word": "regime",
+    "partOfSpeech": "noun",
+    "definition": "A government, especially an authoritarian one.",
+    "example": "The regime was overthrown after years of unrest.",
+    "chineseTranslation": "政權，制度"
+  },
+  {
+    "id": 1221,
+    "word": "regulator",
+    "partOfSpeech": "noun",
+    "definition": "A person or body that supervises a particular industry or business activity.",
+    "example": "Financial regulators monitor the banking sector.",
+    "chineseTranslation": "監管者，調節器"
+  },
+  {
+    "id": 1222,
+    "word": "regulatory",
+    "partOfSpeech": "adjective",
+    "definition": "Serving or intended to regulate something.",
+    "example": "The new regulatory framework is more strict.",
+    "chineseTranslation": "監管的，調節的"
+  },
+  {
+    "id": 1223,
+    "word": "rehabilitation",
+    "partOfSpeech": "noun",
+    "definition": "The action of restoring someone to health or normal life through training and therapy after imprisonment, addiction, or illness.",
+    "example": "He was sent to a rehabilitation center.",
+    "chineseTranslation": "康復，復原"
+  },
+  {
+    "id": 1224,
+    "word": "reign",
+    "partOfSpeech": "noun",
+    "definition": "The period during which a sovereign rules.",
+    "example": "During her reign, the country prospered.",
+    "chineseTranslation": "統治，君主的統治期"
+  },
+  {
+    "id": 1225,
+    "word": "rejection",
+    "partOfSpeech": "noun",
+    "definition": "The dismissing or refusing of a proposal, idea, etc.",
+    "example": "His proposal met with rejection.",
+    "chineseTranslation": "拒絕，否決"
+  },
+  {
+    "id": 1226,
+    "word": "relevance",
+    "partOfSpeech": "noun",
+    "definition": "The quality or state of being closely connected or appropriate.",
+    "example": "She questioned the relevance of his remark.",
+    "chineseTranslation": "相關性"
+  },
+  {
+    "id": 1227,
+    "word": "reliability",
+    "partOfSpeech": "noun",
+    "definition": "The quality of being trustworthy or performing consistently well.",
+    "example": "The reliability of the data is crucial.",
+    "chineseTranslation": "可靠性"
+  },
+  {
+    "id": 1228,
+    "word": "reluctant",
+    "partOfSpeech": "adjective",
+    "definition": "Unwilling and hesitant; disinclined.",
+    "example": "She was reluctant to join the group.",
+    "chineseTranslation": "不情願的"
+  },
+  {
+    "id": 1229,
+    "word": "remainder",
+    "partOfSpeech": "noun",
+    "definition": "A part, number, or quantity that is left after the removal of others.",
+    "example": "He spent the remainder of his life abroad.",
+    "chineseTranslation": "剩餘，餘數"
+  },
+  {
+    "id": 1230,
+    "word": "remains",
+    "partOfSpeech": "noun",
+    "definition": "The parts left over after other parts have been removed, used, or destroyed.",
+    "example": "The remains of the building were cleared away.",
+    "chineseTranslation": "遺骸，殘骸，剩餘物"
+  },
+  {
+    "id": 1231,
+    "word": "remedy",
+    "partOfSpeech": "noun",
+    "definition": "A means of counteracting or eliminating something undesirable.",
+    "example": "There is no simple remedy for unemployment.",
+    "chineseTranslation": "療法，補救方法"
+  },
+  {
+    "id": 1232,
+    "word": "reminder",
+    "partOfSpeech": "noun",
+    "definition": "A thing that causes someone to remember something.",
+    "example": "She sent him a reminder about the meeting.",
+    "chineseTranslation": "提醒，提示"
+  },
+  {
+    "id": 1233,
+    "word": "removal",
+    "partOfSpeech": "noun",
+    "definition": "The action of taking away or abolishing something.",
+    "example": "The removal of the statue sparked debate.",
+    "chineseTranslation": "移除，消除"
+  },
+  {
+    "id": 1234,
+    "word": "render",
+    "partOfSpeech": "verb",
+    "definition": "Provide or give a service, help, etc.; cause to become.",
+    "example": "The shock rendered him speechless.",
+    "chineseTranslation": "使成為，給予"
+  },
+  {
+    "id": 1235,
+    "word": "renew",
+    "partOfSpeech": "verb",
+    "definition": "Resume after an interruption; extend for a further period.",
+    "example": "She renewed her passport last week.",
+    "chineseTranslation": "更新，恢復"
+  },
+  {
+    "id": 1236,
+    "word": "renowned",
+    "partOfSpeech": "adjective",
+    "definition": "Known or talked about by many people; famous.",
+    "example": "He is a renowned artist.",
+    "chineseTranslation": "著名的，有名望的"
+  },
+  {
+    "id": 1237,
+    "word": "rental",
+    "partOfSpeech": "noun",
+    "definition": "The action of renting something, or an amount paid or received as rent.",
+    "example": "Car rental is available at the airport.",
+    "chineseTranslation": "租用，租金"
+  },
+  {
+    "id": 1238,
+    "word": "replacement",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of replacing someone or something.",
+    "example": "The replacement of old equipment improved efficiency.",
+    "chineseTranslation": "替換，取代"
+  },
+  {
+    "id": 1239,
+    "word": "reportedly",
+    "partOfSpeech": "adverb",
+    "definition": "According to what some say; allegedly.",
+    "example": "He was reportedly involved in the scandal.",
+    "chineseTranslation": "據報導，據說"
+  },
+  {
+    "id": 1240,
+    "word": "representation",
+    "partOfSpeech": "noun",
+    "definition": "The action of speaking or acting on behalf of someone.",
+    "example": "The union provides representation for all its members.",
+    "chineseTranslation": "代表，表現"
+  },
+  {
+    "id": 1241,
+    "word": "reproduce",
+    "partOfSpeech": "verb",
+    "definition": "Produce a copy or representation of something.",
+    "example": "The machine can reproduce high-quality images.",
+    "chineseTranslation": "複製，再現"
+  },
+  {
+    "id": 1242,
+    "word": "reproduction",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of making a copy of something; the production of offspring.",
+    "example": "The painting is a reproduction of the original.",
+    "chineseTranslation": "複製，繁殖"
+  },
+  {
+    "id": 1243,
+    "word": "republic",
+    "partOfSpeech": "noun",
+    "definition": "A state in which supreme power is held by the people and their elected representatives.",
+    "example": "France is a republic.",
+    "chineseTranslation": "共和國"
+  },
+  {
+    "id": 1244,
+    "word": "resemble",
+    "partOfSpeech": "verb",
+    "definition": "Have qualities or features, especially those of appearance, in common with someone or something.",
+    "example": "She resembles her mother.",
+    "chineseTranslation": "與...相似"
+  },
+  {
+    "id": 1245,
+    "word": "reside",
+    "partOfSpeech": "verb",
+    "definition": "Have one's permanent home in a particular place.",
+    "example": "She resides in New York.",
+    "chineseTranslation": "居住"
+  },
+  {
+    "id": 1246,
+    "word": "residence",
+    "partOfSpeech": "noun",
+    "definition": "A person's home; the place",
+    "example": "The ambassador's residence is in the city center.",
+    "chineseTranslation": "住所，住宅"
+  },
+  {
+    "id": 1247,
+    "word": "residential",
+    "partOfSpeech": "adjective",
+    "definition": "Designed for people to live in.",
+    "example": "The area is mainly residential.",
+    "chineseTranslation": "住宅的，居住的"
+  },
+  {
+    "id": 1248,
+    "word": "residue",
+    "partOfSpeech": "noun",
+    "definition": "A small amount of something that remains after the main part has gone or been taken or used.",
+    "example": "There was a sticky residue on the table.",
+    "chineseTranslation": "殘留物，剩餘"
+  },
+  {
+    "id": 1249,
+    "word": "resignation",
+    "partOfSpeech": "noun",
+    "definition": "An act of resigning from a job or office.",
+    "example": "Her resignation shocked everyone in the company.",
+    "chineseTranslation": "辭職，辭呈"
+  },
+  {
+    "id": 1250,
+    "word": "resistance",
+    "partOfSpeech": "noun",
+    "definition": "The refusal to accept or comply with something; the attempt to prevent something by action or argument.",
+    "example": "The plan was met with strong resistance.",
+    "chineseTranslation": "抵抗，反抗"
+  },
+  {
+    "id": 1251,
+    "word": "respective",
+    "partOfSpeech": "adjective",
+    "definition": "Belonging or relating separately to each of two or more people or things.",
+    "example": "They returned to their respective homes.",
+    "chineseTranslation": "各自的，分別的"
+  },
+  {
+    "id": 1252,
+    "word": "respectively",
+    "partOfSpeech": "adverb",
+    "definition": "Separately or individually and in the order already mentioned.",
+    "example": "The medals were awarded to John and Lisa, gold and silver respectively.",
+    "chineseTranslation": "分別地，各自地"
+  },
+  {
+    "id": 1253,
+    "word": "restoration",
+    "partOfSpeech": "noun",
+    "definition": "The action of returning something to a former owner, place, or condition.",
+    "example": "The restoration of the painting took several years.",
+    "chineseTranslation": "修復，恢復"
+  },
+  {
+    "id": 1254,
+    "word": "restraint",
+    "partOfSpeech": "noun",
+    "definition": "A measure or condition that keeps someone or something under control.",
+    "example": "The police showed great restraint during the protest.",
+    "chineseTranslation": "克制，約束"
+  },
+  {
+    "id": 1255,
+    "word": "resume",
+    "partOfSpeech": "verb",
+    "definition": "Begin to do or pursue something again after a pause or interruption.",
+    "example": "She resumed her work after lunch.",
+    "chineseTranslation": "重新開始，繼續"
+  },
+  {
+    "id": 1256,
+    "word": "retreat",
+    "partOfSpeech": "verb",
+    "definition": "Withdraw from enemy forces as a result of their superior power or after a defeat.",
+    "example": "The army was forced to retreat.",
+    "chineseTranslation": "撤退，退卻"
+  },
+  {
+    "id": 1257,
+    "word": "retrieve",
+    "partOfSpeech": "verb",
+    "definition": "Get or bring something back; regain possession of.",
+    "example": "The dog retrieved the ball from the water.",
+    "chineseTranslation": "取回，恢復"
+  },
+  {
+    "id": 1258,
+    "word": "revelation",
+    "partOfSpeech": "noun",
+    "definition": "A surprising and previously unknown fact that has been disclosed to others.",
+    "example": "The book was a revelation to many readers.",
+    "chineseTranslation": "揭示，啟示"
+  },
+  {
+    "id": 1259,
+    "word": "revenge",
+    "partOfSpeech": "noun",
+    "definition": "The action of inflicting hurt or harm on someone for an injury or wrong suffered.",
+    "example": "He swore to take revenge on his enemies.",
+    "chineseTranslation": "報復，復仇"
+  },
+  {
+    "id": 1260,
+    "word": "reverse",
+    "partOfSpeech": "verb",
+    "definition": "Move backward; change to the opposite direction, position, or course of action.",
+    "example": "The decision was reversed by the court.",
+    "chineseTranslation": "反轉，推翻"
+  },
+  {
+    "id": 1261,
+    "word": "revival",
+    "partOfSpeech": "noun",
+    "definition": "An improvement in the condition, strength, or fortunes of someone or something.",
+    "example": "The festival marked a revival of local traditions.",
+    "chineseTranslation": "復興，復甦"
+  },
+  {
+    "id": 1262,
+    "word": "revive",
+    "partOfSpeech": "verb",
+    "definition": "Restore to life or consciousness; give new strength or energy to.",
+    "example": "The doctors tried to revive the patient.",
+    "chineseTranslation": "使復甦，使恢復"
+  },
+  {
+    "id": 1263,
+    "word": "revolutionary",
+    "partOfSpeech": "adjective",
+    "definition": "Involving or causing a complete or dramatic change.",
+    "example": "The invention of the internet was revolutionary.",
+    "chineseTranslation": "革命性的，創新的"
+  },
+  {
+    "id": 1264,
+    "word": "rhetoric",
+    "partOfSpeech": "noun",
+    "definition": "The art of effective or persuasive speaking or writing.",
+    "example": "The politician's rhetoric was powerful but lacked substance.",
+    "chineseTranslation": "修辭，煽動性言辭"
+  },
+  {
+    "id": 1265,
+    "word": "rifle",
+    "partOfSpeech": "noun",
+    "definition": "A gun with a long barrel and a rifled bore, intended to be fired from the shoulder.",
+    "example": "The soldier carried a rifle.",
+    "chineseTranslation": "步槍"
+  },
+  {
+    "id": 1266,
+    "word": "riot",
+    "partOfSpeech": "noun",
+    "definition": "A violent disturbance of the peace by a crowd.",
+    "example": "The new law sparked riots in the city.",
+    "chineseTranslation": "暴動，騷亂"
+  },
+  {
+    "id": 1267,
+    "word": "rip",
+    "partOfSpeech": "verb",
+    "definition": "Tear or pull something quickly or forcibly away from something or someone.",
+    "example": "He ripped the letter in half.",
+    "chineseTranslation": "撕裂，撕開"
+  },
+  {
+    "id": 1268,
+    "word": "ritual",
+    "partOfSpeech": "noun",
+    "definition": "A religious or solemn ceremony consisting of a series of actions performed according to a prescribed order.",
+    "example": "The ritual was performed at dawn.",
+    "chineseTranslation": "儀式，典禮"
+  },
+  {
+    "id": 1269,
+    "word": "robust",
+    "partOfSpeech": "adjective",
+    "definition": "Strong and healthy; vigorous.",
+    "example": "She has a robust constitution.",
+    "chineseTranslation": "強健的，結實的"
+  },
+  {
+    "id": 1270,
+    "word": "rock",
+    "partOfSpeech": "noun",
+    "definition": "The solid mineral material forming part of the surface of the earth.",
+    "example": "The climbers rested on a large rock.",
+    "chineseTranslation": "岩石，石頭"
+  },
+  {
+    "id": 1271,
+    "word": "rod",
+    "partOfSpeech": "noun",
+    "definition": "A thin straight bar, especially of wood or metal.",
+    "example": "He used a metal rod to support the structure.",
+    "chineseTranslation": "桿，棒"
+  },
+  {
+    "id": 1272,
+    "word": "rookie",
+    "partOfSpeech": "noun",
+    "definition": "A new recruit, especially in the army or police; a novice.",
+    "example": "The rookie made a few mistakes during his first game.",
+    "chineseTranslation": "新手，菜鳥"
+  },
+  {
+    "id": 1273,
+    "word": "roster",
+    "partOfSpeech": "noun",
+    "definition": "A list or plan showing turns of duty or leave for individuals or groups.",
+    "example": "The team roster was announced before the season started.",
+    "chineseTranslation": "名單，值勤表"
+  },
+  {
+    "id": 1274,
+    "word": "rotate",
+    "partOfSpeech": "verb",
+    "definition": "Move or cause to move in a circle around an axis or center.",
+    "example": "The earth rotates on its axis.",
+    "chineseTranslation": "旋轉，轉動"
+  },
+  {
+    "id": 1275,
+    "word": "rotation",
+    "partOfSpeech": "noun",
+    "definition": "The action of rotating around an axis or center.",
+    "example": "The rotation of the wheels was smooth.",
+    "chineseTranslation": "旋轉，輪流"
+  },
+  {
+    "id": 1276,
+    "word": "ruling",
+    "partOfSpeech": "noun",
+    "definition": "An authoritative decision or pronouncement, especially one made by a judge.",
+    "example": "The court's ruling set a legal precedent.",
+    "chineseTranslation": "裁決，判決"
+  },
+  {
+    "id": 1277,
+    "word": "rumour",
+    "partOfSpeech": "noun",
+    "definition": "A currently circulating story or report of uncertain or doubtful truth.",
+    "example": "There are rumours about a company merger.",
+    "chineseTranslation": "謠言，傳聞"
+  }
+]

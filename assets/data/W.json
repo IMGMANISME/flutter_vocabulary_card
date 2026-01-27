@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1524,
+    "word": "ward",
+    "partOfSpeech": "noun",
+    "definition": "A separate room in a hospital, typically one allocated to a particular type of patient.",
+    "example": "She was moved to the maternity ward.",
+    "chineseTranslation": "病房，區"
+  },
+  {
+    "id": 1525,
+    "word": "warehouse",
+    "partOfSpeech": "noun",
+    "definition": "A large building where raw materials or manufactured goods may be stored before their export or distribution for sale.",
+    "example": "The goods were stored in a large warehouse.",
+    "chineseTranslation": "倉庫"
+  },
+  {
+    "id": 1526,
+    "word": "warfare",
+    "partOfSpeech": "noun",
+    "definition": "Engagement in or the activities involved in war or conflict.",
+    "example": "The country was engaged in chemical warfare.",
+    "chineseTranslation": "戰爭，戰鬥"
+  },
+  {
+    "id": 1527,
+    "word": "warrant",
+    "partOfSpeech": "noun",
+    "definition": "A document issued by a legal or government official authorizing the police or another body to make an arrest, search premises, or carry out some other action relating to the administration of justice.",
+    "example": "The police had a warrant to search the house.",
+    "chineseTranslation": "授權令，保證"
+  },
+  {
+    "id": 1528,
+    "word": "warrior",
+    "partOfSpeech": "noun",
+    "definition": "A brave or experienced soldier or fighter.",
+    "example": "The legend tells of a fearless warrior.",
+    "chineseTranslation": "戰士，勇士"
+  },
+  {
+    "id": 1529,
+    "word": "weaken",
+    "partOfSpeech": "verb",
+    "definition": "Make or become weaker in power, resolve, or physical strength.",
+    "example": "The illness weakened her body.",
+    "chineseTranslation": "削弱，變弱"
+  },
+  {
+    "id": 1530,
+    "word": "weave",
+    "partOfSpeech": "verb",
+    "definition": "Form fabric by interlacing long threads passing in one direction with others at a right angle to them.",
+    "example": "She weaved the threads into a beautiful cloth.",
+    "chineseTranslation": "編織，編造"
+  },
+  {
+    "id": 1531,
+    "word": "weed",
+    "partOfSpeech": "noun",
+    "definition": "A wild plant growing where it is not wanted and in competition with cultivated plants.",
+    "example": "She pulled the weeds from the garden.",
+    "chineseTranslation": "雜草"
+  },
+  {
+    "id": 1532,
+    "word": "well",
+    "partOfSpeech": "noun",
+    "definition": "A shaft sunk into the ground to obtain water, oil, or gas.",
+    "example": "The villagers dug a well for clean water.",
+    "chineseTranslation": "井"
+  },
+  {
+    "id": 1533,
+    "word": "well-being",
+    "partOfSpeech": "noun",
+    "definition": "The state of being comfortable, healthy, or happy.",
+    "example": "Regular exercise contributes to physical and mental well-being.",
+    "chineseTranslation": "幸福，健康"
+  },
+  {
+    "id": 1534,
+    "word": "whatsoever",
+    "partOfSpeech": "adverb",
+    "definition": "Used to emphasize a negative statement.",
+    "example": "He has no interest in politics whatsoever.",
+    "chineseTranslation": "絲毫（用於否定句）"
+  },
+  {
+    "id": 1535,
+    "word": "whereby",
+    "partOfSpeech": "adverb",
+    "definition": "By which.",
+    "example": "They introduced a new system whereby people could vote by telephone.",
+    "chineseTranslation": "藉此，憑此"
+  },
+  {
+    "id": 1536,
+    "word": "whip",
+    "partOfSpeech": "verb",
+    "definition": "Beat with a whip or similar instrument.",
+    "example": "The trainer whipped the horse to make it run faster.",
+    "chineseTranslation": "鞭打，抽打"
+  },
+  {
+    "id": 1537,
+    "word": "wholly",
+    "partOfSpeech": "adverb",
+    "definition": "Entirely; fully.",
+    "example": "The proposal was wholly rejected.",
+    "chineseTranslation": "完全地，全然"
+  },
+  {
+    "id": 1538,
+    "word": "widen",
+    "partOfSpeech": "verb",
+    "definition": "Make or become wider.",
+    "example": "The city decided to widen the road.",
+    "chineseTranslation": "加寬，擴大"
+  },
+  {
+    "id": 1539,
+    "word": "widow",
+    "partOfSpeech": "noun",
+    "definition": "A woman who has lost her spouse by death and has not remarried.",
+    "example": "She has been a widow for ten years.",
+    "chineseTranslation": "寡婦"
+  },
+  {
+    "id": 1540,
+    "word": "width",
+    "partOfSpeech": "noun",
+    "definition": "The measurement or extent of something from side to side; the lesser of two or the least of three dimensions of a body.",
+    "example": "The width of the room is four meters.",
+    "chineseTranslation": "寬度"
+  },
+  {
+    "id": 1541,
+    "word": "willingness",
+    "partOfSpeech": "noun",
+    "definition": "The quality or state of being prepared to do something; readiness.",
+    "example": "Her willingness to help others is admirable.",
+    "chineseTranslation": "樂意，意願"
+  },
+  {
+    "id": 1542,
+    "word": "wipe",
+    "partOfSpeech": "verb",
+    "definition": "Clean or dry something by rubbing its surface with a cloth, a piece of paper, or one's hand.",
+    "example": "She wiped the table with a cloth.",
+    "chineseTranslation": "擦拭，抹去"
+  },
+  {
+    "id": 1543,
+    "word": "wit",
+    "partOfSpeech": "noun",
+    "definition": "The capacity for inventive thought and quick understanding; keen intelligence.",
+    "example": "He is known for his sharp wit.",
+    "chineseTranslation": "機智，風趣"
+  },
+  {
+    "id": 1544,
+    "word": "withdrawal",
+    "partOfSpeech": "noun",
+    "definition": "The action of withdrawing something.",
+    "example": "The general ordered the withdrawal of troops.",
+    "chineseTranslation": "撤退，取回，提款"
+  },
+  {
+    "id": 1545,
+    "word": "workout",
+    "partOfSpeech": "noun",
+    "definition": "A session of vigorous physical exercise or training.",
+    "example": "He does a workout at the gym every morning.",
+    "chineseTranslation": "健身，鍛煉"
+  },
+  {
+    "id": 1546,
+    "word": "worship",
+    "partOfSpeech": "verb",
+    "definition": "Show reverence and adoration for a deity; honor with religious rites.",
+    "example": "They gathered to worship every Sunday.",
+    "chineseTranslation": "崇拜，敬拜"
+  },
+  {
+    "id": 1547,
+    "word": "worthwhile",
+    "partOfSpeech": "adjective",
+    "definition": "Worth the time, money, or effort spent; of value or importance.",
+    "example": "Volunteering is a worthwhile activity.",
+    "chineseTranslation": "值得的，有價值的"
+  },
+  {
+    "id": 1548,
+    "word": "worthy",
+    "partOfSpeech": "adjective",
+    "definition": "Having or showing the qualities that deserve the specified action or regard.",
+    "example": "She is a worthy recipient of the award.",
+    "chineseTranslation": "值得的，應得的"
+  }
+]

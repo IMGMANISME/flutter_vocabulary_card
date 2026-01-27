@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1035,
+    "word": "namely",
+    "partOfSpeech": "adverb",
+    "definition": "That is to say; specifically.",
+    "example": "Three students were mentioned, namely John, Sarah, and Alex.",
+    "chineseTranslation": "即，也就是"
+  },
+  {
+    "id": 1036,
+    "word": "nationwide",
+    "partOfSpeech": "adjective",
+    "definition": "Extending or reaching throughout an entire nation.",
+    "example": "The product was launched nationwide.",
+    "chineseTranslation": "全國性的"
+  },
+  {
+    "id": 1037,
+    "word": "naval",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to a country's navy.", 
+    "example": "The country strengthened its naval forces.",
+    "chineseTranslation": "海軍的"
+  },
+  {
+    "id": 1038,
+    "word": "neglect",
+    "partOfSpeech": "verb",
+    "definition": "Fail to care for properly.",
+    "example": "She neglected her garden for weeks.",
+    "chineseTranslation": "忽視、疏忽"
+  },
+  {
+    "id": 1039,
+    "word": "neighbouring",
+    "partOfSpeech": "adjective",
+    "definition": "Situated near or next to something.",
+    "example": "They came from neighbouring villages.",
+    "chineseTranslation": "鄰近的"
+  },
+  {
+    "id": 1040,
+    "word": "nest",
+    "partOfSpeech": "noun",
+    "definition": "A structure built by birds or other animals to hold eggs or young.",
+    "example": "The bird built its nest in the tree.",
+    "chineseTranslation": "巢"
+  },
+  {
+    "id": 1041,
+    "word": "net",
+    "partOfSpeech": "noun",
+    "definition": "A piece of open-meshed material made of twine, cord, or something similar.",
+    "example": "He caught the fish in a net.",
+    "chineseTranslation": "網"
+  },
+  {
+    "id": 1042,
+    "word": "newsletter",
+    "partOfSpeech": "noun",
+    "definition": "A bulletin issued periodically to inform a group about relevant news.",
+    "example": "I subscribe to the company's monthly newsletter.",
+    "chineseTranslation": "電子報、簡報"
+  },
+  {
+    "id": 1043,
+    "word": "niche",
+    "partOfSpeech": "noun",
+    "definition": "A specialized segment of the market for a particular kind of product or service.",
+    "example": "They found a profitable niche in the travel industry.",
+    "chineseTranslation": "利基市場、定位"
+  },
+  {
+    "id": 1044,
+    "word": "noble",
+    "partOfSpeech": "adjective",
+    "definition": "Having or showing fine personal qualities or high moral principles.",
+    "example": "He made a noble sacrifice for his country.",
+    "chineseTranslation": "高尚的、高貴的"
+  },
+  {
+    "id": 1045,
+    "word": "nod",
+    "partOfSpeech": "verb",
+    "definition": "Lower and raise one's head slightly and briefly, especially in greeting, assent, or understanding.",
+    "example": "She nodded in agreement.",
+    "chineseTranslation": "點頭"
+  },
+  {
+    "id": 1046,
+    "word": "nominate",
+    "partOfSpeech": "verb",
+    "definition": "Propose or formally enter as a candidate for election or for an honor or award.",
+    "example": "She was nominated for the award.",
+    "chineseTranslation": "提名"
+  },
+  {
+    "id": 1047,
+    "word": "nomination",
+    "partOfSpeech": "noun",
+    "definition": "The action of nominating or state of being nominated.",
+    "example": "His nomination was announced yesterday.",
+    "chineseTranslation": "提名"
+  },
+  {
+    "id": 1048,
+    "word": "nominee",
+    "partOfSpeech": "noun",
+    "definition": "A person who is proposed or formally entered as a candidate.",
+    "example": "The nominee accepted the prize.",
+    "chineseTranslation": "被提名人"
+  },
+  {
+    "id": 1049,
+    "word": "nonetheless",
+    "partOfSpeech": "adverb",
+    "definition": "In spite of that; nevertheless.",
+    "example": "It was raining, but we went out nonetheless.",
+    "chineseTranslation": "儘管如此"
+  },
+  {
+    "id": 1050,
+    "word": "non-profit",
+    "partOfSpeech": "adjective",
+    "definition": "Not making or conducted primarily to make a profit.",
+    "example": "She works for a non-profit organization.",
+    "chineseTranslation": "非營利的"
+  },
+  {
+    "id": 1051,
+    "word": "nonsense",
+    "partOfSpeech": "noun",
+    "definition": "Spoken or written words that have no meaning or make no sense.",
+    "example": "What he said was complete nonsense.",
+    "chineseTranslation": "胡說、無意義的話"
+  },
+  {
+    "id": 1052,
+    "word": "noon",
+    "partOfSpeech": "noun",
+    "definition": "Twelve o'clock in the day; midday.",
+    "example": "Let's meet at noon.",
+    "chineseTranslation": "中午"
+  },
+  {
+    "id": 1053,
+    "word": "notable",
+    "partOfSpeech": "adjective",
+    "definition": "Worthy of attention or notice; remarkable.",
+    "example": "She achieved notable success in her career.",
+    "chineseTranslation": "顯著的、值得注意的"
+  },
+  {
+    "id": 1054,
+    "word": "notably",
+    "partOfSpeech": "adverb",
+    "definition": "Especially; in particular.",
+    "example": "He is notably good at solving complex problems.",
+    "chineseTranslation": "尤其、特別"
+  },
+  {
+    "id": 1055,
+    "word": "notify",
+    "partOfSpeech": "verb",
+    "definition": "Inform someone of something, typically in a formal or official manner.",
+    "example": "Please notify me of any changes.",
+    "chineseTranslation": "通知"
+  },
+  {
+    "id": 1056,
+    "word": "notorious",
+    "partOfSpeech": "adjective",
+    "definition": "Famous or well known, typically for some bad quality or deed.",
+    "example": "The city is notorious for its traffic jams.",
+    "chineseTranslation": "惡名昭彰的"
+  },
+  {
+    "id": 1057,
+    "word": "novel",
+    "partOfSpeech": "noun",
+    "definition": "A fictitious prose narrative of book length.",
+    "example": "She published her first novel last year.",
+    "chineseTranslation": "小說"
+  },
+  {
+    "id": 1058,
+    "word": "nursery",
+    "partOfSpeech": "noun",
+    "definition": "A room or place set aside for the use of babies and young children.",
+    "example": "She decorated the nursery with bright colors.",
+    "chineseTranslation": "育嬰室、托兒所"
+  },
+  {
+    "id": 1059,
+    "word": "non-profit",
+    "partOfSpeech": "noun",
+    "definition": "An organization that uses its surplus revenues to further achieve its purpose rather than distributing its income to the organization's leaders, members, or shareholders.",
+    "example": "The foundation operates as a non-profit to support education.",
+    "chineseTranslation": "非營利組織"
+  }
+]

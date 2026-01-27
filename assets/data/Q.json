@@ -1,0 +1,28 @@
+
+
+[
+  {
+    "id": 1188,
+    "word": "query",
+    "partOfSpeech": "noun",
+    "definition": "A question, especially one addressed to an official or organization.",
+    "example": "He sent a query to the customer service department.",
+    "chineseTranslation": "詢問，問題"
+  },
+  {
+    "id": 1189,
+    "word": "quest",
+    "partOfSpeech": "noun",
+    "definition": "A long or arduous search for something.",
+    "example": "Their quest for knowledge never ends.",
+    "chineseTranslation": "探索，追求"
+  },
+  {
+    "id": 1190,
+    "word": "quota",
+    "partOfSpeech": "noun",
+    "definition": "A limited or fixed number or amount of people or things, in particular.",
+    "example": "The country set a quota on car imports.",
+    "chineseTranslation": "配額，限額"
+  }
+]

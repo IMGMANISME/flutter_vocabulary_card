@@ -1,0 +1,36 @@
+
+
+[
+  {
+    "id": 911,
+    "word": "keen",
+    "partOfSpeech": "adjective",
+    "definition": "Having or showing eagerness or enthusiasm.",
+    "example": "She is very keen to learn new skills.",
+    "chineseTranslation": "熱衷的，渴望的"
+  },
+  {
+    "id": 912,
+    "word": "kidnap",
+    "partOfSpeech": "verb",
+    "definition": "Take someone away illegally by force, typically to obtain a ransom.",
+    "example": "The criminals planned to kidnap the businessman.",
+    "chineseTranslation": "綁架"
+  },
+  {
+    "id": 913,
+    "word": "kidney",
+    "partOfSpeech": "noun",
+    "definition": "Each of a pair of organs in the abdominal cavity of mammals, birds, and reptiles, that excrete urine.",
+    "example": "He donated one of his kidneys to save a life.",
+    "chineseTranslation": "腎臟"
+  },
+  {
+    "id": 914,
+    "word": "kingdom",
+    "partOfSpeech": "noun",
+    "definition": "A country, state, or territory ruled by a king or queen.",
+    "example": "The kingdom was known for its rich culture and history.",
+    "chineseTranslation": "王國"
+  }
+]

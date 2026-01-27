@@ -1,0 +1,730 @@
+[
+  {
+    "id": 676,
+    "word": "gambling",
+    "partOfSpeech": "noun",
+    "definition": "The act of betting money on games or events with an uncertain outcome.",
+    "example": "He lost a lot of money through gambling at the casino.",
+    "chineseTranslation": "賭博"
+  },
+  {
+    "id": 677,
+    "word": "gang",
+    "partOfSpeech": "noun",
+    "definition": "A group of people who associate together, often for criminal purposes.",
+    "example": "The police arrested members of a local gang.",
+    "chineseTranslation": "幫派"
+  },
+  {
+    "id": 678,
+    "word": "gap",
+    "partOfSpeech": "noun",
+    "definition": "An empty space or interval; a break in continuity.",
+    "example": "There is a gap between the two buildings.",
+    "chineseTranslation": "間隙"
+  },
+  {
+    "id": 679,
+    "word": "garage",
+    "partOfSpeech": "noun",
+    "definition": "A building or shed for housing a motor vehicle or vehicles.",
+    "example": "He parked his car in the garage.",
+    "chineseTranslation": "車庫"
+  },
+  {
+    "id": 680,
+    "word": "garbage",
+    "partOfSpeech": "noun",
+    "definition": "Waste material; trash.",
+    "example": "Please take out the garbage before it smells.",
+    "chineseTranslation": "垃圾"
+  },
+  {
+    "id": 681,
+    "word": "garden",
+    "partOfSpeech": "noun",
+    "definition": "A piece of ground used for growing flowers, vegetables, or herbs.",
+    "example": "She spends her weekends working in the garden.",
+    "chineseTranslation": "花園"
+  },
+  {
+    "id": 682,
+    "word": "garlic",
+    "partOfSpeech": "noun",
+    "definition": "A strong-smelling pungent-tasting bulb used as a seasoning in cooking.",
+    "example": "Add some garlic to the sauce for extra flavor.",
+    "chineseTranslation": "大蒜"
+  },
+  {
+    "id": 683,
+    "word": "gas",
+    "partOfSpeech": "noun",
+    "definition": "A substance in a form like air that is neither solid nor liquid.",
+    "example": "The gas stove is used for cooking.",
+    "chineseTranslation": "氣體"
+  },
+  {
+    "id": 684,
+    "word": "gather",
+    "partOfSpeech": "verb",
+    "definition": "To come together or bring together into one place.",
+    "example": "People gathered in the park for the festival.",
+    "chineseTranslation": "聚集"
+  },
+  {
+    "id": 685,
+    "word": "gaze",
+    "partOfSpeech": "verb",
+    "definition": "To look steadily and intently, especially in admiration or thought.",
+    "example": "She gazed at the stars all night.",
+    "chineseTranslation": "凝視"
+  },
+  {
+    "id": 686,
+    "word": "gear",
+    "partOfSpeech": "noun",
+    "definition": "Equipment or apparatus used for a particular purpose.",
+    "example": "He packed his camping gear for the trip.",
+    "chineseTranslation": "裝備"
+  },
+  {
+    "id": 687,
+    "word": "gender",
+    "partOfSpeech": "noun",
+    "definition": "The state of being male or female.",
+    "example": "The survey asked about the respondent's gender.",
+    "chineseTranslation": "性別"
+  },
+  {
+    "id": 688,
+    "word": "gene",
+    "partOfSpeech": "noun",
+    "definition": "A unit of heredity which is transferred from a parent to offspring.",
+    "example": "Eye color is determined by genes.",
+    "chineseTranslation": "基因"
+  },
+  {
+    "id": 689,
+    "word": "general",
+    "partOfSpeech": "adjective",
+    "definition": "Common to most people or things; widespread.",
+    "example": "In general, people like to travel during holidays.",
+    "chineseTranslation": "一般的"
+  },
+  {
+    "id": 690,
+    "word": "generate",
+    "partOfSpeech": "verb",
+    "definition": "To produce or create something.",
+    "example": "The power plant generates electricity for the city.",
+    "chineseTranslation": "產生"
+  },
+  {
+    "id": 691,
+    "word": "generation",
+    "partOfSpeech": "noun",
+    "definition": "All of the people born and living at about the same time.",
+    "example": "The younger generation is very tech-savvy.",
+    "chineseTranslation": "世代"
+  },
+  {
+    "id": 692,
+    "word": "generous",
+    "partOfSpeech": "adjective",
+    "definition": "Showing kindness and willingness to give more than necessary.",
+    "example": "She is very generous with her time and money.",
+    "chineseTranslation": "慷慨的"
+  },
+  {
+    "id": 693,
+    "word": "genius",
+    "partOfSpeech": "noun",
+    "definition": "A person with exceptional intellectual or creative power.",
+    "example": "Einstein was a scientific genius.",
+    "chineseTranslation": "天才"
+  },
+  {
+    "id": 694,
+    "word": "genre",
+    "partOfSpeech": "noun",
+    "definition": "A category of artistic composition characterized by similarities in form or style.",
+    "example": "My favorite movie genre is comedy.",
+    "chineseTranslation": "類型"
+  },
+  {
+    "id": 695,
+    "word": "gentle",
+    "partOfSpeech": "adjective",
+    "definition": "Having a mild, kind, or tender temperament or character.",
+    "example": "He gave her a gentle smile.",
+    "chineseTranslation": "溫柔的"
+  },
+  {
+    "id": 696,
+    "word": "genuine",
+    "partOfSpeech": "adjective",
+    "definition": "Truly what something is said to be; authentic.",
+    "example": "She showed genuine concern for his well-being.",
+    "chineseTranslation": "真誠的"
+  },
+  {
+    "id": 697,
+    "word": "gesture",
+    "partOfSpeech": "noun",
+    "definition": "A movement of part of the body to express an idea or meaning.",
+    "example": "He made a gesture of apology.",
+    "chineseTranslation": "手勢"
+  },
+  {
+    "id": 698,
+    "word": "ghost",
+    "partOfSpeech": "noun",
+    "definition": "The spirit of a dead person believed to appear to the living.",
+    "example": "The old house is said to be haunted by a ghost.",
+    "chineseTranslation": "鬼魂"
+  },
+  {
+    "id": 699,
+    "word": "giant",
+    "partOfSpeech": "noun",
+    "definition": "An imaginary or mythical being of human form but superhuman size.",
+    "example": "The story featured a giant who lived in the mountains.",
+    "chineseTranslation": "巨人"
+  },
+  {
+    "id": 700,
+    "word": "gift",
+    "partOfSpeech": "noun",
+    "definition": "Something given voluntarily without payment in return.",
+    "example": "She received a gift for her birthday.",
+    "chineseTranslation": "禮物"
+  },
+  {
+    "id": 701,
+    "word": "gigantic",
+    "partOfSpeech": "adjective",
+    "definition": "Of very great size or extent; huge or enormous.",
+    "example": "They built a gigantic statue in the city square.",
+    "chineseTranslation": "巨大的"
+  },
+  {
+    "id": 702,
+    "word": "ginger",
+    "partOfSpeech": "noun",
+    "definition": "A spicy root used as a flavoring or medicine.",
+    "example": "Add some ginger to the tea for a spicy flavor.",
+    "chineseTranslation": "薑"
+  },
+  {
+    "id": 703,
+    "word": "girl",
+    "partOfSpeech": "noun",
+    "definition": "A female child or young woman.",
+    "example": "The girl is playing in the park.",
+    "chineseTranslation": "女孩"
+  },
+  {
+    "id": 704,
+    "word": "give",
+    "partOfSpeech": "verb",
+    "definition": "To freely transfer the possession of something to someone.",
+    "example": "He gave her a book as a present.",
+    "chineseTranslation": "給予"
+  },
+  {
+    "id": 705,
+    "word": "glad",
+    "partOfSpeech": "adjective",
+    "definition": "Feeling pleasure or happiness.",
+    "example": "I am glad to see you again.",
+    "chineseTranslation": "高興的"
+  },
+  {
+    "id": 706,
+    "word": "glance",
+    "partOfSpeech": "verb",
+    "definition": "To look quickly or briefly.",
+    "example": "She glanced at her watch and hurried away.",
+    "chineseTranslation": "瞥一眼"
+  },
+  {
+    "id": 707,
+    "word": "glass",
+    "partOfSpeech": "noun",
+    "definition": "A hard, brittle substance, typically transparent or translucent.",
+    "example": "The window is made of glass.",
+    "chineseTranslation": "玻璃"
+  },
+  {
+    "id": 708,
+    "word": "glide",
+    "partOfSpeech": "verb",
+    "definition": "To move smoothly and continuously along a surface.",
+    "example": "The bird glided effortlessly through the air.",
+    "chineseTranslation": "滑行"
+  },
+  {
+    "id": 709,
+    "word": "glimpse",
+    "partOfSpeech": "noun",
+    "definition": "A brief or partial view.",
+    "example": "I caught a glimpse of the celebrity in the crowd.",
+    "chineseTranslation": "一瞥"
+  },
+  {
+    "id": 710,
+    "word": "global",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the whole world.",
+    "example": "Climate change is a global issue.",
+    "chineseTranslation": "全球的"
+  },
+  {
+    "id": 711,
+    "word": "globe",
+    "partOfSpeech": "noun",
+    "definition": "A spherical representation of the Earth.",
+    "example": "He spun the globe to find a country to visit.",
+    "chineseTranslation": "地球儀"
+  },
+  {
+    "id": 712,
+    "word": "gloomy",
+    "partOfSpeech": "adjective",
+    "definition": "Dark or poorly lit, especially so as to appear depressing or frightening.",
+    "example": "The sky was gloomy before the storm.",
+    "chineseTranslation": "陰暗的"
+  },
+  {
+    "id": 713,
+    "word": "glorious",
+    "partOfSpeech": "adjective",
+    "definition": "Having great beauty and splendor.",
+    "example": "They enjoyed a glorious sunset at the beach.",
+    "chineseTranslation": "光榮的"
+  },
+  {
+    "id": 714,
+    "word": "glory",
+    "partOfSpeech": "noun",
+    "definition": "High renown or honor won by notable achievements.",
+    "example": "The team basked in the glory of their victory.",
+    "chineseTranslation": "榮耀"
+  },
+  {
+    "id": 715,
+    "word": "glove",
+    "partOfSpeech": "noun",
+    "definition": "A covering for the hand worn for protection or warmth.",
+    "example": "He wore gloves to keep his hands warm.",
+    "chineseTranslation": "手套"
+  },
+  {
+    "id": 716,
+    "word": "glow",
+    "partOfSpeech": "verb",
+    "definition": "To give out a steady light without flame.",
+    "example": "The fireflies glowed in the dark.",
+    "chineseTranslation": "發光"
+  },
+  {
+    "id": 717,
+    "word": "glue",
+    "partOfSpeech": "noun",
+    "definition": "An adhesive substance used for sticking objects together.",
+    "example": "Use glue to fix the broken vase.",
+    "chineseTranslation": "膠水"
+  },
+  {
+    "id": 718,
+    "word": "go",
+    "partOfSpeech": "verb",
+    "definition": "To move from one place to another.",
+    "example": "They go to school by bus every day.",
+    "chineseTranslation": "去"
+  },
+  {
+    "id": 719,
+    "word": "goal",
+    "partOfSpeech": "noun",
+    "definition": "An aim or desired result.",
+    "example": "Her goal is to become a doctor.",
+    "chineseTranslation": "目標"
+  },
+  {
+    "id": 720,
+    "word": "goat",
+    "partOfSpeech": "noun",
+    "definition": "A hardy domesticated ruminant animal that has backward curving horns.",
+    "example": "The goat grazed in the field.",
+    "chineseTranslation": "山羊"
+  },
+  {
+    "id": 721,
+    "word": "god",
+    "partOfSpeech": "noun",
+    "definition": "A superhuman being or spirit worshipped as having power over nature or human fortunes.",
+    "example": "Many religions worship one or more gods.",
+    "chineseTranslation": "神"
+  },
+  {
+    "id": 722,
+    "word": "gold",
+    "partOfSpeech": "noun",
+    "definition": "A yellow precious metal used for coins, jewelry, and decoration.",
+    "example": "The ring is made of pure gold.",
+    "chineseTranslation": "黃金"
+  },
+  {
+    "id": 723,
+    "word": "golden",
+    "partOfSpeech": "adjective",
+    "definition": "Made of gold or having the color of gold.",
+    "example": "She wore a golden necklace.",
+    "chineseTranslation": "金色的"
+  },
+  {
+    "id": 724,
+    "word": "golf",
+    "partOfSpeech": "noun",
+    "definition": "A game in which players use clubs to hit balls into holes on a course.",
+    "example": "He plays golf every weekend.",
+    "chineseTranslation": "高爾夫"
+  },
+  {
+    "id": 725,
+    "word": "good",
+    "partOfSpeech": "adjective",
+    "definition": "To be desired or approved of.",
+    "example": "She is a good student.",
+    "chineseTranslation": "好的"
+  },
+  {
+    "id": 726,
+    "word": "goods",
+    "partOfSpeech": "noun",
+    "definition": "Merchandise or possessions.",
+    "example": "The store sells a variety of goods.",
+    "chineseTranslation": "商品"
+  },
+  {
+    "id": 727,
+    "word": "goose",
+    "partOfSpeech": "noun",
+    "definition": "A large waterbird with a long neck and webbed feet.",
+    "example": "The goose swam across the pond.",
+    "chineseTranslation": "鵝"
+  },
+  {
+    "id": 728,
+    "word": "gorgeous",
+    "partOfSpeech": "adjective",
+    "definition": "Beautiful; very attractive.",
+    "example": "She looked gorgeous in her evening dress.",
+    "chineseTranslation": "華麗的"
+  },
+  {
+    "id": 729,
+    "word": "govern",
+    "partOfSpeech": "verb",
+    "definition": "To conduct the policy, actions, and affairs of a state or organization.",
+    "example": "The president governs the country.",
+    "chineseTranslation": "統治"
+  },
+  {
+    "id": 730,
+    "word": "government",
+    "partOfSpeech": "noun",
+    "definition": "The group of people with the authority to govern a country or state.",
+    "example": "The government passed a new law.",
+    "chineseTranslation": "政府"
+  },
+  {
+    "id": 731,
+    "word": "governor",
+    "partOfSpeech": "noun",
+    "definition": "The elected executive head of a state in the US.",
+    "example": "The governor signed the bill into law.",
+    "chineseTranslation": "州長"
+  },
+  {
+    "id": 732,
+    "word": "grab",
+    "partOfSpeech": "verb",
+    "definition": "To seize suddenly or quickly.",
+    "example": "He grabbed his coat and left.",
+    "chineseTranslation": "抓取"
+  },
+  {
+    "id": 733,
+    "word": "grace",
+    "partOfSpeech": "noun",
+    "definition": "Simple elegance or refinement of movement.",
+    "example": "She danced with grace.",
+    "chineseTranslation": "優雅"
+  },
+  {
+    "id": 734,
+    "word": "grade",
+    "partOfSpeech": "noun",
+    "definition": "A level of quality or rank.",
+    "example": "She got a good grade on her exam.",
+    "chineseTranslation": "等級"
+  },
+  {
+    "id": 735,
+    "word": "graduate",
+    "partOfSpeech": "verb",
+    "definition": "To complete a course of study and receive a degree or diploma.",
+    "example": "He will graduate from university next year.",
+    "chineseTranslation": "畢業"
+  },
+  {
+    "id": 736,
+    "word": "grain",
+    "partOfSpeech": "noun",
+    "definition": "Seeds of cereal plants used as food.",
+    "example": "Rice is a common grain in many countries.",
+    "chineseTranslation": "穀物"
+  },
+  {
+    "id": 737,
+    "word": "grand",
+    "partOfSpeech": "adjective",
+    "definition": "Magnificent and imposing in appearance or style.",
+    "example": "They held a grand celebration.",
+    "chineseTranslation": "宏偉的"
+  },
+  {
+    "id": 738,
+    "word": "grandfather",
+    "partOfSpeech": "noun",
+    "definition": "The father of one's father or mother.",
+    "example": "My grandfather told me stories about his youth.",
+    "chineseTranslation": "祖父"
+  },
+  {
+    "id": 739,
+    "word": "grandmother",
+    "partOfSpeech": "noun",
+    "definition": "The mother of one's father or mother.",
+    "example": "Her grandmother baked cookies for her.",
+    "chineseTranslation": "祖母"
+  },
+  {
+    "id": 740,
+    "word": "grant",
+    "partOfSpeech": "verb",
+    "definition": "To agree to give or allow something requested.",
+    "example": "The university granted her a scholarship.",
+    "chineseTranslation": "授予"
+  },
+  {
+    "id": 741,
+    "word": "grass",
+    "partOfSpeech": "noun",
+    "definition": "Green plants with narrow leaves growing close to the ground.",
+    "example": "The lawn was covered with green grass.",
+    "chineseTranslation": "草"
+  },
+  {
+    "id": 742,
+    "word": "grateful",
+    "partOfSpeech": "adjective",
+    "definition": "Feeling or showing thanks.",
+    "example": "I am grateful for your help.",
+    "chineseTranslation": "感激的"
+  },
+  {
+    "id": 743,
+    "word": "grave",
+    "partOfSpeech": "noun",
+    "definition": "A place of burial for a dead body.",
+    "example": "They visited the grave of their ancestors.",
+    "chineseTranslation": "墳墓"
+  },
+  {
+    "id": 744,
+    "word": "gravity",
+    "partOfSpeech": "noun",
+    "definition": "The force that attracts a body toward the center of the earth.",
+    "example": "Gravity keeps us on the ground.",
+    "chineseTranslation": "重力"
+  },
+  {
+    "id": 745,
+    "word": "great",
+    "partOfSpeech": "adjective",
+    "definition": "Of an extent, amount, or intensity considerably above average.",
+    "example": "She did a great job on the project.",
+    "chineseTranslation": "偉大的"
+  },
+  {
+    "id": 746,
+    "word": "green",
+    "partOfSpeech": "adjective",
+    "definition": "Of the color between blue and yellow in the spectrum.",
+    "example": "The leaves are green in spring.",
+    "chineseTranslation": "綠色的"
+  },
+  {
+    "id": 747,
+    "word": "greet",
+    "partOfSpeech": "verb",
+    "definition": "To give a polite word or sign of welcome or recognition.",
+    "example": "They greeted each other warmly.",
+    "chineseTranslation": "問候"
+  },
+  {
+    "id": 748,
+    "word": "grief",
+    "partOfSpeech": "noun",
+    "definition": "Deep sorrow, especially caused by someone's death.",
+    "example": "She was overcome with grief at the loss of her pet.",
+    "chineseTranslation": "悲痛"
+  },
+  {
+    "id": 749,
+    "word": "grind",
+    "partOfSpeech": "verb",
+    "definition": "To crush or break something into small particles or powder.",
+    "example": "They grind coffee beans to make fresh coffee.",
+    "chineseTranslation": "磨碎"
+  },
+  {
+    "id": 750,
+    "word": "grip",
+    "partOfSpeech": "noun",
+    "definition": "A firm hold or grasp.",
+    "example": "He lost his grip on the rope.",
+    "chineseTranslation": "握把"
+  },
+  {
+    "id": 751,
+    "word": "groan",
+    "partOfSpeech": "verb",
+    "definition": "To make a deep sound in response to pain or despair.",
+    "example": "He groaned when he hurt his back.",
+    "chineseTranslation": "呻吟"
+  },
+  {
+    "id": 752,
+    "word": "gross",
+    "partOfSpeech": "adjective",
+    "definition": "Unattractively large or bloated.",
+    "example": "The company reported gross profits this quarter.",
+    "chineseTranslation": "總共的"
+  },
+  {
+    "id": 753,
+    "word": "ground",
+    "partOfSpeech": "noun",
+    "definition": "The solid surface of the earth.",
+    "example": "The children played on the ground outside.",
+    "chineseTranslation": "地面"
+  },
+  {
+    "id": 754,
+    "word": "group",
+    "partOfSpeech": "noun",
+    "definition": "A number of people or things that are located, gathered, or classed together.",
+    "example": "They formed a group to study together.",
+    "chineseTranslation": "群組"
+  },
+  {
+    "id": 755,
+    "word": "grow",
+    "partOfSpeech": "verb",
+    "definition": "To increase in size or develop.",
+    "example": "The plants grow quickly in the spring.",
+    "chineseTranslation": "成長"
+  },
+  {
+    "id": 756,
+    "word": "growth",
+    "partOfSpeech": "noun",
+    "definition": "The process of increasing in physical size.",
+    "example": "The company experienced rapid growth last year.",
+    "chineseTranslation": "成長"
+  },
+  {
+    "id": 757,
+    "word": "guarantee",
+    "partOfSpeech": "noun",
+    "definition": "A formal promise or assurance.",
+    "example": "The product comes with a two-year guarantee.",
+    "chineseTranslation": "保證"
+  },
+  {
+    "id": 758,
+    "word": "guard",
+    "partOfSpeech": "noun",
+    "definition": "A person who keeps watch, especially to protect something.",
+    "example": "The guard checked everyone's identification.",
+    "chineseTranslation": "警衛"
+  },
+  {
+    "id": 759,
+    "word": "guess",
+    "partOfSpeech": "verb",
+    "definition": "To estimate or suppose something without sufficient information.",
+    "example": "Can you guess the answer to this question?",
+    "chineseTranslation": "猜測"
+  },
+  {
+    "id": 760,
+    "word": "guest",
+    "partOfSpeech": "noun",
+    "definition": "A person who is invited to visit or stay in someone's home.",
+    "example": "They welcomed their guests warmly.",
+    "chineseTranslation": "客人"
+  },
+  {
+    "id": 761,
+    "word": "guide",
+    "partOfSpeech": "noun",
+    "definition": "A person who shows others the way or leads them.",
+    "example": "The tour guide explained the history of the city.",
+    "chineseTranslation": "導遊"
+  },
+  {
+    "id": 762,
+    "word": "guilt",
+    "partOfSpeech": "noun",
+    "definition": "The fact of having committed a specified or implied offense.",
+    "example": "He felt guilt after lying to his friend.",
+    "chineseTranslation": "罪惡感"
+  },
+  {
+    "id": 763,
+    "word": "guilty",
+    "partOfSpeech": "adjective",
+    "definition": "Responsible for a specified wrongdoing.",
+    "example": "The jury found him guilty of theft.",
+    "chineseTranslation": "有罪的"
+  },
+  {
+    "id": 764,
+    "word": "guitar",
+    "partOfSpeech": "noun",
+    "definition": "A stringed musical instrument played by plucking or strumming.",
+    "example": "He plays the guitar in a band.",
+    "chineseTranslation": "吉他"
+  },
+  {
+    "id": 765,
+    "word": "gun",
+    "partOfSpeech": "noun",
+    "definition": "A weapon incorporating a metal tube from which bullets are fired.",
+    "example": "The police found a gun at the crime scene.",
+    "chineseTranslation": "槍"
+  },
+  {
+    "id": 766,
+    "word": "gut",
+    "partOfSpeech": "noun",
+    "definition": "The stomach or belly; the intestines.",
+    "example": "He felt a pain in his gut after eating the food.",
+    "chineseTranslation": "腸胃"
+  }
+]

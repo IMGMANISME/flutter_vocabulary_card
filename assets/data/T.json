@@ -1,0 +1,505 @@
+[
+  {
+    "id": 1421,
+    "word": "tackle",
+    "partOfSpeech": "verb",
+    "definition": "Make determined efforts to deal with a problem or difficult task.",
+    "example": "The government is determined to tackle climate change.",
+    "chineseTranslation": "處理，應對，擒抱"
+  },
+  {
+    "id": 1422,
+    "word": "tactic",
+    "partOfSpeech": "noun",
+    "definition": "An action or strategy carefully planned to achieve a specific end.",
+    "example": "Their marketing tactics were very effective.",
+    "chineseTranslation": "策略，戰術"
+  },
+  {
+    "id": 1423,
+    "word": "tactical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to or constituting actions carefully planned to gain a specific military end.",
+    "example": "The team made a tactical decision to change formation.",
+    "chineseTranslation": "戰術的，策略的"
+  },
+  {
+    "id": 1424,
+    "word": "taxpayer",
+    "partOfSpeech": "noun",
+    "definition": "A person who pays taxes to a federal, state, or local government.",
+    "example": "Taxpayers are concerned about how their money is spent.",
+    "chineseTranslation": "納稅人"
+  },
+  {
+    "id": 1425,
+    "word": "tempt",
+    "partOfSpeech": "verb",
+    "definition": "Entice or try to entice someone to do something that they find attractive but know to be wrong or unwise.",
+    "example": "The smell of freshly baked bread tempted her.",
+    "chineseTranslation": "引誘，誘惑"
+  },
+  {
+    "id": 1426,
+    "word": "tenant",
+    "partOfSpeech": "noun",
+    "definition": "A person who occupies land or property rented from a landlord.",
+    "example": "The tenants must pay rent on time.",
+    "chineseTranslation": "房客，租戶"
+  },
+  {
+    "id": 1427,
+    "word": "tender",
+    "partOfSpeech": "adjective",
+    "definition": "Showing gentleness and concern or sympathy.",
+    "example": "He gave her a tender smile.",
+    "chineseTranslation": "溫柔的，柔軟的"
+  },
+  {
+    "id": 1428,
+    "word": "tenure",
+    "partOfSpeech": "noun",
+    "definition": "The conditions under which land or buildings are held or occupied.",
+    "example": "He has a permanent tenure at the university.",
+    "chineseTranslation": "任期，保有，終身職"
+  },
+  {
+    "id": 1429,
+    "word": "terminate",
+    "partOfSpeech": "verb",
+    "definition": "Bring to an end.",
+    "example": "The company decided to terminate the contract.",
+    "chineseTranslation": "終止，結束"
+  },
+  {
+    "id": 1430,
+    "word": "terrain",
+    "partOfSpeech": "noun",
+    "definition": "A stretch of land, especially with regard to its physical features.",
+    "example": "The hikers explored the rocky terrain.",
+    "chineseTranslation": "地形，地勢"
+  },
+  {
+    "id": 1431,
+    "word": "terrific",
+    "partOfSpeech": "adjective",
+    "definition": "Of great size, amount, or intensity.",
+    "example": "She made a terrific impression at the interview.",
+    "chineseTranslation": "極好的，驚人的"
+  },
+  {
+    "id": 1432,
+    "word": "testify",
+    "partOfSpeech": "verb",
+    "definition": "Give evidence as a witness in a law court.",
+    "example": "He agreed to testify against the accused.",
+    "chineseTranslation": "作證，證明"
+  },
+  {
+    "id": 1433,
+    "word": "testimony",
+    "partOfSpeech": "noun",
+    "definition": "A formal written or spoken statement, especially one given in a court of law.",
+    "example": "Her testimony was crucial to the case.",
+    "chineseTranslation": "證詞，證明"
+  },
+  {
+    "id": 1434,
+    "word": "texture",
+    "partOfSpeech": "noun",
+    "definition": "The feel, appearance, or consistency of a surface or a substance.",
+    "example": "The fabric has a soft texture.",
+    "chineseTranslation": "質地，手感"
+  },
+  {
+    "id": 1435,
+    "word": "thankfully",
+    "partOfSpeech": "adverb",
+    "definition": "Used to express relief or gratitude.",
+    "example": "Thankfully, the storm passed without causing damage.",
+    "chineseTranslation": "幸好，感激地"
+  },
+  {
+    "id": 1436,
+    "word": "theatrical",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to acting, actors, or the theatre.",
+    "example": "She has a very theatrical way of speaking.",
+    "chineseTranslation": "戲劇的，誇張的"
+  },
+  {
+    "id": 1437,
+    "word": "theology",
+    "partOfSpeech": "noun",
+    "definition": "The study of the nature of God and religious belief.",
+    "example": "He studied theology at the university.",
+    "chineseTranslation": "神學"
+  },
+  {
+    "id": 1438,
+    "word": "theoretical",
+    "partOfSpeech": "adjective",
+    "definition": "Concerned with or involving the theory of a subject or area of study rather than its practical application.",
+    "example": "Her research is largely theoretical.",
+    "chineseTranslation": "理論的"
+  },
+  {
+    "id": 1439,
+    "word": "thereafter",
+    "partOfSpeech": "adverb",
+    "definition": "After that time.",
+    "example": "She moved to Paris in 1995 and lived there thereafter.",
+    "chineseTranslation": "之後，此後"
+  },
+  {
+    "id": 1440,
+    "word": "thereby",
+    "partOfSpeech": "adverb",
+    "definition": "By that means; as a result of that.",
+    "example": "He forgot to tie his shoes, thereby causing himself to trip.",
+    "chineseTranslation": "因此，從而"
+  },
+  {
+    "id": 1441,
+    "word": "thoughtful",
+    "partOfSpeech": "adjective",
+    "definition": "Absorbed in or involving thought.",
+    "example": "She looked thoughtful for a moment.",
+    "chineseTranslation": "深思的，體貼的"
+  },
+  {
+    "id": 1442,
+    "word": "thread",
+    "partOfSpeech": "noun",
+    "definition": "A long, thin strand of cotton, nylon, or other fibers used in sewing or weaving.",
+    "example": "She used a needle and thread to sew the button.",
+    "chineseTranslation": "線，線索"
+  },
+  {
+    "id": 1443,
+    "word": "threshold",
+    "partOfSpeech": "noun",
+    "definition": "A strip of wood, metal, or stone forming the bottom of a doorway and crossed in entering a house or room.",
+    "example": "They stood on the threshold of the new house.",
+    "chineseTranslation": "門檻，界限"
+  },
+  {
+    "id": 1444,
+    "word": "thrilled",
+    "partOfSpeech": "adjective",
+    "definition": "Extremely pleased and excited.",
+    "example": "She was thrilled to receive the award.",
+    "chineseTranslation": "激動的，興奮的"
+  },
+  {
+    "id": 1445,
+    "word": "thrive",
+    "partOfSpeech": "verb",
+    "definition": "Grow or develop well or vigorously.",
+    "example": "The business is thriving.",
+    "chineseTranslation": "繁榮，興旺"
+  },
+  {
+    "id": 1446,
+    "word": "tide",
+    "partOfSpeech": "noun",
+    "definition": "The alternate rising and falling of the sea.",
+    "example": "The tide is coming in.",
+    "chineseTranslation": "潮汐，潮流"
+  },
+  {
+    "id": 1447,
+    "word": "tighten",
+    "partOfSpeech": "verb",
+    "definition": "Make or become tight or tighter.",
+    "example": "Tighten the screws to fix the chair.",
+    "chineseTranslation": "收緊，變緊"
+  },
+  {
+    "id": 1448,
+    "word": "timber",
+    "partOfSpeech": "noun",
+    "definition": "Wood prepared for use in building and carpentry.",
+    "example": "The house was built using quality timber.",
+    "chineseTranslation": "木材，樹木"
+  },
+  {
+    "id": 1449,
+    "word": "timely",
+    "partOfSpeech": "adjective",
+    "definition": "Done or occurring at a favorable or useful time.",
+    "example": "The timely arrival of the police prevented a disaster.",
+    "chineseTranslation": "及時的，適時的"
+  },
+  {
+    "id": 1450,
+    "word": "tobacco",
+    "partOfSpeech": "noun",
+    "definition": "A preparation of the nicotine-rich leaves of an American plant, which are cured by a process of drying and fermentation for smoking or chewing.",
+    "example": "The government imposed a tax on tobacco products.",
+    "chineseTranslation": "菸草"
+  },
+  {
+    "id": 1451,
+    "word": "tolerance",
+    "partOfSpeech": "noun",
+    "definition": "The ability or willingness to tolerate something.",
+    "example": "Religious tolerance is essential in a multicultural society.",
+    "chineseTranslation": "寬容，容忍"
+  },
+  {
+    "id": 1452,
+    "word": "tolerate",
+    "partOfSpeech": "verb",
+    "definition": "Allow the existence, occurrence, or practice of something without interference.",
+    "example": "She refused to tolerate rude behavior.",
+    "chineseTranslation": "容忍，寬容"
+  },
+  {
+    "id": 1453,
+    "word": "toll",
+    "partOfSpeech": "noun",
+    "definition": "A charge payable to use a bridge or road.",
+    "example": "They paid the toll to cross the bridge.",
+    "chineseTranslation": "通行費，損失"
+  },
+  {
+    "id": 1454,
+    "word": "top",
+    "partOfSpeech": "verb",
+    "definition": "Exceed in number, amount, or intensity.",
+    "example": "Sales this year topped all previous records.",
+    "chineseTranslation": "超過，位於頂部"
+  },
+  {
+    "id": 1455,
+    "word": "torture",
+    "partOfSpeech": "noun",
+    "definition": "The action or practice of inflicting severe pain on someone as a punishment or to force them to do or say something.",
+    "example": "The prisoners endured terrible torture.",
+    "chineseTranslation": "拷問，折磨"
+  },
+  {
+    "id": 1456,
+    "word": "toss",
+    "partOfSpeech": "verb",
+    "definition": "Throw something somewhere lightly, easily, or casually.",
+    "example": "She tossed the ball to him.",
+    "chineseTranslation": "拋，扔"
+  },
+  {
+    "id": 1457,
+    "word": "total",
+    "partOfSpeech": "adjective",
+    "definition": "Comprising the whole number or amount.",
+    "example": "The total cost of the trip was $500.",
+    "chineseTranslation": "總計的，完全的"
+  },
+  {
+    "id": 1458,
+    "word": "toxic",
+    "partOfSpeech": "adjective",
+    "definition": "Poisonous.",
+    "example": "The factory released toxic chemicals into the river.",
+    "chineseTranslation": "有毒的，有害的"
+  },
+  {
+    "id": 1459,
+    "word": "trademark",
+    "partOfSpeech": "noun",
+    "definition": "A symbol, word, or words legally registered or established by use as representing a company or product.",
+    "example": "The company's trademark is recognized worldwide.",
+    "chineseTranslation": "商標，特徵"
+  },
+  {
+    "id": 1460,
+    "word": "trail",
+    "partOfSpeech": "noun",
+    "definition": "A mark or a series of signs or objects left behind by the passage of someone or something.",
+    "example": "They followed the trail through the forest.",
+    "chineseTranslation": "小徑，蹤跡"
+  },
+  {
+    "id": 1461,
+    "word": "trailer",
+    "partOfSpeech": "noun",
+    "definition": "An unpowered vehicle towed by another.",
+    "example": "They loaded the furniture onto the trailer.",
+    "chineseTranslation": "拖車，預告片"
+  },
+  {
+    "id": 1462,
+    "word": "transaction",
+    "partOfSpeech": "noun",
+    "definition": "An instance of buying or selling something; a business deal.",
+    "example": "The transaction was completed smoothly.",
+    "chineseTranslation": "交易，事務"
+  },
+  {
+    "id": 1463,
+    "word": "transcript",
+    "partOfSpeech": "noun",
+    "definition": "A written or printed version of material originally presented in another medium.",
+    "example": "She requested an official transcript of her grades.",
+    "chineseTranslation": "成績單，謄本"
+  },
+  {
+    "id": 1464,
+    "word": "transformation",
+    "partOfSpeech": "noun",
+    "definition": "A thorough or dramatic change in form or appearance.",
+    "example": "The city has undergone a major transformation.",
+    "chineseTranslation": "轉變，變革"
+  },
+  {
+    "id": 1465,
+    "word": "transit",
+    "partOfSpeech": "noun",
+    "definition": "The carrying of people, goods, or materials from one place to another.",
+    "example": "The package is now in transit.",
+    "chineseTranslation": "運輸，通過"
+  },
+  {
+    "id": 1466,
+    "word": "transmission",
+    "partOfSpeech": "noun",
+    "definition": "The action or process of transmitting something or the state of being transmitted.",
+    "example": "The transmission of the disease can be prevented.",
+    "chineseTranslation": "傳輸，傳播"
+  },
+  {
+    "id": 1467,
+    "word": "transparency",
+    "partOfSpeech": "noun",
+    "definition": "The condition of being transparent.",
+    "example": "We demand greater transparency in government dealings.",
+    "chineseTranslation": "透明，透明度"
+  },
+  {
+    "id": 1468,
+    "word": "transparent",
+    "partOfSpeech": "adjective",
+    "definition": "Allowing light to pass through so that objects behind can be distinctly seen.",
+    "example": "The glass is completely transparent.",
+    "chineseTranslation": "透明的，清楚的"
+  },
+  {
+    "id": 1469,
+    "word": "trauma",
+    "partOfSpeech": "noun",
+    "definition": "A deeply distressing or disturbing experience.",
+    "example": "The accident caused him great trauma.",
+    "chineseTranslation": "創傷，外傷"
+  },
+  {
+    "id": 1470,
+    "word": "treaty",
+    "partOfSpeech": "noun",
+    "definition": "A formally concluded and ratified agreement between countries.",
+    "example": "The two nations signed a peace treaty.",
+    "chineseTranslation": "條約，協定"
+  },
+  {
+    "id": 1471,
+    "word": "tremendous",
+    "partOfSpeech": "adjective",
+    "definition": "Very great in amount, scale, or intensity.",
+    "example": "They made a tremendous effort to finish the project on time.",
+    "chineseTranslation": "巨大的，驚人的"
+  },
+  {
+    "id": 1472,
+    "word": "tribal",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to a tribe or tribes.",
+    "example": "The festival included traditional tribal dances.",
+    "chineseTranslation": "部落的，種族的"
+  },
+  {
+    "id": 1473,
+    "word": "tribute",
+    "partOfSpeech": "noun",
+    "definition": "An act, statement, or gift that is intended to show gratitude, respect, or admiration.",
+    "example": "They paid tribute to the firefighters who saved lives.",
+    "chineseTranslation": "敬意，貢品"
+  },
+  {
+    "id": 1474,
+    "word": "trio",
+    "partOfSpeech": "noun",
+    "definition": "A set or group of three people or things.",
+    "example": "The jazz trio performed wonderfully.",
+    "chineseTranslation": "三重奏，三人組"
+  },
+  {
+    "id": 1475,
+    "word": "triumph",
+    "partOfSpeech": "noun",
+    "definition": "A great victory or achievement.",
+    "example": "Winning the championship was a triumph for the team."
+  },
+    {
+    "id": 1476,
+    "word": "trophy",
+    "partOfSpeech": "noun",
+    "definition": "A cup or other decorative object awarded as a prize for a victory or success.",
+    "example": "The team proudly held the championship trophy.",
+    "chineseTranslation": "獎盃，戰利品"
+  },
+  {
+    "id": 1477,
+    "word": "troubled",
+    "partOfSpeech": "adjective",
+    "definition": "Experiencing or characterized by problems or difficulties.",
+    "example": "He gave her a troubled look.",
+    "chineseTranslation": "困擾的，不安的"
+  },
+  {
+    "id": 1478,
+    "word": "trustee",
+    "partOfSpeech": "noun",
+    "definition": "An individual person or member of a board given control or powers of administration of property in trust with a legal obligation to administer it solely for the purposes specified.",
+    "example": "The trustee manages the fund for the benefit of the students.",
+    "chineseTranslation": "受託人，董事"
+  },
+  {
+    "id": 1479,
+    "word": "tuition",
+    "partOfSpeech": "noun",
+    "definition": "A sum of money charged for teaching or instruction by a school, college, or university.",
+    "example": "University tuition fees have increased significantly.",
+    "chineseTranslation": "學費，教學"
+  },
+  {
+    "id": 1480,
+    "word": "tumour",
+    "partOfSpeech": "noun",
+    "definition": "A swelling of a part of the body, generally without inflammation, caused by an abnormal growth of tissue, whether benign or malignant.",
+    "example": "The doctors removed a benign tumour.",
+    "chineseTranslation": "腫瘤"
+  },
+  {
+    "id": 1481,
+    "word": "turnout",
+    "partOfSpeech": "noun",
+    "definition": "The number of people attending or taking part in an event, especially the number of people voting in an election.",
+    "example": "Voter turnout was the highest in decades.",
+    "chineseTranslation": "出席人數，投票率"
+  },
+  {
+    "id": 1482,
+    "word": "turnover",
+    "partOfSpeech": "noun",
+    "definition": "The amount of money taken by a business in a particular period.",
+    "example": "The company's annual turnover reached $5 million.",
+    "chineseTranslation": "營業額，人員流動率"
+  },
+  {
+    "id": 1483,
+    "word": "twist",
+    "partOfSpeech": "verb",
+    "definition": "Form into a bent, curling, or distorted shape.",
+    "example": "She twisted the wire into a loop.",
+    "chineseTranslation": "扭轉，轉動"
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "id": 103,
+    "word": "backdrop",
+    "partOfSpeech": "noun",
+    "definition": "The setting or background for a scene or event.",
+    "example": "The mountains provided a stunning backdrop for the wedding.",
+    "chineseTranslation": "背景、幕布"
+  },
+  {
+    "id": 104,
+    "word": "backing",
+    "partOfSpeech": "noun",
+    "definition": "Support or help from someone.",
+    "example": "The project succeeded with strong government backing.",
+    "chineseTranslation": "支持、援助"
+  },
+  {
+    "id": 105,
+    "word": "backup",
+    "partOfSpeech": "noun",
+    "definition": "A copy of data kept in case the original is lost; a substitute or support.",
+    "example": "Remember to make a backup of your files regularly.",
+    "chineseTranslation": "備份、支援"
+  },
+  {
+    "id": 106,
+    "word": "bail",
+    "partOfSpeech": "noun",
+    "definition": "The temporary release of an accused person awaiting trial, sometimes on condition of a sum of money.",
+    "example": "He was released on bail.",
+    "chineseTranslation": "保釋、保釋金"
+  },
+  {
+    "id": 107,
+    "word": "ballot",
+    "partOfSpeech": "noun",
+    "definition": "A process of voting, typically in secret.",
+    "example": "The decision will be made by ballot.",
+    "chineseTranslation": "投票、選票"
+  },
+  {
+    "id": 108,
+    "word": "bankruptcy",
+    "partOfSpeech": "noun",
+    "definition": "The state of being legally unable to pay debts.",
+    "example": "The company filed for bankruptcy.",
+    "chineseTranslation": "破產"
+  },
+  {
+    "id": 109,
+    "word": "banner",
+    "partOfSpeech": "noun",
+    "definition": "A long strip of cloth bearing a slogan or design, often used in advertising or demonstrations.",
+    "example": "The protesters carried a large banner.",
+    "chineseTranslation": "橫幅、旗幟"
+  },
+  {
+    "id": 110,
+    "word": "bare",
+    "partOfSpeech": "adjective",
+    "definition": "Not clothed or covered; basic and simple.",
+    "example": "He walked on the bare floor.",
+    "chineseTranslation": "裸露的、基本的"
+  },
+  {
+    "id": 111,
+    "word": "barrel",
+    "partOfSpeech": "noun",
+    "definition": "A cylindrical container, typically made of wood or metal.",
+    "example": "The wine was stored in oak barrels.",
+    "chineseTranslation": "桶"
+  },
+  {
+    "id": 112,
+    "word": "bass",
+    "partOfSpeech": "noun",
+    "definition": "The lowest adult male singing voice; or a low-pitched sound or instrument.",
+    "example": "The song features a strong bass line.",
+    "chineseTranslation": "低音、低音部"
+  },
+  {
+    "id": 113,
+    "word": "battlefield",
+    "partOfSpeech": "noun",
+    "definition": "A place where a battle is fought.",
+    "example": "The soldiers gathered on the battlefield.",
+    "chineseTranslation": "戰場"
+  },
+  {
+    "id": 114,
+    "word": "bay",
+    "partOfSpeech": "noun",
+    "definition": "A broad inlet of the sea where the land curves inward.",
+    "example": "The ship entered the bay at dawn.",
+    "chineseTranslation": "海灣"
+  },
+  {
+    "id": 115,
+    "word": "beam",
+    "partOfSpeech": "noun",
+    "definition": "A long, sturdy piece of wood or metal used in construction; a ray of light.",
+    "example": "A beam of sunlight came through the window.",
+    "chineseTranslation": "橫樑、光束"
+  },
+  {
+    "id": 116,
+    "word": "beast",
+    "partOfSpeech": "noun",
+    "definition": "An animal, especially a large or dangerous one; a brutal person.",
+    "example": "The lion is known as the king of beasts.",
+    "chineseTranslation": "野獸、兇殘的人"
+  },
+  {
+    "id": 117,
+    "word": "behalf",
+    "partOfSpeech": "noun",
+    "definition": "In the interests of or as a representative of.",
+    "example": "She accepted the award on behalf of her team.",
+    "chineseTranslation": "代表、為了…的利益"
+  },
+  {
+    "id": 118,
+    "word": "behavioural",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the way in which people or animals behave.",
+    "example": "The study focused on behavioural patterns in children.",
+    "chineseTranslation": "行為的"
+  },
+  {
+    "id": 119,
+    "word": "beloved",
+    "partOfSpeech": "adjective",
+    "definition": "Dearly loved.",
+    "example": "She is a beloved teacher to her students.",
+    "chineseTranslation": "深愛的、心愛的"
+  },
+  {
+    "id": 120,
+    "word": "bench",
+    "partOfSpeech": "noun",
+    "definition": "A long seat for several people, typically made of wood or stone.",
+    "example": "They sat together on the park bench.",
+    "chineseTranslation": "長凳、法官席"
+  },
+  {
+    "id": 121,
+    "word": "benchmark",
+    "partOfSpeech": "noun",
+    "definition": "A standard or point of reference against which things may be compared or assessed.",
+    "example": "The report sets a new benchmark for quality.",
+    "chineseTranslation": "基準、標竿"
+  },
+  {
+    "id": 122,
+    "word": "beneath",
+       "partOfSpeech": "preposition",
+    "definition": "At a lower level or layer than; directly underneath.",
+    "example": "The valley lay beneath the mountains.",
+    "chineseTranslation": "在…之下"
+  },
+  {
+    "id": 123,
+    "word": "beneficiary",
+    "partOfSpeech": "noun",
+    "definition": "A person who derives advantage from something, especially a trust or will.",
+    "example": "She is the main beneficiary of the estate.",
+    "chineseTranslation": "受益人"
+  },
+  {
+    "id": 124,
+    "word": "betray",
+    "partOfSpeech": "verb",
+    "definition": "Be disloyal to; reveal secrets.",
+    "example": "He felt hurt when his friend betrayed him.",
+    "chineseTranslation": "背叛、洩漏"
+  },
+  {
+    "id": 125,
+    "word": "beverage",
+    "partOfSpeech": "noun",
+    "definition": "A drink, especially one other than water.",
+    "example": "Coffee is the most popular breakfast beverage.",
+    "chineseTranslation": "飲料"
+  },
+  {
+    "id": 126,
+    "word": "bind",
+    "partOfSpeech": "verb",
+    "definition": "Tie or fasten something tightly.",
+    "example": "They used rope to bind the packages together.",
+    "chineseTranslation": "綁、束縛"
+  },
+  {
+    "id": 127,
+    "word": "biography",
+    "partOfSpeech": "noun",
+    "definition": "An account of someone's life written by someone else.",
+    "example": "I read a fascinating biography of Einstein.",
+    "chineseTranslation": "傳記"
+  },
+  {
+    "id": 128,
+    "word": "bishop",
+    "partOfSpeech": "noun",
+    "definition": "A senior member of the Christian clergy, typically in charge of a diocese.",
+    "example": "The bishop led the Sunday service.",
+    "chineseTranslation": "主教"
+  },
+  {
+    "id": 129,
+    "word": "bizarre",
+    "partOfSpeech": "adjective",
+    "definition": "Very strange or unusual.",
+    "example": "The movie had a bizarre ending.",
+    "chineseTranslation": "奇異的、古怪的"
+  },
+  {
+    "id": 130,
+    "word": "blade",
+    "partOfSpeech": "noun",
+    "definition": "The flat cutting edge of a knife, saw, or other tool.",
+    "example": "Be careful not to touch the sharp blade.",
+    "chineseTranslation": "刀刃、葉片"
+  },
+  {
+    "id": 131,
+    "word": "blast",
+    "partOfSpeech": "noun",
+    "definition": "A destructive wave of highly compressed air spreading outward from an explosion.",
+    "example": "The blast shattered windows across the street.",
+    "chineseTranslation": "爆炸、衝擊波"
+  },
+  {
+    "id": 132,
+    "word": "bleed",
+    "partOfSpeech": "verb",
+    "definition": "Lose blood from the body as a result of injury.",
+    "example": "He started to bleed after cutting his finger.",
+    "chineseTranslation": "流血"
+  },
+  {
+    "id": 133,
+    "word": "blend",
+    "partOfSpeech": "verb",
+    "definition": "Mix together thoroughly.",
+    "example": "Blend the ingredients until smooth.",
+    "chineseTranslation": "混合、融合"
+  },
+  {
+    "id": 134,
+    "word": "bless",
+    "partOfSpeech": "verb",
+    "definition": "Pronounce words in a religious rite to confer or invoke divine favor.",
+    "example": "The priest blessed the congregation.",
+    "chineseTranslation": "祝福、保佑"
+  },
+  {
+    "id": 135,
+    "word": "blessing",
+    "partOfSpeech": "noun",
+    "definition": "God's favor and protection; a beneficial thing for which one is grateful.",
+    "example": "Good health is a blessing.",
+    "chineseTranslation": "祝福、恩典"
+  },
+  {
+    "id": 136,
+    "word": "boast",
+    "partOfSpeech": "verb",
+    "definition": "Talk with excessive pride and self-satisfaction about achievements or possessions.",
+    "example": "He likes to boast about his success.",
+    "chineseTranslation": "誇耀、自誇"
+  },
+  {
+    "id": 137,
+    "word": "bonus",
+    "partOfSpeech": "noun",
+    "definition": "An extra payment added to wages or salary as a reward.",
+    "example": "Employees received a year-end bonus.",
+    "chineseTranslation": "獎金、紅利"
+  },
+  {
+    "id": 138,
+    "word": "booking",
+    "partOfSpeech": "noun",
+    "definition": "An arrangement to reserve accommodation, a place, or a service.",
+    "example": "I made a hotel booking for next week.",
+    "chineseTranslation": "預訂"
+  },
+  {
+    "id": 139,
+    "word": "boom",
+    "partOfSpeech": "noun",
+    "definition": "A period of great prosperity or rapid economic growth.",
+    "example": "The tech boom created many jobs.",
+    "chineseTranslation": "繁榮、激增"
+  },
+  {
+    "id": 140,
+    "word": "bounce",
+    "partOfSpeech": "verb",
+    "definition": "Move quickly back from a surface after hitting it.",
+    "example": "The ball bounced off the wall.",
+    "chineseTranslation": "彈跳、反彈"
+  },
+  {
+    "id": 141,
+    "word": "boundary",
+    "partOfSpeech": "noun",
+    "definition": "A line that marks the limits of an area; a dividing line.",
+    "example": "The fence marks the boundary between the two properties.",
+    "chineseTranslation": "邊界、界限"
+  },
+  {
+    "id": 142,
+    "word": "bow",
+    "partOfSpeech": "verb",
+    "definition": "Bend the head or upper part of the body as a sign of respect or greeting.",
+    "example": "The performers bowed to the audience.",
+    "chineseTranslation": "鞠躬、彎腰"
+  },
+  {
+    "id": 143,
+    "word": "breach",
+    "partOfSpeech": "noun",
+    "definition": "An act of breaking or failing to observe a law, agreement, or code of conduct.",
+    "example": "The company was fined for a data breach.",
+    "chineseTranslation": "違反、破壞"
+  },
+  {
+    "id": 144,
+    "word": "breakdown",
+    "partOfSpeech": "noun",
+    "definition": "A mechanical failure; a failure in a system or relationship.",
+    "example": "The car had a breakdown on the highway.",
+    "chineseTranslation": "故障、崩潰"
+  },
+  {
+    "id": 145,
+    "word": "breakthrough",
+    "partOfSpeech": "noun",
+    "definition": "A sudden, dramatic, and important discovery or development.",
+    "example": "The scientists achieved a major breakthrough in cancer research.",
+    "chineseTranslation": "突破、重大進展"
+  },
+  {
+    "id": 146,
+    "word": "breed",
+    "partOfSpeech": "verb",
+    "definition": "Cause animals to produce offspring, typically in a controlled way.",
+    "example": "They breed horses on the farm.",
+    "chineseTranslation": "繁殖、飼養"
+  },
+  {
+    "id": 147,
+    "word": "broadband",
+    "partOfSpeech": "noun",
+    "definition": "A high-capacity transmission technique using a wide range of frequencies.",
+    "example": "Broadband internet is available in most urban areas.",
+    "chineseTranslation": "寬頻"
+  },
+  {
+    "id": 148,
+    "word": "browser",
+    "partOfSpeech": "noun",
+    "definition": "A software application for accessing information on the World Wide Web.",
+    "example": "I opened the website using my browser.",
+    "chineseTranslation": "瀏覽器"
+  },
+  {
+    "id": 149,
+    "word": "brutal",
+    "partOfSpeech": "adjective",
+    "definition": "Savagely violent; harsh or cruel.",
+    "example": "The attack was described as brutal.",
+    "chineseTranslation": "殘忍的、野蠻的"
+  },
+  {
+    "id": 150,
+    "word": "buddy",
+    "partOfSpeech": "noun",
+    "definition": "A close friend.",
+    "example": "He went fishing with his buddy.",
+    "chineseTranslation": "好朋友、夥伴"
+  },
+  {
+    "id": 151,
+    "word": "buffer",
+    "partOfSpeech": "noun",
+    "definition": "A person or thing that reduces a shock or that forms a barrier between incompatible things.",
+    "example": "Trees act as a buffer against noise.",
+    "chineseTranslation": "緩衝、緩衝區"
+  },
+  {
+    "id": 152,
+    "word": "bulk",
+    "partOfSpeech": "noun",
+    "definition": "The mass or magnitude of something large.",
+    "example": "The bulk of the work was finished on time.",
+    "chineseTranslation": "大量、大部分"
+  },
+  {
+    "id": 153,
+    "word": "burden",
+    "partOfSpeech": "noun",
+    "definition": "A heavy load; a duty or responsibility that is hard to bear.",
+    "example": "Financial problems became a heavy burden.",
+    "chineseTranslation": "負擔、重擔"
+  },
+  {
+    "id": 154,
+    "word": "bureaucracy",
+    "partOfSpeech": "noun",
+    "definition": "A system of government or management with many complex rules and procedures.",
+    "example": "Starting a business involves dealing with a lot of bureaucracy.",
+    "chineseTranslation": "官僚體系"
+  },
+  {
+    "id": 155,
+    "word": "burial",
+    "partOfSpeech": "noun",
+    "definition": "The act or ceremony of burying a dead body.",
+    "example": "The burial took place at the local cemetery.",
+    "chineseTranslation": "埋葬、葬禮"
+  },
+  {
+    "id": 156,
+    "word": "burst",
+    "partOfSpeech": "verb",
+    "definition": "Break open or apart suddenly and violently.",
+    "example": "The balloon burst with a loud noise.",
+    "chineseTranslation": "爆裂、突然發生"
+  }
+]

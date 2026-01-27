@@ -1,0 +1,354 @@
+[
+  {
+    "id": 915,
+    "word": "landlord",
+    "partOfSpeech": "noun",
+    "definition": "A person who rents out land, a building, or accommodation.",
+    "example": "The landlord increased the rent this year.",
+    "chineseTranslation": "房東"
+  },
+  {
+    "id": 916,
+    "word": "landmark",
+    "partOfSpeech": "noun",
+    "definition": "An object or feature of a landscape or town that is easily seen and recognized.",
+    "example": "The Eiffel Tower is a famous landmark.",
+    "chineseTranslation": "地標、里程碑"
+  },
+  {
+    "id": 917,
+    "word": "lap",
+    "partOfSpeech": "noun",
+    "definition": "The flat area between the waist and knees of a seated person.",
+    "example": "The child sat on her mother's lap.",
+    "chineseTranslation": "膝部"
+  },
+  {
+    "id": 918,
+    "word": "large-scale",
+    "partOfSpeech": "adjective",
+    "definition": "Involving large numbers or a large area; extensive.",
+    "example": "They launched a large-scale investigation.",
+    "chineseTranslation": "大規模的"
+  },
+  {
+    "id": 919,
+    "word": "laser",
+    "partOfSpeech": "noun",
+    "definition": "A device that emits a narrow, intense beam of light.",
+    "example": "The surgeon used a laser to perform the operation.",
+    "chineseTranslation": "雷射"
+  },
+  {
+    "id": 920,
+    "word": "latter",
+    "partOfSpeech": "noun",
+    "definition": "The second of two things mentioned.",
+    "example": "Of the two options, I prefer the latter.",
+    "chineseTranslation": "後者"
+  },
+  {
+    "id": 921,
+    "word": "lawmaker",
+    "partOfSpeech": "noun",
+    "definition": "A person who makes laws; a legislator.",
+    "example": "Lawmakers debated the new policy in parliament.",
+    "chineseTranslation": "立法者、議員"
+  },
+  {
+    "id": 922,
+    "word": "lawn",
+    "partOfSpeech": "noun",
+    "definition": "An area of short, regularly mown grass in a yard or park.",
+    "example": "They had a picnic on the front lawn.",
+    "chineseTranslation": "草坪"
+  },
+  {
+    "id": 923,
+    "word": "lawsuit",
+    "partOfSpeech": "noun",
+    "definition": "A claim or dispute brought to a court of law for adjudication.",
+    "example": "The company filed a lawsuit against its competitor.",
+    "chineseTranslation": "訴訟"
+  },
+  {
+    "id": 924,
+    "word": "layout",
+    "partOfSpeech": "noun",
+    "definition": "The way in which the parts of something are arranged or laid out.",
+    "example": "The architect presented the layout of the new building.",
+    "chineseTranslation": "佈局、設計"
+  },
+  {
+    "id": 925,
+    "word": "leak",
+    "partOfSpeech": "verb",
+    "definition": "Accidentally allow (liquid, gas, light, etc.) to escape through a hole or crack.",
+    "example": "Water was leaking from the pipe.",
+    "chineseTranslation": "洩漏、滲漏"
+  },
+  {
+    "id": 926,
+    "word": "leap",
+    "partOfSpeech": "verb",
+    "definition": "Jump or spring a long way, to a great height, or with great force.",
+    "example": "The cat leaped onto the table.",
+    "chineseTranslation": "跳躍、飛躍"
+  },
+  {
+    "id": 927,
+    "word": "legacy",
+    "partOfSpeech": "noun",
+    "definition": "An amount of money or property left to someone in a will; something handed down from the past.",
+    "example": "The reforms left a lasting legacy.",
+    "chineseTranslation": "遺產、遺留"
+  },
+  {
+    "id": 928,
+    "word": "legendary",
+    "partOfSpeech": "adjective",
+    "definition": "Remarkable enough to be famous; very well known.",
+    "example": "He is a legendary football player.",
+    "chineseTranslation": "傳奇的、著名的"
+  },
+  {
+    "id": 929,
+    "word": "legislation",
+    "partOfSpeech": "noun",
+    "definition": "Laws considered collectively.",
+    "example": "The government passed new environmental legislation.",
+    "chineseTranslation": "立法、法律"
+  },
+  {
+    "id": 930,
+    "word": "legislative",
+    "partOfSpeech": "adjective",
+    "definition": "Having the power to make laws.",
+    "example": "The legislative branch is responsible for creating laws.",
+    "chineseTranslation": "立法的"
+  },
+  {
+    "id": 931,
+    "word": "legislature",
+    "partOfSpeech": "noun",
+    "definition": "The legislative body of a country or state.",
+    "example": "The legislature approved the new tax bill.",
+    "chineseTranslation": "立法機構"
+  },
+  {
+    "id": 932,
+    "word": "legitimate",
+    "partOfSpeech": "adjective",
+    "definition": "Conforming to the law or to rules; valid or justified.",
+    "example": "They raised legitimate concerns about the policy.",
+    "chineseTranslation": "合法的、正當的"
+  },
+  {
+    "id": 933,
+    "word": "lengthy",
+    "partOfSpeech": "adjective",
+    "definition": "Long in time; extended.",
+    "example": "They had a lengthy discussion about the proposal.",
+    "chineseTranslation": "冗長的、漫長的"
+  },
+  {
+    "id": 934,
+    "word": "lesbian",
+    "partOfSpeech": "noun",
+    "definition": "A woman who is sexually attracted to other women.",
+    "example": "She came out as a lesbian during college.",
+    "chineseTranslation": "女同性戀者"
+  },
+  {
+    "id": 935,
+    "word": "lesser",
+    "partOfSpeech": "adjective",
+    "definition": "Not as great in size, amount, or importance.",
+    "example": "The lesser of the two evils was chosen.",
+    "chineseTranslation": "較小的、次要的"
+  },
+  {
+    "id": 936,
+    "word": "lethal",
+    "partOfSpeech": "adjective",
+    "definition": "Sufficient to cause death; deadly.",
+    "example": "The snake's bite can be lethal.",
+    "chineseTranslation": "致命的"
+  },
+  {
+    "id": 937,
+    "word": "liable",
+    "partOfSpeech": "adjective",
+    "definition": "Legally responsible for something.",
+    "example": "The company is liable for any damages caused.",
+    "chineseTranslation": "負有法律責任的"
+  },
+  {
+    "id": 938,
+    "word": "liberal",
+    "partOfSpeech": "adjective",
+    "definition": "Open to new behavior or opinions and willing to discard traditional values.",
+    "example": "She has liberal views on social issues.",
+    "chineseTranslation": "自由的、開明的"
+  },
+  {
+    "id": 939,
+    "word": "liberation",
+    "partOfSpeech": "noun",
+    "definition": "The act of setting someone free from imprisonment, slavery, or oppression.",
+    "example": "The liberation of the city was celebrated by all.",
+    "chineseTranslation": "解放、釋放"
+  },
+  {
+    "id": 940,
+    "word": "liberty",
+    "partOfSpeech": "noun",
+    "definition": "The state of being free within society from oppressive restrictions.",
+    "example": "Freedom of speech is a fundamental liberty.",
+    "chineseTranslation": "自由"
+  },
+  {
+    "id": 941,
+    "word": "lifelong",
+    "partOfSpeech": "adjective",
+    "definition": "Lasting or remaining in a particular state throughout a person's life.",
+    "example": "She is a lifelong learner.",
+    "chineseTranslation": "終身的"
+  },
+  {
+    "id": 942,
+    "word": "likelihood",
+    "partOfSpeech": "noun",
+    "definition": "The state or fact of something being likely; probability.",
+    "example": "There is a high likelihood of rain tomorrow.",
+    "chineseTranslation": "可能性"
+  },
+  {
+    "id": 943,
+    "word": "limb",
+    "partOfSpeech": "noun",
+    "definition": "An arm or leg of a person or four-legged animal.",
+    "example": "He injured a limb while hiking.",
+    "chineseTranslation": "肢體"
+  },
+  {
+    "id": 944,
+    "word": "linear",
+    "partOfSpeech": "adjective",
+    "definition": "Arranged in or extending along a straight line.",
+    "example": "The graph shows a linear relationship.",
+    "chineseTranslation": "線性的"
+  },
+  {
+    "id": 945,
+    "word": "line-up",
+    "partOfSpeech": "noun",
+    "definition": "A group of people or things arranged or organized for a particular purpose.",
+    "example": "The festival has a great line-up of bands.",
+    "chineseTranslation": "陣容、排列"
+  },
+  {
+    "id": 946,
+    "word": "linger",
+    "partOfSpeech": "verb",
+    "definition": "Stay in a place longer than necessary because of a reluctance to leave.",
+    "example": "The smell of perfume lingered in the room.",
+    "chineseTranslation": "徘徊、逗留"
+  },
+  {
+    "id": 947,
+    "word": "listing",
+    "partOfSpeech": "noun",
+    "definition": "An entry in a list or directory.",
+    "example": "The website has a listing of available apartments.",
+    "chineseTranslation": "清單、列表"
+  },
+  {
+    "id": 948,
+    "word": "litre",
+    "partOfSpeech": "noun",
+    "definition": "A metric unit of capacity equal to 1,000 cubic centimeters.",
+    "example": "The bottle holds two litres of water.",
+    "chineseTranslation": "公升"
+  },
+  {
+    "id": 949,
+    "word": "literacy",
+    "partOfSpeech": "noun",
+    "definition": "The ability to read and write.",
+    "example": "The program aims to improve adult literacy.",
+    "chineseTranslation": "讀寫能力"
+  },
+  {
+    "id": 950,
+    "word": "liver",
+    "partOfSpeech": "noun",
+    "definition": "A large lobed glandular organ in the abdomen of vertebrates.",
+    "example": "The liver plays a vital role in detoxification.",
+    "chineseTranslation": "肝臟"
+  },
+  {
+    "id": 951,
+    "word": "lobby",
+    "partOfSpeech": "noun",
+    "definition": "A room providing a space out of which one or more other rooms or corridors lead.",
+    "example": "They waited in the hotel lobby.",
+    "chineseTranslation": "大廳、遊說團體"
+  },
+  {
+    "id": 952,
+    "word": "log",
+    "partOfSpeech": "noun",
+    "definition": "A part of the trunk or a large branch of a tree that has fallen or been cut off.",
+    "example": "They sat on a log by the fire.",
+    "chineseTranslation": "原木、日誌"
+  },
+  {
+    "id": 953,
+    "word": "logic",
+    "partOfSpeech": "noun",
+    "definition": "Reasoning conducted or assessed according to strict principles of validity.",
+    "example": "His argument was based on sound logic.",
+    "chineseTranslation": "邏輯"
+  },
+  {
+    "id": 954,
+    "word": "long-standing",
+    "partOfSpeech": "adjective",
+    "definition": "Having existed or continued for a long time.",
+    "example": "They finally resolved their long-standing dispute.",
+    "chineseTranslation": "長期存在的"
+  },
+  {
+    "id": 955,
+    "word": "long-time",
+    "partOfSpeech": "adjective",
+    "definition": "Having existed or continued for a long period of time.",
+    "example": "They are long-time friends.",
+    "chineseTranslation": "長久的、長期的"
+  },
+  {
+    "id": 956,
+    "word": "loom",
+    "partOfSpeech": "verb",
+    "definition": "Appear as a vague form, especially one that is large or threatening.",
+    "example": "Dark clouds loomed on the horizon.",
+    "chineseTranslation": "隱約出現、逼近"
+  },
+  {
+    "id": 957,
+    "word": "loop",
+    "partOfSpeech": "noun",
+    "definition": "A shape produced by a curve that bends around and crosses itself.",
+    "example": "The rope formed a loop.",
+    "chineseTranslation": "圈、迴路"
+  },
+  {
+    "id": 958,
+    "word": "loyalty",
+    "partOfSpeech": "noun",
+    "definition": "A strong feeling of support or allegiance.",
+    "example": "Her loyalty to the company was admirable.",
+    "chineseTranslation": "忠誠、忠心"
+  }
+]
