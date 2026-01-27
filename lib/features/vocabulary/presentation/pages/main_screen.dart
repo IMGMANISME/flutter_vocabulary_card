@@ -1,41 +1,36 @@
+import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:flip_card/flip_card.dart';
-import '../models/vocabulary_word.dart';
-import '../services/vocabulary_service.dart';
-import '../services/auth_service.dart';
-import '../components/flashcard_widget.dart';
-import '../components/adaptive_button.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class MainScreen extends StatefulWidget {
+import '../../../../shared/widgets/adaptive_button.dart';
+import '../../../auth/presentation/providers/auth_provider.dart';
+import '../../domain/entities/vocabulary_word.dart';
+import '../providers/vocabulary_providers.dart';
+import '../widgets/flashcard_widget.dart';
+
+class MainScreen extends ConsumerStatefulWidget {
   const MainScreen({super.key});
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  ConsumerState<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _MainScreenState extends ConsumerState<MainScreen> {
   final GlobalKey<FlipCardState> _cardKey = GlobalKey<FlipCardState>();
 
-  // 導航/顯示狀態
   int _currentIndex = 0;
   bool _hideLearned = false;
 
-  // 計算屬性（針對當前 Build 緩存）
   List<VocabularyWord> _filteredWords = [];
   VocabularyWord? _currentWord;
   List<String> _availableLetters = [];
   final Map<String, int> _letterIndexMap = {};
-  Set<String> _learnedIds = {}; // 緩存輔助用
 
   @override
   void initState() {
     super.initState();
-    // Trigger initialization once
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      Provider.of<VocabularyService>(context, listen: false).initialize();
-    });
+    // Riverpod providers are auto-initialized/disposed, no explicit init needed.
   }
 
   void _processData(List<VocabularyWord> allWords, Set<String> learnedIds) {
@@ -49,15 +44,10 @@ class _MainScreenState extends State<MainScreen> {
 
     _buildLetterIndex();
 
-    // Safety check for index
     if (_filteredWords.isEmpty) {
       _currentIndex = 0;
       _currentWord = null;
     } else {
-      // 嘗試盡可能保持同一個單字，或是同一個索引
-      // 但如果列表變動很大（例如初始載入），索引 0 比較安全。
-      // 如果我們只是切換已學習狀態，該單字可能會從列表中消失。
-
       if (_currentIndex >= _filteredWords.length) {
         _currentIndex = _filteredWords.length - 1;
       }
@@ -116,17 +106,16 @@ class _MainScreenState extends State<MainScreen> {
 
   Future<void> _toggleLearned() async {
     if (_currentWord == null) return;
-    final vocabService = Provider.of<VocabularyService>(context, listen: false);
-    await vocabService.toggleLearnedStatus(_currentWord!.id);
-    // UI will update automatically via build
+    final useCase = ref.read(toggleLearnedStatusUseCaseProvider);
+    await useCase.call(_currentWord!.id);
+    // Stream will automatically update UI
   }
 
   void _toggleHideLearned() {
     setState(() {
       _hideLearned = !_hideLearned;
-      // Index adjustment happens in build/_processData
-      // But we might want to reset index or try to find current word?
-      // For simplicity, let _processData handle bounds checking.
+      // Reset index if needed, or let _processData handle it
+      _currentIndex = 0;
     });
   }
 
@@ -135,12 +124,14 @@ class _MainScreenState extends State<MainScreen> {
         Theme.of(context).platform == TargetPlatform.iOS ||
         Theme.of(context).platform == TargetPlatform.macOS;
 
+    final content = const Text('Are you sure you want to log out?');
+
     if (isIOS) {
       showCupertinoDialog(
         context: context,
         builder: (context) => CupertinoAlertDialog(
           title: const Text('Logout'),
-          content: const Text('Are you sure you want to log out?'),
+          content: content,
           actions: [
             CupertinoDialogAction(
               onPressed: () => Navigator.pop(context),
@@ -150,7 +141,7 @@ class _MainScreenState extends State<MainScreen> {
               isDestructiveAction: true,
               onPressed: () {
                 Navigator.pop(context);
-                Provider.of<AuthService>(context, listen: false).signOut();
+                ref.read(authControllerProvider.notifier).signOut();
               },
               child: const Text('Logout'),
             ),
@@ -162,7 +153,7 @@ class _MainScreenState extends State<MainScreen> {
         context: context,
         builder: (context) => AlertDialog(
           title: const Text('Logout'),
-          content: const Text('Are you sure you want to log out?'),
+          content: content,
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
@@ -170,10 +161,8 @@ class _MainScreenState extends State<MainScreen> {
             ),
             TextButton(
               onPressed: () {
-                // Close dialog first
                 Navigator.pop(context);
-                // Perform sign out
-                Provider.of<AuthService>(context, listen: false).signOut();
+                ref.read(authControllerProvider.notifier).signOut();
               },
               style: TextButton.styleFrom(foregroundColor: Colors.red),
               child: const Text('Logout'),
@@ -186,40 +175,44 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // Reactive data source
-    final vocabService = Provider.of<VocabularyService>(context);
-    final allWords = vocabService.allWords;
-    _learnedIds = vocabService.getLearnedWordIds();
-    final bool isLoading = allWords.isEmpty;
-
-    if (!isLoading) {
-      _processData(allWords, _learnedIds);
-    }
+    // Watch providers
+    final vocabListAsync = ref.watch(vocabularyListProvider);
+    final learnedIdsAsync = ref.watch(learnedWordIdsProvider);
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF9FAFB), // Gray-50
+      backgroundColor: const Color(0xFFF9FAFB),
       body: SafeArea(
-        child: isLoading
-            ? const Center(child: CircularProgressIndicator())
-            : Column(
-                children: [
-                  _buildHeader(),
-                  if (_filteredWords.isNotEmpty) _buildProgressBar(),
-                  Expanded(
-                    child: _filteredWords.isEmpty
-                        ? _buildEmptyState()
-                        : _buildCardArea(),
-                  ),
-                  if (_filteredWords.isNotEmpty) _buildControls(),
-                  _buildFooter(),
-                ],
-              ),
+        child: vocabListAsync.when(
+          data: (allWords) {
+            final learnedIds = learnedIdsAsync.value ?? {};
+            _processData(allWords, learnedIds);
+
+            return Column(
+              children: [
+                _buildHeader(),
+                if (_filteredWords.isNotEmpty) _buildProgressBar(),
+                Expanded(
+                  child: _filteredWords.isEmpty
+                      ? _buildEmptyState()
+                      : _buildCardArea(learnedIds),
+                ),
+                if (_filteredWords.isNotEmpty) _buildControls(),
+                _buildFooter(),
+              ],
+            );
+          },
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (err, stack) => Center(child: Text('Error: $err')),
+        ),
       ),
     );
   }
 
   Widget _buildHeader() {
-    final authService = Provider.of<AuthService>(context);
+    final authState = ref.watch(authStateProvider);
+    final authControllerState = ref.watch(authControllerProvider);
+    final user = authState.value;
+    final isLoading = authState.isLoading || authControllerState.isLoading;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
@@ -247,29 +240,26 @@ class _MainScreenState extends State<MainScreen> {
           ),
           Align(
             alignment: Alignment.centerRight,
-            child: authService.isLoading
+            child: isLoading
                 ? const SizedBox(
                     width: 24,
                     height: 24,
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
-                : authService.user != null
+                : user != null
                 ? InkWell(
                     onTap: () => _showLogoutDialog(context),
                     borderRadius: BorderRadius.circular(16),
                     child: CircleAvatar(
                       radius: 16,
                       backgroundColor: Colors.grey[800],
-                      backgroundImage: authService.user!.photoURL != null
-                          ? NetworkImage(authService.user!.photoURL!)
+                      backgroundImage: user.photoURL != null
+                          ? NetworkImage(user.photoURL!)
                           : null,
-                      onBackgroundImageError: (_, __) {
-                        // Allow fallback to child if image fails
-                      },
-                      child: authService.user!.photoURL == null
+                      onBackgroundImageError: (_, __) {},
+                      child: user.photoURL == null
                           ? Text(
-                              (authService.user!.displayName ?? 'U')[0]
-                                  .toUpperCase(),
+                              (user.displayName ?? 'U')[0].toUpperCase(),
                               style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 12,
@@ -280,20 +270,10 @@ class _MainScreenState extends State<MainScreen> {
                   )
                 : AdaptiveButton(
                     onPressed: () async {
-                      await authService.signInWithGoogle();
-                      if (context.mounted && authService.user != null) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text(
-                              'Verification Mode: Logged in as Test User',
-                            ),
-                            backgroundColor: Colors.green,
-                            duration: Duration(seconds: 2),
-                          ),
-                        );
-                      }
+                      await ref
+                          .read(authControllerProvider.notifier)
+                          .signInWithGoogle();
                     },
-                    // Sign In: Icon only
                     isFilled: false,
                     padding: EdgeInsets.zero,
                     child: const Icon(
@@ -320,7 +300,7 @@ class _MainScreenState extends State<MainScreen> {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withValues(alpha: 0.05),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),
@@ -421,21 +401,18 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 
-  Widget _buildCardArea() {
+  Widget _buildCardArea(Set<String> learnedIds) {
     if (_currentWord == null) return const SizedBox();
 
-    final isLearned = _learnedIds.contains(_currentWord!.id);
+    final isLearned = learnedIds.contains(_currentWord!.id);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: Column(
         children: [
-          // 使用 Expanded 讓 Flashcard 填滿剩餘空間，而不是使用固定的 60% 高度
           Expanded(
             child: FlashcardWidget(
-              key: ValueKey(_currentWord!.id), // 使用唯一 Key 強制在單字變更時重建 Widget
-              // 使用 Global Key 讓我們可以程式化控制翻牌
-              // 使用 ValueKey 確保狀態重置（預設為正面）
+              key: ValueKey(_currentWord!.id),
               cardKey: _cardKey,
               word: _currentWord!,
               isLearned: isLearned,
@@ -443,20 +420,17 @@ class _MainScreenState extends State<MainScreen> {
             ),
           ),
           const SizedBox(height: 24),
-
-          // 標記為已學習按鈕
-          // 標記為已學習按鈕
           AdaptiveButton(
             onPressed: _toggleLearned,
             icon: Icon(
               isLearned ? Icons.check : Icons.circle_outlined,
               size: 20,
             ),
-            child: Text(isLearned ? 'Learned' : 'Mark as Learned'),
-            color: isLearned ? Colors.grey[900] : Colors.white,
-            textColor: isLearned ? Colors.white : Colors.grey[700],
             borderRadius: 30,
             padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+            color: isLearned ? Colors.grey[900] : Colors.white,
+            textColor: isLearned ? Colors.white : Colors.grey[700],
+            child: Text(isLearned ? 'Learned' : 'Mark as Learned'),
           ),
         ],
       ),
@@ -467,7 +441,6 @@ class _MainScreenState extends State<MainScreen> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // Letter Jump
         Container(
           height: 50,
           margin: const EdgeInsets.only(bottom: 12),
@@ -505,8 +478,6 @@ class _MainScreenState extends State<MainScreen> {
             },
           ),
         ),
-
-        // Navigation Buttons
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
           child: Row(
@@ -515,10 +486,10 @@ class _MainScreenState extends State<MainScreen> {
                 child: AdaptiveButton(
                   onPressed: _currentIndex > 0 ? _prevCard : null,
                   icon: const Icon(Icons.arrow_back),
-                  child: const Text('Previous'),
                   color: Colors.white,
                   textColor: Colors.grey[800],
                   borderRadius: 16,
+                  child: const Text('Previous'),
                 ),
               ),
               const SizedBox(width: 16),
@@ -528,10 +499,10 @@ class _MainScreenState extends State<MainScreen> {
                       ? _nextCard
                       : null,
                   icon: const Icon(Icons.arrow_forward),
-                  child: const Text('Next'),
                   color: Colors.grey[800],
                   textColor: Colors.white,
                   borderRadius: 16,
+                  child: const Text('Next'),
                 ),
               ),
             ],

@@ -1,8 +1,8 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../components/adaptive_button.dart';
-import '../models/vocabulary_word.dart';
+import '../../../../shared/widgets/adaptive_button.dart';
+import '../../domain/entities/vocabulary_word.dart';
 
 class FlashcardWidget extends StatelessWidget {
   final VocabularyWord word;
@@ -36,8 +36,6 @@ class FlashcardWidget extends StatelessWidget {
   }
 
   Widget _buildFront(BuildContext context) {
-    // 響應式高度：填滿父容器
-
     return Container(
       width: double.infinity,
       height: double.infinity,
@@ -47,7 +45,6 @@ class FlashcardWidget extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          // 漸層裝飾
           Positioned(
             top: 0,
             left: 0,
@@ -66,8 +63,6 @@ class FlashcardWidget extends StatelessWidget {
               ),
             ),
           ),
-
-          // 資訊按鈕（右上角）
           Positioned(
             top: 16,
             right: 16,
@@ -78,8 +73,6 @@ class FlashcardWidget extends StatelessWidget {
               child: const Icon(Icons.info_outline, color: Colors.grey),
             ),
           ),
-
-          // 內容
           Positioned.fill(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -95,15 +88,13 @@ class FlashcardWidget extends StatelessWidget {
                         fontSize: 48,
                         fontWeight: FontWeight.w600,
                         letterSpacing: -0.5,
-                        color: Color(0xFF1F2937), // Gray-900
+                        color: Color(0xFF1F2937),
                       ),
                       textAlign: TextAlign.center,
                     ),
                   ),
                 ),
                 const Spacer(flex: 1),
-
-                // 提示圖示
                 Container(
                   width: 64,
                   height: 64,
@@ -127,8 +118,6 @@ class FlashcardWidget extends StatelessWidget {
                   ),
                 ),
                 const Spacer(flex: 2),
-
-                // 底部指示器
                 Container(
                   width: 48,
                   height: 4,
@@ -147,8 +136,6 @@ class FlashcardWidget extends StatelessWidget {
   }
 
   Widget _buildBack(BuildContext context) {
-    // 響應式高度匹配正面
-
     return Container(
       width: double.infinity,
       height: double.infinity,
@@ -156,16 +143,12 @@ class FlashcardWidget extends StatelessWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [
-            Color(0xFF374151),
-            Color(0xFF111827),
-          ], // Gray-700 to Gray-900
+          colors: [Color(0xFF374151), Color(0xFF111827)],
         ),
         borderRadius: BorderRadius.circular(24),
       ),
       child: Column(
         children: [
-          // 標頭
           Container(
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
@@ -185,7 +168,6 @@ class FlashcardWidget extends StatelessWidget {
               ),
             ),
           ),
-
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(24.0),
@@ -193,15 +175,12 @@ class FlashcardWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // 定義
                   _buildContentCard(
                     icon: Icons.menu_book,
                     label: 'DEFINITION',
                     content: word.definition,
                   ),
                   const SizedBox(height: 16),
-
-                  // 例句
                   _buildContentCard(
                     icon: Icons.format_quote,
                     label: 'EXAMPLE',
@@ -212,8 +191,6 @@ class FlashcardWidget extends StatelessWidget {
               ),
             ),
           ),
-
-          // 頁尾
           Container(
             padding: const EdgeInsets.symmetric(vertical: 24),
             decoration: const BoxDecoration(
@@ -243,7 +220,7 @@ class FlashcardWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: Colors.white24),
       ),

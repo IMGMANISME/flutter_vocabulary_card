@@ -13,12 +13,15 @@
 -   **Google 登入**：使用 Google 帳號進行安全驗證。
 -   **字母導覽**：快速跳轉至特定字母開頭的單字。
 
-## 技術堆疊
+## 技術堆疊與架構
 
+本專案採用 **Clean Architecture** 原則，並使用 **Riverpod** 進行狀態管理。
+
+-   **架構**：Feature-First Clean Architecture (Domain, Data, Presentation 分層)
 -   **前端**：Flutter (Dart)
+-   **狀態管理**：Riverpod (v2+ 搭配程式碼生成)
 -   **後端**：Firebase (Firestore, Authentication)
--   **狀態管理**：Provider
--   **資源**：C1 CEFR 單字列表
+-   **程式碼生成**：`build_runner`, `riverpod_generator`, `json_serializable`, `freezed`
 
 ## 設定與安裝
 
@@ -33,11 +36,16 @@
     flutter pub get
     ```
 
-3.  **Firebase 設定**：
+3.  **執行程式碼生成** (Riverpod 與 Models 必需)：
+    ```bash
+    dart run build_runner build --delete-conflicting-outputs
+    ```
+
+4.  **Firebase 設定**：
     -   請確保您已為 Firebase 專案設定好 `firebase_options.dart`。
     -   (若尚未設定) 使用 `flutterfire configure` 指令來產生該檔案。
 
-4.  **執行應用程式**：
+5.  **執行應用程式**：
     -   **iOS**：在 Xcode 中開啟 `ios/Runner.xcworkspace` 以設定簽署 (Signing)，然後執行：
         ```bash
         flutter run

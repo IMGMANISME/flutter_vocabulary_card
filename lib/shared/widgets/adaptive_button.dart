@@ -38,10 +38,8 @@ class AdaptiveButton extends StatelessWidget {
   }
 
   Widget _buildCupertinoButton(BuildContext context) {
-    // Determine the default color from the Theme
     final defaultColor = color ?? Theme.of(context).primaryColor;
 
-    // If not filled, return standard CupertinoButton (text/icon only)
     if (!isFilled) {
       final content = icon != null
           ? Row(
@@ -71,12 +69,11 @@ class AdaptiveButton extends StatelessWidget {
       );
     }
 
-    // "Liquid Glass" Style for Filled Buttons
     return Container(
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: defaultColor.withOpacity(0.3),
+            color: defaultColor.withValues(alpha: 0.3),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -87,14 +84,13 @@ class AdaptiveButton extends StatelessWidget {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Container(
-            color: defaultColor.withOpacity(0.7),
+            color: defaultColor.withValues(alpha: 0.7),
             child: CupertinoButton(
               onPressed: onPressed,
               padding:
                   padding ??
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
               borderRadius: BorderRadius.circular(borderRadius),
-              // Set color to transparent because the Container handles the background color
               color: Colors.transparent,
               disabledColor: CupertinoColors.quaternarySystemFill,
               child: IconTheme(
@@ -140,7 +136,7 @@ class AdaptiveButton extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(borderRadius),
         side: !isFilled && color != null
-            ? BorderSide(color: color!.withOpacity(0.5))
+            ? BorderSide(color: color!.withValues(alpha: 0.5))
             : BorderSide.none,
       ),
     );
@@ -165,11 +161,7 @@ class AdaptiveButton extends StatelessWidget {
       if (isFilled) {
         return ElevatedButton(onPressed: onPressed, style: style, child: child);
       } else {
-        return TextButton(
-          onPressed: onPressed,
-          style: style, // TextButton style is slightly different but compatible
-          child: child,
-        );
+        return TextButton(onPressed: onPressed, style: style, child: child);
       }
     }
   }
