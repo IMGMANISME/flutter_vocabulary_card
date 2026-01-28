@@ -5,6 +5,8 @@ abstract class VocabularyLocalDataSource {
   Future<Set<String>> getLearnedWordIds();
   Future<void> cacheLearnedWordIds(Set<String> ids);
   Future<void> toggleLearnedStatus(String wordId);
+  bool getHideLearned();
+  Future<void> cacheHideLearned(bool value);
 }
 
 class VocabularyLocalDataSourceImpl implements VocabularyLocalDataSource {
@@ -12,6 +14,8 @@ class VocabularyLocalDataSourceImpl implements VocabularyLocalDataSource {
   static const String _learnedWordsKey = 'learned_words';
 
   VocabularyLocalDataSourceImpl({required this.sharedPreferences});
+
+  static const String _hideLearnedKey = 'hide_learned';
 
   @override
   Future<Set<String>> getLearnedWordIds() async {
@@ -39,5 +43,15 @@ class VocabularyLocalDataSourceImpl implements VocabularyLocalDataSource {
       ids.add(wordId);
     }
     await cacheLearnedWordIds(ids);
+  }
+
+  @override
+  bool getHideLearned() {
+    return sharedPreferences.getBool(_hideLearnedKey) ?? false;
+  }
+
+  @override
+  Future<void> cacheHideLearned(bool value) async {
+    await sharedPreferences.setBool(_hideLearnedKey, value);
   }
 }

@@ -20,7 +20,6 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   final GlobalKey<FlipCardState> _cardKey = GlobalKey<FlipCardState>();
 
   int _currentIndex = 0;
-  bool _hideLearned = false;
 
   List<VocabularyWord> _filteredWords = [];
   VocabularyWord? _currentWord;
@@ -33,8 +32,12 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     // Riverpod providers are auto-initialized/disposed, no explicit init needed.
   }
 
-  void _processData(List<VocabularyWord> allWords, Set<String> learnedIds) {
-    if (_hideLearned) {
+  void _processData(
+    List<VocabularyWord> allWords,
+    Set<String> learnedIds,
+    bool hideLearned,
+  ) {
+    if (hideLearned) {
       _filteredWords = allWords
           .where((w) => !learnedIds.contains(w.id))
           .toList();
@@ -112,9 +115,8 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   }
 
   void _toggleHideLearned() {
+    ref.read(hideLearnedProvider.notifier).toggle();
     setState(() {
-      _hideLearned = !_hideLearned;
-      // Reset index if needed, or let _processData handle it
       _currentIndex = 0;
     });
   }
@@ -178,6 +180,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     // Watch providers
     final vocabListAsync = ref.watch(vocabularyListProvider);
     final learnedIdsAsync = ref.watch(learnedWordIdsProvider);
+    final hideLearned = ref.watch(hideLearnedProvider);
 
     return Scaffold(
       backgroundColor: const Color(0xFFF9FAFB),
@@ -185,7 +188,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
         child: vocabListAsync.when(
           data: (allWords) {
             final learnedIds = learnedIdsAsync.value ?? {};
-            _processData(allWords, learnedIds);
+            _processData(allWords, learnedIds, hideLearned);
 
             return Column(
               children: [
@@ -289,6 +292,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   }
 
   Widget _buildProgressBar() {
+    final hideLearned = ref.watch(hideLearnedProvider);
     final progress = (_currentIndex + 1) / _filteredWords.length;
 
     return Padding(
@@ -332,17 +336,17 @@ class _MainScreenState extends ConsumerState<MainScreen> {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: _hideLearned ? Colors.grey[900] : Colors.grey[100],
+                      color: hideLearned ? Colors.grey[900] : Colors.grey[100],
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Row(
                       children: [
                         Icon(
-                          _hideLearned
+                          hideLearned
                               ? Icons.check_circle
                               : Icons.circle_outlined,
                           size: 14,
-                          color: _hideLearned ? Colors.white : Colors.grey,
+                          color: hideLearned ? Colors.white : Colors.grey,
                         ),
                         const SizedBox(width: 4),
                         Text(
@@ -350,7 +354,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
-                            color: _hideLearned
+                            color: hideLearned
                                 ? Colors.white
                                 : Colors.grey[600],
                           ),
@@ -389,7 +393,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
-          if (_hideLearned)
+          if (ref.watch(hideLearnedProvider))
             AdaptiveButton(
               onPressed: _toggleHideLearned,
               isFilled: false,

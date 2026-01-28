@@ -118,4 +118,14 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
       return Left(CacheFailure(e.message));
     }
   }
+
+  @override
+  bool getHideLearned() {
+    return localDataSource.getHideLearned();
+  }
+
+  @override
+  Future<void> saveHideLearned(bool value) async {
+    await localDataSource.cacheHideLearned(value);
+  }
 }

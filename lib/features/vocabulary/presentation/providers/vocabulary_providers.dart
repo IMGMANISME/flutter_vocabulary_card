@@ -88,3 +88,16 @@ Stream<Set<String>> learnedWordIds(Ref ref) {
   final useCase = ref.watch(getLearnedStatusStreamUseCaseProvider);
   return useCase.call();
 }
+
+@riverpod
+class HideLearned extends _$HideLearned {
+  @override
+  bool build() {
+    return ref.watch(vocabularyRepositoryProvider).getHideLearned();
+  }
+
+  void toggle() {
+    state = !state;
+    ref.read(vocabularyRepositoryProvider).saveHideLearned(state);
+  }
+}
