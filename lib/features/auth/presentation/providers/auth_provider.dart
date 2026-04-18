@@ -1,55 +1,46 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-part 'auth_provider.g.dart';
+import '../../../../core/errors/failure.dart';
+import '../../di/auth_dependencies.dart';
+import '../../domain/entities/app_user.dart';
 
-@riverpod
-FirebaseAuth firebaseAuth(Ref ref) {
-  return FirebaseAuth.instance;
-}
+final authStateProvider = StreamProvider<AppUser?>((ref) {
+  final useCase = ref.watch(observeAuthStateUseCaseProvider);
+  return useCase.call();
+});
 
-@riverpod
-Stream<User?> authState(Ref ref) {
-  return ref.watch(firebaseAuthProvider).authStateChanges();
-}
-
-@riverpod
-class AuthController extends _$AuthController {
+class AuthController extends Notifier<AsyncValue<void>> {
   @override
-  FutureOr<void> build() {
-    // No state to initialize mostly, just methods
+  AsyncValue<void> build() {
+    return const AsyncData(null);
   }
 
   Future<void> signInWithGoogle() async {
     state = const AsyncLoading();
-    try {
-      final GoogleSignIn googleSignIn = GoogleSignIn();
-      final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
 
-      if (googleUser != null) {
-        final GoogleSignInAuthentication googleAuth =
-            await googleUser.authentication;
-        final OAuthCredential credential = GoogleAuthProvider.credential(
-          accessToken: googleAuth.accessToken,
-          idToken: googleAuth.idToken,
-        );
-        await ref.read(firebaseAuthProvider).signInWithCredential(credential);
-      }
-      state = const AsyncData(null);
-    } catch (e, stack) {
-      state = AsyncError(e, stack);
-    }
+    final result = await ref.read(signInWithGoogleUseCaseProvider).call();
+
+    result.match(
+      (failure) => state = AsyncError(_mapFailure(failure), StackTrace.current),
+      (_) => state = const AsyncData(null),
+    );
   }
 
   Future<void> signOut() async {
     state = const AsyncLoading();
-    try {
-      await GoogleSignIn().signOut();
-      await ref.read(firebaseAuthProvider).signOut();
-      state = const AsyncData(null);
-    } catch (e, stack) {
-      state = AsyncError(e, stack);
-    }
+
+    final result = await ref.read(signOutUseCaseProvider).call();
+
+    result.match(
+      (failure) => state = AsyncError(_mapFailure(failure), StackTrace.current),
+      (_) => state = const AsyncData(null),
+    );
+  }
+
+  Object _mapFailure(Failure failure) {
+    return Exception(failure.message);
   }
 }
+
+final authControllerProvider =
+    NotifierProvider<AuthController, AsyncValue<void>>(AuthController.new);

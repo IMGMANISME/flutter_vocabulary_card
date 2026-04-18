@@ -1,9 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart'; // For WidgetsFlutterBinding
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'features/vocabulary/presentation/providers/vocabulary_providers.dart';
+import 'core/providers/app_providers.dart';
 import 'firebase_options.dart';
 
 Future<ProviderContainer> bootstrap() async {
@@ -13,16 +13,13 @@ Future<ProviderContainer> bootstrap() async {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-  } catch (e) {
-    // Handle error or ignore if already initialized
-    debugPrint('Firebase init error: $e');
+  } catch (error) {
+    debugPrint('Firebase initialization error: $error');
   }
 
   final prefs = await SharedPreferences.getInstance();
 
-  final container = ProviderContainer(
+  return ProviderContainer(
     overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
   );
-
-  return container;
 }
