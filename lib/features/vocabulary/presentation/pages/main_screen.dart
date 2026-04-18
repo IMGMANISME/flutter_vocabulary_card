@@ -1,224 +1,60 @@
-import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../shared/widgets/adaptive_button.dart';
+import '../../../auth/domain/entities/app_user.dart';
 import '../../../auth/presentation/providers/auth_provider.dart';
-import '../../domain/entities/vocabulary_word.dart';
+import '../../di/vocabulary_dependencies.dart';
+import '../../presentation/providers/study_session_providers.dart';
 import '../providers/vocabulary_providers.dart';
 import '../widgets/flashcard_widget.dart';
 
-class MainScreen extends ConsumerStatefulWidget {
+class MainScreen extends ConsumerWidget {
   const MainScreen({super.key});
 
   @override
-  ConsumerState<MainScreen> createState() => _MainScreenState();
-}
-
-class _MainScreenState extends ConsumerState<MainScreen> {
-  final GlobalKey<FlipCardState> _cardKey = GlobalKey<FlipCardState>();
-
-  int _currentIndex = 0;
-
-  List<VocabularyWord> _filteredWords = [];
-  VocabularyWord? _currentWord;
-  List<String> _availableLetters = [];
-  final Map<String, int> _letterIndexMap = {};
-
-  @override
-  void initState() {
-    super.initState();
-    // Riverpod providers are auto-initialized/disposed, no explicit init needed.
-  }
-
-  void _processData(
-    List<VocabularyWord> allWords,
-    Set<String> learnedIds,
-    bool hideLearned,
-  ) {
-    if (hideLearned) {
-      _filteredWords = allWords
-          .where((w) => !learnedIds.contains(w.id))
-          .toList();
-    } else {
-      _filteredWords = List.from(allWords);
-    }
-
-    _buildLetterIndex();
-
-    if (_filteredWords.isEmpty) {
-      _currentIndex = 0;
-      _currentWord = null;
-    } else {
-      if (_currentIndex >= _filteredWords.length) {
-        _currentIndex = _filteredWords.length - 1;
-      }
-      if (_currentIndex < 0) _currentIndex = 0;
-
-      _currentWord = _filteredWords[_currentIndex];
-    }
-  }
-
-  void _buildLetterIndex() {
-    _availableLetters = [];
-    _letterIndexMap.clear();
-
-    for (int i = 0; i < _filteredWords.length; i++) {
-      final letter = _filteredWords[i].word[0].toUpperCase();
-      if (!_availableLetters.contains(letter)) {
-        _availableLetters.add(letter);
-        _letterIndexMap[letter] = i;
-      }
-    }
-    _availableLetters.sort();
-  }
-
-  void _nextCard() {
-    if (_currentIndex < _filteredWords.length - 1) {
-      setState(() {
-        _currentIndex++;
-        if (_cardKey.currentState?.isFront == false) {
-          _cardKey.currentState?.toggleCard();
-        }
-      });
-    }
-  }
-
-  void _prevCard() {
-    if (_currentIndex > 0) {
-      setState(() {
-        _currentIndex--;
-        if (_cardKey.currentState?.isFront == false) {
-          _cardKey.currentState?.toggleCard();
-        }
-      });
-    }
-  }
-
-  void _jumpToLetter(String letter) {
-    if (_letterIndexMap.containsKey(letter)) {
-      setState(() {
-        _currentIndex = _letterIndexMap[letter]!;
-        if (_cardKey.currentState?.isFront == false) {
-          _cardKey.currentState?.toggleCard();
-        }
-      });
-    }
-  }
-
-  Future<void> _toggleLearned() async {
-    if (_currentWord == null) return;
-    final useCase = ref.read(toggleLearnedStatusUseCaseProvider);
-    await useCase.call(_currentWord!.id);
-    // Stream will automatically update UI
-  }
-
-  void _toggleHideLearned() {
-    ref.read(hideLearnedProvider.notifier).toggle();
-    setState(() {
-      _currentIndex = 0;
-    });
-  }
-
-  void _showLogoutDialog(BuildContext context) {
-    final isIOS =
-        Theme.of(context).platform == TargetPlatform.iOS ||
-        Theme.of(context).platform == TargetPlatform.macOS;
-
-    final content = const Text('Are you sure you want to log out?');
-
-    if (isIOS) {
-      showCupertinoDialog(
-        context: context,
-        builder: (context) => CupertinoAlertDialog(
-          title: const Text('Logout'),
-          content: content,
-          actions: [
-            CupertinoDialogAction(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
-            ),
-            CupertinoDialogAction(
-              isDestructiveAction: true,
-              onPressed: () {
-                Navigator.pop(context);
-                ref.read(authControllerProvider.notifier).signOut();
-              },
-              child: const Text('Logout'),
-            ),
-          ],
-        ),
-      );
-    } else {
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: const Text('Logout'),
-          content: content,
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-                ref.read(authControllerProvider.notifier).signOut();
-              },
-              style: TextButton.styleFrom(foregroundColor: Colors.red),
-              child: const Text('Logout'),
-            ),
-          ],
-        ),
-      );
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // Watch providers
-    final vocabListAsync = ref.watch(vocabularyListProvider);
-    final learnedIdsAsync = ref.watch(learnedWordIdsProvider);
-    final hideLearned = ref.watch(hideLearnedProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    _listenAuthController(context, ref);
+    final vocabularyListAsync = ref.watch(vocabularyListProvider);
 
     return Scaffold(
       backgroundColor: const Color(0xFFF9FAFB),
       body: SafeArea(
-        child: vocabListAsync.when(
-          data: (allWords) {
-            final learnedIds = learnedIdsAsync.value ?? {};
-            _processData(allWords, learnedIds, hideLearned);
+        child: vocabularyListAsync.when(
+          data: (_) {
+            final session = ref.watch(studySessionProvider);
 
             return Column(
               children: [
-                _buildHeader(),
-                if (_filteredWords.isNotEmpty) _buildProgressBar(),
+                _buildHeader(context, ref),
+                if (session.hasWords) _buildProgressBar(ref, session),
                 Expanded(
-                  child: _filteredWords.isEmpty
-                      ? _buildEmptyState()
-                      : _buildCardArea(learnedIds),
+                  child: session.hasWords
+                      ? _buildCardArea(context, ref, session)
+                      : _buildEmptyState(ref),
                 ),
-                if (_filteredWords.isNotEmpty) _buildControls(),
+                if (session.hasWords) _buildControls(ref, session),
                 _buildFooter(),
               ],
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (err, stack) => Center(child: Text('Error: $err')),
+          error: (error, stackTrace) => Center(child: Text('Error: $error')),
         ),
       ),
     );
   }
 
-  Widget _buildHeader() {
+  Widget _buildHeader(BuildContext context, WidgetRef ref) {
     final authState = ref.watch(authStateProvider);
     final authControllerState = ref.watch(authControllerProvider);
+
     final user = authState.value;
     final isLoading = authState.isLoading || authControllerState.isLoading;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -238,6 +74,17 @@ class _MainScreenState extends ConsumerState<MainScreen> {
                   'Learn C1 CEFR vocabulary words',
                   style: TextStyle(fontSize: 14, color: Colors.grey[600]),
                 ),
+                const SizedBox(height: 4),
+                Text(
+                  _authStatusLabel(user: user, isLoading: isLoading),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: user != null ? Colors.green[700] : Colors.grey[600],
+                  ),
+                ),
               ],
             ),
           ),
@@ -251,16 +98,16 @@ class _MainScreenState extends ConsumerState<MainScreen> {
                   )
                 : user != null
                 ? InkWell(
-                    onTap: () => _showLogoutDialog(context),
+                    onTap: () => _showLogoutDialog(context, ref),
                     borderRadius: BorderRadius.circular(16),
                     child: CircleAvatar(
                       radius: 16,
                       backgroundColor: Colors.grey[800],
-                      backgroundImage: user.photoURL != null
-                          ? NetworkImage(user.photoURL!)
+                      backgroundImage: user.photoUrl != null
+                          ? NetworkImage(user.photoUrl!)
                           : null,
-                      onBackgroundImageError: (_, __) {},
-                      child: user.photoURL == null
+                      onBackgroundImageError: (exception, stackTrace) {},
+                      child: user.photoUrl == null
                           ? Text(
                               (user.displayName ?? 'U')[0].toUpperCase(),
                               style: const TextStyle(
@@ -291,12 +138,11 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     );
   }
 
-  Widget _buildProgressBar() {
+  Widget _buildProgressBar(WidgetRef ref, StudySessionState session) {
     final hideLearned = ref.watch(hideLearnedProvider);
-    final progress = (_currentIndex + 1) / _filteredWords.length;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
@@ -322,13 +168,13 @@ class _MainScreenState extends ConsumerState<MainScreen> {
                       style: TextStyle(fontWeight: FontWeight.w600),
                     ),
                     Text(
-                      '(${_currentIndex + 1}/${_filteredWords.length})',
+                      '(${session.displayPosition}/${session.totalCount})',
                       style: TextStyle(color: Colors.grey[500], fontSize: 12),
                     ),
                   ],
                 ),
                 InkWell(
-                  onTap: _toggleHideLearned,
+                  onTap: () => _toggleHideLearned(ref),
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
                     padding: const EdgeInsets.symmetric(
@@ -369,7 +215,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
             ClipRRect(
               borderRadius: BorderRadius.circular(4),
               child: LinearProgressIndicator(
-                value: progress,
+                value: session.progress,
                 backgroundColor: Colors.grey[200],
                 valueColor: AlwaysStoppedAnimation<Color>(Colors.grey[800]!),
                 minHeight: 6,
@@ -381,7 +227,9 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     );
   }
 
-  Widget _buildEmptyState() {
+  Widget _buildEmptyState(WidgetRef ref) {
+    final hideLearned = ref.watch(hideLearnedProvider);
+
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -393,9 +241,9 @@ class _MainScreenState extends ConsumerState<MainScreen> {
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
-          if (ref.watch(hideLearnedProvider))
+          if (hideLearned)
             AdaptiveButton(
-              onPressed: _toggleHideLearned,
+              onPressed: () => _toggleHideLearned(ref),
               isFilled: false,
               textColor: Colors.grey[600],
               child: const Text('Show learned words'),
@@ -405,27 +253,31 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     );
   }
 
-  Widget _buildCardArea(Set<String> learnedIds) {
-    if (_currentWord == null) return const SizedBox();
+  Widget _buildCardArea(
+    BuildContext context,
+    WidgetRef ref,
+    StudySessionState session,
+  ) {
+    final currentWord = session.currentWord;
+    if (currentWord == null) {
+      return const SizedBox();
+    }
 
-    final isLearned = learnedIds.contains(_currentWord!.id);
+    final isLearned = session.isCurrentWordLearned;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Column(
         children: [
           Expanded(
             child: FlashcardWidget(
-              key: ValueKey(_currentWord!.id),
-              cardKey: _cardKey,
-              word: _currentWord!,
-              isLearned: isLearned,
-              onToggleLearned: _toggleLearned,
+              key: ValueKey(currentWord.id),
+              word: currentWord,
             ),
           ),
           const SizedBox(height: 24),
           AdaptiveButton(
-            onPressed: _toggleLearned,
+            onPressed: () => _toggleLearned(context, ref, currentWord.id),
             icon: Icon(
               isLearned ? Icons.check : Icons.circle_outlined,
               size: 20,
@@ -441,24 +293,32 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     );
   }
 
-  Widget _buildControls() {
+  Widget _buildControls(WidgetRef ref, StudySessionState session) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Container(
+        SizedBox(
           height: 50,
-          margin: const EdgeInsets.only(bottom: 12),
           child: ListView.separated(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             scrollDirection: Axis.horizontal,
-            itemCount: _availableLetters.length,
-            separatorBuilder: (c, i) => const SizedBox(width: 8),
+            itemCount: session.availableLetters.length,
+            separatorBuilder: (context, index) => const SizedBox(width: 8),
             itemBuilder: (context, index) {
-              final letter = _availableLetters[index];
-              final isSelected = _currentWord?.word.startsWith(letter) ?? false;
+              final letter = session.availableLetters[index];
+              final isSelected =
+                  session.currentWord?.word.toUpperCase().startsWith(letter) ??
+                  false;
 
               return InkWell(
-                onTap: () => _jumpToLetter(letter),
+                onTap: () {
+                  final targetIndex = session.letterIndexMap[letter];
+                  if (targetIndex == null) {
+                    return;
+                  }
+
+                  ref.read(studyIndexProvider.notifier).jumpTo(targetIndex);
+                },
                 child: Container(
                   width: 36,
                   height: 36,
@@ -488,7 +348,13 @@ class _MainScreenState extends ConsumerState<MainScreen> {
             children: [
               Expanded(
                 child: AdaptiveButton(
-                  onPressed: _currentIndex > 0 ? _prevCard : null,
+                  onPressed: session.isAtStart
+                      ? null
+                      : () {
+                          ref
+                              .read(studyIndexProvider.notifier)
+                              .previous(session.currentIndex);
+                        },
                   icon: const Icon(Icons.arrow_back),
                   color: Colors.white,
                   textColor: Colors.grey[800],
@@ -499,9 +365,16 @@ class _MainScreenState extends ConsumerState<MainScreen> {
               const SizedBox(width: 16),
               Expanded(
                 child: AdaptiveButton(
-                  onPressed: _currentIndex < _filteredWords.length - 1
-                      ? _nextCard
-                      : null,
+                  onPressed: session.isAtEnd
+                      ? null
+                      : () {
+                          ref
+                              .read(studyIndexProvider.notifier)
+                              .next(
+                                currentIndex: session.currentIndex,
+                                totalCount: session.totalCount,
+                              );
+                        },
                   icon: const Icon(Icons.arrow_forward),
                   color: Colors.grey[800],
                   textColor: Colors.white,
@@ -518,11 +391,142 @@ class _MainScreenState extends ConsumerState<MainScreen> {
 
   Widget _buildFooter() {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8.0),
+      padding: const EdgeInsets.only(bottom: 8),
       child: Text(
         '© 2025 English Vocabulary Card',
         style: TextStyle(color: Colors.grey[400], fontSize: 12),
       ),
     );
+  }
+
+  Future<void> _toggleLearned(
+    BuildContext context,
+    WidgetRef ref,
+    String wordId,
+  ) async {
+    final result = await ref
+        .read(toggleLearnedStatusUseCaseProvider)
+        .call(wordId);
+
+    result.match((failure) {
+      if (!context.mounted) {
+        return;
+      }
+
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(failure.message)));
+    }, (_) {});
+  }
+
+  Future<void> _toggleHideLearned(WidgetRef ref) async {
+    await ref.read(hideLearnedProvider.notifier).toggle();
+    ref.read(studyIndexProvider.notifier).reset();
+  }
+
+  void _showLogoutDialog(BuildContext context, WidgetRef ref) {
+    final isIOS =
+        Theme.of(context).platform == TargetPlatform.iOS ||
+        Theme.of(context).platform == TargetPlatform.macOS;
+
+    final content = const Text('Are you sure you want to log out?');
+
+    if (isIOS) {
+      showCupertinoDialog(
+        context: context,
+        builder: (dialogContext) => CupertinoAlertDialog(
+          title: const Text('Logout'),
+          content: content,
+          actions: [
+            CupertinoDialogAction(
+              onPressed: () => Navigator.pop(dialogContext),
+              child: const Text('Cancel'),
+            ),
+            CupertinoDialogAction(
+              isDestructiveAction: true,
+              onPressed: () {
+                Navigator.pop(dialogContext);
+                ref.read(authControllerProvider.notifier).signOut();
+              },
+              child: const Text('Logout'),
+            ),
+          ],
+        ),
+      );
+    } else {
+      showDialog(
+        context: context,
+        builder: (dialogContext) => AlertDialog(
+          title: const Text('Logout'),
+          content: content,
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(dialogContext);
+                ref.read(authControllerProvider.notifier).signOut();
+              },
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              child: const Text('Logout'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
+
+  String _authStatusLabel({required AppUser? user, required bool isLoading}) {
+    if (isLoading) {
+      return 'Checking sign-in status...';
+    }
+
+    if (user == null) {
+      return 'Not signed in';
+    }
+
+    final displayName = user.displayName;
+    final email = user.email;
+    final identity = (displayName != null && displayName.isNotEmpty)
+        ? displayName
+        : (email ?? user.id);
+
+    return 'Signed in as $identity';
+  }
+
+  void _listenAuthController(BuildContext context, WidgetRef ref) {
+    ref.listen<AsyncValue<void>>(authControllerProvider, (previous, next) {
+      if (!context.mounted) {
+        return;
+      }
+
+      if (next.hasError) {
+        final message = _formatError(next.error);
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(message), backgroundColor: Colors.red[700]),
+        );
+        return;
+      }
+
+      if (previous?.isLoading == true && next is AsyncData<void>) {
+        final user = ref.read(authStateProvider).value;
+        final message = user == null ? 'Signed out' : 'Signed in successfully';
+
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text(message)));
+      }
+    });
+  }
+
+  String _formatError(Object? error) {
+    if (error == null) {
+      return 'Unknown authentication error';
+    }
+
+    return error.toString().replaceFirst('Exception: ', '');
   }
 }

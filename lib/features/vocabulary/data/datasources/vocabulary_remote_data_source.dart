@@ -1,13 +1,22 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
 import '../../../../core/errors/exceptions.dart';
-import 'package:rxdart/rxdart.dart';
 import '../models/vocabulary_model.dart';
 
 abstract class VocabularyRemoteDataSource {
+  String? get currentUserId;
+
+  Stream<String?> userIdChanges();
+
   Future<List<VocabularyModel>> getVocabularyList();
-  Future<void> toggleLearnedStatus(String wordId, bool isLearned);
-  Stream<Set<String>> getLearnedWordIdsStream();
+
+  Stream<Set<String>> watchLearnedWordIds(String userId);
+
+  Future<void> toggleLearnedStatus({
+    required String userId,
+    required String wordId,
+  });
 }
 
 class VocabularyRemoteDataSourceImpl implements VocabularyRemoteDataSource {
@@ -17,59 +26,66 @@ class VocabularyRemoteDataSourceImpl implements VocabularyRemoteDataSource {
   VocabularyRemoteDataSourceImpl({required this.firestore, required this.auth});
 
   @override
+  String? get currentUserId => auth.currentUser?.uid;
+
+  @override
+  Stream<String?> userIdChanges() {
+    return auth.authStateChanges().map((user) => user?.uid);
+  }
+
+  @override
   Future<List<VocabularyModel>> getVocabularyList() async {
     try {
       final snapshot = await firestore.collection('vocabulary').get();
-      return snapshot.docs.map((doc) {
+      final list = snapshot.docs.map((doc) {
         final data = doc.data();
-        data['id'] = doc.id; // Ensure ID is part of the map
+        data['id'] = doc.id;
         return VocabularyModel.fromJson(data);
       }).toList();
-    } catch (e) {
-      throw ServerException(e.toString());
+
+      list.sort((a, b) => a.word.toLowerCase().compareTo(b.word.toLowerCase()));
+
+      return list;
+    } catch (error) {
+      throw ServerException(error.toString());
     }
   }
 
   @override
-  Future<void> toggleLearnedStatus(String wordId, bool isLearned) async {
-    final user = auth.currentUser;
-    if (user == null) {
-      throw ServerException('User not authenticated');
-    }
+  Stream<Set<String>> watchLearnedWordIds(String userId) {
+    return firestore
+        .collection('users')
+        .doc(userId)
+        .collection('learnedWords')
+        .snapshots()
+        .map((snapshot) {
+          return snapshot.docs.map((doc) => doc.id).toSet();
+        });
+  }
 
+  @override
+  Future<void> toggleLearnedStatus({
+    required String userId,
+    required String wordId,
+  }) async {
     final docRef = firestore
         .collection('users')
-        .doc(user.uid)
+        .doc(userId)
         .collection('learnedWords')
         .doc(wordId);
 
     try {
-      if (isLearned) {
-        // Was learned, now removing
-        await docRef.delete();
-      } else {
-        // Was not learned, now adding
-        await docRef.set({'timestamp': FieldValue.serverTimestamp()});
-      }
-    } catch (e) {
-      throw ServerException(e.toString());
-    }
-  }
+      await firestore.runTransaction((transaction) async {
+        final snapshot = await transaction.get(docRef);
 
-  @override
-  Stream<Set<String>> getLearnedWordIdsStream() {
-    return auth.authStateChanges().switchMap((user) {
-      if (user == null) {
-        return Stream.value({});
-      }
-      return firestore
-          .collection('users')
-          .doc(user.uid)
-          .collection('learnedWords')
-          .snapshots()
-          .map((snapshot) {
-            return snapshot.docs.map((doc) => doc.id).toSet();
-          });
-    });
+        if (snapshot.exists) {
+          transaction.delete(docRef);
+        } else {
+          transaction.set(docRef, {'timestamp': FieldValue.serverTimestamp()});
+        }
+      });
+    } catch (error) {
+      throw ServerException(error.toString());
+    }
   }
 }

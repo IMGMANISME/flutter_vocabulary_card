@@ -6,12 +6,12 @@ part 'vocabulary_model.g.dart';
 @JsonSerializable()
 class VocabularyModel extends VocabularyWord {
   const VocabularyModel({
-    @JsonKey(defaultValue: '') required super.id,
-    @JsonKey(defaultValue: '') required super.word,
-    @JsonKey(defaultValue: '') required super.partOfSpeech,
-    @JsonKey(defaultValue: '') required super.definition,
-    @JsonKey(defaultValue: '') required super.example,
-    @JsonKey(defaultValue: '') required super.chineseTranslation,
+    required super.id,
+    required super.word,
+    required super.partOfSpeech,
+    required super.definition,
+    required super.example,
+    required super.chineseTranslation,
   });
 
   factory VocabularyModel.fromJson(Map<String, dynamic> json) =>
