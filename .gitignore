@@ -47,3 +47,4 @@ app.*.map.json
 # Firebase Configs
 google-services.json
 GoogleService-Info.plist
+.vscode/settings.json
