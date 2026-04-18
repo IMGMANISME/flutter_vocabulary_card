@@ -1,22 +1,14 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import '../../../../shared/widgets/adaptive_button.dart';
 import '../../domain/entities/vocabulary_word.dart';
 
 class FlashcardWidget extends StatelessWidget {
   final VocabularyWord word;
-  final bool isLearned;
-  final VoidCallback onToggleLearned;
-  final GlobalKey<FlipCardState> cardKey;
 
-  const FlashcardWidget({
-    super.key,
-    required this.word,
-    required this.isLearned,
-    required this.onToggleLearned,
-    required this.cardKey,
-  });
+  const FlashcardWidget({super.key, required this.word});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +17,6 @@ class FlashcardWidget extends StatelessWidget {
       shadowColor: Colors.black26,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       child: FlipCard(
-        key: cardKey,
         flipOnTouch: true,
         direction: FlipDirection.HORIZONTAL,
         side: CardSide.FRONT,
@@ -79,7 +70,7 @@ class FlashcardWidget extends StatelessWidget {
               children: [
                 const Spacer(flex: 2),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: FittedBox(
                     fit: BoxFit.scaleDown,
                     child: Text(
@@ -170,7 +161,7 @@ class FlashcardWidget extends StatelessWidget {
           ),
           Expanded(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.all(24.0),
+              padding: const EdgeInsets.all(24),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -275,18 +266,18 @@ class FlashcardWidget extends StatelessWidget {
     if (isIOS) {
       showCupertinoDialog(
         context: context,
-        builder: (context) => CupertinoAlertDialog(
+        builder: (dialogContext) => CupertinoAlertDialog(
           title: Text(
             word.word,
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           content: Padding(
-            padding: const EdgeInsets.only(top: 8.0),
+            padding: const EdgeInsets.only(top: 8),
             child: content,
           ),
           actions: [
             CupertinoDialogAction(
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => Navigator.pop(dialogContext),
               child: const Text('Close'),
             ),
           ],
@@ -295,7 +286,7 @@ class FlashcardWidget extends StatelessWidget {
     } else {
       showDialog(
         context: context,
-        builder: (context) => AlertDialog(
+        builder: (dialogContext) => AlertDialog(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
@@ -307,7 +298,7 @@ class FlashcardWidget extends StatelessWidget {
           content: content,
           actions: [
             TextButton(
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => Navigator.pop(dialogContext),
               child: const Text('Close'),
             ),
           ],
