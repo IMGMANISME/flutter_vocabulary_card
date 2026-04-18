@@ -70,7 +70,8 @@ class DefaultFirebaseOptions {
     projectId: 'english-volcabulary-card',
     databaseURL: 'https://english-volcabulary-card-default-rtdb.firebaseio.com',
     storageBucket: 'english-volcabulary-card.firebasestorage.app',
-    iosClientId: '1082504661197-8lgn48ajr73qkb0ebjo9dahs4ljssrog.apps.googleusercontent.com',
+    iosClientId:
+        '1082504661197-8lgn48ajr73qkb0ebjo9dahs4ljssrog.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterVocabularyCard',
   );
 
@@ -81,8 +82,8 @@ class DefaultFirebaseOptions {
     projectId: 'english-volcabulary-card',
     databaseURL: 'https://english-volcabulary-card-default-rtdb.firebaseio.com',
     storageBucket: 'english-volcabulary-card.firebasestorage.app',
-    iosClientId: '1082504661197-8lgn48ajr73qkb0ebjo9dahs4ljssrog.apps.googleusercontent.com',
+    iosClientId:
+        '1082504661197-8lgn48ajr73qkb0ebjo9dahs4ljssrog.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterVocabularyCard',
   );
-
 }

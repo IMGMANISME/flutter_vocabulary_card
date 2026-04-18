@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'bootstrap.dart';
 import 'features/vocabulary/presentation/pages/main_screen.dart';
 
-void main() async {
+Future<void> main() async {
   final container = await bootstrap();
 
   runApp(UncontrolledProviderScope(container: container, child: const MyApp()));
