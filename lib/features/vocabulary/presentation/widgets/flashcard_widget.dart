@@ -2,7 +2,6 @@ import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../shared/widgets/adaptive_button.dart';
 import '../../domain/entities/vocabulary_word.dart';
 
 class FlashcardWidget extends StatelessWidget {
@@ -10,18 +9,30 @@ class FlashcardWidget extends StatelessWidget {
 
   const FlashcardWidget({super.key, required this.word});
 
+  static const Color _ink = Color(0xFF15243A);
+
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 8,
-      shadowColor: Colors.black26,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-      child: FlipCard(
-        flipOnTouch: true,
-        direction: FlipDirection.HORIZONTAL,
-        side: CardSide.FRONT,
-        front: _buildFront(context),
-        back: _buildBack(context),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(26),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF0F172A).withValues(alpha: 0.18),
+            blurRadius: 24,
+            offset: const Offset(0, 14),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(26),
+        child: FlipCard(
+          flipOnTouch: true,
+          direction: FlipDirection.HORIZONTAL,
+          side: CardSide.FRONT,
+          front: _buildFront(context),
+          back: _buildBack(context),
+        ),
       ),
     );
   }
@@ -31,8 +42,12 @@ class FlashcardWidget extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(24),
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Color(0xFFFFFFFF), Color(0xFFF4F8FD)],
+        ),
+        border: Border.all(color: const Color(0xFFD8E2EF)),
       ),
       child: Stack(
         children: [
@@ -40,28 +55,60 @@ class FlashcardWidget extends StatelessWidget {
             top: 0,
             left: 0,
             right: 0,
-            height: 100,
+            height: 130,
             child: Container(
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.vertical(
-                  top: Radius.circular(24),
-                ),
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.vertical(top: Radius.circular(26)),
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Colors.grey[100]!, Colors.grey[50]!],
+                  colors: [Color(0xFFE4ECFF), Color(0xFFD9F3EA)],
                 ),
               ),
             ),
           ),
           Positioned(
-            top: 16,
-            right: 16,
-            child: AdaptiveButton(
-              isFilled: false,
-              padding: EdgeInsets.zero,
-              onPressed: () => _showWordInfo(context),
-              child: const Icon(Icons.info_outline, color: Colors.grey),
+            top: -24,
+            right: -14,
+            child: Container(
+              width: 120,
+              height: 120,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: const Color(0xFFBDEADA).withValues(alpha: 0.55),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 14,
+            right: 14,
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () => _showWordInfo(context),
+                borderRadius: BorderRadius.circular(999),
+                child: Ink(
+                  width: 36,
+                  height: 36,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: const Color(0xFFD8E1ED)),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.08),
+                        blurRadius: 10,
+                        offset: const Offset(0, 5),
+                      ),
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.info_outline_rounded,
+                    color: Color(0xFF334155),
+                    size: 18,
+                  ),
+                ),
+              ),
             ),
           ),
           Positioned.fill(
@@ -76,10 +123,10 @@ class FlashcardWidget extends StatelessWidget {
                     child: Text(
                       word.word,
                       style: const TextStyle(
-                        fontSize: 48,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: -0.5,
-                        color: Color(0xFF1F2937),
+                        fontSize: 54,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: -1,
+                        color: _ink,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -87,37 +134,46 @@ class FlashcardWidget extends StatelessWidget {
                 ),
                 const Spacer(flex: 1),
                 Container(
-                  width: 64,
-                  height: 64,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 10,
+                  ),
                   decoration: BoxDecoration(
-                    color: Colors.grey[100],
-                    shape: BoxShape.circle,
+                    color: const Color(0xFFEAF1F9),
+                    borderRadius: BorderRadius.circular(999),
+                    border: Border.all(color: const Color(0xFFD8E2EF)),
                   ),
-                  child: Icon(
-                    Icons.touch_app_outlined,
-                    color: Colors.grey[600],
-                    size: 32,
-                  ),
-                ),
-                const SizedBox(height: 16),
-                const Text(
-                  'Tap to see definition',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.touch_app_rounded,
+                        color: _ink.withValues(alpha: 0.75),
+                        size: 18,
+                      ),
+                      const SizedBox(width: 6),
+                      Text(
+                        'Tap card to reveal definition',
+                        style: TextStyle(
+                          color: _ink.withValues(alpha: 0.74),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 0.15,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 const Spacer(flex: 2),
                 Container(
-                  width: 48,
+                  width: 52,
                   height: 4,
                   decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                    color: const Color(0xFFCED8E6),
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 20),
               ],
             ),
           ),
@@ -134,68 +190,134 @@ class FlashcardWidget extends StatelessWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF374151), Color(0xFF111827)],
+          colors: [Color(0xFF162B45), Color(0xFF0C1323)],
         ),
-        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: const Color(0xFF2A3E5E)),
       ),
-      child: Column(
+      child: Stack(
         children: [
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
-            decoration: const BoxDecoration(
-              border: Border(bottom: BorderSide(color: Colors.white24)),
+          Positioned(
+            top: -70,
+            right: -36,
+            child: Container(
+              width: 170,
+              height: 170,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: const Color(0xFF22D3EE).withValues(alpha: 0.14),
+              ),
             ),
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Text(
-                word.word,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 28,
-                  fontWeight: FontWeight.w600,
+          ),
+          Positioned(
+            bottom: -88,
+            left: -34,
+            child: Container(
+              width: 190,
+              height: 190,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: const Color(0xFF34D399).withValues(alpha: 0.12),
+              ),
+            ),
+          ),
+          Column(
+            children: [
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(
+                  vertical: 22,
+                  horizontal: 16,
                 ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(24),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  _buildContentCard(
-                    icon: Icons.menu_book,
-                    label: 'DEFINITION',
-                    content: word.definition,
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: Colors.white.withValues(alpha: 0.2),
+                    ),
                   ),
-                  const SizedBox(height: 16),
-                  _buildContentCard(
-                    icon: Icons.format_quote,
-                    label: 'EXAMPLE',
-                    content: '"${word.example}"',
-                    isItalic: true,
+                ),
+                child: Column(
+                  children: [
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        word.word,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: -0.3,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.12),
+                        borderRadius: BorderRadius.circular(999),
+                        border: Border.all(
+                          color: Colors.white.withValues(alpha: 0.2),
+                        ),
+                      ),
+                      child: const Text(
+                        'Definition & Example',
+                        style: TextStyle(
+                          color: Colors.white70,
+                          fontSize: 11,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      _buildContentCard(
+                        icon: Icons.menu_book_rounded,
+                        label: 'DEFINITION',
+                        content: word.definition,
+                      ),
+                      const SizedBox(height: 14),
+                      _buildContentCard(
+                        icon: Icons.format_quote_rounded,
+                        label: 'EXAMPLE',
+                        content: '"${word.example}"',
+                        isItalic: true,
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.symmetric(vertical: 24),
-            decoration: const BoxDecoration(
-              border: Border(top: BorderSide(color: Colors.white24)),
-            ),
-            child: const Text(
-              'Tap to flip back',
-              style: TextStyle(
-                color: Colors.white70,
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 18),
+                decoration: BoxDecoration(
+                  border: Border(
+                    top: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
+                  ),
+                ),
+                child: const Text(
+                  'Tap card to flip back',
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    letterSpacing: 0.2,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
-              textAlign: TextAlign.center,
-            ),
+            ],
           ),
         ],
       ),
@@ -209,26 +331,26 @@ class FlashcardWidget extends StatelessWidget {
     bool isItalic = false,
   }) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white24),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
-              Icon(icon, color: Colors.white70, size: 20),
+              Icon(icon, color: Colors.white70, size: 19),
               const SizedBox(width: 8),
               Text(
                 label,
                 style: const TextStyle(
                   color: Colors.white60,
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.2,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 1.1,
                 ),
               ),
             ],
@@ -240,6 +362,7 @@ class FlashcardWidget extends StatelessWidget {
               color: Colors.white,
               fontSize: 16,
               height: 1.5,
+              fontWeight: FontWeight.w500,
               fontStyle: isItalic ? FontStyle.italic : FontStyle.normal,
             ),
           ),

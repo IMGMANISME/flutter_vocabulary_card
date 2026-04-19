@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'bootstrap.dart';
 import 'features/vocabulary/presentation/pages/main_screen.dart';
@@ -15,18 +16,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = GoogleFonts.dmSansTextTheme();
+
     return MaterialApp(
       title: 'Gocab',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.grey,
-          primary: Colors.black,
-          secondary: Colors.grey,
+          seedColor: const Color(0xFF0F766E),
+          primary: const Color(0xFF111C2E),
+          secondary: const Color(0xFF0F766E),
+          surface: const Color(0xFFF4F8FD),
         ),
         useMaterial3: true,
-        fontFamily: 'Roboto',
-        scaffoldBackgroundColor: const Color(0xFFF9FAFB),
+        textTheme: textTheme.apply(
+          bodyColor: const Color(0xFF15243A),
+          displayColor: const Color(0xFF15243A),
+        ),
+        scaffoldBackgroundColor: const Color(0xFFF3F7FC),
       ),
       home: const MainScreen(),
     );
