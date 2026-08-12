@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../../config/theme/app_colors.dart';
 import '../../../../shared/widgets/adaptive_button.dart';
 import '../../../../shared/widgets/glass_panel.dart';
 import '../../../auth/presentation/providers/auth_provider.dart';
@@ -13,16 +14,6 @@ import '../widgets/flashcard_widget.dart';
 class MainScreen extends ConsumerWidget {
   const MainScreen({super.key});
 
-  static const Color _pageTop = Color(0xFFF5F8FC);
-  // Deepened towards the accent so the floating glass has saturated colour
-  // beneath it. On the old near-white bottom the panel measured only ~23
-  // levels of lift and read as a flat rectangle.
-  static const Color _pageBottom = Color(0xFFBFD8DC);
-  static const Color _ink = Color(0xFF15243A);
-  static const Color _accent = Color(0xFF0F766E);
-  static const Color _accentDeep = Color(0xFF115E59);
-  static const Color _panelBorder = Color(0xFFD4DFED);
-
   // Height of the floating controls, which the card area has to clear. Two
   // values because the letter row disappears in shuffled order.
   static const double _controlsHeight = 138;
@@ -31,15 +22,16 @@ class MainScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     _listenAuthController(context, ref);
+    final c = context.colors;
     final vocabularyListAsync = ref.watch(vocabularyListProvider);
 
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [_pageTop, _pageBottom],
+            colors: [c.pageTop, c.pageBottom],
           ),
         ),
         child: SafeArea(
@@ -54,13 +46,13 @@ class MainScreen extends ConsumerWidget {
                   ),
                   Column(
                     children: [
-                      _buildHeaderCard(context, ref, session),
+                      _buildHeaderCard(context, ref, session, c),
                       Expanded(
                         child: session.hasWords
-                            ? _buildCardArea(context, ref, session)
-                            : _buildEmptyState(ref),
+                            ? _buildCardArea(context, ref, c, session)
+                            : _buildEmptyState(ref, c),
                       ),
-                      if (!session.hasWords) _buildFooter(),
+                      if (!session.hasWords) _buildFooter(c),
                     ],
                   ),
                   // Floats above the card so the glass has something to
@@ -70,7 +62,7 @@ class MainScreen extends ConsumerWidget {
                       left: 0,
                       right: 0,
                       bottom: 0,
-                      child: _buildControls(ref, session),
+                      child: _buildControls(ref, session, c),
                     ),
                 ],
               );
@@ -89,6 +81,7 @@ class MainScreen extends ConsumerWidget {
     BuildContext context,
     WidgetRef ref,
     StudySessionState session,
+    AppColors c,
   ) {
     final authState = ref.watch(authStateProvider);
     final authControllerState = ref.watch(authControllerProvider);
@@ -104,7 +97,7 @@ class MainScreen extends ConsumerWidget {
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
       child: Container(
         padding: const EdgeInsets.fromLTRB(14, 12, 12, 12),
-        decoration: _panelDecoration(radius: 24),
+        decoration: _panelDecoration(c, radius: 24),
         child: Column(
           children: [
             Row(
@@ -119,14 +112,14 @@ class MainScreen extends ConsumerWidget {
                           vertical: 4,
                         ),
                         decoration: BoxDecoration(
-                          color: const Color(0xFFECF6F4),
+                          color: c.accentSoft,
                           borderRadius: BorderRadius.circular(999),
-                          border: Border.all(color: const Color(0xFFC9E6E0)),
+                          border: Border.all(color: c.accentSoftBorder),
                         ),
-                        child: const Text(
+                        child: Text(
                           'C1 Vocabulary Focus',
                           style: TextStyle(
-                            color: Color(0xFF0F766E),
+                            color: c.accent,
                             fontSize: 10,
                             fontWeight: FontWeight.w700,
                             letterSpacing: 0.6,
@@ -134,13 +127,13 @@ class MainScreen extends ConsumerWidget {
                         ),
                       ),
                       const SizedBox(height: 6),
-                      const Text(
+                      Text(
                         'English Vocabulary Card',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w800,
                           letterSpacing: -0.7,
-                          color: _ink,
+                          color: c.ink,
                         ),
                       ),
                     ],
@@ -150,6 +143,7 @@ class MainScreen extends ConsumerWidget {
                 _buildAuthAction(
                   context,
                   ref,
+                  c,
                   user: user,
                   isLoading: isLoading,
                 ),
@@ -159,7 +153,7 @@ class MainScreen extends ConsumerWidget {
               const SizedBox(height: 14),
               Container(
                 decoration: BoxDecoration(
-                  color: const Color(0xFFDDE6F1),
+                  color: c.trackFill,
                   borderRadius: BorderRadius.circular(999),
                 ),
                 clipBehavior: Clip.antiAlias,
@@ -167,7 +161,7 @@ class MainScreen extends ConsumerWidget {
                   value: session.progress.clamp(0.0, 1.0),
                   minHeight: 8,
                   backgroundColor: Colors.transparent,
-                  valueColor: const AlwaysStoppedAnimation<Color>(_accent),
+                  valueColor: AlwaysStoppedAnimation<Color>(c.accent),
                 ),
               ),
               const SizedBox(height: 9),
@@ -175,8 +169,8 @@ class MainScreen extends ConsumerWidget {
                 children: [
                   Text(
                     '${session.displayPosition}/${session.totalCount}',
-                    style: const TextStyle(
-                      color: _ink,
+                    style: TextStyle(
+                      color: c.ink,
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
                     ),
@@ -189,16 +183,16 @@ class MainScreen extends ConsumerWidget {
                       '$progressPercent% · $remainingCount left',
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
-                        color: _ink.withValues(alpha: 0.6),
+                        color: c.ink.withValues(alpha: 0.6),
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                   ),
                   const SizedBox(width: 8),
-                  _buildShuffleChip(ref, isShuffled),
+                  _buildShuffleChip(ref, isShuffled, c),
                   const SizedBox(width: 6),
-                  _buildHideLearnedChip(ref, hideLearned),
+                  _buildHideLearnedChip(ref, hideLearned, c),
                 ],
               ),
             ],
@@ -210,7 +204,8 @@ class MainScreen extends ConsumerWidget {
 
   Widget _buildAuthAction(
     BuildContext context,
-    WidgetRef ref, {
+    WidgetRef ref,
+    AppColors c, {
     required dynamic user,
     required bool isLoading,
   }) {
@@ -220,14 +215,14 @@ class MainScreen extends ConsumerWidget {
         height: 44,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: c.panel,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: _panelBorder),
+          border: Border.all(color: c.panelBorder),
         ),
-        child: const SizedBox(
+        child: SizedBox(
           width: 18,
           height: 18,
-          child: CircularProgressIndicator(strokeWidth: 2.2, color: _accent),
+          child: CircularProgressIndicator(strokeWidth: 2.2, color: c.accent),
         ),
       );
     }
@@ -242,14 +237,14 @@ class MainScreen extends ConsumerWidget {
             padding: const EdgeInsets.all(2),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: const LinearGradient(
+              gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [Color(0xFF1F2D48), Color(0xFF0B1220)],
+                colors: [c.actionFill, c.actionFillEnd],
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.18),
+                  color: c.panelShadow.withValues(alpha: 0.18),
                   blurRadius: 14,
                   offset: const Offset(0, 8),
                 ),
@@ -257,7 +252,7 @@ class MainScreen extends ConsumerWidget {
             ),
             child: CircleAvatar(
               radius: 19,
-              backgroundColor: Colors.grey[800],
+              backgroundColor: c.actionFill,
               backgroundImage: user.photoUrl != null
                   ? NetworkImage(user.photoUrl!)
                   : null,
@@ -278,38 +273,51 @@ class MainScreen extends ConsumerWidget {
       );
     }
 
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: () async {
-          await ref.read(authControllerProvider.notifier).signInWithGoogle();
-        },
+    // The shadow lives on an outer container, not on the Ink decoration.
+    // Ink paints into the ancestor Material's ink layer, where the shadow is
+    // rasterised against rectangular bounds — the corner radius is lost and a
+    // hard-edged square appears behind the rounded button.
+    return Container(
+      decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        child: Ink(
-          width: 44,
-          height: 44,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            gradient: const LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFF25344F), Color(0xFF0F172A)],
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFF0F172A).withValues(alpha: 0.24),
-                blurRadius: 16,
-                offset: const Offset(0, 8),
-              ),
-            ],
+        boxShadow: [
+          BoxShadow(
+            color: c.panelShadow.withValues(alpha: 0.24),
+            blurRadius: 16,
+            offset: const Offset(0, 8),
           ),
-          child: const Icon(Icons.login_rounded, color: Colors.white, size: 21),
+        ],
+      ),
+      child: Material(
+        color: Colors.transparent,
+        clipBehavior: Clip.antiAlias,
+        borderRadius: BorderRadius.circular(12),
+        child: InkWell(
+          onTap: () async {
+            await ref.read(authControllerProvider.notifier).signInWithGoogle();
+          },
+          child: Ink(
+            width: 44,
+            height: 44,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [c.actionFill, c.actionFillEnd],
+              ),
+            ),
+            child: const Icon(
+              Icons.login_rounded,
+              color: Colors.white,
+              size: 21,
+            ),
+          ),
         ),
       ),
     );
   }
 
-  Widget _buildShuffleChip(WidgetRef ref, bool isShuffled) {
+  Widget _buildShuffleChip(WidgetRef ref, bool isShuffled, AppColors c) {
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -319,10 +327,10 @@ class MainScreen extends ConsumerWidget {
           duration: const Duration(milliseconds: 220),
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
           decoration: BoxDecoration(
-            color: isShuffled ? _accentDeep : const Color(0xFFF3F6FA),
+            color: isShuffled ? c.accentDeep : c.chipFill,
             borderRadius: BorderRadius.circular(999),
             border: Border.all(
-              color: isShuffled ? const Color(0xFF0E7A75) : _panelBorder,
+              color: isShuffled ? c.accentDeep : c.panelBorder,
             ),
           ),
           child: Row(
@@ -332,7 +340,9 @@ class MainScreen extends ConsumerWidget {
                     ? Icons.shuffle_rounded
                     : Icons.sort_by_alpha_rounded,
                 size: 14,
-                color: isShuffled ? Colors.white : _ink.withValues(alpha: 0.72),
+                color: isShuffled
+                    ? Colors.white
+                    : c.ink.withValues(alpha: 0.72),
               ),
               const SizedBox(width: 4),
               Text(
@@ -342,7 +352,7 @@ class MainScreen extends ConsumerWidget {
                   fontWeight: FontWeight.w700,
                   color: isShuffled
                       ? Colors.white
-                      : _ink.withValues(alpha: 0.72),
+                      : c.ink.withValues(alpha: 0.72),
                 ),
               ),
             ],
@@ -352,7 +362,7 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildHideLearnedChip(WidgetRef ref, bool hideLearned) {
+  Widget _buildHideLearnedChip(WidgetRef ref, bool hideLearned, AppColors c) {
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -362,10 +372,10 @@ class MainScreen extends ConsumerWidget {
           duration: const Duration(milliseconds: 220),
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
           decoration: BoxDecoration(
-            color: hideLearned ? _accentDeep : const Color(0xFFF3F6FA),
+            color: hideLearned ? c.accentDeep : c.chipFill,
             borderRadius: BorderRadius.circular(999),
             border: Border.all(
-              color: hideLearned ? const Color(0xFF0E7A75) : _panelBorder,
+              color: hideLearned ? c.accentDeep : c.panelBorder,
             ),
           ),
           child: Row(
@@ -375,7 +385,7 @@ class MainScreen extends ConsumerWidget {
                 size: 14,
                 color: hideLearned
                     ? Colors.white
-                    : _ink.withValues(alpha: 0.72),
+                    : c.ink.withValues(alpha: 0.72),
               ),
               const SizedBox(width: 4),
               Text(
@@ -385,7 +395,7 @@ class MainScreen extends ConsumerWidget {
                   fontWeight: FontWeight.w700,
                   color: hideLearned
                       ? Colors.white
-                      : _ink.withValues(alpha: 0.72),
+                      : c.ink.withValues(alpha: 0.72),
                 ),
               ),
             ],
@@ -395,7 +405,7 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildEmptyState(WidgetRef ref) {
+  Widget _buildEmptyState(WidgetRef ref, AppColors c) {
     final hideLearned = ref.watch(hideLearnedProvider);
 
     return Center(
@@ -405,7 +415,7 @@ class MainScreen extends ConsumerWidget {
           constraints: const BoxConstraints(maxWidth: 380),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
-            decoration: _panelDecoration(radius: 24),
+            decoration: _panelDecoration(c, radius: 24),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -414,32 +424,32 @@ class MainScreen extends ConsumerWidget {
                   height: 76,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    gradient: const LinearGradient(
+                    gradient: LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
-                      colors: [Color(0xFFDBEAFE), Color(0xFFE0F2F1)],
+                      colors: [c.cardBannerStart, c.cardBannerEnd],
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF0F172A).withValues(alpha: 0.08),
+                        color: c.panelShadow.withValues(alpha: 0.08),
                         blurRadius: 16,
                         offset: const Offset(0, 10),
                       ),
                     ],
                   ),
-                  child: const Icon(
+                  child: Icon(
                     Icons.auto_stories_rounded,
                     size: 36,
-                    color: Color(0xFF1E3A5F),
+                    color: c.accent,
                   ),
                 ),
                 const SizedBox(height: 16),
-                const Text(
+                Text(
                   'No words available',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.w800,
-                    color: _ink,
+                    color: c.ink,
                     letterSpacing: -0.4,
                   ),
                   textAlign: TextAlign.center,
@@ -451,7 +461,7 @@ class MainScreen extends ConsumerWidget {
                       : 'Try checking your data source or sync status.',
                   style: TextStyle(
                     fontSize: 14,
-                    color: _ink.withValues(alpha: 0.72),
+                    color: c.ink.withValues(alpha: 0.72),
                     fontWeight: FontWeight.w500,
                   ),
                   textAlign: TextAlign.center,
@@ -461,7 +471,7 @@ class MainScreen extends ConsumerWidget {
                   AdaptiveButton(
                     onPressed: () => _toggleHideLearned(ref),
                     isFilled: true,
-                    color: _accent,
+                    color: c.accent,
                     textColor: Colors.white,
                     borderRadius: 14,
                     child: const Text('Show learned words'),
@@ -478,6 +488,7 @@ class MainScreen extends ConsumerWidget {
   Widget _buildCardArea(
     BuildContext context,
     WidgetRef ref,
+    AppColors c,
     StudySessionState session,
   ) {
     final currentWord = session.currentWord;
@@ -529,6 +540,7 @@ class MainScreen extends ConsumerWidget {
                 constraints: const BoxConstraints(maxWidth: 290),
                 child: _buildLearnedButton(
                   context,
+                  c,
                   isLearned: isLearned,
                   compact: true,
                   onTap: () => _toggleLearned(context, ref, currentWord.id),
@@ -542,7 +554,8 @@ class MainScreen extends ConsumerWidget {
   }
 
   Widget _buildLearnedButton(
-    BuildContext context, {
+    BuildContext context,
+    AppColors c, {
     required bool isLearned,
     required VoidCallback onTap,
     bool compact = false,
@@ -565,18 +578,16 @@ class MainScreen extends ConsumerWidget {
             vertical: verticalPadding,
           ),
           decoration: BoxDecoration(
-            color: isLearned ? null : Colors.white,
+            color: isLearned ? null : c.panel,
             gradient: isLearned
-                ? const LinearGradient(
+                ? LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: [_accentDeep, Color(0xFF0F172A)],
+                    colors: [c.accentDeep, c.actionFillEnd],
                   )
                 : null,
             borderRadius: BorderRadius.circular(buttonRadius),
-            border: Border.all(
-              color: isLearned ? const Color(0xFF0F766E) : _panelBorder,
-            ),
+            border: Border.all(color: isLearned ? c.accent : c.panelBorder),
             boxShadow: [
               BoxShadow(
                 color: const Color(
@@ -593,7 +604,7 @@ class MainScreen extends ConsumerWidget {
               Icon(
                 isLearned ? Icons.check_rounded : Icons.circle_outlined,
                 size: iconSize,
-                color: isLearned ? Colors.white : _ink.withValues(alpha: 0.82),
+                color: isLearned ? Colors.white : c.ink.withValues(alpha: 0.82),
               ),
               const SizedBox(width: 8),
               Text(
@@ -604,7 +615,7 @@ class MainScreen extends ConsumerWidget {
                   letterSpacing: 0.2,
                   color: isLearned
                       ? Colors.white
-                      : _ink.withValues(alpha: 0.85),
+                      : c.ink.withValues(alpha: 0.85),
                 ),
               ),
             ],
@@ -614,7 +625,7 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildControls(WidgetRef ref, StudySessionState session) {
+  Widget _buildControls(WidgetRef ref, StudySessionState session, AppColors c) {
     // Alphabetical jumping has no meaning once the deck is shuffled, so the
     // letter row goes away and the panel shrinks with it.
     final isShuffled = ref.watch(shuffleSeedProvider) != null;
@@ -672,23 +683,18 @@ class MainScreen extends ConsumerWidget {
                               alignment: Alignment.center,
                               decoration: BoxDecoration(
                                 gradient: isSelected
-                                    ? const LinearGradient(
+                                    ? LinearGradient(
                                         begin: Alignment.topLeft,
                                         end: Alignment.bottomRight,
-                                        colors: [
-                                          Color(0xFF273A5D),
-                                          Color(0xFF0F172A),
-                                        ],
+                                        colors: [c.actionFill, c.actionFillEnd],
                                       )
                                     : null,
-                                color: isSelected
-                                    ? null
-                                    : const Color(0xFFF3F7FB),
+                                color: isSelected ? null : c.chipFill,
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(
                                   color: isSelected
                                       ? Colors.transparent
-                                      : _panelBorder,
+                                      : c.panelBorder,
                                 ),
                                 boxShadow: isSelected
                                     ? [
@@ -705,7 +711,7 @@ class MainScreen extends ConsumerWidget {
                               child: Text(
                                 letter,
                                 style: TextStyle(
-                                  color: isSelected ? Colors.white : _ink,
+                                  color: isSelected ? Colors.white : c.ink,
                                   fontWeight: FontWeight.w700,
                                   fontSize: 13,
                                 ),
@@ -721,6 +727,7 @@ class MainScreen extends ConsumerWidget {
                   children: [
                     Expanded(
                       child: _buildNavigationButton(
+                        c,
                         label: 'Previous',
                         icon: Icons.arrow_back_rounded,
                         isPrimary: false,
@@ -736,6 +743,7 @@ class MainScreen extends ConsumerWidget {
                     const SizedBox(width: 8),
                     Expanded(
                       child: _buildNavigationButton(
+                        c,
                         label: 'Next',
                         icon: Icons.arrow_forward_rounded,
                         isPrimary: true,
@@ -761,14 +769,15 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildNavigationButton({
+  Widget _buildNavigationButton(
+    AppColors c, {
     required String label,
     required IconData icon,
     required bool isPrimary,
     required VoidCallback? onPressed,
   }) {
-    final background = isPrimary ? const Color(0xFF111C2E) : Colors.white;
-    final foreground = isPrimary ? Colors.white : _ink;
+    final background = isPrimary ? c.actionFillEnd : c.panel;
+    final foreground = isPrimary ? Colors.white : c.ink;
 
     return SizedBox(
       height: 46,
@@ -780,16 +789,16 @@ class MainScreen extends ConsumerWidget {
           backgroundColor: background,
           foregroundColor: foreground,
           disabledBackgroundColor: isPrimary
-              ? const Color(0xFFA8B6C6)
-              : const Color(0xFFF1F5F9),
-          disabledForegroundColor: const Color(0xFF9DA8B8),
+              ? c.actionDisabledInk
+              : c.actionDisabled,
+          disabledForegroundColor: c.actionDisabledInk,
           elevation: onPressed == null ? 0 : (isPrimary ? 6 : 0),
-          shadowColor: const Color(0xFF0F172A).withValues(alpha: 0.2),
+          shadowColor: c.panelShadow.withValues(alpha: 0.2),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(14),
             side: isPrimary
                 ? BorderSide.none
-                : const BorderSide(color: _panelBorder),
+                : BorderSide(color: c.panelBorder),
           ),
           textStyle: const TextStyle(
             fontSize: 14,
@@ -801,13 +810,13 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildFooter() {
+  Widget _buildFooter(AppColors c) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Text(
         '© 2025 English Vocabulary Card',
         style: TextStyle(
-          color: _ink.withValues(alpha: 0.38),
+          color: c.ink.withValues(alpha: 0.38),
           fontSize: 12,
           fontWeight: FontWeight.w600,
           letterSpacing: 0.2,
@@ -816,18 +825,18 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  BoxDecoration _panelDecoration({double radius = 20}) {
+  BoxDecoration _panelDecoration(AppColors c, {double radius = 20}) {
     return BoxDecoration(
-      gradient: const LinearGradient(
+      gradient: LinearGradient(
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
-        colors: [Color(0xFFFFFFFF), Color(0xFFF4F8FD)],
+        colors: [c.panel, c.cardFaceBottom],
       ),
       borderRadius: BorderRadius.circular(radius),
-      border: Border.all(color: _panelBorder),
+      border: Border.all(color: c.panelBorder),
       boxShadow: [
         BoxShadow(
-          color: const Color(0xFF0F172A).withValues(alpha: 0.06),
+          color: c.panelShadow.withValues(alpha: 0.06),
           blurRadius: 20,
           offset: const Offset(0, 10),
         ),
@@ -876,6 +885,7 @@ class MainScreen extends ConsumerWidget {
   }
 
   void _showLogoutDialog(BuildContext context, WidgetRef ref) {
+    final c = context.colors;
     final isIOS = _isCupertinoPlatform(context);
 
     final content = const Text('Are you sure you want to log out?');
@@ -921,7 +931,7 @@ class MainScreen extends ConsumerWidget {
                 Navigator.pop(dialogContext);
                 ref.read(authControllerProvider.notifier).signOut();
               },
-              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              style: TextButton.styleFrom(foregroundColor: c.danger),
               child: const Text('Logout'),
             ),
           ],
@@ -971,6 +981,8 @@ class MainScreen extends ConsumerWidget {
     required String message,
     bool isError = false,
   }) {
+    final c = context.colors;
+
     if (_isCupertinoPlatform(context)) {
       showCupertinoDialog(
         context: context,
@@ -999,7 +1011,7 @@ class MainScreen extends ConsumerWidget {
           TextButton(
             onPressed: () => Navigator.pop(dialogContext),
             style: isError
-                ? TextButton.styleFrom(foregroundColor: Colors.red)
+                ? TextButton.styleFrom(foregroundColor: c.danger)
                 : null,
             child: const Text('OK'),
           ),
@@ -1022,6 +1034,8 @@ class _DecorativeBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final c = context.colors;
+
     return Stack(
       children: [
         Positioned(
@@ -1032,7 +1046,7 @@ class _DecorativeBackground extends StatelessWidget {
             height: 220,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: const Color(0xFF9CC8E5).withValues(alpha: 0.2),
+              color: c.blobTop.withValues(alpha: 0.2),
             ),
           ),
         ),
@@ -1044,7 +1058,7 @@ class _DecorativeBackground extends StatelessWidget {
             height: 190,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: const Color(0xFF9EE6D3).withValues(alpha: 0.2),
+              color: c.blobMid.withValues(alpha: 0.2),
             ),
           ),
         ),
@@ -1059,7 +1073,7 @@ class _DecorativeBackground extends StatelessWidget {
             height: 260,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: const Color(0xFF6FB3AA).withValues(alpha: 0.42),
+              color: c.blobBottomA.withValues(alpha: 0.42),
             ),
           ),
         ),
@@ -1071,7 +1085,7 @@ class _DecorativeBackground extends StatelessWidget {
             height: 230,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: const Color(0xFF8FA9E8).withValues(alpha: 0.34),
+              color: c.blobBottomB.withValues(alpha: 0.34),
             ),
           ),
         ),
@@ -1085,13 +1099,13 @@ class _LoadingState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          CircularProgressIndicator(color: MainScreen._accent),
-          SizedBox(height: 12),
-          Text(
+          CircularProgressIndicator(color: context.colors.accent),
+          const SizedBox(height: 12),
+          const Text(
             'Loading vocabulary...',
             style: TextStyle(fontWeight: FontWeight.w600),
           ),
@@ -1108,20 +1122,22 @@ class _ErrorState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final c = context.colors;
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Container(
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: c.dangerSurface,
             borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: const Color(0xFFE7D2D2)),
+            border: Border.all(color: c.dangerBorder),
           ),
           child: Text(
             'Error: $error',
             textAlign: TextAlign.center,
-            style: const TextStyle(color: Color(0xFF8B1E2C)),
+            style: TextStyle(color: c.danger),
           ),
         ),
       ),

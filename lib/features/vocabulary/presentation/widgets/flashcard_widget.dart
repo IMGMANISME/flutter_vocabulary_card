@@ -2,6 +2,8 @@ import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../config/theme/app_colors.dart';
+
 import '../../domain/entities/vocabulary_word.dart';
 
 class FlashcardWidget extends StatelessWidget {
@@ -9,16 +11,15 @@ class FlashcardWidget extends StatelessWidget {
 
   const FlashcardWidget({super.key, required this.word});
 
-  static const Color _ink = Color(0xFF15243A);
-
   @override
   Widget build(BuildContext context) {
+    final c = context.colors;
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(26),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF0F172A).withValues(alpha: 0.18),
+            color: c.panelShadow.withValues(alpha: 0.18),
             blurRadius: 24,
             offset: const Offset(0, 14),
           ),
@@ -38,16 +39,17 @@ class FlashcardWidget extends StatelessWidget {
   }
 
   Widget _buildFront(BuildContext context) {
+    final c = context.colors;
     return Container(
       width: double.infinity,
       height: double.infinity,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
+        gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Color(0xFFFFFFFF), Color(0xFFF4F8FD)],
+          colors: [c.cardFaceTop, c.cardFaceBottom],
         ),
-        border: Border.all(color: const Color(0xFFD8E2EF)),
+        border: Border.all(color: c.panelBorder),
       ),
       child: Stack(
         children: [
@@ -57,12 +59,14 @@ class FlashcardWidget extends StatelessWidget {
             right: 0,
             height: 130,
             child: Container(
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.vertical(top: Radius.circular(26)),
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(26),
+                ),
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Color(0xFFE4ECFF), Color(0xFFD9F3EA)],
+                  colors: [c.cardBannerStart, c.cardBannerEnd],
                 ),
               ),
             ),
@@ -75,7 +79,7 @@ class FlashcardWidget extends StatelessWidget {
               height: 120,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: const Color(0xFFBDEADA).withValues(alpha: 0.55),
+                color: c.blobMid.withValues(alpha: 0.55),
               ),
             ),
           ),
@@ -91,20 +95,20 @@ class FlashcardWidget extends StatelessWidget {
                   width: 36,
                   height: 36,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: c.panel,
                     shape: BoxShape.circle,
-                    border: Border.all(color: const Color(0xFFD8E1ED)),
+                    border: Border.all(color: c.panelBorder),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.08),
+                        color: c.panelShadow.withValues(alpha: 0.08),
                         blurRadius: 10,
                         offset: const Offset(0, 5),
                       ),
                     ],
                   ),
-                  child: const Icon(
+                  child: Icon(
                     Icons.info_outline_rounded,
-                    color: Color(0xFF334155),
+                    color: c.ink.withValues(alpha: 0.8),
                     size: 18,
                   ),
                 ),
@@ -122,11 +126,11 @@ class FlashcardWidget extends StatelessWidget {
                     fit: BoxFit.scaleDown,
                     child: Text(
                       word.word,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 54,
                         fontWeight: FontWeight.w800,
                         letterSpacing: -1,
-                        color: _ink,
+                        color: c.ink,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -139,23 +143,23 @@ class FlashcardWidget extends StatelessWidget {
                     vertical: 10,
                   ),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFEAF1F9),
+                    color: c.hintSurface,
                     borderRadius: BorderRadius.circular(999),
-                    border: Border.all(color: const Color(0xFFD8E2EF)),
+                    border: Border.all(color: c.panelBorder),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(
                         Icons.touch_app_rounded,
-                        color: _ink.withValues(alpha: 0.75),
+                        color: c.ink.withValues(alpha: 0.75),
                         size: 18,
                       ),
                       const SizedBox(width: 6),
                       Text(
                         'Tap card to reveal definition',
                         style: TextStyle(
-                          color: _ink.withValues(alpha: 0.74),
+                          color: c.ink.withValues(alpha: 0.74),
                           fontSize: 12,
                           fontWeight: FontWeight.w700,
                           letterSpacing: 0.15,
@@ -169,7 +173,7 @@ class FlashcardWidget extends StatelessWidget {
                   width: 52,
                   height: 4,
                   decoration: BoxDecoration(
-                    color: const Color(0xFFCED8E6),
+                    color: c.panelBorder,
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
@@ -183,16 +187,17 @@ class FlashcardWidget extends StatelessWidget {
   }
 
   Widget _buildBack(BuildContext context) {
+    final c = context.colors;
     return Container(
       width: double.infinity,
       height: double.infinity,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
+        gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF162B45), Color(0xFF0C1323)],
+          colors: [c.cardBackTop, c.cardBackBottom],
         ),
-        border: Border.all(color: const Color(0xFF2A3E5E)),
+        border: Border.all(color: c.cardBackPanel),
       ),
       child: Stack(
         children: [
@@ -204,7 +209,7 @@ class FlashcardWidget extends StatelessWidget {
               height: 170,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: const Color(0xFF22D3EE).withValues(alpha: 0.14),
+                color: c.accent.withValues(alpha: 0.14),
               ),
             ),
           ),
@@ -216,7 +221,7 @@ class FlashcardWidget extends StatelessWidget {
               height: 190,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: const Color(0xFF34D399).withValues(alpha: 0.12),
+                color: c.accent.withValues(alpha: 0.12),
               ),
             ),
           ),
@@ -283,12 +288,14 @@ class FlashcardWidget extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       _buildContentCard(
+                        c,
                         icon: Icons.menu_book_rounded,
                         label: 'DEFINITION',
                         content: word.definition,
                       ),
                       const SizedBox(height: 14),
                       _buildContentCard(
+                        c,
                         icon: Icons.format_quote_rounded,
                         label: 'EXAMPLE',
                         content: '"${word.example}"',
@@ -324,7 +331,8 @@ class FlashcardWidget extends StatelessWidget {
     );
   }
 
-  Widget _buildContentCard({
+  Widget _buildContentCard(
+    AppColors c, {
     required IconData icon,
     required String label,
     required String content,
@@ -376,15 +384,23 @@ class FlashcardWidget extends StatelessWidget {
         Theme.of(context).platform == TargetPlatform.iOS ||
         Theme.of(context).platform == TargetPlatform.macOS;
 
-    final content = Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        _buildInfoRow('Part of Speech', word.partOfSpeech),
-        const SizedBox(height: 16),
-        _buildInfoRow('Translation', word.chineseTranslation),
-      ],
-    );
+    // Built per-frame from the dialog's own context. Building it once up front
+    // bakes in the palette that was current at open time, so the body keeps
+    // light colours after the system flips to dark (or the reverse) while the
+    // dialog is on screen.
+    Widget buildContent(BuildContext dialogContext) {
+      final c = dialogContext.colors;
+
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _buildInfoRow(c, 'Part of Speech', word.partOfSpeech),
+          const SizedBox(height: 16),
+          _buildInfoRow(c, 'Translation', word.chineseTranslation),
+        ],
+      );
+    }
 
     if (isIOS) {
       showCupertinoDialog(
@@ -396,7 +412,7 @@ class FlashcardWidget extends StatelessWidget {
           ),
           content: Padding(
             padding: const EdgeInsets.only(top: 8),
-            child: content,
+            child: buildContent(dialogContext),
           ),
           actions: [
             CupertinoDialogAction(
@@ -418,7 +434,7 @@ class FlashcardWidget extends StatelessWidget {
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          content: content,
+          content: buildContent(dialogContext),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(dialogContext),
@@ -430,12 +446,13 @@ class FlashcardWidget extends StatelessWidget {
     }
   }
 
-  Widget _buildInfoRow(String label, String value) {
+  Widget _buildInfoRow(AppColors c, String label, String value) {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.grey[50],
+        color: c.hintSurface,
         borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: c.panelBorder),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -443,7 +460,7 @@ class FlashcardWidget extends StatelessWidget {
           Text(
             label,
             style: TextStyle(
-              color: Colors.grey[500],
+              color: c.ink.withValues(alpha: 0.6),
               fontSize: 12,
               fontWeight: FontWeight.w600,
             ),
@@ -451,10 +468,10 @@ class FlashcardWidget extends StatelessWidget {
           const SizedBox(height: 4),
           Text(
             value,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w500,
-              color: Colors.black87,
+              color: c.ink,
             ),
           ),
         ],

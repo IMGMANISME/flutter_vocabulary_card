@@ -71,6 +71,9 @@ class AdaptiveButton extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
+        // Must match the ClipRRect below, or the shadow is cast from a
+        // rectangle and shows as a square behind the rounded button.
+        borderRadius: BorderRadius.circular(borderRadius),
         boxShadow: [
           BoxShadow(
             color: defaultColor.withValues(alpha: 0.3),

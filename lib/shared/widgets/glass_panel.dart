@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../config/theme/app_colors.dart';
+
 /// A translucent surface rendered by the host platform.
 ///
 /// It draws nothing of its own beyond the surface, and is meant to sit at the
@@ -27,7 +29,7 @@ class GlassPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (kIsWeb) return _fallback();
+    if (kIsWeb) return _fallback(context);
 
     final params = <String, dynamic>{'cornerRadius': cornerRadius};
 
@@ -48,14 +50,14 @@ class GlassPanel extends StatelessWidget {
       case TargetPlatform.linux:
       case TargetPlatform.macOS:
       case TargetPlatform.windows:
-        return _fallback();
+        return _fallback(context);
     }
   }
 
-  Widget _fallback() {
+  Widget _fallback(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.75),
+        color: context.colors.panel.withValues(alpha: 0.75),
         borderRadius: BorderRadius.circular(cornerRadius),
       ),
     );
