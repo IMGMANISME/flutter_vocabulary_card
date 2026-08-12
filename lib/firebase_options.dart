@@ -65,14 +65,14 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBqijJW5_gZzEQVtwRWC42RX9Kru2gDW5k',
-    appId: '1:1082504661197:ios:47516a57b6de88cd0ec184',
+    appId: '1:1082504661197:ios:c4e54b32585967b50ec184',
     messagingSenderId: '1082504661197',
     projectId: 'english-volcabulary-card',
     databaseURL: 'https://english-volcabulary-card-default-rtdb.firebaseio.com',
     storageBucket: 'english-volcabulary-card.firebasestorage.app',
     iosClientId:
-        '1082504661197-8lgn48ajr73qkb0ebjo9dahs4ljssrog.apps.googleusercontent.com',
-    iosBundleId: 'com.example.flutterVocabularyCard',
+        '1082504661197-4pak62eqiuu0fmnlhs29vihjh2nl07pv.apps.googleusercontent.com',
+    iosBundleId: 'com.gman.gocabapp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
