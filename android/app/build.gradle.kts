@@ -69,6 +69,11 @@ android {
     }
 }
 
+dependencies {
+    // Material 3 components for the native glass-button platform view.
+    implementation("com.google.android.material:material:1.12.0")
+}
+
 if (!hasKeystore) {
     logger.warn(
         "WARNING: android/key.properties not found. Release builds fall back to debug " +

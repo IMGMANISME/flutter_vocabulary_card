@@ -8,6 +8,7 @@ import UIKit
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
+    GlassPanelFactory.register(with: registrar(forPlugin: "GlassPanelPlugin")!)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }
