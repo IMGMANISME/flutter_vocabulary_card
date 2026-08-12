@@ -417,6 +417,13 @@ class FlashcardWidget extends StatelessWidget {
           actions: [
             CupertinoDialogAction(
               onPressed: () => Navigator.pop(dialogContext),
+              // CupertinoDialogAction defaults to the theme's primary colour,
+              // which is the teal accent. Dismissal is not an accent action.
+              textStyle: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                color: dialogContext.colors.ink,
+              ),
               child: const Text('Close'),
             ),
           ],
@@ -438,6 +445,9 @@ class FlashcardWidget extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(dialogContext),
+              style: TextButton.styleFrom(
+                foregroundColor: dialogContext.colors.ink,
+              ),
               child: const Text('Close'),
             ),
           ],

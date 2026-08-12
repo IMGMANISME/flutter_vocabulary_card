@@ -19,8 +19,15 @@ abstract final class AppTheme {
       colorScheme: ColorScheme.fromSeed(
         seedColor: colors.accent,
         brightness: brightness,
-        primary: colors.actionFillEnd,
-        secondary: colors.accent,
+        // `primary` drives interactive text — dialog actions, TextButtons.
+        // It must stay legible on a surface, so it is the accent rather than
+        // the filled-button colour: the latter is near-black by design and
+        // vanishes against a dark dialog.
+        primary: colors.accent,
+        onPrimary: brightness == Brightness.dark
+            ? colors.pageTop
+            : Colors.white,
+        secondary: colors.accentDeep,
         surface: colors.panel,
       ),
       scaffoldBackgroundColor: colors.pageTop,
