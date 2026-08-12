@@ -1,3 +1,6 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // START: FlutterFire Configuration
@@ -8,8 +11,17 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+// Release signing credentials live in android/key.properties, which is gitignored.
+// See docs/RELEASE.md for how to generate the keystore.
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
+val hasKeystore = keystorePropertiesFile.exists()
+if (hasKeystore) {
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+}
+
 android {
-    namespace = "com.example.flutter_vocabulary_card"
+    namespace = "com.gman.gocabapp"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -23,8 +35,7 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.flutter_vocabulary_card"
+        applicationId = "com.gman.gocabapp"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
@@ -33,13 +44,36 @@ android {
         versionName = flutter.versionName
     }
 
-    buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+    signingConfigs {
+        if (hasKeystore) {
+            create("release") {
+                keyAlias = keystoreProperties["keyAlias"] as String
+                keyPassword = keystoreProperties["keyPassword"] as String
+                storeFile = file(keystoreProperties["storeFile"] as String)
+                storePassword = keystoreProperties["storePassword"] as String
+            }
         }
     }
+
+    buildTypes {
+        release {
+            // Falls back to debug keys when key.properties is absent so that
+            // `flutter run --release` still works locally. Play Store uploads
+            // require the real keystore — see docs/RELEASE.md.
+            signingConfig = if (hasKeystore) {
+                signingConfigs.getByName("release")
+            } else {
+                signingConfigs.getByName("debug")
+            }
+        }
+    }
+}
+
+if (!hasKeystore) {
+    logger.warn(
+        "WARNING: android/key.properties not found. Release builds fall back to debug " +
+            "keys and will be rejected by Google Play. See docs/RELEASE.md."
+    )
 }
 
 flutter {

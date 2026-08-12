@@ -1,4 +1,4 @@
-package com.example.flutter_vocabulary_card
+package com.gman.gocabapp
 
 import io.flutter.embedding.android.FlutterActivity
 
