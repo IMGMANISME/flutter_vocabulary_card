@@ -7,33 +7,33 @@
 
 ## ⚡ 例行更新（最常用）
 
-每次發新版都是這三步：
-
-**1. 改版本號** — [`pubspec.yaml`](../pubspec.yaml) 的 `version`，兩平台共用
+### iOS
 
 ```bash
-sed -i '' 's/^version: .*/version: 1.0.0+2/' pubspec.yaml && grep ^version: pubspec.yaml
+./scripts/release_ios.sh --bump
 ```
 
-`1.0.0` = 使用者看到的版本；`+2` = build number，**每次上傳必須遞增**，重複會被商店退件。
+遞增 build number、乾淨重建、驗證產物，並把 archive 放進 Xcode Organizer（同時清掉舊的，清單只會有一個）。任一項驗證失敗即中止。
 
-**2. 建置**
+接著 Xcode → Window → Organizer → **Distribute App** → **App Store Connect** → **Upload**，並**取消勾選 Manage Version and Build Number**。
+
+上傳成功後提交版號：
 
 ```bash
-flutter build ipa --release
+git add pubspec.yaml && git commit -m "chore: 遞增 build number 至 $(grep '^version:' pubspec.yaml | sed 's/^version: //')"
 ```
+
+### Android
+
+版號與 iOS 共用 [`pubspec.yaml`](../pubspec.yaml) 的 `version`，若已跑過上面的腳本就不必再改。
 
 ```bash
 flutter build appbundle --release
 ```
 
-**3. 上傳**
+到 [Play Console](https://play.google.com/console) 上傳 `build/app/outputs/bundle/release/app-release.aab`。
 
-```bash
-open build/ios/archive/Runner.xcarchive
-```
-
-Android 到 [Play Console](https://play.google.com/console) 上傳 `build/app/outputs/bundle/release/app-release.aab`。
+> `1.0.0+4` 中 `1.0.0` 是使用者看到的版本，`4` 是 build number，**每次上傳必須遞增**，重複會被兩邊商店退件。
 
 ---
 
@@ -52,19 +52,71 @@ Android 到 [Play Console](https://play.google.com/console) 上傳 `build/app/ou
 
 到 [App Store Connect](https://appstoreconnect.apple.com/apps) → 「+」→ 新 App，Bundle ID 選 `com.gman.gocabapp`。此步驟無 CLI 替代，紀錄不存在時上傳會被退。
 
-### 建置與上傳
+### 建置
 
 ```bash
-flutter build ipa --release
+./scripts/release_ios.sh --bump
 ```
+
+腳本會遞增 build number、乾淨重建、驗證產物，並把 archive 放進 Organizer 且清掉舊的，任一項驗證失敗即中止。下面各節說明它在做什麼與為何需要——手動執行時請照著做。
+
+不遞增版號（例如重建同一版）就省略 `--bump`。
+
+<details>
+<summary>手動等價指令</summary>
 
 ```bash
-open build/ios/archive/Runner.xcarchive
+flutter clean && flutter pub get && flutter build ipa --release
+```
+</details>
+
+`flutter clean` 不是多餘的。`objective_c.framework`（`path_provider_foundation` 的間接相依）由 Flutter 的 native assets 管線編譯，產物快取在 `build/native_assets/ios/`。只要先前在模擬器跑過 `flutter run`，那裡留下的就是**模擬器版**，而 `flutter build ipa` 會直接沿用、不重建，於是模擬器用的 binary 被打包進裝置 archive，上傳時被 Apple 以 `Invalid executable`（code 91169）退件。
+
+### ⚠️ 上傳：archive 不會自動出現在 Organizer
+
+`flutter build ipa` 把 archive 寫到專案的 `build/ios/archive/`，但 Xcode Organizer 只顯示 `~/Library/Developer/Xcode/Archives/` 底下的內容。**新建的 archive 不會出現在清單裡**，而舊的會一直留著。
+
+對 `.xcarchive` 執行 `open` 只會啟動 Xcode，不會把它加入清單。
+
+複製進去，檔名帶時間以便辨識：
+
+```bash
+mkdir -p ~/Library/Developer/Xcode/Archives/$(date +%F) && cp -R build/ios/archive/Runner.xcarchive ~/Library/Developer/Xcode/Archives/$(date +%F)/Gocab-$(date +%H%M).xcarchive
 ```
 
-Xcode Organizer → **Distribute App** → **App Store Connect** → **Upload**。沿用已登入的帳號，免密碼，且會先跑一次驗證。
+Xcode → Window → Organizer → 選新的那個 → **Distribute App** → **App Store Connect** → **Upload**。
 
-### 上傳前自我驗證（選用）
+替代做法是直接在 Xcode 內建置：`open ios/Runner.xcworkspace`，裝置選 **Any iOS Device (arm64)**，**Product → Archive**。這條路產物必定進 Organizer。
+
+#### 務必取消勾選 Manage Version and Build Number
+
+Distribute 流程中該選項預設開啟。它會在偵測到 build number 已被使用時**自動遞增**，於是上傳一個舊 archive 也會顯示成新版號——錯誤被偽裝成正常。
+
+關閉後，選錯 archive 會被 Apple 以重複 build number 直接退件。吵鬧的失敗遠優於安靜的錯誤上傳。
+
+> 這不是假設性風險。2026-08-12 曾因此上傳到 13:25 建立的舊 archive，TestFlight 顯示為 `1.0.0 (3)`，實際內容卻是尚未包含 UI 改版的 build 2。
+
+### 上傳前自我驗證
+
+**送出前務必跑這段**，確認手上的 archive 確實是剛建的：
+
+```bash
+A=build/ios/archive/Runner.xcarchive/Products/Applications/Runner.app
+/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" $A/Info.plist
+strings $A/Runner | grep -c "gocab/glass_panel"
+vtool -show-build-version $A/Frameworks/objective_c.framework/objective_c | grep -c IOSSIMULATOR
+```
+
+預期三行依序為：本次的 build number、`1`、`0`。
+
+- 第二行是 `0` → 拿到的是 2026-08 UI 改版之前的舊產物
+- 第三行是 `1` → 沿用了模擬器的 native assets 快取，**不要上傳**，回到[建置](#建置)重跑含 `flutter clean` 的版本
+
+> 第三行檢查的是「有沒有出現 IOSSIMULATOR」而非「是不是 IOS」。裝置版的
+> `objective_c` 可能標記為 `LC_BUILD_VERSION / platform IOS`，也可能是舊式的
+> `LC_VERSION_MIN_IPHONEOS`，比對後者會誤判。
+
+archive 內的 app 由 **Apple Development** 憑證簽署屬正常——重新簽為 Apple Distribution 發生在 Distribute 匯出階段。要驗證發佈簽章請查 IPA：
 
 ```bash
 cd $(mktemp -d) && unzip -q "$OLDPWD/build/ios/ipa/flutter_vocabulary_card.ipa" && codesign -dvvv Payload/Runner.app 2>&1 | grep -E "Identifier=|Authority=Apple Dist"
@@ -221,6 +273,8 @@ dart pub global activate flutterfire_cli && flutterfire configure
 | `The app identifier ... is not available` | Bundle ID 被別的團隊佔用。`com.gman.Gocab` 已被免費團隊 `Q56BA6VT7Y` 永久佔用且無法釋出，這就是改用 `com.gman.gocabapp` 的原因，**請勿改回** |
 | `did not include a dSYM for objective_c.framework` | **可忽略**。該 framework 由 Flutter native assets 管線編譯，繞過 Xcode 且已 strip，無法產生 dSYM。不影響上傳 |
 | build number 重複 | 回到[改版本號](#-例行更新最常用) |
+| **上傳成功但 TestFlight 內容是舊版** | 選到 Organizer 裡的舊 archive。新建的 archive 不會自動出現在清單，且 Manage Version and Build Number 會自動遞增版號、使錯誤看不出來。見[上傳章節](#️-上傳archive-不會自動出現在-organizer)，並在送出前跑[自我驗證](#上傳前自我驗證) |
+| `Invalid executable ... references an unsupported platform in the arm64 slice`（code 91169） | `objective_c.framework` 是模擬器版本。native assets 快取沿用了先前 `flutter run` 的產物。用 `flutter clean` 重建，見[建置](#建置) |
 
 ```bash
 security find-identity -v -p codesigning
