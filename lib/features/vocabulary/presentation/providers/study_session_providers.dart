@@ -1,4 +1,5 @@
 import 'dart:collection';
+import 'dart:math';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -95,9 +96,30 @@ final studyIndexProvider = NotifierProvider<StudyIndexController, int>(
   StudyIndexController.new,
 );
 
+/// Null means alphabetical order. A non-null value seeds the shuffle, so the
+/// order survives rebuilds — marking a word learned or toggling [hideLearned]
+/// must not silently reshuffle the deck under the reader.
+class ShuffleSeedController extends Notifier<int?> {
+  @override
+  int? build() => null;
+
+  void shuffle() {
+    state = DateTime.now().microsecondsSinceEpoch;
+  }
+
+  void restoreOrder() {
+    state = null;
+  }
+}
+
+final shuffleSeedProvider = NotifierProvider<ShuffleSeedController, int?>(
+  ShuffleSeedController.new,
+);
+
 final studySessionProvider = Provider<StudySessionState>((ref) {
   final requestedIndex = ref.watch(studyIndexProvider);
   final hideLearned = ref.watch(hideLearnedProvider);
+  final shuffleSeed = ref.watch(shuffleSeedProvider);
 
   final allWords =
       ref.watch(vocabularyListProvider).value ?? const <VocabularyWord>[];
@@ -109,6 +131,7 @@ final studySessionProvider = Provider<StudySessionState>((ref) {
     learnedWordIds: learnedWordIds,
     hideLearned: hideLearned,
     requestedIndex: requestedIndex,
+    shuffleSeed: shuffleSeed,
   );
 });
 
@@ -117,6 +140,7 @@ StudySessionState buildStudySessionState({
   required Set<String> learnedWordIds,
   required bool hideLearned,
   required int requestedIndex,
+  int? shuffleSeed,
 }) {
   final filteredWords = hideLearned
       ? allWords.where((word) => !learnedWordIds.contains(word.id)).toList()
@@ -124,6 +148,10 @@ StudySessionState buildStudySessionState({
 
   if (filteredWords.isEmpty) {
     return StudySessionState.empty(learnedWordIds: learnedWordIds);
+  }
+
+  if (shuffleSeed != null) {
+    filteredWords.shuffle(Random(shuffleSeed));
   }
 
   final clampedIndex = requestedIndex.clamp(0, filteredWords.length - 1);
