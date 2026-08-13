@@ -23,6 +23,39 @@ die()  { echo "${RED}✗ $1${NC}" >&2; exit 1; }
 ARCHIVE=build/ios/archive/Runner.xcarchive
 IPA=build/ios/ipa/flutter_vocabulary_card.ipa
 ORGANIZER=~/Library/Developer/Xcode/Archives/$(date +%F)
+ROOT=$(pwd)
+
+# --- stale absolute paths -------------------------------------------------
+
+# These generated files bake in the project's absolute path and are not updated
+# when the directory is moved or renamed. The build then writes to the old
+# location — artifacts appear somewhere else entirely while the working tree
+# looks perfectly normal. `flutter clean` regenerates them.
+stale=""
+xcconfig=ios/Flutter/Generated.xcconfig
+if [[ -f "$xcconfig" ]]; then
+  got=$(grep '^FLUTTER_APPLICATION_PATH=' "$xcconfig" | cut -d= -f2-)
+  [[ -z "$got" || "$got" == "$ROOT" ]] || stale+="  $xcconfig → $got"$'\n'
+fi
+pkgcfg=.dart_tool/package_config.json
+if [[ -f "$pkgcfg" ]]; then
+  got=$(python3 - "$pkgcfg" <<'PY' 2>/dev/null
+import json, os, sys, urllib.parse
+d = json.load(open(sys.argv[1]))
+p = [x for x in d["packages"] if x["name"] == "flutter_vocabulary_card"]
+uri = p[0]["rootUri"] if p else ""
+print(os.path.normpath(urllib.parse.unquote(uri[7:])) if uri.startswith("file://") else "")
+PY
+)
+  [[ -z "$got" || "$got" == "$ROOT" ]] || stale+="  $pkgcfg → $got"$'\n'
+fi
+if [[ -n "$stale" ]]; then
+  echo "${RED}✗ 產生檔記錄的專案路徑與現在不符（專案曾被移動或改名）${NC}" >&2
+  printf '%s' "$stale" >&2
+  echo "  現在的路徑：$ROOT" >&2
+  die "請先執行 flutter clean && flutter pub get"
+fi
+ok "專案路徑一致"
 
 # --- build number ---------------------------------------------------------
 
