@@ -21,12 +21,29 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
   Future<Either<Failure, List<VocabularyWord>>> getVocabularyList() async {
     try {
       final remoteWords = await remoteDataSource.getVocabularyList();
+      await localDataSource.cacheVocabularyList(remoteWords);
       return Right(remoteWords);
     } on ServerException catch (error) {
-      return Left(ServerFailure(error.message));
+      return _cachedListOr(ServerFailure(error.message));
     } catch (error) {
-      return Left(ServerFailure(error.toString()));
+      return _cachedListOr(ServerFailure(error.toString()));
     }
+  }
+
+  /// Offline is only an error when there is nothing cached to show.
+  Either<Failure, List<VocabularyWord>> _cachedListOr(Failure failure) {
+    final cached = localDataSource.getCachedVocabularyList();
+
+    if (cached.isEmpty) {
+      return Left(failure);
+    }
+
+    return Right(cached);
+  }
+
+  @override
+  List<VocabularyWord> getCachedVocabularyList() {
+    return localDataSource.getCachedVocabularyList();
   }
 
   @override
@@ -38,7 +55,23 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
             return localDataSource.getLearnedWordIdsStream();
           }
 
-          return remoteDataSource.watchLearnedWordIds(userId);
+          final stream = remoteDataSource
+              .watchLearnedWordIds(userId)
+              .doOnData(
+                (ids) => localDataSource.cacheRemoteLearnedIds(userId, ids),
+              );
+
+          final mirrored = localDataSource.getCachedRemoteLearnedIds(userId);
+
+          // The mirror goes out first so the buttons are already correct on
+          // the frame the deck appears, instead of flashing "not learned"
+          // until Firestore answers. An empty mirror carries no information,
+          // and prepending it would cause the very flash it exists to avoid.
+          if (mirrored.isEmpty) {
+            return stream;
+          }
+
+          return stream.startWith(mirrored);
         })
         .distinct(_sameSet);
   }
@@ -100,5 +133,25 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
   @override
   Future<void> saveHideLearned(bool value) async {
     await localDataSource.cacheHideLearned(value);
+  }
+
+  @override
+  int getStudyIndex() {
+    return localDataSource.getStudyIndex();
+  }
+
+  @override
+  Future<void> saveStudyIndex(int index) async {
+    await localDataSource.cacheStudyIndex(index);
+  }
+
+  @override
+  int? getShuffleSeed() {
+    return localDataSource.getShuffleSeed();
+  }
+
+  @override
+  Future<void> saveShuffleSeed(int? seed) async {
+    await localDataSource.cacheShuffleSeed(seed);
   }
 }
