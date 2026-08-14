@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:flutter_vocabulary_card/core/errors/exceptions.dart';
 import 'package:flutter_vocabulary_card/features/vocabulary/data/datasources/vocabulary_local_data_source.dart';
 import 'package:flutter_vocabulary_card/features/vocabulary/data/datasources/vocabulary_remote_data_source.dart';
 import 'package:flutter_vocabulary_card/features/vocabulary/data/models/vocabulary_model.dart';
@@ -14,13 +15,24 @@ class FakeVocabularyLocalDataSource implements VocabularyLocalDataSource {
   String? lastSetWordId;
   bool? lastSetIsLearned;
 
+  List<VocabularyModel> cachedList;
+  final Map<String, Set<String>> remoteMirror;
+  int studyIndex;
+  int? shuffleSeed;
+
   final _idsController = StreamController<Set<String>>.broadcast();
 
   FakeVocabularyLocalDataSource({
     Set<String>? seededIds,
     bool hideLearned = false,
+    List<VocabularyModel>? seededList,
+    Map<String, Set<String>>? seededRemoteMirror,
+    this.studyIndex = 0,
+    this.shuffleSeed,
   }) : _ids = Set<String>.from(seededIds ?? <String>{}),
-       _hideLearned = hideLearned;
+       _hideLearned = hideLearned,
+       cachedList = seededList ?? const <VocabularyModel>[],
+       remoteMirror = seededRemoteMirror ?? <String, Set<String>>{};
 
   @override
   Future<Set<String>> getLearnedWordIds() async => Set<String>.from(_ids);
@@ -49,6 +61,40 @@ class FakeVocabularyLocalDataSource implements VocabularyLocalDataSource {
   }
 
   @override
+  List<VocabularyModel> getCachedVocabularyList() => cachedList;
+
+  @override
+  Future<void> cacheVocabularyList(List<VocabularyModel> words) async {
+    cachedList = List<VocabularyModel>.from(words);
+  }
+
+  @override
+  Set<String> getCachedRemoteLearnedIds(String userId) {
+    return Set<String>.from(remoteMirror[userId] ?? <String>{});
+  }
+
+  @override
+  Future<void> cacheRemoteLearnedIds(String userId, Set<String> ids) async {
+    remoteMirror[userId] = Set<String>.from(ids);
+  }
+
+  @override
+  int getStudyIndex() => studyIndex;
+
+  @override
+  Future<void> cacheStudyIndex(int index) async {
+    studyIndex = index;
+  }
+
+  @override
+  int? getShuffleSeed() => shuffleSeed;
+
+  @override
+  Future<void> cacheShuffleSeed(int? seed) async {
+    shuffleSeed = seed;
+  }
+
+  @override
   bool getHideLearned() => _hideLearned;
 
   @override
@@ -65,6 +111,8 @@ class FakeVocabularyRemoteDataSource implements VocabularyRemoteDataSource {
   String? _currentUserId;
   Set<String> _remoteIds;
 
+  List<VocabularyModel> remoteList = const <VocabularyModel>[];
+  bool failVocabularyList = false;
 
   int setCallCount = 0;
   String? lastSetUserId;
@@ -91,7 +139,11 @@ class FakeVocabularyRemoteDataSource implements VocabularyRemoteDataSource {
 
   @override
   Future<List<VocabularyModel>> getVocabularyList() async {
-    return const <VocabularyModel>[];
+    if (failVocabularyList) {
+      throw ServerException('offline');
+    }
+
+    return remoteList;
   }
 
   @override
@@ -226,5 +278,125 @@ void main() {
       await local.dispose();
       await remote.dispose();
     });
+    test('caches the fetched word list', () async {
+      final local = FakeVocabularyLocalDataSource();
+      final remote = FakeVocabularyRemoteDataSource(seededUserId: null)
+        ..remoteList = [_word('word_1')];
+
+      final repository = VocabularyRepositoryImpl(
+        remoteDataSource: remote,
+        localDataSource: local,
+      );
+
+      final result = await repository.getVocabularyList();
+
+      expect(result.isRight(), isTrue);
+      expect(local.cachedList.single.id, 'word_1');
+
+      await local.dispose();
+      await remote.dispose();
+    });
+
+    test('falls back to the cached list when the fetch fails', () async {
+      final local = FakeVocabularyLocalDataSource(
+        seededList: [_word('cached_word')],
+      );
+      final remote = FakeVocabularyRemoteDataSource(seededUserId: null)
+        ..failVocabularyList = true;
+
+      final repository = VocabularyRepositoryImpl(
+        remoteDataSource: remote,
+        localDataSource: local,
+      );
+
+      final result = await repository.getVocabularyList();
+
+      expect(
+        result.getOrElse((_) => const []).single.id,
+        'cached_word',
+      );
+
+      await local.dispose();
+      await remote.dispose();
+    });
+
+    test('fails when the fetch fails and nothing is cached', () async {
+      final local = FakeVocabularyLocalDataSource();
+      final remote = FakeVocabularyRemoteDataSource(seededUserId: null)
+        ..failVocabularyList = true;
+
+      final repository = VocabularyRepositoryImpl(
+        remoteDataSource: remote,
+        localDataSource: local,
+      );
+
+      final result = await repository.getVocabularyList();
+
+      expect(result.isLeft(), isTrue);
+
+      await local.dispose();
+      await remote.dispose();
+    });
+
+    test('emits the mirrored ids before the remote stream answers', () async {
+      final local = FakeVocabularyLocalDataSource(
+        seededRemoteMirror: {
+          'user_1': {'mirrored_word'},
+        },
+      );
+      final remote = FakeVocabularyRemoteDataSource(
+        seededUserId: 'user_1',
+        seededRemoteIds: {'remote_word'},
+      );
+
+      final repository = VocabularyRepositoryImpl(
+        remoteDataSource: remote,
+        localDataSource: local,
+      );
+
+      await expectLater(
+        repository.getLearnedWordIdsStream(),
+        emitsInOrder([
+          {'mirrored_word'},
+          {'remote_word'},
+        ]),
+      );
+
+      await local.dispose();
+      await remote.dispose();
+    });
+
+    test('mirrors remote ids into the local cache', () async {
+      final local = FakeVocabularyLocalDataSource();
+      final remote = FakeVocabularyRemoteDataSource(
+        seededUserId: 'user_1',
+        seededRemoteIds: {'remote_word'},
+      );
+
+      final repository = VocabularyRepositoryImpl(
+        remoteDataSource: remote,
+        localDataSource: local,
+      );
+
+      final subscription = repository.getLearnedWordIdsStream().listen((_) {});
+      await Future<void>.delayed(const Duration(milliseconds: 10));
+
+      expect(local.remoteMirror['user_1'], {'remote_word'});
+
+      await subscription.cancel();
+      await local.dispose();
+      await remote.dispose();
+    });
   });
+}
+
+VocabularyModel _word(String id) {
+  return VocabularyModel(
+    id: id,
+    word: id,
+    partOfSpeech: 'noun',
+    definition: 'definition',
+    example: 'example',
+    chineseTranslation: 'translation',
+  );
 }
