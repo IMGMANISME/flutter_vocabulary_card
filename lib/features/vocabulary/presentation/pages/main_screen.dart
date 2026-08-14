@@ -552,7 +552,12 @@ class MainScreen extends ConsumerWidget {
                   c,
                   isLearned: isLearned,
                   compact: true,
-                  onTap: () => _toggleLearned(context, ref, currentWord.id),
+                  onTap: () => _setLearned(
+                    context,
+                    ref,
+                    wordId: currentWord.id,
+                    isLearned: !isLearned,
+                  ),
                 ),
               ),
             ),
@@ -853,14 +858,15 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Future<void> _toggleLearned(
+  Future<void> _setLearned(
     BuildContext context,
-    WidgetRef ref,
-    String wordId,
-  ) async {
+    WidgetRef ref, {
+    required String wordId,
+    required bool isLearned,
+  }) async {
     final result = await ref
-        .read(toggleLearnedStatusUseCaseProvider)
-        .call(wordId);
+        .read(setLearnedStatusUseCaseProvider)
+        .call(wordId: wordId, isLearned: isLearned);
 
     result.match((failure) {
       if (!context.mounted) {

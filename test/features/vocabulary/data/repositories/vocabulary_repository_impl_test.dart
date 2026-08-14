@@ -10,7 +10,9 @@ import 'package:flutter_vocabulary_card/features/vocabulary/data/repositories/vo
 class FakeVocabularyLocalDataSource implements VocabularyLocalDataSource {
   final Set<String> _ids;
   bool _hideLearned;
-  int toggleCallCount = 0;
+  int setCallCount = 0;
+  String? lastSetWordId;
+  bool? lastSetIsLearned;
 
   final _idsController = StreamController<Set<String>>.broadcast();
 
@@ -34,24 +36,15 @@ class FakeVocabularyLocalDataSource implements VocabularyLocalDataSource {
     required String wordId,
     required bool isLearned,
   }) async {
+    setCallCount += 1;
+    lastSetWordId = wordId;
+    lastSetIsLearned = isLearned;
+
     if (isLearned) {
       _ids.add(wordId);
     } else {
       _ids.remove(wordId);
     }
-    _idsController.add(Set<String>.from(_ids));
-  }
-
-  @override
-  Future<void> toggleLearnedStatus(String wordId) async {
-    toggleCallCount += 1;
-
-    if (_ids.contains(wordId)) {
-      _ids.remove(wordId);
-    } else {
-      _ids.add(wordId);
-    }
-
     _idsController.add(Set<String>.from(_ids));
   }
 
@@ -72,9 +65,11 @@ class FakeVocabularyRemoteDataSource implements VocabularyRemoteDataSource {
   String? _currentUserId;
   Set<String> _remoteIds;
 
-  int toggleCallCount = 0;
-  String? lastToggleUserId;
-  String? lastToggleWordId;
+
+  int setCallCount = 0;
+  String? lastSetUserId;
+  String? lastSetWordId;
+  bool? lastSetIsLearned;
 
   final _userIdController = StreamController<String?>.broadcast();
   final _remoteIdsController = StreamController<Set<String>>.broadcast();
@@ -106,18 +101,20 @@ class FakeVocabularyRemoteDataSource implements VocabularyRemoteDataSource {
   }
 
   @override
-  Future<void> toggleLearnedStatus({
+  Future<void> setLearnedStatus({
     required String userId,
     required String wordId,
+    required bool isLearned,
   }) async {
-    toggleCallCount += 1;
-    lastToggleUserId = userId;
-    lastToggleWordId = wordId;
+    setCallCount += 1;
+    lastSetUserId = userId;
+    lastSetWordId = wordId;
+    lastSetIsLearned = isLearned;
 
-    if (_remoteIds.contains(wordId)) {
-      _remoteIds.remove(wordId);
-    } else {
+    if (isLearned) {
       _remoteIds.add(wordId);
+    } else {
+      _remoteIds.remove(wordId);
     }
 
     _remoteIdsController.add(Set<String>.from(_remoteIds));
@@ -189,7 +186,7 @@ void main() {
       await remote.dispose();
     });
 
-    test('toggleLearnedStatus uses local datasource when logged out', () async {
+    test('setLearnedStatus uses local datasource when logged out', () async {
       final local = FakeVocabularyLocalDataSource();
       final remote = FakeVocabularyRemoteDataSource(seededUserId: null);
 
@@ -198,16 +195,18 @@ void main() {
         localDataSource: local,
       );
 
-      await repository.toggleLearnedStatus('word_1');
+      await repository.setLearnedStatus(wordId: 'word_1', isLearned: true);
 
-      expect(local.toggleCallCount, 1);
-      expect(remote.toggleCallCount, 0);
+      expect(local.setCallCount, 1);
+      expect(local.lastSetWordId, 'word_1');
+      expect(local.lastSetIsLearned, true);
+      expect(remote.setCallCount, 0);
 
       await local.dispose();
       await remote.dispose();
     });
 
-    test('toggleLearnedStatus uses remote datasource when logged in', () async {
+    test('setLearnedStatus uses remote datasource when logged in', () async {
       final local = FakeVocabularyLocalDataSource();
       final remote = FakeVocabularyRemoteDataSource(seededUserId: 'user_1');
 
@@ -216,12 +215,13 @@ void main() {
         localDataSource: local,
       );
 
-      await repository.toggleLearnedStatus('word_1');
+      await repository.setLearnedStatus(wordId: 'word_1', isLearned: true);
 
-      expect(local.toggleCallCount, 0);
-      expect(remote.toggleCallCount, 1);
-      expect(remote.lastToggleUserId, 'user_1');
-      expect(remote.lastToggleWordId, 'word_1');
+      expect(local.setCallCount, 0);
+      expect(remote.setCallCount, 1);
+      expect(remote.lastSetUserId, 'user_1');
+      expect(remote.lastSetWordId, 'word_1');
+      expect(remote.lastSetIsLearned, true);
 
       await local.dispose();
       await remote.dispose();

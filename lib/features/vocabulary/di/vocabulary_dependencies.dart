@@ -7,7 +7,7 @@ import '../data/repositories/vocabulary_repository_impl.dart';
 import '../domain/repositories/vocabulary_repository.dart';
 import '../domain/usecases/get_learned_status_stream_usecase.dart';
 import '../domain/usecases/get_vocabulary_list_usecase.dart';
-import '../domain/usecases/toggle_learned_status_usecase.dart';
+import '../domain/usecases/set_learned_status_usecase.dart';
 
 final vocabularyLocalDataSourceProvider = Provider<VocabularyLocalDataSource>((
   ref,
@@ -39,11 +39,11 @@ final getVocabularyListUseCaseProvider = Provider<GetVocabularyListUseCase>((
   return GetVocabularyListUseCase(ref.watch(vocabularyRepositoryProvider));
 });
 
-final toggleLearnedStatusUseCaseProvider = Provider<ToggleLearnedStatusUseCase>(
-  (ref) {
-    return ToggleLearnedStatusUseCase(ref.watch(vocabularyRepositoryProvider));
-  },
-);
+final setLearnedStatusUseCaseProvider = Provider<SetLearnedStatusUseCase>((
+  ref,
+) {
+  return SetLearnedStatusUseCase(ref.watch(vocabularyRepositoryProvider));
+});
 
 final getLearnedStatusStreamUseCaseProvider =
     Provider<GetLearnedStatusStreamUseCase>((ref) {

@@ -62,16 +62,23 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
   }
 
   @override
-  Future<Either<Failure, void>> toggleLearnedStatus(String wordId) async {
+  Future<Either<Failure, void>> setLearnedStatus({
+    required String wordId,
+    required bool isLearned,
+  }) async {
     try {
       final userId = remoteDataSource.currentUserId;
 
       if (userId == null) {
-        await localDataSource.toggleLearnedStatus(wordId);
+        await localDataSource.setLearnedStatus(
+          wordId: wordId,
+          isLearned: isLearned,
+        );
       } else {
-        await remoteDataSource.toggleLearnedStatus(
+        await remoteDataSource.setLearnedStatus(
           userId: userId,
           wordId: wordId,
+          isLearned: isLearned,
         );
       }
 
