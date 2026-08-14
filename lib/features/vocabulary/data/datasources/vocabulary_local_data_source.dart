@@ -15,8 +15,6 @@ abstract class VocabularyLocalDataSource {
     required bool isLearned,
   });
 
-  Future<void> toggleLearnedStatus(String wordId);
-
   bool getHideLearned();
 
   Future<void> cacheHideLearned(bool value);
@@ -65,19 +63,6 @@ class VocabularyLocalDataSourceImpl implements VocabularyLocalDataSource {
       ids.add(wordId);
     } else {
       ids.remove(wordId);
-    }
-
-    await _persistLearnedIds(ids);
-  }
-
-  @override
-  Future<void> toggleLearnedStatus(String wordId) async {
-    final ids = await getLearnedWordIds();
-
-    if (ids.contains(wordId)) {
-      ids.remove(wordId);
-    } else {
-      ids.add(wordId);
     }
 
     await _persistLearnedIds(ids);

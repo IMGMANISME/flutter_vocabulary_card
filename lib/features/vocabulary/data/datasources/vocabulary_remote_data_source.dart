@@ -13,9 +13,10 @@ abstract class VocabularyRemoteDataSource {
 
   Stream<Set<String>> watchLearnedWordIds(String userId);
 
-  Future<void> toggleLearnedStatus({
+  Future<void> setLearnedStatus({
     required String userId,
     required String wordId,
+    required bool isLearned,
   });
 }
 
@@ -63,10 +64,16 @@ class VocabularyRemoteDataSourceImpl implements VocabularyRemoteDataSource {
         });
   }
 
+  /// Writes the desired state instead of flipping whatever the server holds.
+  /// A transaction would have to read the server copy first, which skips the
+  /// local cache entirely — the snapshot listener, and with it the button,
+  /// could only react after the full round trip. A plain write lands in the
+  /// cache immediately and the listener fires straight away.
   @override
-  Future<void> toggleLearnedStatus({
+  Future<void> setLearnedStatus({
     required String userId,
     required String wordId,
+    required bool isLearned,
   }) async {
     final docRef = firestore
         .collection('users')
@@ -75,15 +82,11 @@ class VocabularyRemoteDataSourceImpl implements VocabularyRemoteDataSource {
         .doc(wordId);
 
     try {
-      await firestore.runTransaction((transaction) async {
-        final snapshot = await transaction.get(docRef);
-
-        if (snapshot.exists) {
-          transaction.delete(docRef);
-        } else {
-          transaction.set(docRef, {'timestamp': FieldValue.serverTimestamp()});
-        }
-      });
+      if (isLearned) {
+        await docRef.set({'timestamp': FieldValue.serverTimestamp()});
+      } else {
+        await docRef.delete();
+      }
     } catch (error) {
       throw ServerException(error.toString());
     }
