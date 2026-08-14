@@ -167,26 +167,35 @@ class MainScreen extends ConsumerWidget {
               const SizedBox(height: 9),
               Row(
                 children: [
-                  Text(
-                    '${session.displayPosition}/${session.totalCount}',
-                    style: TextStyle(
-                      color: c.ink,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  // Flexible so the two chips never get squeezed off the row
-                  // once the counts grow to four digits.
-                  Flexible(
-                    child: Text(
-                      '$progressPercent% · $remainingCount left',
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        color: c.ink.withValues(alpha: 0.6),
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  // The counters take the whole left half regardless of how
+                  // long they render, so the two chips stay pinned to the
+                  // right edge instead of sliding with the text width.
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Text(
+                          '${session.displayPosition}/${session.totalCount}',
+                          style: TextStyle(
+                            color: c.ink,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        // Flexible so the two chips never get squeezed off the
+                        // row once the counts grow to four digits.
+                        Flexible(
+                          child: Text(
+                            '$progressPercent% · $remainingCount left',
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              color: c.ink.withValues(alpha: 0.6),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(width: 8),
