@@ -54,6 +54,7 @@ class VocabularyLocalDataSourceImpl implements VocabularyLocalDataSource {
 
   final BehaviorSubject<Set<String>> _learnedIdsSubject =
       BehaviorSubject<Set<String>>.seeded(<String>{});
+  Future<void> _learnedWriteQueue = Future<void>.value();
 
   VocabularyLocalDataSourceImpl({required this.sharedPreferences}) {
     _learnedIdsSubject.add(_readLearnedWordIds());
@@ -82,16 +83,28 @@ class VocabularyLocalDataSourceImpl implements VocabularyLocalDataSource {
   Future<void> setLearnedStatus({
     required String wordId,
     required bool isLearned,
-  }) async {
-    final ids = await getLearnedWordIds();
+  }) {
+    // Serialize the entire read-modify-write, including different word IDs.
+    final operation = _learnedWriteQueue.then((_) async {
+      final ids = await getLearnedWordIds();
+      if (isLearned) {
+        ids.add(wordId);
+      } else {
+        ids.remove(wordId);
+      }
+      await _persistLearnedIds(ids);
+    });
+    // A failed operation still reaches its caller without blocking later writes.
+    _learnedWriteQueue = operation.then<void>(
+      (_) {},
+      onError: (Object error, StackTrace stackTrace) {},
+    );
+    return operation;
+  }
 
-    if (isLearned) {
-      ids.add(wordId);
-    } else {
-      ids.remove(wordId);
-    }
-
-    await _persistLearnedIds(ids);
+  Future<void> dispose() async {
+    await _learnedWriteQueue;
+    await _learnedIdsSubject.close();
   }
 
   Future<void> _persistLearnedIds(Set<String> ids) async {

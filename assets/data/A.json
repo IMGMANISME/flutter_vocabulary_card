@@ -107,9 +107,11 @@
     "id": 14,
     "word": "accountable",
     "partOfSpeech": "adjective",
-    "definition": "Required or expected to justify actions or decisions; responsible.",
-    "example": "You will be held accountable for your behavior.",
-    "chineseTranslation": "負責任的、可說明的"
+    "definition": "Expected to explain decisions or actions and accept responsibility for them.",
+    "example": "The project manager is accountable to the board for how the budget is spent.",
+    "chineseTranslation": "須負責並作出說明的",
+    "usageNote": "Accountable to names the person or group you answer to; accountable for names the action or result.",
+    "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/accountable"
   },
   {
     "id": 15,

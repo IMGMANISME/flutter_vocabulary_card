@@ -15,6 +15,8 @@ class StudySessionState {
   final List<String> availableLetters;
   final Map<String, int> letterIndexMap;
   final Set<String> learnedWordIds;
+  final int deckCount;
+  final int learnedCount;
 
   const StudySessionState({
     required this.words,
@@ -23,9 +25,15 @@ class StudySessionState {
     required this.availableLetters,
     required this.letterIndexMap,
     required this.learnedWordIds,
+    required this.deckCount,
+    required this.learnedCount,
   });
 
-  factory StudySessionState.empty({required Set<String> learnedWordIds}) {
+  factory StudySessionState.empty({
+    required Set<String> learnedWordIds,
+    int deckCount = 0,
+    int learnedCount = 0,
+  }) {
     return StudySessionState(
       words: const [],
       currentWord: null,
@@ -33,6 +41,8 @@ class StudySessionState {
       availableLetters: const [],
       letterIndexMap: const {},
       learnedWordIds: learnedWordIds,
+      deckCount: deckCount,
+      learnedCount: learnedCount,
     );
   }
 
@@ -42,7 +52,10 @@ class StudySessionState {
 
   int get displayPosition => hasWords ? currentIndex + 1 : 0;
 
-  double get progress => hasWords ? displayPosition / totalCount : 0;
+  /// Learning progress is independent of the current card and active filter.
+  double get progress => deckCount == 0 ? 0 : learnedCount / deckCount;
+
+  int get remainingCount => deckCount - learnedCount;
 
   bool get isAtStart => !hasWords || currentIndex == 0;
 
@@ -160,16 +173,25 @@ StudySessionState buildStudySessionState({
   required int requestedIndex,
   int? shuffleSeed,
 }) {
-  final filteredWords = hideLearned
-      ? allWords.where((word) => !learnedWordIds.contains(word.id)).toList()
-      : List<VocabularyWord>.from(allWords);
-
-  if (filteredWords.isEmpty) {
-    return StudySessionState.empty(learnedWordIds: learnedWordIds);
+  final orderedWords = List<VocabularyWord>.from(allWords);
+  if (shuffleSeed != null) {
+    orderedWords.shuffle(Random(shuffleSeed));
   }
 
-  if (shuffleSeed != null) {
-    filteredWords.shuffle(Random(shuffleSeed));
+  // Filter an existing ordering so learning a word never reshuffles the rest.
+  final filteredWords = hideLearned
+      ? orderedWords.where((word) => !learnedWordIds.contains(word.id)).toList()
+      : orderedWords;
+  final learnedCount = allWords
+      .where((word) => learnedWordIds.contains(word.id))
+      .length;
+
+  if (filteredWords.isEmpty) {
+    return StudySessionState.empty(
+      learnedWordIds: UnmodifiableSetView(learnedWordIds),
+      deckCount: allWords.length,
+      learnedCount: learnedCount,
+    );
   }
 
   final clampedIndex = requestedIndex.clamp(0, filteredWords.length - 1);
@@ -194,5 +216,7 @@ StudySessionState buildStudySessionState({
     availableLetters: UnmodifiableListView(availableLetters),
     letterIndexMap: UnmodifiableMapView(letterIndexMap),
     learnedWordIds: UnmodifiableSetView(learnedWordIds),
+    deckCount: allWords.length,
+    learnedCount: learnedCount,
   );
 }

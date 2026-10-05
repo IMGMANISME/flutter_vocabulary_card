@@ -7,6 +7,8 @@ class VocabularyWord extends Equatable {
   final String definition;
   final String example;
   final String chineseTranslation;
+  final String usageNote;
+  final String sourceUrl;
 
   const VocabularyWord({
     required this.id,
@@ -15,6 +17,8 @@ class VocabularyWord extends Equatable {
     required this.definition,
     required this.example,
     required this.chineseTranslation,
+    this.usageNote = '',
+    this.sourceUrl = '',
   });
 
   @override
@@ -25,5 +29,7 @@ class VocabularyWord extends Equatable {
     definition,
     example,
     chineseTranslation,
+    usageNote,
+    sourceUrl,
   ];
 }

@@ -1,0 +1,93 @@
+[
+  {
+    "word": "accountable",
+    "partOfSpeech": "adjective",
+    "originalDefinition": "Required or expected to justify actions or decisions; responsible.",
+    "originalExample": "You will be held accountable for your behavior.",
+    "replacement": {
+      "definition": "Expected to explain decisions or actions and accept responsibility for them.",
+      "example": "The project manager is accountable to the board for how the budget is spent.",
+      "chineseTranslation": "須負責並作出說明的",
+      "usageNote": "Accountable to names the person or group you answer to; accountable for names the action or result.",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/accountable"
+    }
+  },
+  {
+    "word": "critical",
+    "partOfSpeech": "adjective",
+    "originalDefinition": "Expressing adverse or disapproving comments; very important.",
+    "originalExample": "It is critical to follow the safety rules.",
+    "replacement": {
+      "definition": "Extremely important to the success or outcome of something.",
+      "example": "Reliable evidence is critical to making a fair decision.",
+      "chineseTranslation": "至關重要的；關鍵的",
+      "usageNote": "This card uses the important sense. Critical can also mean expressing disapproval or seriously ill.",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/critical"
+    }
+  },
+  {
+    "word": "efficient",
+    "partOfSpeech": "adjective",
+    "originalDefinition": "Performing tasks in a well-organized and competent way.",
+    "originalExample": "The new system is more efficient than the old one.",
+    "replacement": {
+      "definition": "Able to achieve good results while using little time, energy, or other resources.",
+      "example": "The new booking system is more efficient because it processes requests in half the time.",
+      "chineseTranslation": "有效率的",
+      "usageNote": "Efficient focuses on avoiding wasted resources; effective focuses on achieving the intended result.",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/efficient"
+    }
+  },
+  {
+    "word": "faculty",
+    "partOfSpeech": "noun",
+    "originalDefinition": "an inherent mental or physical power; a division of a university",
+    "originalExample": "She has a faculty for learning languages quickly.",
+    "replacement": {
+      "definition": "A natural ability or a particular skill that a person has.",
+      "example": "Her faculty for noticing small changes made her a careful editor.",
+      "chineseTranslation": "能力；才能",
+      "usageNote": "Faculty for introduces an ability. The university department or teaching staff senses are separate.",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/faculty"
+    }
+  },
+  {
+    "word": "prescribe",
+    "partOfSpeech": "verb",
+    "originalDefinition": "Advise and authorize the use of a medicine or treatment for someone, especially in writing.",
+    "originalExample": "The doctor prescribed antibiotics.",
+    "replacement": {
+      "definition": "To specify a medicine or treatment that someone should receive.",
+      "example": "The doctor prescribed a new treatment after reviewing the test results.",
+      "chineseTranslation": "開藥；指定治療方式",
+      "usageNote": "Prescribe a medicine or treatment; prescribe something for a patient or condition.",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/prescribe"
+    }
+  },
+  {
+    "word": "sanction",
+    "partOfSpeech": "noun",
+    "originalDefinition": "A threatened penalty for disobeying a law or rule.",
+    "originalExample": "The country faces international sanctions.",
+    "replacement": {
+      "definition": "An official restriction or penalty imposed to make a country or person obey rules.",
+      "example": "Several countries imposed economic sanctions on the government after it broke the agreement.",
+      "chineseTranslation": "制裁；處罰",
+      "usageNote": "This card uses the penalty sense, often plural: impose sanctions on. Sanction can also mean official approval.",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/sanction"
+    }
+  },
+  {
+    "word": "triumph",
+    "partOfSpeech": "noun",
+    "originalDefinition": "A great victory or achievement.",
+    "originalExample": "Winning the championship was a triumph for the team.",
+    "replacement": {
+      "definition": "An important success or victory, especially after a difficult effort.",
+      "example": "Completing the project despite repeated setbacks was a triumph for the whole team.",
+      "chineseTranslation": "重大成功；勝利",
+      "usageNote": "A triumph for someone describes their success; a triumph over something describes overcoming an obstacle.",
+      "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/triumph"
+    }
+  }
+]

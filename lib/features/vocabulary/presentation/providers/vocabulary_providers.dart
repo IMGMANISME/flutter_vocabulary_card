@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:fpdart/fpdart.dart';
 
 import '../../../../core/errors/failure.dart';
 import '../../di/vocabulary_dependencies.dart';
@@ -20,7 +21,8 @@ class VocabularyLoadException implements Exception {
 class VocabularyListController extends AsyncNotifier<List<VocabularyWord>> {
   @override
   FutureOr<List<VocabularyWord>> build() {
-    final cached = ref.watch(vocabularyRepositoryProvider)
+    final cached = ref
+        .watch(vocabularyRepositoryProvider)
         .getCachedVocabularyList();
 
     if (cached.isEmpty) {
@@ -63,6 +65,36 @@ final learnedWordIdsProvider = StreamProvider<Set<String>>((ref) {
   final useCase = ref.watch(getLearnedStatusStreamUseCaseProvider);
   return useCase.call();
 });
+
+/// Keeps repeated taps from issuing conflicting writes for the same word.
+class LearnedStatusController extends Notifier<Set<String>> {
+  @override
+  Set<String> build() => const {};
+
+  Future<Either<Failure, void>> setStatus({
+    required String wordId,
+    required bool isLearned,
+  }) async {
+    if (state.contains(wordId)) {
+      return const Left(ServerFailure('This word is already being updated.'));
+    }
+    state = {...state, wordId};
+    try {
+      return await ref
+          .read(setLearnedStatusUseCaseProvider)
+          .call(wordId: wordId, isLearned: isLearned);
+    } finally {
+      if (ref.mounted) {
+        state = {...state}..remove(wordId);
+      }
+    }
+  }
+}
+
+final learnedStatusControllerProvider =
+    NotifierProvider<LearnedStatusController, Set<String>>(
+      LearnedStatusController.new,
+    );
 
 class HideLearnedController extends Notifier<bool> {
   @override

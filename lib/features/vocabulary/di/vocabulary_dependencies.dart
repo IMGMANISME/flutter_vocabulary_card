@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/providers/app_providers.dart';
@@ -12,9 +14,11 @@ import '../domain/usecases/set_learned_status_usecase.dart';
 final vocabularyLocalDataSourceProvider = Provider<VocabularyLocalDataSource>((
   ref,
 ) {
-  return VocabularyLocalDataSourceImpl(
+  final source = VocabularyLocalDataSourceImpl(
     sharedPreferences: ref.watch(sharedPreferencesProvider),
   );
+  ref.onDispose(() => unawaited(source.dispose()));
+  return source;
 });
 
 final vocabularyRemoteDataSourceProvider = Provider<VocabularyRemoteDataSource>(

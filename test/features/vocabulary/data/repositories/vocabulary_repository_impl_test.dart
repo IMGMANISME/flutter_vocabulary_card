@@ -14,6 +14,8 @@ class FakeVocabularyLocalDataSource implements VocabularyLocalDataSource {
   int setCallCount = 0;
   String? lastSetWordId;
   bool? lastSetIsLearned;
+  bool failVocabularyCache = false;
+  bool failRemoteMirror = false;
 
   List<VocabularyModel> cachedList;
   final Map<String, Set<String>> remoteMirror;
@@ -65,6 +67,9 @@ class FakeVocabularyLocalDataSource implements VocabularyLocalDataSource {
 
   @override
   Future<void> cacheVocabularyList(List<VocabularyModel> words) async {
+    if (failVocabularyCache) {
+      throw CacheException('disk unavailable');
+    }
     cachedList = List<VocabularyModel>.from(words);
   }
 
@@ -75,6 +80,9 @@ class FakeVocabularyLocalDataSource implements VocabularyLocalDataSource {
 
   @override
   Future<void> cacheRemoteLearnedIds(String userId, Set<String> ids) async {
+    if (failRemoteMirror) {
+      throw CacheException('disk unavailable');
+    }
     remoteMirror[userId] = Set<String>.from(ids);
   }
 
@@ -311,14 +319,62 @@ void main() {
 
       final result = await repository.getVocabularyList();
 
-      expect(
-        result.getOrElse((_) => const []).single.id,
-        'cached_word',
-      );
+      expect(result.getOrElse((_) => const []).single.id, 'cached_word');
 
       await local.dispose();
       await remote.dispose();
     });
+
+    for (final hasOldCache in [false, true]) {
+      test(
+        'keeps fresh download when cache fails (old cache: $hasOldCache)',
+        () async {
+          final local = FakeVocabularyLocalDataSource(
+            seededList: hasOldCache ? [_word('old_word')] : null,
+          )..failVocabularyCache = true;
+          final remote = FakeVocabularyRemoteDataSource()
+            ..remoteList = [_word('fresh_word')];
+          final repository = VocabularyRepositoryImpl(
+            remoteDataSource: remote,
+            localDataSource: local,
+          );
+
+          final result = await repository.getVocabularyList();
+          expect(result.getOrElse((_) => const []).single.id, 'fresh_word');
+          await local.dispose();
+          await remote.dispose();
+        },
+      );
+    }
+
+    test(
+      'mirror failure preserves live updates without unhandled errors',
+      () async {
+        final local = FakeVocabularyLocalDataSource()..failRemoteMirror = true;
+        final remote = FakeVocabularyRemoteDataSource(
+          seededUserId: 'user_1',
+          seededRemoteIds: {'first_word'},
+        );
+        final repository = VocabularyRepositoryImpl(
+          remoteDataSource: remote,
+          localDataSource: local,
+        );
+        final received = <Set<String>>[];
+        final subscription = repository.getLearnedWordIdsStream().listen(
+          received.add,
+        );
+        await Future<void>.delayed(Duration.zero);
+        remote.emitRemoteIds({'second_word'});
+        await Future<void>.delayed(Duration.zero);
+        expect(received, [
+          {'first_word'},
+          {'second_word'},
+        ]);
+        await subscription.cancel();
+        await local.dispose();
+        await remote.dispose();
+      },
+    );
 
     test('fails when the fetch fails and nothing is cached', () async {
       final local = FakeVocabularyLocalDataSource();

@@ -139,9 +139,11 @@
     "id": 383,
     "word": "efficient",
     "partOfSpeech": "adjective",
-    "definition": "Performing tasks in a well-organized and competent way.",
-    "example": "The new system is more efficient than the old one.",
-    "chineseTranslation": "有效率的"
+    "definition": "Able to achieve good results while using little time, energy, or other resources.",
+    "example": "The new booking system is more efficient because it processes requests in half the time.",
+    "chineseTranslation": "有效率的",
+    "usageNote": "Efficient focuses on avoiding wasted resources; effective focuses on achieving the intended result.",
+    "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/efficient"
   },
   {
     "id": 384,
