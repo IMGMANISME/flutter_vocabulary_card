@@ -5,8 +5,8 @@
 #   ./scripts/release_ios.sh          build with the current build number
 #   ./scripts/release_ios.sh --bump   increment the build number first
 #
-# Ends with exactly one archive in Xcode's Organizer folder, so there is nothing
-# to pick wrong. Refuses to stage anything that fails verification.
+# Stages a versioned archive in Xcode's Organizer folder and keeps existing
+# archives. Refuses to stage anything that fails verification.
 #
 # Every check here exists because that failure actually happened. See
 # docs/RELEASE.md for the incidents.
