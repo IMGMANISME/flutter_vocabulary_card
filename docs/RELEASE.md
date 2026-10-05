@@ -13,7 +13,7 @@
 ./scripts/release_ios.sh --bump
 ```
 
-遞增 build number、乾淨重建、驗證產物，並把 archive 放進 Xcode Organizer（同時清掉舊的，清單只會有一個）。任一項驗證失敗即中止。
+遞增 build number、乾淨重建、驗證產物，並把 archive 放進 Xcode Organizer（保留既有 archive，以版號與時間辨識）。任一項驗證失敗即中止。
 
 接著 Xcode → Window → Organizer → **Distribute App** → **App Store Connect** → **Upload**，並**取消勾選 Manage Version and Build Number**。
 
@@ -58,7 +58,7 @@ flutter build appbundle --release
 ./scripts/release_ios.sh --bump
 ```
 
-腳本會遞增 build number、乾淨重建、驗證產物，並把 archive 放進 Organizer 且清掉舊的，任一項驗證失敗即中止。下面各節說明它在做什麼與為何需要——手動執行時請照著做。
+腳本會遞增 build number、乾淨重建、驗證產物，並把 archive 放進 Organizer，保留既有 archive，任一項驗證失敗即中止。下面各節說明它在做什麼與為何需要——手動執行時請照著做。
 
 不遞增版號（例如重建同一版）就省略 `--bump`。
 
