@@ -21,7 +21,11 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
   Future<Either<Failure, List<VocabularyWord>>> getVocabularyList() async {
     try {
       final remoteWords = await remoteDataSource.getVocabularyList();
-      await localDataSource.cacheVocabularyList(remoteWords);
+      try {
+        await localDataSource.cacheVocabularyList(remoteWords);
+      } catch (_) {
+        // Fresh content remains usable even when persistence is unavailable.
+      }
       return Right(remoteWords);
     } on ServerException catch (error) {
       return _cachedListOr(ServerFailure(error.message));
@@ -57,9 +61,7 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
 
           final stream = remoteDataSource
               .watchLearnedWordIds(userId)
-              .doOnData(
-                (ids) => localDataSource.cacheRemoteLearnedIds(userId, ids),
-              );
+              .doOnData((ids) => _mirrorLearnedIds(userId, ids));
 
           final mirrored = localDataSource.getCachedRemoteLearnedIds(userId);
 
@@ -74,6 +76,14 @@ class VocabularyRepositoryImpl implements VocabularyRepository {
           return stream.startWith(mirrored);
         })
         .distinct(_sameSet);
+  }
+
+  Future<void> _mirrorLearnedIds(String userId, Set<String> ids) async {
+    try {
+      await localDataSource.cacheRemoteLearnedIds(userId, ids);
+    } catch (_) {
+      // Mirroring is best effort; it must not disrupt live learned status.
+    }
   }
 
   bool _sameSet(Set<String> previous, Set<String> next) {

@@ -43,9 +43,11 @@
     "id": 530,
     "word": "faculty",
     "partOfSpeech": "noun",
-    "definition": "an inherent mental or physical power; a division of a university",
-    "example": "She has a faculty for learning languages quickly.",
-    "chineseTranslation": "能力；學院"
+    "definition": "A natural ability or a particular skill that a person has.",
+    "example": "Her faculty for noticing small changes made her a careful editor.",
+    "chineseTranslation": "能力；才能",
+    "usageNote": "Faculty for introduces an ability. The university department or teaching staff senses are separate.",
+    "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/faculty"
   },
   {
     "id": 531,

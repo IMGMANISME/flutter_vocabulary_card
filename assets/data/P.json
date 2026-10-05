@@ -427,8 +427,11 @@
     "id": 1142,
     "word": "prescribe",
     "partOfSpeech": "verb",
-    "definition": "Advise and authorize the use of a medicine or treatment for someone, especially in writing.",
-    "example": "The doctor prescribed antibiotics."
+    "definition": "To specify a medicine or treatment that someone should receive.",
+    "example": "The doctor prescribed a new treatment after reviewing the test results.",
+    "chineseTranslation": "開藥；指定治療方式",
+    "usageNote": "Prescribe a medicine or treatment; prescribe something for a patient or condition.",
+    "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/prescribe"
   },
   {
     "id": 1143,

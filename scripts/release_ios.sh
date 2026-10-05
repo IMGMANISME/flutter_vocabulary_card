@@ -119,13 +119,9 @@ echo "  （archive 為 $signer，屬正常）"
 mkdir -p "$ORGANIZER"
 staged="$ORGANIZER/Gocab-${name}+${number}-$(date +%H%M).xcarchive"
 
-# Old archives in the Organizer list are indistinguishable at a glance and have
-# been uploaded by mistake before. Leave exactly one.
-stale=$(find "$ORGANIZER" -maxdepth 1 -name '*.xcarchive' | wc -l | tr -d ' ')
-if [[ "$stale" -gt 0 ]]; then
-  find "$ORGANIZER" -maxdepth 1 -name '*.xcarchive' -exec rm -rf {} +
-  warn "已移除 $stale 個先前的 archive，避免在 Organizer 中選錯"
-fi
+# Keep existing archives, including archives from other apps built today.
+# Refuse a same-minute collision instead of overwriting or nesting a copy.
+[[ ! -e "$staged" ]] || die "Organizer 已有同名 archive：$staged；請稍後重試"
 
 cp -R "$ARCHIVE" "$staged"
 ok "已放入 Organizer：$(basename "$staged")"

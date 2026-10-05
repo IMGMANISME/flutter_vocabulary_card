@@ -8,12 +8,14 @@ part of 'vocabulary_model.dart';
 
 VocabularyModel _$VocabularyModelFromJson(Map<String, dynamic> json) =>
     VocabularyModel(
-      id: json['id'] as String? ?? '',
-      word: json['word'] as String? ?? '',
-      partOfSpeech: json['partOfSpeech'] as String? ?? '',
-      definition: json['definition'] as String? ?? '',
-      example: json['example'] as String? ?? '',
-      chineseTranslation: json['chineseTranslation'] as String? ?? '',
+      id: json['id'] as String,
+      word: json['word'] as String,
+      partOfSpeech: json['partOfSpeech'] as String,
+      definition: json['definition'] as String,
+      example: json['example'] as String,
+      chineseTranslation: json['chineseTranslation'] as String,
+      usageNote: json['usageNote'] as String? ?? '',
+      sourceUrl: json['sourceUrl'] as String? ?? '',
     );
 
 Map<String, dynamic> _$VocabularyModelToJson(VocabularyModel instance) =>
@@ -24,4 +26,6 @@ Map<String, dynamic> _$VocabularyModelToJson(VocabularyModel instance) =>
       'definition': instance.definition,
       'example': instance.example,
       'chineseTranslation': instance.chineseTranslation,
+      'usageNote': instance.usageNote,
+      'sourceUrl': instance.sourceUrl,
     };

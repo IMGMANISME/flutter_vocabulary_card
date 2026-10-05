@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,18 +8,13 @@ import '../../../../config/theme/app_colors.dart';
 import '../../../../shared/widgets/adaptive_button.dart';
 import '../../../../shared/widgets/glass_panel.dart';
 import '../../../auth/presentation/providers/auth_provider.dart';
-import '../../di/vocabulary_dependencies.dart';
+import '../../../auth/domain/entities/app_user.dart';
 import '../../presentation/providers/study_session_providers.dart';
 import '../providers/vocabulary_providers.dart';
 import '../widgets/flashcard_widget.dart';
 
 class MainScreen extends ConsumerWidget {
   const MainScreen({super.key});
-
-  // Height of the floating controls, which the card area has to clear. Two
-  // values because the letter row disappears in shuffled order.
-  static const double _controlsHeight = 138;
-  static const double _controlsHeightShuffled = 78;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -44,31 +41,45 @@ class MainScreen extends ConsumerWidget {
                   const Positioned.fill(
                     child: IgnorePointer(child: _DecorativeBackground()),
                   ),
-                  Column(
-                    children: [
-                      _buildHeaderCard(context, ref, session, c),
-                      Expanded(
-                        child: session.hasWords
-                            ? _buildCardArea(context, ref, c, session)
-                            : _buildEmptyState(ref, c),
-                      ),
-                      if (!session.hasWords) _buildFooter(c),
-                    ],
+                  LayoutBuilder(
+                    builder: (context, constraints) {
+                      final textScale =
+                          MediaQuery.textScalerOf(context).scale(20) / 20;
+                      final cardHeight =
+                          (constraints.maxHeight * 0.5).clamp(300.0, 520.0) *
+                          math.min(textScale, 1.5);
+                      return SingleChildScrollView(
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            minHeight: constraints.maxHeight,
+                          ),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              _buildHeaderCard(context, ref, session, c),
+                              SizedBox(
+                                height: cardHeight,
+                                child: session.hasWords
+                                    ? _buildCardArea(context, ref, c, session)
+                                    : _buildEmptyState(ref, c, session),
+                              ),
+                              if (session.hasWords)
+                                _buildControls(ref, session, c),
+                              if (!session.hasWords) _buildFooter(c),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
                   ),
-                  // Floats above the card so the glass has something to
-                  // refract — a flat backdrop would render it invisible.
-                  if (session.hasWords)
-                    Positioned(
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      child: _buildControls(ref, session, c),
-                    ),
                 ],
               );
             },
             loading: () => const _LoadingState(),
-            error: (error, stackTrace) => _ErrorState(error: error.toString()),
+            error: (error, stackTrace) => _ErrorState(
+              onRetry: () => ref.invalidate(vocabularyListProvider),
+            ),
           ),
         ),
       ),
@@ -91,7 +102,8 @@ class MainScreen extends ConsumerWidget {
     final user = authState.value;
     final isLoading = authState.isLoading || authControllerState.isLoading;
     final progressPercent = (session.progress * 100).round();
-    final remainingCount = session.totalCount - session.displayPosition;
+    final remainingCount = session.remainingCount;
+    final learnedAsync = ref.watch(learnedWordIdsProvider);
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
@@ -128,7 +140,7 @@ class MainScreen extends ConsumerWidget {
                       ),
                       const SizedBox(height: 6),
                       Text(
-                        'English Vocabulary Card',
+                        'Gocab',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w800,
@@ -149,7 +161,7 @@ class MainScreen extends ConsumerWidget {
                 ),
               ],
             ),
-            if (session.hasWords) ...[
+            if (session.deckCount > 0) ...[
               const SizedBox(height: 14),
               Container(
                 decoration: BoxDecoration(
@@ -158,49 +170,47 @@ class MainScreen extends ConsumerWidget {
                 ),
                 clipBehavior: Clip.antiAlias,
                 child: LinearProgressIndicator(
-                  value: session.progress.clamp(0.0, 1.0),
+                  value: learnedAsync.isLoading
+                      ? null
+                      : session.progress.clamp(0.0, 1.0),
                   minHeight: 8,
                   backgroundColor: Colors.transparent,
                   valueColor: AlwaysStoppedAnimation<Color>(c.accent),
                 ),
               ),
               const SizedBox(height: 9),
-              Row(
+              Wrap(
+                spacing: 12,
+                runSpacing: 4,
+                alignment: WrapAlignment.spaceBetween,
                 children: [
-                  // The counters take the whole left half regardless of how
-                  // long they render, so the two chips stay pinned to the
-                  // right edge instead of sliding with the text width.
-                  Expanded(
-                    child: Row(
-                      children: [
-                        Text(
-                          '${session.displayPosition}/${session.totalCount}',
-                          style: TextStyle(
-                            color: c.ink,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        // Flexible so the two chips never get squeezed off the
-                        // row once the counts grow to four digits.
-                        Flexible(
-                          child: Text(
-                            '$progressPercent% · $remainingCount left',
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                              color: c.ink.withValues(alpha: 0.6),
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                  Text(
+                    learnedAsync.hasError
+                        ? 'Learning progress unavailable'
+                        : learnedAsync.isLoading
+                        ? 'Loading learning progress…'
+                        : '${session.learnedCount}/${session.deckCount} learned · $progressPercent%',
+                    style: TextStyle(color: c.ink, fontWeight: FontWeight.w700),
                   ),
-                  const SizedBox(width: 8),
+                  if (!learnedAsync.isLoading && !learnedAsync.hasError)
+                    Text(
+                      '$remainingCount to learn',
+                      style: TextStyle(color: c.ink.withValues(alpha: 0.7)),
+                    ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  if (session.hasWords)
+                    Text(
+                      'Card ${session.displayPosition} of ${session.totalCount}',
+                      style: TextStyle(color: c.ink.withValues(alpha: 0.7)),
+                    ),
                   _buildShuffleChip(ref, isShuffled, c),
-                  const SizedBox(width: 6),
                   _buildHideLearnedChip(ref, hideLearned, c),
                 ],
               ),
@@ -215,7 +225,7 @@ class MainScreen extends ConsumerWidget {
     BuildContext context,
     WidgetRef ref,
     AppColors c, {
-    required dynamic user,
+    required AppUser? user,
     required bool isLoading,
   }) {
     if (isLoading) {
@@ -262,20 +272,22 @@ class MainScreen extends ConsumerWidget {
             child: CircleAvatar(
               radius: 19,
               backgroundColor: c.actionFill,
-              backgroundImage: user.photoUrl != null
+              foregroundImage: user.photoUrl != null
                   ? NetworkImage(user.photoUrl!)
                   : null,
-              onBackgroundImageError: (exception, stackTrace) {},
-              child: user.photoUrl == null
-                  ? Text(
-                      (user.displayName ?? 'U')[0].toUpperCase(),
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    )
+              onForegroundImageError: user.photoUrl != null
+                  ? (exception, stackTrace) {}
                   : null,
+              child: Text(
+                user.displayName?.trim().isNotEmpty == true
+                    ? user.displayName!.trim()[0].toUpperCase()
+                    : 'U',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
             ),
           ),
         ),
@@ -343,6 +355,7 @@ class MainScreen extends ConsumerWidget {
             ),
           ),
           child: Row(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Icon(
                 isShuffled
@@ -354,14 +367,16 @@ class MainScreen extends ConsumerWidget {
                     : c.ink.withValues(alpha: 0.72),
               ),
               const SizedBox(width: 4),
-              Text(
-                isShuffled ? 'Shuffled' : 'Shuffle',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  color: isShuffled
-                      ? Colors.white
-                      : c.ink.withValues(alpha: 0.72),
+              Flexible(
+                child: Text(
+                  isShuffled ? 'Shuffled' : 'Shuffle',
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    color: isShuffled
+                        ? Colors.white
+                        : c.ink.withValues(alpha: 0.72),
+                  ),
                 ),
               ),
             ],
@@ -388,6 +403,7 @@ class MainScreen extends ConsumerWidget {
             ),
           ),
           child: Row(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Icon(
                 hideLearned ? Icons.visibility_off_rounded : Icons.visibility,
@@ -397,14 +413,16 @@ class MainScreen extends ConsumerWidget {
                     : c.ink.withValues(alpha: 0.72),
               ),
               const SizedBox(width: 4),
-              Text(
-                'Hide',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  color: hideLearned
-                      ? Colors.white
-                      : c.ink.withValues(alpha: 0.72),
+              Flexible(
+                child: Text(
+                  hideLearned ? 'Show all' : 'Hide learned',
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    color: hideLearned
+                        ? Colors.white
+                        : c.ink.withValues(alpha: 0.72),
+                  ),
                 ),
               ),
             ],
@@ -414,79 +432,86 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildEmptyState(WidgetRef ref, AppColors c) {
+  Widget _buildEmptyState(
+    WidgetRef ref,
+    AppColors c,
+    StudySessionState session,
+  ) {
     final hideLearned = ref.watch(hideLearnedProvider);
+    final isComplete = hideLearned && session.deckCount > 0;
 
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 380),
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
-            decoration: _panelDecoration(c, radius: 24),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 76,
-                  height: 76,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [c.cardBannerStart, c.cardBannerEnd],
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: c.panelShadow.withValues(alpha: 0.08),
-                        blurRadius: 16,
-                        offset: const Offset(0, 10),
+    return SingleChildScrollView(
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 380),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
+              decoration: _panelDecoration(c, radius: 24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 76,
+                    height: 76,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [c.cardBannerStart, c.cardBannerEnd],
                       ),
-                    ],
+                      boxShadow: [
+                        BoxShadow(
+                          color: c.panelShadow.withValues(alpha: 0.08),
+                          blurRadius: 16,
+                          offset: const Offset(0, 10),
+                        ),
+                      ],
+                    ),
+                    child: Icon(
+                      Icons.auto_stories_rounded,
+                      size: 36,
+                      color: c.accent,
+                    ),
                   ),
-                  child: Icon(
-                    Icons.auto_stories_rounded,
-                    size: 36,
-                    color: c.accent,
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'No words available',
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w800,
-                    color: c.ink,
-                    letterSpacing: -0.4,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  hideLearned
-                      ? 'All words are currently hidden as learned.'
-                      : 'Try checking your data source or sync status.',
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: c.ink.withValues(alpha: 0.72),
-                    fontWeight: FontWeight.w500,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                if (hideLearned) ...[
                   const SizedBox(height: 16),
-                  AdaptiveButton(
-                    onPressed: () => _toggleHideLearned(ref),
-                    isFilled: true,
-                    color: c.accent,
-                    textColor: Colors.white,
-                    borderRadius: 14,
-                    child: const Text('Show learned words'),
+                  Text(
+                    isComplete ? 'All words learned!' : 'No words available',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w800,
+                      color: c.ink,
+                      letterSpacing: -0.4,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
+                  const SizedBox(height: 8),
+                  Text(
+                    isComplete
+                        ? 'You have marked every word as learned. Show them again to review.'
+                        : 'Try checking your data source or sync status.',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: c.ink.withValues(alpha: 0.72),
+                      fontWeight: FontWeight.w500,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  if (isComplete) ...[
+                    const SizedBox(height: 16),
+                    AdaptiveButton(
+                      onPressed: () => _toggleHideLearned(ref),
+                      isFilled: true,
+                      color: c.accent,
+                      textColor: Colors.white,
+                      borderRadius: 14,
+                      child: const Text('Show learned words'),
+                    ),
+                  ],
                 ],
-              ],
+              ),
             ),
           ),
         ),
@@ -506,62 +531,58 @@ class MainScreen extends ConsumerWidget {
     }
 
     final isLearned = session.isCurrentWordLearned;
-    final isShuffled = ref.watch(shuffleSeedProvider) != null;
-    final controlsHeight = isShuffled
-        ? _controlsHeightShuffled
-        : _controlsHeight;
-
     return Padding(
-      // Clears the floating controls entirely so the card is never cut off.
-      // What the glass refracts is the page backdrop.
-      padding: EdgeInsets.fromLTRB(12, 4, 12, controlsHeight + 8),
-      child: Stack(
+      padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
+      child: Column(
         children: [
-          Positioned.fill(
+          Expanded(
             child: AnimatedSwitcher(
               duration: const Duration(milliseconds: 280),
               switchInCurve: Curves.easeOutCubic,
               switchOutCurve: Curves.easeInCubic,
-              transitionBuilder: (child, animation) {
-                final scaleAnimation = Tween<double>(
-                  begin: 0.96,
-                  end: 1,
-                ).animate(animation);
-
-                return FadeTransition(
-                  opacity: animation,
-                  child: ScaleTransition(scale: scaleAnimation, child: child),
-                );
-              },
               child: FlashcardWidget(
                 key: ValueKey(currentWord.id),
                 word: currentWord,
               ),
             ),
           ),
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 14,
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 290),
-                child: _buildLearnedButton(
-                  context,
-                  c,
-                  isLearned: isLearned,
-                  compact: true,
-                  onTap: () => _setLearned(
-                    context,
-                    ref,
-                    wordId: currentWord.id,
-                    isLearned: !isLearned,
-                  ),
-                ),
+          const SizedBox(height: 10),
+          if (ref.watch(learnedWordIdsProvider).hasError)
+            TextButton.icon(
+              onPressed: () => ref.invalidate(learnedWordIdsProvider),
+              icon: const Icon(Icons.refresh_rounded),
+              label: const Text('Retry loading learning progress'),
+            )
+          else if (ref.watch(learnedWordIdsProvider).isLoading)
+            const Padding(
+              padding: EdgeInsets.all(8),
+              child: Text('Loading learning progress…'),
+            )
+          else
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 290),
+              child: _buildLearnedButton(
+                context,
+                c,
+                isLearned: isLearned,
+                isUpdating: ref
+                    .watch(learnedStatusControllerProvider)
+                    .contains(currentWord.id),
+                compact: true,
+                onTap:
+                    ref
+                        .watch(learnedStatusControllerProvider)
+                        .contains(currentWord.id)
+                    ? null
+                    : () => _setLearned(
+                        context,
+                        ref,
+                        wordId: currentWord.id,
+                        wordLabel: currentWord.word,
+                        isLearned: !isLearned,
+                      ),
               ),
             ),
-          ),
         ],
       ),
     );
@@ -571,7 +592,8 @@ class MainScreen extends ConsumerWidget {
     BuildContext context,
     AppColors c, {
     required bool isLearned,
-    required VoidCallback onTap,
+    required VoidCallback? onTap,
+    bool isUpdating = false,
     bool compact = false,
   }) {
     final buttonRadius = compact ? 16.0 : 20.0;
@@ -621,15 +643,19 @@ class MainScreen extends ConsumerWidget {
                 color: isLearned ? Colors.white : c.ink.withValues(alpha: 0.82),
               ),
               const SizedBox(width: 8),
-              Text(
-                isLearned ? 'Learned' : 'Mark as Learned',
-                style: TextStyle(
-                  fontSize: fontSize,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 0.2,
-                  color: isLearned
-                      ? Colors.white
-                      : c.ink.withValues(alpha: 0.85),
+              Flexible(
+                child: Text(
+                  isUpdating
+                      ? 'Saving…'
+                      : (isLearned ? 'Learned' : 'Mark as Learned'),
+                  style: TextStyle(
+                    fontSize: fontSize,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.2,
+                    color: isLearned
+                        ? Colors.white
+                        : c.ink.withValues(alpha: 0.85),
+                  ),
                 ),
               ),
             ],
@@ -793,13 +819,12 @@ class MainScreen extends ConsumerWidget {
     final background = isPrimary ? c.actionFillEnd : c.panel;
     final foreground = isPrimary ? Colors.white : c.ink;
 
-    return SizedBox(
-      height: 46,
-      child: ElevatedButton.icon(
+    return ConstrainedBox(
+      constraints: const BoxConstraints(minHeight: 46),
+      child: ElevatedButton(
         onPressed: onPressed,
-        icon: Icon(icon, size: 16),
-        label: Text(label),
         style: ElevatedButton.styleFrom(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
           backgroundColor: background,
           foregroundColor: foreground,
           disabledBackgroundColor: isPrimary
@@ -819,6 +844,14 @@ class MainScreen extends ConsumerWidget {
             fontWeight: FontWeight.w700,
             letterSpacing: 0.15,
           ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, size: 16),
+            const SizedBox(width: 8),
+            Flexible(child: Text(label, textAlign: TextAlign.center)),
+          ],
         ),
       ),
     );
@@ -858,33 +891,91 @@ class MainScreen extends ConsumerWidget {
     );
   }
 
-  Future<void> _setLearned(
+  Future<bool> _setLearned(
     BuildContext context,
     WidgetRef ref, {
     required String wordId,
+    required String wordLabel,
     required bool isLearned,
+    bool offerUndo = true,
   }) async {
+    final userId = ref.read(authStateProvider).value?.id;
+    final previousIndex = ref.read(studySessionProvider).currentIndex;
     final result = await ref
-        .read(setLearnedStatusUseCaseProvider)
-        .call(wordId: wordId, isLearned: isLearned);
+        .read(learnedStatusControllerProvider.notifier)
+        .setStatus(wordId: wordId, isLearned: isLearned);
 
-    result.match((failure) {
-      if (!context.mounted) {
-        return;
-      }
+    if (!context.mounted || ref.read(authStateProvider).value?.id != userId) {
+      return false;
+    }
 
-      _showAppDialog(
-        context,
-        title: 'Unable to update word',
-        message: failure.message,
-        isError: true,
-      );
-    }, (_) {});
+    return result.match(
+      (failure) {
+        _showAppDialog(
+          context,
+          title: 'Unable to update word',
+          message: failure.message,
+          isError: true,
+        );
+        return false;
+      },
+      (_) {
+        if (offerUndo) {
+          final messenger = ScaffoldMessenger.of(context);
+          messenger.hideCurrentSnackBar();
+          messenger.showSnackBar(
+            SnackBar(
+              content: Text(
+                isLearned
+                    ? '$wordLabel marked as learned'
+                    : '$wordLabel marked as not learned',
+              ),
+              duration: const Duration(seconds: 6),
+              action: SnackBarAction(
+                label: 'Undo',
+                onPressed: () async {
+                  if (!context.mounted) return;
+                  if (ref.read(authStateProvider).value?.id != userId) return;
+                  final restored = await _setLearned(
+                    context,
+                    ref,
+                    wordId: wordId,
+                    wordLabel: wordLabel,
+                    isLearned: !isLearned,
+                    offerUndo: false,
+                  );
+                  if (restored && context.mounted) {
+                    final restoredIndex = ref
+                        .read(studySessionProvider)
+                        .words
+                        .indexWhere((word) => word.id == wordId);
+                    ref
+                        .read(studyIndexProvider.notifier)
+                        .jumpTo(
+                          restoredIndex >= 0 ? restoredIndex : previousIndex,
+                        );
+                  }
+                },
+              ),
+            ),
+          );
+        }
+        return true;
+      },
+    );
   }
 
   Future<void> _toggleHideLearned(WidgetRef ref) async {
-    await ref.read(hideLearnedProvider.notifier).toggle();
-    ref.read(studyIndexProvider.notifier).reset();
+    final current = ref.read(studySessionProvider);
+    final save = ref.read(hideLearnedProvider.notifier).toggle();
+    final next = ref.read(studySessionProvider);
+    final retainedIndex = next.words.indexWhere(
+      (word) => word.id == current.currentWord?.id,
+    );
+    ref
+        .read(studyIndexProvider.notifier)
+        .jumpTo(retainedIndex >= 0 ? retainedIndex : current.currentIndex);
+    await save;
   }
 
   void _toggleShuffle(WidgetRef ref, bool isShuffled) {
@@ -1131,9 +1222,9 @@ class _LoadingState extends StatelessWidget {
 }
 
 class _ErrorState extends StatelessWidget {
-  final String error;
+  final VoidCallback onRetry;
 
-  const _ErrorState({required this.error});
+  const _ErrorState({required this.onRetry});
 
   @override
   Widget build(BuildContext context) {
@@ -1149,10 +1240,25 @@ class _ErrorState extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             border: Border.all(color: c.dangerBorder),
           ),
-          child: Text(
-            'Error: $error',
-            textAlign: TextAlign.center,
-            style: TextStyle(color: c.danger),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                'Unable to load vocabulary',
+                style: TextStyle(color: c.danger, fontWeight: FontWeight.w700),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'Check your connection and try again.',
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 16),
+              ElevatedButton.icon(
+                onPressed: onRetry,
+                icon: const Icon(Icons.refresh_rounded),
+                label: const Text('Try again'),
+              ),
+            ],
           ),
         ),
       ),

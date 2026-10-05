@@ -435,10 +435,13 @@
     "id": 1475,
     "word": "triumph",
     "partOfSpeech": "noun",
-    "definition": "A great victory or achievement.",
-    "example": "Winning the championship was a triumph for the team."
+    "definition": "An important success or victory, especially after a difficult effort.",
+    "example": "Completing the project despite repeated setbacks was a triumph for the whole team.",
+    "chineseTranslation": "重大成功；勝利",
+    "usageNote": "A triumph for someone describes their success; a triumph over something describes overcoming an obstacle.",
+    "sourceUrl": "https://dictionary.cambridge.org/us/dictionary/english/triumph"
   },
-    {
+  {
     "id": 1476,
     "word": "trophy",
     "partOfSpeech": "noun",

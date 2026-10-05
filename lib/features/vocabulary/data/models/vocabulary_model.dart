@@ -1,5 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import '../../domain/entities/vocabulary_word.dart';
+import 'vocabulary_content_review.dart';
 
 part 'vocabulary_model.g.dart';
 
@@ -12,10 +13,12 @@ class VocabularyModel extends VocabularyWord {
     required super.definition,
     required super.example,
     required super.chineseTranslation,
+    super.usageNote = '',
+    super.sourceUrl = '',
   });
 
   factory VocabularyModel.fromJson(Map<String, dynamic> json) =>
-      _$VocabularyModelFromJson(json);
+      _$VocabularyModelFromJson(prepareVocabularyJson(json));
 
   Map<String, dynamic> toJson() => _$VocabularyModelToJson(this);
 
@@ -27,6 +30,8 @@ class VocabularyModel extends VocabularyWord {
       definition: entity.definition,
       example: entity.example,
       chineseTranslation: entity.chineseTranslation,
+      usageNote: entity.usageNote,
+      sourceUrl: entity.sourceUrl,
     );
   }
 }

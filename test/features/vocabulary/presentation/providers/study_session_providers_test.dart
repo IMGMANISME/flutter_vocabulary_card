@@ -113,6 +113,59 @@ void main() {
       );
     });
 
+    test('learning a shuffled word preserves every remaining card order', () {
+      final before = buildStudySessionState(
+        allWords: _deck,
+        learnedWordIds: const {},
+        hideLearned: true,
+        requestedIndex: 0,
+        shuffleSeed: 42,
+      );
+      final learnedId = before.currentWord!.id;
+      final after = buildStudySessionState(
+        allWords: _deck,
+        learnedWordIds: {learnedId},
+        hideLearned: true,
+        requestedIndex: 0,
+        shuffleSeed: 42,
+      );
+
+      expect(
+        after.words.map((word) => word.id),
+        before.words
+            .where((word) => word.id != learnedId)
+            .map((word) => word.id),
+      );
+      expect(after.currentWord, before.words[1]);
+    });
+
+    test('learning progress ignores navigation, filters, and stale IDs', () {
+      for (final hideLearned in [true, false]) {
+        final state = buildStudySessionState(
+          allWords: _deck,
+          learnedWordIds: {'1', '2', 'removed-word'},
+          hideLearned: hideLearned,
+          requestedIndex: 100,
+        );
+        expect(state.learnedCount, 2);
+        expect(state.deckCount, 8);
+        expect(state.remainingCount, 6);
+        expect(state.progress, 0.25);
+      }
+    });
+
+    test('a completed hidden deck retains its completed progress', () {
+      final state = buildStudySessionState(
+        allWords: _deck,
+        learnedWordIds: _deck.map((word) => word.id).toSet(),
+        hideLearned: true,
+        requestedIndex: 0,
+      );
+      expect(state.hasWords, false);
+      expect(state.progress, 1);
+      expect(state.remainingCount, 0);
+    });
+
     test('letter jump targets stay consistent with the shuffled order', () {
       final state = buildStudySessionState(
         allWords: _deck,
