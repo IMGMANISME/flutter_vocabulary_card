@@ -94,11 +94,11 @@ APP="$ARCHIVE/Products/Applications/Runner.app"
 python3 scripts/verify_ios_scene.py "$APP/Info.plist" || die "archive 的 UIScene 設定不完整"
 
 built=$(/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$APP/Info.plist")
-[[ "$built" == "$number" ]] || die "archive 的 build number 是 $built，應為 $number（拿到舊產物）"
+[[ "$built" == "$number" ]] || die "archive 的 build number 是 ${built}，應為 ${number}（拿到舊產物）"
 ok "build number $built"
 
 bundle=$(/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "$APP/Info.plist")
-[[ "$bundle" == "com.gman.gocabapp" ]] || die "bundle ID 是 $bundle，應為 com.gman.gocabapp"
+[[ "$bundle" == "com.gman.gocabapp" ]] || die "bundle ID 是 ${bundle}，應為 com.gman.gocabapp"
 ok "bundle ID $bundle"
 
 # Any framework carrying a simulator slice is rejected at upload.
@@ -116,7 +116,7 @@ ipa_signer=$(codesign -dvvv "$tmp/Payload/Runner.app" 2>&1 | grep '^Authority=' 
 rm -rf "$tmp"
 [[ "$ipa_signer" == Apple\ Distribution* ]] || die "IPA 簽章是「$ipa_signer」，應為 Apple Distribution"
 ok "IPA 簽章 $ipa_signer"
-echo "  （archive 為 $signer，屬正常）"
+echo "  （archive 為 ${signer}，屬正常）"
 
 # --- stage ----------------------------------------------------------------
 
@@ -125,7 +125,7 @@ staged="$ORGANIZER/Gocab-${name}+${number}-$(date +%H%M).xcarchive"
 
 # Keep existing archives, including archives from other apps built today.
 # Refuse a same-minute collision instead of overwriting or nesting a copy.
-[[ ! -e "$staged" ]] || die "Organizer 已有同名 archive：$staged；請稍後重試"
+[[ ! -e "$staged" ]] || die "Organizer 已有同名 archive：${staged}；請稍後重試"
 
 cp -R "$ARCHIVE" "$staged"
 ok "已放入 Organizer：$(basename "$staged")"
