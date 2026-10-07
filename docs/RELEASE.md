@@ -98,6 +98,18 @@ Distribute 流程中該選項預設開啟。它會在偵測到 build number 已�
 
 ### 上傳前自我驗證
 
+Xcode 27 / iOS 27 SDK 要求 UIScene 啟動流程。build 6 缺少 scene manifest，與 iOS 27.0.1 啟動立即閃退的回報吻合；尚未取得該裝置的 crash log。修正包含 `FlutterSceneDelegate`、Main storyboard 的 scene 設定，以及將插件和 GlassPanel 註冊移到 `didInitializeImplicitFlutterEngine`。參考 [Flutter 官方遷移說明](https://docs.flutter.dev/release/breaking-changes/uiscenedelegate)。
+
+release 腳本會在建置前及 archive 產出後驗證 scene 設定。手動建置時執行：
+
+```bash
+python3 scripts/verify_ios_scene.py build/ios/archive/Runner.xcarchive/Products/Applications/Runner.app/Info.plist
+```
+
+編譯與 manifest 驗證不能取代真機啟動測試。上傳前，應在目標 iOS 版本實際冷啟動，並確認首頁、背景返回及登入回呼正常。
+
+2026-10-07 修正驗證：iOS 26.5 模擬器的 `RunnerTests.testLaunchCreatesFlutterSceneAndRegistersPlugins` 通過，確認 scene 建立及 Firebase、Google 登入、本機儲存插件註冊；手動首次啟動、終止後冷啟動與背景返回均正常，首頁及原生玻璃面板可呈現。Flutter 靜態分析及 36 個測試通過。iOS 27.0.1 的 TestFlight 真機驗證仍待 build 7 更新後確認。
+
 **送出前務必跑這段**，確認手上的 archive 確實是剛建的：
 
 ```bash
