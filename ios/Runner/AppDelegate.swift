@@ -2,13 +2,10 @@ import Flutter
 import UIKit
 
 @main
-@objc class AppDelegate: FlutterAppDelegate {
-  override func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-  ) -> Bool {
-    GeneratedPluginRegistrant.register(with: self)
-    GlassPanelFactory.register(with: registrar(forPlugin: "GlassPanelPlugin")!)
-    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+@objc class AppDelegate: FlutterAppDelegate, FlutterImplicitEngineDelegate {
+  func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
+    // The scene's storyboard creates the engine after application launch.
+    GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
+    GlassPanelFactory.register(with: engineBridge.applicationRegistrar)
   }
 }

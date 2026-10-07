@@ -57,6 +57,9 @@ if [[ -n "$stale" ]]; then
 fi
 ok "專案路徑一致"
 
+# Xcode 27 / iOS 27 requires the scene lifecycle even when compilation succeeds.
+python3 scripts/verify_ios_scene.py ios/Runner/Info.plist || die "UIScene 設定不完整"
+
 # --- build number ---------------------------------------------------------
 
 current=$(grep '^version:' pubspec.yaml | sed 's/^version: //')
@@ -88,6 +91,7 @@ flutter build ipa --release
 APP="$ARCHIVE/Products/Applications/Runner.app"
 [[ -d "$APP" ]] || die "找不到 archive：$ARCHIVE"
 [[ -f "$IPA" ]] || die "找不到 IPA：$IPA"
+python3 scripts/verify_ios_scene.py "$APP/Info.plist" || die "archive 的 UIScene 設定不完整"
 
 built=$(/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$APP/Info.plist")
 [[ "$built" == "$number" ]] || die "archive 的 build number 是 $built，應為 $number（拿到舊產物）"

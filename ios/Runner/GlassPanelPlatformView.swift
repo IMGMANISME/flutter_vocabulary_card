@@ -80,7 +80,7 @@ final class GlassPanelFactory: NSObject, FlutterPlatformViewFactory {
         FlutterStandardMessageCodec.sharedInstance()
     }
 
-    static func register(with registrar: FlutterPluginRegistrar) {
+    static func register(with registrar: FlutterBaseRegistrar) {
         registrar.register(GlassPanelFactory(), withId: GlassPanelIds.viewType)
     }
 }
